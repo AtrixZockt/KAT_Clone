@@ -28,5 +28,7 @@ jobs:
           cp -R ./docs/html/* ./wiki/
           cd ./wiki
           git add .
+          git config --local user.email "atrixzockt@web.de"
+          git config --local user.name "AtrixZockt"
           git commit -m "Update documentation"
           git push origin HEAD
