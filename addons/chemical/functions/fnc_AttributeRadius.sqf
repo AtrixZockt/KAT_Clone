@@ -1,18 +1,4 @@
-#include "script_component.hpp"
-/*
- * Author: DiGii
- * 
- *
- * Return Value:
- * NONE
- *
- * Example:
- * [] call kat_chemical_fnc_AttributeRadius;
- *
- * Public: No
- *
- *
-*/
+
 
 
 params ["_control"];
@@ -24,18 +10,7 @@ if!(isNull attachedTo _logic) then {
     _sealCheckBox ctrlShow true;
     _sealText ctrlShow true;
 
-    _placeText ctrlSetText CSTRING(GasModule_createContaminatedObject);
-} else {
-    _sealCheckBox ctrlShow false;
-    _sealText ctrlShow false;
-    _placetext ctrlSetText CSTRING(GasModule_createContaminatedZone);
-};
-
-private _ntrol controlsGroupCtrl 1612;
-
-_maxEdit ctrlSetText "100";
-_minEdit ctrlSetText "50";
-
+    _pla
 private _fnc_onKeyUp = {
     params ["_display"];
 
