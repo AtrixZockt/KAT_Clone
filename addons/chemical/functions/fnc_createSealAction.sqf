@@ -41,7 +41,7 @@ private _action = [
         ] call ace_common_fnc_progressBar;
     },
     {
-        params["_target","_player"];
+        params["_r"];
 
         [_player, _target] call ACEFUNC(common,canInteractWith);
         [_player, _player, ["kat_sealant"]] call ACEFUNC(medical_treatment,hasItem);
