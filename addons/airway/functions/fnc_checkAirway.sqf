@@ -16,12 +16,6 @@
  * Public: No
  */
 
-
-    if (_patient getVariable [QGVAR(overstretch), false]) then {
-        _messageairwayobstruction = LLSTRING(message_obstructionTemporarilyMitigated);
-        _obstruction = LLSTRING(mitigatedObstruction);
-    };
-    if (GVAR(autoTriage)) then {
         _patient setVariable [QACEGVAR(medical,triageLevel), 3, true];
     };
 };
