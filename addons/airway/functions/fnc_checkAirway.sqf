@@ -19,10 +19,6 @@
 params ["_medic", "_patient"];
 
 
-private _messageairwayOccluded = LLSTRING(message_Occluded_no);
-private _obstruction = LSTRING(noObstruction);
-private _occluded = LSTRING(noOccluded);
-
 if (_patient getVariable [QGVAR(obstruction), false]) then {
     _messageairwayobstruction = LLSTRING(message_obstruction_yes);
     _obstruction = LSTRING(obstruction);
