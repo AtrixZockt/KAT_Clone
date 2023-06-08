@@ -18,7 +18,7 @@
 
 params ["_medic", "_patient"];
 
-private _messageairwayobstruction = LLSTRING(message_obstruction_no);
+
 private _messageairwayOccluded = LLSTRING(message_Occluded_no);
 private _obstruction = LSTRING(noObstruction);
 private _occluded = LSTRING(noOccluded);
