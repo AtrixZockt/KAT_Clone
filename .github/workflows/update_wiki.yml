@@ -28,7 +28,7 @@ jobs:
         run: git clone --depth 1 https://github.com/${{ github.repository }}.wiki.git
 
       - name: Copy Doxygen documentation to Wiki
-        run: cp -R html/* ./${{ github.repository }}.wiki
+        run: cp -R docs/html/* ./${{ github.repository }}.wiki
 
       - name: Commit and push changes
         run: |
