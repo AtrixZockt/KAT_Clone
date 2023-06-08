@@ -1,0 +1,47 @@
+name: Update Wiki
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  update-wiki:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Install Doxygen
+        run: sudo apt-get install doxygen -y
+
+      - name: Update Wiki
+        run: |
+          # Retrieve the pull request number
+          PR_NUMBER=$(echo "${{ github.event.pull_request.url }}" | grep -oE '[0-9]+$')
+
+          # Clone the repository's wiki
+          git clone https://github.com/${{ github.repository }}/wiki.git wiki
+
+          # Go through each file in the pull request
+          for file in $(git diff --name-only HEAD~1 HEAD); do
+            # Check if the file contains Doxygen comments
+            if grep -q "@brief" "$file"; then
+              # Generate documentation using Doxygen and update the wiki page
+              doxygen -g doxygen.conf
+              sed -i "s@PROJECT_NAME           = \"MyProject\"@PROJECT_NAME           = \"$(basename $file)\"@g" doxygen.conf
+              doxygen doxygen.conf
+              cp -r html/* wiki/
+            fi
+          done
+
+          # Commit and push the changes to the wiki repository
+          cd wiki
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git add .
+          git commit -m "Update wiki from PR #${PR_NUMBER}"
+          git push origin master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
