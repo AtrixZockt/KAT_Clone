@@ -17,7 +17,6 @@ jobs:
         uses: mattnotmitt/doxygen-action@1.9.5
         with:
           working-directory: 'addons/'
-          doxyfile-path: 'docs/Doxyfile'
 
       - name: Set up wiki
         run: |
