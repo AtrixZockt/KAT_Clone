@@ -40,9 +40,7 @@ private _fnc_onKeyUp = {
     params ["_display"];
 
     private _maxEdit = _display displayCtrl 1611;
-    private _minEdit = _display displayCtrl 1612;
-    private _maxradius = parseNumber (ctrlText _maxEdit);
-    private _minradius = parseNumber (ctrlText _minEdit);
+    private _miumber (ctrlText _minEdit);
 
     // Handle invalid radius (non-numerical input)
     if (_maxradius == 0) then {
