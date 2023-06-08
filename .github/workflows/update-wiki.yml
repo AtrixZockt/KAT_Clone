@@ -18,7 +18,7 @@ jobs:
       - name: Generate Doxygen documentation
         uses: mattnotmitt/doxygen-action@1.9.5
         with:
-          doxyfile-path: '../Doxyfile'
+          doxyfile-path: './Doxyfile'
 
       - name: Set up wiki
         run: |
