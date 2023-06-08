@@ -31,9 +31,7 @@ if!(isNull attachedTo _logic) then {
     _placetext ctrlSetText CSTRING(GasModule_createContaminatedZone);
 };
 
-private _gasTypeCombo = _display displayCtrl 1615;
-private _maxEdit = _control controlsGroupCtrl 1611;
-private _minEdit = _control controlsGroupCtrl 1612;
+private _ntrol controlsGroupCtrl 1612;
 
 _maxEdit ctrlSetText "100";
 _minEdit ctrlSetText "50";

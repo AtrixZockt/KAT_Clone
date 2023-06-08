@@ -27,12 +27,7 @@ private _action = [
         //add time to addon options
         [
             20,
-            [_target,_player],
-            {
-                params["_args"];
-                _args params ["_target","_player"];
-                _target setVariable [QGVAR(gas_active), false, true];
-                [_target, 0, ["ACE_MainActions", "kat_gas_interaction"]] call ACEFUNC(interact_menu,removeActionFromObject);
+            [_target,"ACE_MainActions", "kat_gas_interaction"]] call ACEFUNC(interact_menu,removeActionFromObject);
                 [_player, "kat_sealant"] call ACEFUNC(common,useItem);
             },
             {
