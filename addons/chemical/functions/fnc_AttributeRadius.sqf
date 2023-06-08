@@ -52,10 +52,6 @@ private _fnc_onKeyUp = {
         _display setVariable [QGVAR(ui_radiusMax),_maxradius];
     };
 
-    if (_minradius == 0) then {
-        _minEdit ctrlSetTooltip (ACELSTRING(Zeus,AttributeRadiusInvalid));
-        _minEdit ctrlSetTextColor [1,0,0,1];
-    } else {
         if(_minradius > _maxradius) then {
             _minEdit ctrlSetTooltip (ACELSTRING(Zeus,AttributeRadiusInvalid));
             _minEdit ctrlSetTextColor [1,0,0,1];
