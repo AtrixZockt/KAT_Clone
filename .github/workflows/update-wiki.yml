@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: mattnotmitt/doxygen-action@1.9.5
+        uses: actions/checkout@v2
 
       - name: Generate Doxygen documentation
-        uses: doxygen/doxygen-action@v2
+        uses: mattnotmitt/doxygen-action@1.9.5
         with:
           config-file: /Doxyfile
 
