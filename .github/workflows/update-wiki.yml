@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+          with:
+            path: KAT_Clone7"
 
       - name: Generate Doxygen documentation
         uses: mattnotmitt/doxygen-action@1.9.5
@@ -28,7 +30,5 @@ jobs:
           cp -R ./docs/html/* ./wiki/
           cd ./wiki
           git add .
-          git config --local user.email "atrixzockt@web.de"
-          git config --local user.name "AtrixZockt"
           git commit -m "Update documentation"
           git push origin HEAD
