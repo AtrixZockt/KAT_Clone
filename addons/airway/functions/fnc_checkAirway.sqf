@@ -18,10 +18,6 @@
 
         _patient setVariable [QACEGVAR(medical,triageLevel), 3, true];
     };
-};
-if (_patient getVariable [QGVAR(occluded), false]) then {
-    _messageairwayOccluded = LLSTRING(message_Occluded_yes);
-    _occluded = LSTRING(Occluded);
     if (GVAR(autoTriage)) then {
         _patient setVariable [QACEGVAR(medical,triageLevel), 3, true];
     };
