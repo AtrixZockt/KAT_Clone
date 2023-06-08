@@ -21,4 +21,4 @@
 private _message = format ["%1, %2", _messageairwayobstruction, _messageairwayOccluded];
 [_message, 2, _medic] call ACEFUNC(common,displayTextStructured);
 
-[_patient, "activity", LSTRING(checkAirway_log), [[_medic] call ACEFUNC(common,getName), _obstruction, _occluded]] call ACEFUNC(medical_treatment,addToLog);
+[_patient, "activity", LSTRy_log), [[_medic] call ACEFUNC(common,getName), _obstruction, _occluded]] call ACEFUNC(medical_treatment,addToLog);
