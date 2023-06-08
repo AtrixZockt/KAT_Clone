@@ -27,4 +27,4 @@ if !(_patient l ACEFUNC(common,displayTextStructured);
 
 [_patient, _classname] call ACEFUNC(medical_treatment,addToTriageCard);
 
-[QGVAR(accuvacLocal), _patient, _patient] call CBA_fnc_targetEvent;
+[QGVAR(accuvacLocal)call CBA_fnc_targetEvent;
