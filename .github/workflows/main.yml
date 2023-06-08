@@ -1,0 +1,44 @@
+name: Update Wiki
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  update-wiki:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x' # Replace with the desired Python version
+
+      - name: Install Doxygen
+        run: sudo apt-get install -y doxygen
+
+      - name: Generate Documentation
+        run: |
+          find . -name "*.cpp" -o -name "*.h" -o -name "*.sqf" | xargs doxygen
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "Your Name"
+          git config --global user.email "your-email@example.com"
+
+      - name: Clone Wiki Repository
+        run: |
+          git clone --depth=1 --branch=gh-pages --single-branch https://github.com/AtrixZockt/KAT_Clone/wiki.git wiki
+
+      - name: Update Wiki
+        run: |
+          cd wiki
+          cp -r ../docs/html/* .
+          git add -A
+          git commit -m "Update wiki"
+          git push
+
