@@ -17,12 +17,7 @@
  */
 
         _patient setVariable [QACEGVAR(medical,triageLevel), 3, true];
-    };
-    if (GVAR(autoTriage)) then {
-        _patient setVariable [QACEGVAR(medical,triageLevel), 3, true];
-    };
-};
-if (!(_patient getVariable [QGVAR(occluded), false] && _patient getVariable [QGVAR(obstruction), false]) && GVAR(autoTriage)) then {_patient setVariable [QACEGVAR(medical,triageLevel), 0, true]};
+    };] && _patient getVariable [QGVAR(obstruction), false]) && GVAR(autoTriage)) then {_patient setVariable [QACEGVAR(medical,triageLevel), 0, true]};
 private _message = format ["%1, %2", _messageairwayobstruction, _messageairwayOccluded];
 [_message, 2, _medic] call ACEFUNC(common,displayTextStructured);
 
