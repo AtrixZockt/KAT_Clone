@@ -13,6 +13,10 @@
  *
  * Public: No
 */
+/*!
+Hallo MEin name
+\params Int
+!*/
 params["_target"];
 
 private _action = [
