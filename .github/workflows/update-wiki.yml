@@ -22,7 +22,7 @@ jobs:
           PR_NUMBER=$(echo "${{ github.event.pull_request.url }}" | grep -oE '[0-9]+$')
 
           # Clone the repository's wiki
-          git clone https://github.com/${{ github.repository }}/wiki.git wiki
+          git clone https://github.com/${{ github.repository }}.wiki.git wiki
 
           # Go through each file in the pull request
           for file in $(git diff --name-only HEAD~1 HEAD); do
