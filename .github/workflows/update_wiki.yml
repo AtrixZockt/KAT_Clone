@@ -1,0 +1,41 @@
+name: Update Wiki with Doxygen
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  update-wiki:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install Doxygen
+        run: sudo apt-get update && sudo apt-get install -y doxygen
+
+      - name: Generate Doxygen documentation
+        run: doxygen
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+
+      - name: Clone Wiki repository
+        run: git clone --depth 1 --branch gh-pages https://github.com/${{ github.repository }}.wiki.git
+
+      - name: Copy Doxygen documentation to Wiki
+        run: cp -R html/* ./${{ github.repository }}.wiki
+
+      - name: Commit and push changes
+        run: |
+          cd ./${{ github.repository }}.wiki
+          git add .
+          git commit -m "Update Doxygen documentation"
+          git push
+
+      - name: Clean up
+        run: rm -rf ./${{ github.repository }}.wiki
