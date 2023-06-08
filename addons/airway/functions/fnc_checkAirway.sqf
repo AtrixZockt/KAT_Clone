@@ -16,12 +16,7 @@
  * Public: No
  */
 
-params ["_medic", "_patient"];
 
-
-if (_patient getVariable [QGVAR(obstruction), false]) then {
-    _messageairwayobstruction = LLSTRING(message_obstruction_yes);
-    _obstruction = LSTRING(obstruction);
     if (_patient getVariable [QGVAR(overstretch), false]) then {
         _messageairwayobstruction = LLSTRING(message_obstructionTemporarilyMitigated);
         _obstruction = LLSTRING(mitigatedObstruction);
