@@ -1,0 +1,35 @@
+name: Update Wiki
+on:
+  pull_request:
+    types:
+      - closed
+      - merged
+
+jobs:
+  update-wiki:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+- name: Generate Doxygen documentation
+  uses: doxygen/doxygen-action@v2
+  with:
+    config-file: /Doxyfile
+
+- name: Set up wiki
+  run: |
+    git clone https://github.com/${{ github.repository }}.wiki.git ./wiki
+    cd ./wiki
+    git config user.name "${{ github.actor }}"
+    git config user.email "${{ github.actor }}@users.noreply.github.com"
+
+- name: Copy documentation to wiki
+  run: |
+    cp -R /docs/html/* ./wiki/
+    cd ./wiki
+    git add .
+    git commit -m "Update documentation"
+    git push origin HEAD
+
+
