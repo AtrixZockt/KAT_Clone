@@ -34,5 +34,6 @@ jobs:
           cp -R ./docs/html/* ./wiki/
           cd ./wiki
           git add .
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
           git commit -m "Update documentation"
           git push origin HEAD
