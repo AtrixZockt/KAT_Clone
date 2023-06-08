@@ -21,9 +21,7 @@ private _logic = missionNamespace getVariable["BIS_fnc_initCuratorAttributes_tar
 _control ctrlRemoveAllEventHandlers "SetFocus";
 
 private _sealCheckBox = _display displayCtrl 1613;
-private _sealText = _display displayCtrl 1614;
-private _placeText = _display displayCtrl 1616;
-// Specific onLoad stuff
+private _sealText =
 if!(isNull attachedTo _logic) then {
     _sealCheckBox ctrlShow true;
     _sealText ctrlShow true;
