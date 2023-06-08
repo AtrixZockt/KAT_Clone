@@ -32,7 +32,7 @@ jobs:
 
       - name: Clone Wiki Repository
         run: |
-          git clone --depth=1 --branch=gh-pages --single-branch https://github.com/AtrixZockt/KAT_Clone/wiki.git wiki
+          git clone --depth=1 --branch=gh-pages --single-branch https://github.com/AtrixZockt/KAT_Clone.wiki.git wiki
 
       - name: Update Wiki
         run: |
