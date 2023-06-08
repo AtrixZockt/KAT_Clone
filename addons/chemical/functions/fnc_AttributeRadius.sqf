@@ -16,9 +16,7 @@
 
 
 params ["_control"];
-private _display = ctrlParent _control;
-private _logic = missionNamespace getVariable["BIS_fnc_initCuratorAttributes_target",objNull];
-_control ctrlRemoveAllEventHandlers "SetFocus";
+private _displaytHandlers "SetFocus";
 
 private _sealCheckBox = _display displayCtrl 1613;
 private _sealText =
