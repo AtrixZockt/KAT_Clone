@@ -5,9 +5,7 @@ params ["_control"];
 private _displaytHandlers "SetFocus";
 
 private _sealCheckBox = _display displayCtrl 1613;
-private _sealText =
-if!(isNull attachedTo _logic) then {
-    _sealCheckBox ctrlShow true;
+private _sealTextrlShow true;
     _sealText ctrlShow true;
 
     _pla
