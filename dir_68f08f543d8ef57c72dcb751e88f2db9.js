@@ -22,5 +22,7 @@ var dir_68f08f543d8ef57c72dcb751e88f2db9 =
       [ "CfgWeapons", "class_cfg_weapons.html", null ]
     ] ],
     [ "script_component.hpp", "airway_2script__component_8hpp.html", "airway_2script__component_8hpp" ],
+    [ "XEH_postInit.sqf", "airway_2_x_e_h__post_init_8sqf.html", "airway_2_x_e_h__post_init_8sqf" ],
+    [ "XEH_preInit.sqf", "airway_2_x_e_h__pre_init_8sqf.html", "airway_2_x_e_h__pre_init_8sqf" ],
     [ "XEH_PREP.hpp", "airway_2_x_e_h___p_r_e_p_8hpp.html", "airway_2_x_e_h___p_r_e_p_8hpp" ]
 ];

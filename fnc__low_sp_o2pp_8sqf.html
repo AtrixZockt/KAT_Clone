@@ -81,16 +81,130 @@ $(document).ready(function(){initNavTree('fnc__low_sp_o2pp_8sqf.html',''); initR
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/breathing/functions/fnc_lowSpO2pp.sqf File Reference</div>  </div>
+<div class="title">fnc_lowSpO2pp.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="breathing_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a056ccf62f344e948cd2b72866cee57bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__low_sp_o2pp_8sqf.html#a056ccf62f344e948cd2b72866cee57bd">if</a> (!(alive <a class="el" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a>)||!([<a class="el" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a>] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(common, isAwake))||<a class="el" href="fnc__low_sp_o2pp_8sqf.html#aba8d635702ec06b47e8c8d6bb98ebeac">_currentSpO2</a> &gt; <a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(lowSPO2Level)) exitWith</td></tr>
+<tr class="separator:a056ccf62f344e948cd2b72866cee57bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a82fb0c7d729dd3880152687ee97a5f21"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__low_sp_o2pp_8sqf.html#a82fb0c7d729dd3880152687ee97a5f21">params</a> [&quot;_target&quot;]</td></tr>
+<tr class="separator:a82fb0c7d729dd3880152687ee97a5f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba8d635702ec06b47e8c8d6bb98ebeac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__low_sp_o2pp_8sqf.html#aba8d635702ec06b47e8c8d6bb98ebeac">_currentSpO2</a> = <a class="el" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(airwayStatus), 100]</td></tr>
+<tr class="separator:aba8d635702ec06b47e8c8d6bb98ebeac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a100d6621d07c68e425c9a1dfcf80dbc3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__low_sp_o2pp_8sqf.html#a100d6621d07c68e425c9a1dfcf80dbc3">spawn</a></td></tr>
+<tr class="separator:a100d6621d07c68e425c9a1dfcf80dbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a277011ad2f02dd4781c8d743061f4a70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__low_sp_o2pp_8sqf.html#a277011ad2f02dd4781c8d743061f4a70">while</a></td></tr>
+<tr class="separator:a277011ad2f02dd4781c8d743061f4a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a056ccf62f344e948cd2b72866cee57bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a056ccf62f344e948cd2b72866cee57bd">&#9670;&nbsp;</a></span>if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!(alive <a class="el" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a>)||!([<a class="el" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a>] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(common, isAwake))||&#160;</td>
+          <td class="paramname"><em>_currentSpO2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(lowSPO2Level)&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aba8d635702ec06b47e8c8d6bb98ebeac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba8d635702ec06b47e8c8d6bb98ebeac">&#9670;&nbsp;</a></span>_currentSpO2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_currentSpO2 = <a class="el" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(airwayStatus), 100]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a82fb0c7d729dd3880152687ee97a5f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82fb0c7d729dd3880152687ee97a5f21">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_target&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a100d6621d07c68e425c9a1dfcf80dbc3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a100d6621d07c68e425c9a1dfcf80dbc3">&#9670;&nbsp;</a></span>spawn</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">spawn</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line"> </div>
+<div class="line">    <a class="code" href="fnc__low_sp_o2pp_8sqf.html#a82fb0c7d729dd3880152687ee97a5f21">params</a> [<span class="stringliteral">&quot;_name&quot;</span>, <span class="stringliteral">&quot;_priority&quot;</span>, <span class="stringliteral">&quot;_effect&quot;</span>, <span class="stringliteral">&quot;_handle&quot;</span>]</div>
+<div class="ttc" id="afnc__low_sp_o2pp_8sqf_html_a82fb0c7d729dd3880152687ee97a5f21"><div class="ttname"><a href="fnc__low_sp_o2pp_8sqf.html#a82fb0c7d729dd3880152687ee97a5f21">params</a></div><div class="ttdeci">params[&quot;_target&quot;]</div><div class="ttdef"><b>Definition:</b> fnc_lowSpO2pp.sqf:19</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a277011ad2f02dd4781c8d743061f4a70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a277011ad2f02dd4781c8d743061f4a70">&#9670;&nbsp;</a></span>while</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">while</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        _handle = ppEffectCreate [<a class="code" href="fnc__attach_stretcher_8sqf.html#ac5015312a026c5fdfd732f5526c51018">_name</a>, _priority]</div>
+<div class="ttc" id="afnc__attach_stretcher_8sqf_html_ac5015312a026c5fdfd732f5526c51018"><div class="ttname"><a href="fnc__attach_stretcher_8sqf.html#ac5015312a026c5fdfd732f5526c51018">_name</a></div><div class="ttdeci">private _name</div><div class="ttdef"><b>Definition:</b> fnc_attachStretcher.sqf:26</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__low_sp_o2pp_8sqf.html">fnc_lowSpO2pp.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_19324090db7fa5ae9be4a5fd923b156d.html">breathing</a></li><li class="navelem"><a class="el" href="dir_5d84e112e42ea35c0142b853b32f6ecf.html">functions</a></li><li class="navelem"><a class="el" href="fnc__low_sp_o2pp_8sqf.html">fnc_lowSpO2pp.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

@@ -81,16 +81,131 @@ $(document).ready(function(){initNavTree('fnc__display_patient_information_8sqf.
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/airway/functions/fnc_displayPatientInformation.sqf File Reference</div>  </div>
+<div class="title">fnc_displayPatientInformation.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="airway_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a08e4da5f3d0c7936fa52467f40e4b6aa"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__display_patient_information_8sqf.html#a08e4da5f3d0c7936fa52467f40e4b6aa">MAX_DISTANCE</a>&#160;&#160;&#160;4</td></tr>
+<tr class="memdesc:a08e4da5f3d0c7936fa52467f40e4b6aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Author: Glowbal, mharis001 Opens the patient information display for given target.  <a href="fnc__display_patient_information_8sqf.html#a08e4da5f3d0c7936fa52467f40e4b6aa">More...</a><br /></td></tr>
+<tr class="separator:a08e4da5f3d0c7936fa52467f40e4b6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a69ae3fa7653c1396dea33afe6495423b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__display_patient_information_8sqf.html#a69ae3fa7653c1396dea33afe6495423b">if</a> (isNull <a class="el" href="fnc__ui__manage_airway_8sqf.html#a528ed63e4e791557747143ca8173564e">_display</a>) then</td></tr>
+<tr class="separator:a69ae3fa7653c1396dea33afe6495423b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab4c54e4de2b087619135c96aac40ed4b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__display_patient_information_8sqf.html#ab4c54e4de2b087619135c96aac40ed4b">params</a> [&quot;_target&quot;, &quot;_selectionN&quot;]</td></tr>
+<tr class="separator:ab4c54e4de2b087619135c96aac40ed4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528ed63e4e791557747143ca8173564e"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__display_patient_information_8sqf.html#a528ed63e4e791557747143ca8173564e">_display</a> = uiNamespace <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical_gui,RscPatientInfo), displayNull]</td></tr>
+<tr class="separator:a528ed63e4e791557747143ca8173564e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a434934faf1bb349006f5dc3b353100b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fnc__ui__manage_airway_8sqf.html#a528ed63e4e791557747143ca8173564e">_display</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__display_patient_information_8sqf.html#a434934faf1bb349006f5dc3b353100b5">setVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical_gui, target), <a class="el" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a>]</td></tr>
+<tr class="separator:a434934faf1bb349006f5dc3b353100b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a08e4da5f3d0c7936fa52467f40e4b6aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08e4da5f3d0c7936fa52467f40e4b6aa">&#9670;&nbsp;</a></span>MAX_DISTANCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MAX_DISTANCE&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Author: Glowbal, mharis001 Opens the patient information display for given target. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Target</td><td>&lt;OBJECT&gt; </td></tr>
+    <tr><td class="paramname">Body</td><td>part &lt;NUMBER&gt;</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Return Value: </p><dl class="section return"><dt>Returns</dt><dd>None</dd></dl>
+<p>Example: [_target, 0] call ace_medical_gui_fnc_displayPatientInformation</p>
+<p>Public: No </p>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a69ae3fa7653c1396dea33afe6495423b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69ae3fa7653c1396dea33afe6495423b">&#9670;&nbsp;</a></span>if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">isNull&#160;</td>
+          <td class="paramname"><em>_display</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a528ed63e4e791557747143ca8173564e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a528ed63e4e791557747143ca8173564e">&#9670;&nbsp;</a></span>_display</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _display = uiNamespace <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical_gui,RscPatientInfo), displayNull]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab4c54e4de2b087619135c96aac40ed4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4c54e4de2b087619135c96aac40ed4b">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_target&quot;, &quot;_selectionN&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a434934faf1bb349006f5dc3b353100b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a434934faf1bb349006f5dc3b353100b5">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__ui__manage_airway_8sqf.html#a528ed63e4e791557747143ca8173564e">_display</a> setVariable[<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical_gui, selectionN), _selectionN]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__display_patient_information_8sqf.html">fnc_displayPatientInformation.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_68f08f543d8ef57c72dcb751e88f2db9.html">airway</a></li><li class="navelem"><a class="el" href="dir_0ec7ac071fffc5968f5248906b55ba45.html">functions</a></li><li class="navelem"><a class="el" href="fnc__display_patient_information_8sqf.html">fnc_displayPatientInformation.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

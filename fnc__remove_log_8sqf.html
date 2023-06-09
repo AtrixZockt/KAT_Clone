@@ -81,16 +81,145 @@ $(document).ready(function(){initNavTree('fnc__remove_log_8sqf.html',''); initRe
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/circulation/functions/fnc_removeLog.sqf File Reference</div>  </div>
+<div class="title">fnc_removeLog.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="circulation_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac676a6e1e22ca32392f1f59460b37985"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_log_8sqf.html#ac676a6e1e22ca32392f1f59460b37985">if</a> (<a class="el" href="fnc__remove_log_8sqf.html#a6f534c01f5f8ca4cfca0662153c5c9c4">_logVarName</a> <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a> <a class="el" href="fnc__remove_log_8sqf.html#a7ef0a1966953b86bf20c59083587d021">_logs</a>) exitWith</td></tr>
+<tr class="separator:ac676a6e1e22ca32392f1f59460b37985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a7809331ba628a41387167dd2c9e4b98c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_log_8sqf.html#a7809331ba628a41387167dd2c9e4b98c">params</a> [&quot;_target&quot;, &quot;<a class="el" href="fnc__listen_lungs_8sqf.html#acf9c0a9c4d131e82abc5a6fc86232f7a">_type</a>&quot;, &quot;<a class="el" href="fnc__show_message_8sqf.html#abddbb9bea3f939e2914cf0201d7ae132">_message</a>&quot;]</td></tr>
+<tr class="separator:a7809331ba628a41387167dd2c9e4b98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f534c01f5f8ca4cfca0662153c5c9c4"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_log_8sqf.html#a6f534c01f5f8ca4cfca0662153c5c9c4">_logVarName</a> = <a class="el" href="fnc__group_i_d_8sqf.html#af878a00abe6cb2d824dd3e0fd8b414b9">format</a> [&quot;ace_medical_log_%1&quot;, _type]</td></tr>
+<tr class="separator:a6f534c01f5f8ca4cfca0662153c5c9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ef0a1966953b86bf20c59083587d021"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_log_8sqf.html#a7ef0a1966953b86bf20c59083587d021">_logs</a> = <a class="el" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,allLogs), []]</td></tr>
+<tr class="separator:a7ef0a1966953b86bf20c59083587d021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81740f2576e1d27509c1bc4426d45111"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_log_8sqf.html#a81740f2576e1d27509c1bc4426d45111">_log</a> = <a class="el" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__remove_log_8sqf.html#a6f534c01f5f8ca4cfca0662153c5c9c4">_logVarName</a>, []]</td></tr>
+<tr class="separator:a81740f2576e1d27509c1bc4426d45111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c29bc5b5ec3c6e95900b68f2a85949c"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_log_8sqf.html#a1c29bc5b5ec3c6e95900b68f2a85949c">_newLog</a> = []</td></tr>
+<tr class="separator:a1c29bc5b5ec3c6e95900b68f2a85949c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae63494af21a1201cccfd4d69e6258055"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_log_8sqf.html#ae63494af21a1201cccfd4d69e6258055">setVariable</a> [<a class="el" href="fnc__remove_log_8sqf.html#a6f534c01f5f8ca4cfca0662153c5c9c4">_logVarName</a>, <a class="el" href="fnc__remove_log_8sqf.html#a81740f2576e1d27509c1bc4426d45111">_log</a>, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td></tr>
+<tr class="separator:ae63494af21a1201cccfd4d69e6258055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac676a6e1e22ca32392f1f59460b37985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac676a6e1e22ca32392f1f59460b37985">&#9670;&nbsp;</a></span>if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__remove_log_8sqf.html#a6f534c01f5f8ca4cfca0662153c5c9c4">_logVarName</a> <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a>&#160;</td>
+          <td class="paramname"><em>_logs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a81740f2576e1d27509c1bc4426d45111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81740f2576e1d27509c1bc4426d45111">&#9670;&nbsp;</a></span>_log</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__treatment_advanced___naloxone_local_8sqf.html#a00880a9e6fb8c0b0c753f72fb5f4d0c3">forEach</a> _log = <a class="el" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__remove_log_8sqf.html#a6f534c01f5f8ca4cfca0662153c5c9c4">_logVarName</a>, []]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7ef0a1966953b86bf20c59083587d021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7ef0a1966953b86bf20c59083587d021">&#9670;&nbsp;</a></span>_logs</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _logs = <a class="el" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,allLogs), []]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6f534c01f5f8ca4cfca0662153c5c9c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f534c01f5f8ca4cfca0662153c5c9c4">&#9670;&nbsp;</a></span>_logVarName</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _logVarName = <a class="el" href="fnc__group_i_d_8sqf.html#af878a00abe6cb2d824dd3e0fd8b414b9">format</a> [&quot;ace_medical_log_%1&quot;, _type]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c29bc5b5ec3c6e95900b68f2a85949c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c29bc5b5ec3c6e95900b68f2a85949c">&#9670;&nbsp;</a></span>_newLog</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _newLog = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7809331ba628a41387167dd2c9e4b98c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7809331ba628a41387167dd2c9e4b98c">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_target&quot;, &quot;<a class="el" href="fnc__listen_lungs_8sqf.html#acf9c0a9c4d131e82abc5a6fc86232f7a">_type</a>&quot;, &quot;<a class="el" href="fnc__show_message_8sqf.html#abddbb9bea3f939e2914cf0201d7ae132">_message</a>&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae63494af21a1201cccfd4d69e6258055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae63494af21a1201cccfd4d69e6258055">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a> setVariable[<a class="el" href="fnc__remove_log_8sqf.html#a6f534c01f5f8ca4cfca0662153c5c9c4">_logVarName</a>, <a class="el" href="fnc__remove_log_8sqf.html#a81740f2576e1d27509c1bc4426d45111">_log</a>, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__remove_log_8sqf.html">fnc_removeLog.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_5dbcfbcd78d4b03b14d2295126304954.html">circulation</a></li><li class="navelem"><a class="el" href="dir_23a0c90030228b43b5d4f90c150a5268.html">functions</a></li><li class="navelem"><a class="el" href="fnc__remove_log_8sqf.html">fnc_removeLog.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

@@ -81,16 +81,134 @@ $(document).ready(function(){initNavTree('fnc__can_draw_8sqf.html',''); initResi
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/circulation/functions/fnc_canDraw.sqf File Reference</div>  </div>
+<div class="title">fnc_canDraw.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="circulation_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a739840cd5d0ddbfcfee1c8a1e1b05dc9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__can_draw_8sqf.html#a739840cd5d0ddbfcfee1c8a1e1b05dc9">if</a> (((<a class="el" href="fnc__has_stable_vitals_8sqf.html#afa7787a2401a8bd4ca56bef62f163037">_bloodVolume</a> - <a class="el" href="fnc__draw_blood_8sqf.html#a8dcd1badf98103e9cd0dbc3c937220df">_volumeChange</a>) &gt; <a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(blood_draw_limit)) &amp;&amp;<a class="el" href="fnc__can_draw_8sqf.html#abb423ee797b0e4256c6759dd08886460">_canAddItem</a>) exitWith</td></tr>
+<tr class="separator:a739840cd5d0ddbfcfee1c8a1e1b05dc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3028e627ab882afd2f319a5ac240f74a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__can_draw_8sqf.html#a3028e627ab882afd2f319a5ac240f74a">params</a> [&quot;_medic&quot;,&quot;_patient&quot;,&quot;<a class="el" href="fnc__treatment_advanced___i_v_8sqf.html#a4b5648ee11586f3c4c6301a54b0e2856">_volume</a>&quot;]</td></tr>
+<tr class="separator:a3028e627ab882afd2f319a5ac240f74a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae8f14174cc904a7688f2fdd21fc5d7"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__can_draw_8sqf.html#aeae8f14174cc904a7688f2fdd21fc5d7">_bagItem</a> = <a class="el" href="fnc__group_i_d_8sqf.html#af878a00abe6cb2d824dd3e0fd8b414b9">format</a> [&quot;ACE_bloodIV_%1&quot;, _volume]</td></tr>
+<tr class="memdesc:aeae8f14174cc904a7688f2fdd21fc5d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enum type.  <a href="fnc__can_draw_8sqf.html#aeae8f14174cc904a7688f2fdd21fc5d7">More...</a><br /></td></tr>
+<tr class="separator:aeae8f14174cc904a7688f2fdd21fc5d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa7787a2401a8bd4ca56bef62f163037"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__can_draw_8sqf.html#afa7787a2401a8bd4ca56bef62f163037">_bloodVolume</a> = (_patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,bloodVolume), 6.0])</td></tr>
+<tr class="separator:afa7787a2401a8bd4ca56bef62f163037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8dcd1badf98103e9cd0dbc3c937220df"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__can_draw_8sqf.html#a8dcd1badf98103e9cd0dbc3c937220df">_volumeChange</a> = <a class="el" href="fnc__treatment_advanced___i_v_8sqf.html#a4b5648ee11586f3c4c6301a54b0e2856">_volume</a>/1000</td></tr>
+<tr class="separator:a8dcd1badf98103e9cd0dbc3c937220df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb423ee797b0e4256c6759dd08886460"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__can_draw_8sqf.html#abb423ee797b0e4256c6759dd08886460">_canAddItem</a> = ((<a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a> canAddItemToUniform <a class="el" href="fnc__can_draw_8sqf.html#aeae8f14174cc904a7688f2fdd21fc5d7">_bagItem</a>) || (<a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a> canAddItemToVest <a class="el" href="fnc__can_draw_8sqf.html#aeae8f14174cc904a7688f2fdd21fc5d7">_bagItem</a>) || (<a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a> canAddItemToBackpack <a class="el" href="fnc__can_draw_8sqf.html#aeae8f14174cc904a7688f2fdd21fc5d7">_bagItem</a>))</td></tr>
+<tr class="separator:abb423ee797b0e4256c6759dd08886460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a739840cd5d0ddbfcfee1c8a1e1b05dc9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a739840cd5d0ddbfcfee1c8a1e1b05dc9">&#9670;&nbsp;</a></span>if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">((<a class="el" href="fnc__has_stable_vitals_8sqf.html#afa7787a2401a8bd4ca56bef62f163037">_bloodVolume</a> - <a class="el" href="fnc__draw_blood_8sqf.html#a8dcd1badf98103e9cd0dbc3c937220df">_volumeChange</a>) &gt; <a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(blood_draw_limit)) &amp;&amp;&#160;</td>
+          <td class="paramname"><em>_canAddItem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aeae8f14174cc904a7688f2fdd21fc5d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae8f14174cc904a7688f2fdd21fc5d7">&#9670;&nbsp;</a></span>_bagItem</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _bagItem = <a class="el" href="fnc__group_i_d_8sqf.html#af878a00abe6cb2d824dd3e0fd8b414b9">format</a> [&quot;ACE_bloodIV_%1&quot;, _volume]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enum type. </p>
+<p>The documentation block cannot be put after the enum! </p>
+
+</div>
+</div>
+<a id="afa7787a2401a8bd4ca56bef62f163037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa7787a2401a8bd4ca56bef62f163037">&#9670;&nbsp;</a></span>_bloodVolume</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _bloodVolume = (_patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,bloodVolume), 6.0])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb423ee797b0e4256c6759dd08886460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb423ee797b0e4256c6759dd08886460">&#9670;&nbsp;</a></span>_canAddItem</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _canAddItem = ((<a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a> canAddItemToUniform <a class="el" href="fnc__can_draw_8sqf.html#aeae8f14174cc904a7688f2fdd21fc5d7">_bagItem</a>) || (<a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a> canAddItemToVest <a class="el" href="fnc__can_draw_8sqf.html#aeae8f14174cc904a7688f2fdd21fc5d7">_bagItem</a>) || (<a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a> canAddItemToBackpack <a class="el" href="fnc__can_draw_8sqf.html#aeae8f14174cc904a7688f2fdd21fc5d7">_bagItem</a>))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8dcd1badf98103e9cd0dbc3c937220df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dcd1badf98103e9cd0dbc3c937220df">&#9670;&nbsp;</a></span>_volumeChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _volumeChange = <a class="el" href="fnc__treatment_advanced___i_v_8sqf.html#a4b5648ee11586f3c4c6301a54b0e2856">_volume</a>/1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3028e627ab882afd2f319a5ac240f74a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3028e627ab882afd2f319a5ac240f74a">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_medic&quot;,&quot;_patient&quot;,&quot;<a class="el" href="fnc__treatment_advanced___i_v_8sqf.html#a4b5648ee11586f3c4c6301a54b0e2856">_volume</a>&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>A test class </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__can_draw_8sqf.html">fnc_canDraw.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_5dbcfbcd78d4b03b14d2295126304954.html">circulation</a></li><li class="navelem"><a class="el" href="dir_23a0c90030228b43b5d4f90c150a5268.html">functions</a></li><li class="navelem"><a class="el" href="fnc__can_draw_8sqf.html">fnc_canDraw.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

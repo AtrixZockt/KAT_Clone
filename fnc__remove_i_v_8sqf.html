@@ -81,16 +81,139 @@ $(document).ready(function(){initNavTree('fnc__remove_i_v_8sqf.html',''); initRe
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/pharma/functions/fnc_removeIV.sqf File Reference</div>  </div>
+<div class="title">fnc_removeIV.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="pharma_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a2e61434713451d2a4fc04f6e1851dce8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_v_8sqf.html#a2e61434713451d2a4fc04f6e1851dce8">if</a> (<a class="el" href="fnc__treatment_advanced___t_x_a_local_8sqf.html#a6fc31df2f6193351b4f9c86b5d6cb034">_IVactual</a> &gt; 0) then</td></tr>
+<tr class="separator:a2e61434713451d2a4fc04f6e1851dce8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a477708cf92e063f3d97f4ffcbb1eb713"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_v_8sqf.html#a477708cf92e063f3d97f4ffcbb1eb713">params</a> [&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;]</td></tr>
+<tr class="separator:a477708cf92e063f3d97f4ffcbb1eb713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b18e20f094d8990bf39121de3b3d3c"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_v_8sqf.html#a24b18e20f094d8990bf39121de3b3d3c">_partIndex</a> = ALL_BODY_PARTS find toLower _bodyPart</td></tr>
+<tr class="separator:a24b18e20f094d8990bf39121de3b3d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c070e3bffbbdc9c2f1ebe603d63485"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_v_8sqf.html#ae1c070e3bffbbdc9c2f1ebe603d63485">_IVarray</a> = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(IV), [0,0,0,0,0,0]]</td></tr>
+<tr class="separator:ae1c070e3bffbbdc9c2f1ebe603d63485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc31df2f6193351b4f9c86b5d6cb034"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_v_8sqf.html#a6fc31df2f6193351b4f9c86b5d6cb034">_IVactual</a> = <a class="el" href="fnc__treatment_advanced___t_x_a_local_8sqf.html#ae1c070e3bffbbdc9c2f1ebe603d63485">_IVarray</a> select <a class="el" href="fnc__treatment_advanced___t_x_a_local_8sqf.html#a24b18e20f094d8990bf39121de3b3d3c">_partIndex</a></td></tr>
+<tr class="separator:a6fc31df2f6193351b4f9c86b5d6cb034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92e29a13f69e5d9de04d73823ed8ac8a"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_v_8sqf.html#a92e29a13f69e5d9de04d73823ed8ac8a">_return</a> = <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a></td></tr>
+<tr class="separator:a92e29a13f69e5d9de04d73823ed8ac8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a2e61434713451d2a4fc04f6e1851dce8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e61434713451d2a4fc04f6e1851dce8">&#9670;&nbsp;</a></span>if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__treatment_advanced___t_x_a_local_8sqf.html#a6fc31df2f6193351b4f9c86b5d6cb034">_IVactual</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a6fc31df2f6193351b4f9c86b5d6cb034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc31df2f6193351b4f9c86b5d6cb034">&#9670;&nbsp;</a></span>_IVactual</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _IVactual = <a class="el" href="fnc__treatment_advanced___t_x_a_local_8sqf.html#ae1c070e3bffbbdc9c2f1ebe603d63485">_IVarray</a> select <a class="el" href="fnc__treatment_advanced___t_x_a_local_8sqf.html#a24b18e20f094d8990bf39121de3b3d3c">_partIndex</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1c070e3bffbbdc9c2f1ebe603d63485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c070e3bffbbdc9c2f1ebe603d63485">&#9670;&nbsp;</a></span>_IVarray</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _IVarray = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(IV), [0,0,0,0,0,0]]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24b18e20f094d8990bf39121de3b3d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b18e20f094d8990bf39121de3b3d3c">&#9670;&nbsp;</a></span>_partIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _partIndex = ALL_BODY_PARTS find toLower _bodyPart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92e29a13f69e5d9de04d73823ed8ac8a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92e29a13f69e5d9de04d73823ed8ac8a">&#9670;&nbsp;</a></span>_return</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _return = <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a477708cf92e063f3d97f4ffcbb1eb713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a477708cf92e063f3d97f4ffcbb1eb713">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__remove_i_v_8sqf.html">fnc_removeIV.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_dc39b52e4bfa30dbe36e264d4ae12071.html">pharma</a></li><li class="navelem"><a class="el" href="dir_2a5e03e2d8a3b508cfdf78cd6a958ade.html">functions</a></li><li class="navelem"><a class="el" href="fnc__remove_i_v_8sqf.html">fnc_removeIV.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

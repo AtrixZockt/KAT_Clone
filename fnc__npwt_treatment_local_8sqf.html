@@ -81,16 +81,462 @@ $(document).ready(function(){initNavTree('fnc__npwt_treatment_local_8sqf.html','
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/surgery/functions/fnc_npwtTreatmentLocal.sqf File Reference</div>  </div>
+<div class="title">fnc_npwtTreatmentLocal.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="surgery_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa7ee5806c9891bf5449c6fa95246c7bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#aa7ee5806c9891bf5449c6fa95246c7bc">if</a> ((<a class="el" href="fnc__npwt_treatment_local_8sqf.html#acdccbc4bdf16ee82d7204f7d082cee3e">_debridement</a> select <a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a>) !=1) exitWith</td></tr>
+<tr class="separator:aa7ee5806c9891bf5449c6fa95246c7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e3af3a341b919cb3c147afdbd511155"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a9e3af3a341b919cb3c147afdbd511155">if</a> (<a class="el" href="fnc__npwt_treatment_local_8sqf.html#a9232eecb9e3acbeda65b69493323c91a">_lidocaine</a>==0 &amp;&amp;<a class="el" href="fnc__npwt_treatment_local_8sqf.html#ae8d0b4372bd6983841fbb1be293d1470">_morphine</a>==0) then</td></tr>
+<tr class="separator:a9e3af3a341b919cb3c147afdbd511155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad632e4020c981c0fb876317495944674"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#ad632e4020c981c0fb876317495944674">if</a> (_bodyPart !=<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a>) then</td></tr>
+<tr class="separator:ad632e4020c981c0fb876317495944674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285adf863dd852b70c60a656ac249d3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a285adf863dd852b70c60a656ac249d3e">if</a> (_bodyPart==<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a> &amp;&amp;_amount &gt; 0) exitWith</td></tr>
+<tr class="separator:a285adf863dd852b70c60a656ac249d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a733c80576170784a30691f8445c9b9dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a733c80576170784a30691f8445c9b9dd">if</a> (<a class="el" href="fnc__npwt_treatment_local_8sqf.html#a01ff51e8b722f9e71649d65b824328c9">_remainder</a>) then</td></tr>
+<tr class="separator:a733c80576170784a30691f8445c9b9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb8d4a2d1f8cac8e4ee42357c9c16b62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#abb8d4a2d1f8cac8e4ee42357c9c16b62">switch</a> (<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a>) do</td></tr>
+<tr class="separator:abb8d4a2d1f8cac8e4ee42357c9c16b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab008d57ff2e859352a95cdf84e1cc075"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#ab008d57ff2e859352a95cdf84e1cc075">ACEFUNC</a> (medical_engine, updateDamageEffects)</td></tr>
+<tr class="separator:ab008d57ff2e859352a95cdf84e1cc075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c5993e838075d99a3232cd74cb75a39"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a3c5993e838075d99a3232cd74cb75a39">ACEFUNC</a> (medical_engine, updateWoundBleedLoss)</td></tr>
+<tr class="separator:a3c5993e838075d99a3232cd74cb75a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a477708cf92e063f3d97f4ffcbb1eb713"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a477708cf92e063f3d97f4ffcbb1eb713">params</a> [&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;]</td></tr>
+<tr class="separator:a477708cf92e063f3d97f4ffcbb1eb713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d084cf05481e26badcc963215953f3c"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a> = ALL_BODY_PARTS find toLower _bodyPart</td></tr>
+<tr class="separator:a3d084cf05481e26badcc963215953f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdccbc4bdf16ee82d7204f7d082cee3e"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#acdccbc4bdf16ee82d7204f7d082cee3e">_debridement</a> = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(debridement), [0,0,0,0,0,0]]</td></tr>
+<tr class="separator:acdccbc4bdf16ee82d7204f7d082cee3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9232eecb9e3acbeda65b69493323c91a"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a9232eecb9e3acbeda65b69493323c91a">_lidocaine</a> = [_patient, &quot;Lidocaine&quot;] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(medical_status,getMedicationCount)</td></tr>
+<tr class="separator:a9232eecb9e3acbeda65b69493323c91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d0b4372bd6983841fbb1be293d1470"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#ae8d0b4372bd6983841fbb1be293d1470">_morphine</a> = [_patient, &quot;Morphine&quot;] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(medical_status,getMedicationCount)</td></tr>
+<tr class="separator:ae8d0b4372bd6983841fbb1be293d1470"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ff8eece88d6ee80dd1197d818936fe"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a73ff8eece88d6ee80dd1197d818936fe">_damage</a> = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,bodyPartDamage), [0,0,0,0,0,0]]</td></tr>
+<tr class="separator:a73ff8eece88d6ee80dd1197d818936fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11d8d3321b123db32c1784defe1e3aec"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a11d8d3321b123db32c1784defe1e3aec">_bandagedWounds</a> = <a class="el" href="fnc__debridement_local_8sqf.html#a30390f26e0a49a0060a62b38eeca9e9f">GET_BANDAGED_WOUNDS</a>(_patient)</td></tr>
+<tr class="separator:a11d8d3321b123db32c1784defe1e3aec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88dfbc978d057decbab7205e80cc27dd"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a88dfbc978d057decbab7205e80cc27dd">_stitchedWounds</a> = <a class="el" href="fnc__debridement_check_8sqf.html#ae7d205c66f2af10b4b50b9e7356a51dd">GET_STITCHED_WOUNDS</a>(_patient)</td></tr>
+<tr class="separator:a88dfbc978d057decbab7205e80cc27dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2f38489cc1a87a61952b3bec625ee22"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#ac2f38489cc1a87a61952b3bec625ee22">_openWounds</a> = <a class="el" href="fnc__debridement_local_8sqf.html#ad74c8e75b0e22b79f59ce8cc1deca8ac">GET_OPEN_WOUNDS</a>(_patient)</td></tr>
+<tr class="separator:ac2f38489cc1a87a61952b3bec625ee22"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afabeba31e1ccb7bebbf2dc3374c707ac"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#afabeba31e1ccb7bebbf2dc3374c707ac">_bandaged</a> = []</td></tr>
+<tr class="separator:afabeba31e1ccb7bebbf2dc3374c707ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71ffb585d7f281eed0cf739a4e4e2220"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a71ffb585d7f281eed0cf739a4e4e2220">_stitched</a> = []</td></tr>
+<tr class="separator:a71ffb585d7f281eed0cf739a4e4e2220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3751aca85bdbfe70e6cd56a0ed9ee09"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#aa3751aca85bdbfe70e6cd56a0ed9ee09">_open</a> = []</td></tr>
+<tr class="separator:aa3751aca85bdbfe70e6cd56a0ed9ee09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a01ff51e8b722f9e71649d65b824328c9"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a01ff51e8b722f9e71649d65b824328c9">_remainder</a> = <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a></td></tr>
+<tr class="separator:a01ff51e8b722f9e71649d65b824328c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c93c799dc3640787f2eafd5ab54b50b"><td class="memItemLeft" align="right" valign="top">_patient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a7c93c799dc3640787f2eafd5ab54b50b">setVariable</a> [<a class="el" href="surgery_2functions_2script__component_8hpp.html#aa712cc3083f141755da739ae4066df4e">VAR_BANDAGED_WOUNDS</a>, <a class="el" href="fnc__npwt_treatment_local_8sqf.html#afabeba31e1ccb7bebbf2dc3374c707ac">_bandaged</a>, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td></tr>
+<tr class="separator:a7c93c799dc3640787f2eafd5ab54b50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48fd25b37661fd69b9122cb3d1876cf3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#acdccbc4bdf16ee82d7204f7d082cee3e">_debridement</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a48fd25b37661fd69b9122cb3d1876cf3">set</a> [<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a>, 0]</td></tr>
+<tr class="separator:a48fd25b37661fd69b9122cb3d1876cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ab008d57ff2e859352a95cdf84e1cc075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab008d57ff2e859352a95cdf84e1cc075">&#9670;&nbsp;</a></span>ACEFUNC() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call ACEFUNC </td>
+          <td>(</td>
+          <td class="paramtype">medical_engine&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">updateDamageEffects&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c5993e838075d99a3232cd74cb75a39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c5993e838075d99a3232cd74cb75a39">&#9670;&nbsp;</a></span>ACEFUNC() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call ACEFUNC </td>
+          <td>(</td>
+          <td class="paramtype">medical_engine&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">updateWoundBleedLoss&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7ee5806c9891bf5449c6fa95246c7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ee5806c9891bf5449c6fa95246c7bc">&#9670;&nbsp;</a></span>if() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="fnc__npwt_treatment_local_8sqf.html#acdccbc4bdf16ee82d7204f7d082cee3e">_debridement</a> select <a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a>) !                     &#160;</td>
+          <td class="paramname"> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad632e4020c981c0fb876317495944674"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad632e4020c981c0fb876317495944674">&#9670;&nbsp;</a></span>if() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">_bodyPart !&#160;</td>
+          <td class="paramname"> = <code><a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    _x <a class="code" href="fnc__npwt_treatment_local_8sqf.html#a477708cf92e063f3d97f4ffcbb1eb713">params</a> [<span class="stringliteral">&quot;_id&quot;</span>, <span class="stringliteral">&quot;_bodyPart&quot;</span>, <span class="stringliteral">&quot;_amount&quot;</span>]</div>
+<div class="ttc" id="afnc__npwt_treatment_local_8sqf_html_a477708cf92e063f3d97f4ffcbb1eb713"><div class="ttname"><a href="fnc__npwt_treatment_local_8sqf.html#a477708cf92e063f3d97f4ffcbb1eb713">params</a></div><div class="ttdeci">params[&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;]</div><div class="ttdef"><b>Definition:</b> fnc_npwtTreatmentLocal.sqf:20</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a285adf863dd852b70c60a656ac249d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a285adf863dd852b70c60a656ac249d3e">&#9670;&nbsp;</a></span>if() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">_bodyPart&#160;</td>
+          <td class="paramname"> = <code>=&#160;<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a>&#160;&amp;&amp;&#160;_amount</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">0&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9e3af3a341b919cb3c147afdbd511155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e3af3a341b919cb3c147afdbd511155">&#9670;&nbsp;</a></span>if() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a9232eecb9e3acbeda65b69493323c91a">_lidocaine</a>                    &#160;</td>
+          <td class="paramname"> = <code>=&#160;0&#160;&amp;&amp;&#160;<a class="el" href="fnc__npwt_treatment_local_8sqf.html#ae8d0b4372bd6983841fbb1be293d1470">_morphine</a>&#160;==&#160;0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a733c80576170784a30691f8445c9b9dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a733c80576170784a30691f8445c9b9dd">&#9670;&nbsp;</a></span>if() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a01ff51e8b722f9e71649d65b824328c9">_remainder</a>                &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb8d4a2d1f8cac8e4ee42357c9c16b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8d4a2d1f8cac8e4ee42357c9c16b62">&#9670;&nbsp;</a></span>switch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a>&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="afabeba31e1ccb7bebbf2dc3374c707ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afabeba31e1ccb7bebbf2dc3374c707ac">&#9670;&nbsp;</a></span>_bandaged</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _bandaged = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11d8d3321b123db32c1784defe1e3aec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11d8d3321b123db32c1784defe1e3aec">&#9670;&nbsp;</a></span>_bandagedWounds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__treatment_advanced___naloxone_local_8sqf.html#a00880a9e6fb8c0b0c753f72fb5f4d0c3">forEach</a> _bandagedWounds = <a class="el" href="fnc__debridement_local_8sqf.html#a30390f26e0a49a0060a62b38eeca9e9f">GET_BANDAGED_WOUNDS</a>(_patient)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a73ff8eece88d6ee80dd1197d818936fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ff8eece88d6ee80dd1197d818936fe">&#9670;&nbsp;</a></span>_damage</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _damage = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,bodyPartDamage), [0,0,0,0,0,0]]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acdccbc4bdf16ee82d7204f7d082cee3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdccbc4bdf16ee82d7204f7d082cee3e">&#9670;&nbsp;</a></span>_debridement</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _debridement = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(debridement), [0,0,0,0,0,0]]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9232eecb9e3acbeda65b69493323c91a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9232eecb9e3acbeda65b69493323c91a">&#9670;&nbsp;</a></span>_lidocaine</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _lidocaine = [_patient, &quot;Lidocaine&quot;] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(medical_status,getMedicationCount)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8d0b4372bd6983841fbb1be293d1470"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8d0b4372bd6983841fbb1be293d1470">&#9670;&nbsp;</a></span>_morphine</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _morphine = [_patient, &quot;Morphine&quot;] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(medical_status,getMedicationCount)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa3751aca85bdbfe70e6cd56a0ed9ee09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3751aca85bdbfe70e6cd56a0ed9ee09">&#9670;&nbsp;</a></span>_open</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _open = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2f38489cc1a87a61952b3bec625ee22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2f38489cc1a87a61952b3bec625ee22">&#9670;&nbsp;</a></span>_openWounds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__treatment_advanced___naloxone_local_8sqf.html#a00880a9e6fb8c0b0c753f72fb5f4d0c3">forEach</a> _openWounds = <a class="el" href="fnc__debridement_local_8sqf.html#ad74c8e75b0e22b79f59ce8cc1deca8ac">GET_OPEN_WOUNDS</a>(_patient)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d084cf05481e26badcc963215953f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d084cf05481e26badcc963215953f3c">&#9670;&nbsp;</a></span>_part</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _part = ALL_BODY_PARTS find toLower _bodyPart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a01ff51e8b722f9e71649d65b824328c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a01ff51e8b722f9e71649d65b824328c9">&#9670;&nbsp;</a></span>_remainder</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _remainder = <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a71ffb585d7f281eed0cf739a4e4e2220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71ffb585d7f281eed0cf739a4e4e2220">&#9670;&nbsp;</a></span>_stitched</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _stitched = []</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88dfbc978d057decbab7205e80cc27dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88dfbc978d057decbab7205e80cc27dd">&#9670;&nbsp;</a></span>_stitchedWounds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__treatment_advanced___naloxone_local_8sqf.html#a00880a9e6fb8c0b0c753f72fb5f4d0c3">forEach</a> _stitchedWounds = <a class="el" href="fnc__debridement_check_8sqf.html#ae7d205c66f2af10b4b50b9e7356a51dd">GET_STITCHED_WOUNDS</a>(_patient)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a477708cf92e063f3d97f4ffcbb1eb713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a477708cf92e063f3d97f4ffcbb1eb713">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48fd25b37661fd69b9122cb3d1876cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48fd25b37661fd69b9122cb3d1876cf3">&#9670;&nbsp;</a></span>set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#acdccbc4bdf16ee82d7204f7d082cee3e">_debridement</a> set[<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a>, 0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c93c799dc3640787f2eafd5ab54b50b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c93c799dc3640787f2eafd5ab54b50b">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_patient setVariable[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(debridement), <a class="el" href="fnc__npwt_treatment_local_8sqf.html#acdccbc4bdf16ee82d7204f7d082cee3e">_debridement</a>, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__npwt_treatment_local_8sqf.html">fnc_npwtTreatmentLocal.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_881826e38e25fb00b5e36ff124b2249a.html">surgery</a></li><li class="navelem"><a class="el" href="dir_60f9061eb176bae83fdd4d003cfcb468.html">functions</a></li><li class="navelem"><a class="el" href="fnc__npwt_treatment_local_8sqf.html">fnc_npwtTreatmentLocal.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

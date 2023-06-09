@@ -81,16 +81,228 @@ $(document).ready(function(){initNavTree('fnc__remove_i_vbag_8sqf.html',''); ini
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/misc/functions/fnc_removeIVbag.sqf File Reference</div>  </div>
+<div class="title">fnc_removeIVbag.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="misc_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac7f6c510a826eef1724c1ed277be0e61"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_vbag_8sqf.html#ac7f6c510a826eef1724c1ed277be0e61">if</a> (<a class="el" href="fnc__remove_i_vbag_8sqf.html#a60a9d9fc7679614f87e41be99dee75bd">_className</a> isEqualTo &quot;Land_IntravenStand_01_2bags_F&quot;) then</td></tr>
+<tr class="separator:ac7f6c510a826eef1724c1ed277be0e61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab66c6dd2a49d65b870a04915664fd914"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_vbag_8sqf.html#ab66c6dd2a49d65b870a04915664fd914">params</a> [&quot;_player&quot;, &quot;_oldML&quot;]</td></tr>
+<tr class="separator:ab66c6dd2a49d65b870a04915664fd914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a799382d87623d6e61c60db2cbbd88ae0"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_vbag_8sqf.html#a799382d87623d6e61c60db2cbbd88ae0">_object</a> = <a class="el" href="fnc___a_e_d_station_condition_8sqf.html#a2266b6edbb340926f85713305dd0123d">nearestObjects</a> [_player, ['Land_IntravenStand_01_1bag_F', 'Land_IntravenStand_01_2bags_F'], 10, <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td></tr>
+<tr class="separator:a799382d87623d6e61c60db2cbbd88ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d6a4163160551979de806e3b25a2d7c"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_vbag_8sqf.html#a5d6a4163160551979de806e3b25a2d7c">_value</a> = <a class="el" href="fnc__stretcher_8sqf.html#a799382d87623d6e61c60db2cbbd88ae0">_object</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(stand), []]</td></tr>
+<tr class="separator:a5d6a4163160551979de806e3b25a2d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60a9d9fc7679614f87e41be99dee75bd"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_vbag_8sqf.html#a60a9d9fc7679614f87e41be99dee75bd">_className</a> = typeOf <a class="el" href="fnc__stretcher_8sqf.html#a799382d87623d6e61c60db2cbbd88ae0">_object</a></td></tr>
+<tr class="separator:a60a9d9fc7679614f87e41be99dee75bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50433627c27d1431df8e6c639a1e0c56"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_vbag_8sqf.html#a50433627c27d1431df8e6c639a1e0c56">_newObjectClass</a> = &quot;&quot;</td></tr>
+<tr class="separator:a50433627c27d1431df8e6c639a1e0c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0544c3fe466e421738dae463968b70ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_vbag_8sqf.html#a0544c3fe466e421738dae463968b70ba">else</a></td></tr>
+<tr class="separator:a0544c3fe466e421738dae463968b70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a967531699b5a423ca4013af3e8bd9d1b"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_vbag_8sqf.html#a967531699b5a423ca4013af3e8bd9d1b">_newObject</a> = <a class="el" href="fnc__stretcher_8sqf.html#acdd0d8af6ef3a329702fcb15bd4fbb53">createVehicle</a> [<a class="el" href="fnc__remove_i_vbag_8sqf.html#a50433627c27d1431df8e6c639a1e0c56">_newObjectClass</a>, [0,0,0], [], 0, &quot;CAN_COLLIDE&quot;]</td></tr>
+<tr class="separator:a967531699b5a423ca4013af3e8bd9d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae718ea3eb088147904888f0fc9180531"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fnc__remove_i_vbag_8sqf.html#a967531699b5a423ca4013af3e8bd9d1b">_newObject</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_vbag_8sqf.html#ae718ea3eb088147904888f0fc9180531">setVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(stand), <a class="el" href="fnc__treatment_i_v_8sqf.html#a5d6a4163160551979de806e3b25a2d7c">_value</a>, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td></tr>
+<tr class="separator:ae718ea3eb088147904888f0fc9180531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b082bb681c1225c0a87d3d54d8c9837"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_vbag_8sqf.html#a4b082bb681c1225c0a87d3d54d8c9837">_oldPos</a> = getPos <a class="el" href="fnc__stretcher_8sqf.html#a799382d87623d6e61c60db2cbbd88ae0">_object</a></td></tr>
+<tr class="separator:a4b082bb681c1225c0a87d3d54d8c9837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a952e8d8ba30938a509615cd6cc43411c"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_vbag_8sqf.html#a952e8d8ba30938a509615cd6cc43411c">_oldDir</a> = getDir <a class="el" href="fnc__stretcher_8sqf.html#a799382d87623d6e61c60db2cbbd88ae0">_object</a></td></tr>
+<tr class="separator:a952e8d8ba30938a509615cd6cc43411c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addbc168bd8434c87de471a7bf385dff6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fnc__stretcher_8sqf.html#a799382d87623d6e61c60db2cbbd88ae0">_object</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_i_vbag_8sqf.html#addbc168bd8434c87de471a7bf385dff6">setPos</a> [1, 1, 1]</td></tr>
+<tr class="separator:addbc168bd8434c87de471a7bf385dff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ac7f6c510a826eef1724c1ed277be0e61"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f6c510a826eef1724c1ed277be0e61">&#9670;&nbsp;</a></span>if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__remove_i_vbag_8sqf.html#a60a9d9fc7679614f87e41be99dee75bd">_className</a> isEqualTo &quot;Land_IntravenStand_01_2bags_F&quot;                                                                                     &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a60a9d9fc7679614f87e41be99dee75bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60a9d9fc7679614f87e41be99dee75bd">&#9670;&nbsp;</a></span>_className</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _className = typeOf <a class="el" href="fnc__stretcher_8sqf.html#a799382d87623d6e61c60db2cbbd88ae0">_object</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a967531699b5a423ca4013af3e8bd9d1b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a967531699b5a423ca4013af3e8bd9d1b">&#9670;&nbsp;</a></span>_newObject</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _newObject = <a class="el" href="fnc__stretcher_8sqf.html#acdd0d8af6ef3a329702fcb15bd4fbb53">createVehicle</a> [<a class="el" href="fnc__remove_i_vbag_8sqf.html#a50433627c27d1431df8e6c639a1e0c56">_newObjectClass</a>, [0,0,0], [], 0, &quot;CAN_COLLIDE&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a50433627c27d1431df8e6c639a1e0c56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50433627c27d1431df8e6c639a1e0c56">&#9670;&nbsp;</a></span>_newObjectClass</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _newObjectClass = &quot;&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a799382d87623d6e61c60db2cbbd88ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a799382d87623d6e61c60db2cbbd88ae0">&#9670;&nbsp;</a></span>_object</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">deleteVehicle _object = <a class="el" href="fnc___a_e_d_station_condition_8sqf.html#a2266b6edbb340926f85713305dd0123d">nearestObjects</a> [_player, ['Land_IntravenStand_01_1bag_F', 'Land_IntravenStand_01_2bags_F'], 10, <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a952e8d8ba30938a509615cd6cc43411c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a952e8d8ba30938a509615cd6cc43411c">&#9670;&nbsp;</a></span>_oldDir</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__remove_i_vbag_8sqf.html#a967531699b5a423ca4013af3e8bd9d1b">_newObject</a> setDir _oldDir = getDir <a class="el" href="fnc__stretcher_8sqf.html#a799382d87623d6e61c60db2cbbd88ae0">_object</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b082bb681c1225c0a87d3d54d8c9837"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b082bb681c1225c0a87d3d54d8c9837">&#9670;&nbsp;</a></span>_oldPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__remove_i_vbag_8sqf.html#a967531699b5a423ca4013af3e8bd9d1b">_newObject</a> <a class="el" href="fnc__remove_i_vbag_8sqf.html#addbc168bd8434c87de471a7bf385dff6">setPos</a> _oldPos = getPos <a class="el" href="fnc__stretcher_8sqf.html#a799382d87623d6e61c60db2cbbd88ae0">_object</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d6a4163160551979de806e3b25a2d7c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d6a4163160551979de806e3b25a2d7c">&#9670;&nbsp;</a></span>_value</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _value = <a class="el" href="fnc__stretcher_8sqf.html#a799382d87623d6e61c60db2cbbd88ae0">_object</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(stand), []]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0544c3fe466e421738dae463968b70ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0544c3fe466e421738dae463968b70ba">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    <a class="code" href="fnc__remove_i_vbag_8sqf.html#a50433627c27d1431df8e6c639a1e0c56">_newObjectClass</a> = <span class="stringliteral">&quot;Land_IntravenStand_01_empty_F&quot;</span></div>
+<div class="ttc" id="afnc__remove_i_vbag_8sqf_html_a50433627c27d1431df8e6c639a1e0c56"><div class="ttname"><a href="fnc__remove_i_vbag_8sqf.html#a50433627c27d1431df8e6c639a1e0c56">_newObjectClass</a></div><div class="ttdeci">private _newObjectClass</div><div class="ttdef"><b>Definition:</b> fnc_removeIVbag.sqf:26</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ab66c6dd2a49d65b870a04915664fd914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab66c6dd2a49d65b870a04915664fd914">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_player&quot;, &quot;_oldML&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="addbc168bd8434c87de471a7bf385dff6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addbc168bd8434c87de471a7bf385dff6">&#9670;&nbsp;</a></span>setPos</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__stretcher_8sqf.html#a799382d87623d6e61c60db2cbbd88ae0">_object</a> setPos[1, 1, 1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae718ea3eb088147904888f0fc9180531"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae718ea3eb088147904888f0fc9180531">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__remove_i_vbag_8sqf.html#a967531699b5a423ca4013af3e8bd9d1b">_newObject</a> setVariable[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(stand), <a class="el" href="fnc__treatment_i_v_8sqf.html#a5d6a4163160551979de806e3b25a2d7c">_value</a>, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__remove_i_vbag_8sqf.html">fnc_removeIVbag.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_5bf007d71e717921f629e4d4d868b95a.html">misc</a></li><li class="navelem"><a class="el" href="dir_046437928829a29414e49d7cf44b9da2.html">functions</a></li><li class="navelem"><a class="el" href="fnc__remove_i_vbag_8sqf.html">fnc_removeIVbag.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

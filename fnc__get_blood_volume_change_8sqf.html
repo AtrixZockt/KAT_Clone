@@ -81,16 +81,113 @@ $(document).ready(function(){initNavTree('fnc__get_blood_volume_change_8sqf.html
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/pharma/functions/fnc_getBloodVolumeChange.sqf File Reference</div>  </div>
+<div class="title">fnc_getBloodVolumeChange.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="pharma_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9b5f838f26cf58f3d964a8a0293d89d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__get_blood_volume_change_8sqf.html#a9b5f838f26cf58f3d964a8a0293d89d8">if</a> (!isNil {<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical, ivBags),[]]}) then</td></tr>
+<tr class="separator:a9b5f838f26cf58f3d964a8a0293d89d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad6e21e1914c52eb1a748630f473a45d0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__get_blood_volume_change_8sqf.html#ad6e21e1914c52eb1a748630f473a45d0">params</a> [&quot;_unit&quot;, &quot;_deltaT&quot;, &quot;_syncValues&quot;]</td></tr>
+<tr class="separator:ad6e21e1914c52eb1a748630f473a45d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada69b1ec1a7b0a71e20af44496abcda6"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__get_blood_volume_change_8sqf.html#ada69b1ec1a7b0a71e20af44496abcda6">_bloodLoss</a> = [<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a>] call <a class="el" href="fnc__treatment_advanced___painkillers_8sqf.html#ac6cfb51b907293f35b6c0019221f1b22">EFUNC</a>(pharma,getBloodLoss)</td></tr>
+<tr class="separator:ada69b1ec1a7b0a71e20af44496abcda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81a38de512d2a826ab2c6c7843c7cfe7"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__get_blood_volume_change_8sqf.html#a81a38de512d2a826ab2c6c7843c7cfe7">_internalBleeding</a> = <a class="el" href="pharma_2_x_e_h__post_init_8sqf.html#a3723ace32fa83fea4d7dee29d1646afa">GET_INTERNAL_BLEEDING</a>(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a>)</td></tr>
+<tr class="separator:a81a38de512d2a826ab2c6c7843c7cfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fea378064428dcd3520419a113109d8"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__get_blood_volume_change_8sqf.html#a6fea378064428dcd3520419a113109d8">_bloodVolumeChange</a> = -_deltaT * (<a class="el" href="fnc__has_stable_vitals_8sqf.html#ada69b1ec1a7b0a71e20af44496abcda6">_bloodLoss</a> + <a class="el" href="fnc__get_blood_volume_change_8sqf.html#a81a38de512d2a826ab2c6c7843c7cfe7">_internalBleeding</a>)</td></tr>
+<tr class="separator:a6fea378064428dcd3520419a113109d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a9b5f838f26cf58f3d964a8a0293d89d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b5f838f26cf58f3d964a8a0293d89d8">&#9670;&nbsp;</a></span>if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!isNil {<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical, ivBags),[]]}                                                                         &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ada69b1ec1a7b0a71e20af44496abcda6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada69b1ec1a7b0a71e20af44496abcda6">&#9670;&nbsp;</a></span>_bloodLoss</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _bloodLoss = [<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a>] call <a class="el" href="fnc__treatment_advanced___painkillers_8sqf.html#ac6cfb51b907293f35b6c0019221f1b22">EFUNC</a>(pharma,getBloodLoss)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fea378064428dcd3520419a113109d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fea378064428dcd3520419a113109d8">&#9670;&nbsp;</a></span>_bloodVolumeChange</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _bloodVolumeChange = -_deltaT * (<a class="el" href="fnc__has_stable_vitals_8sqf.html#ada69b1ec1a7b0a71e20af44496abcda6">_bloodLoss</a> + <a class="el" href="fnc__get_blood_volume_change_8sqf.html#a81a38de512d2a826ab2c6c7843c7cfe7">_internalBleeding</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a81a38de512d2a826ab2c6c7843c7cfe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81a38de512d2a826ab2c6c7843c7cfe7">&#9670;&nbsp;</a></span>_internalBleeding</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _internalBleeding = <a class="el" href="pharma_2_x_e_h__post_init_8sqf.html#a3723ace32fa83fea4d7dee29d1646afa">GET_INTERNAL_BLEEDING</a>(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a>)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6e21e1914c52eb1a748630f473a45d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6e21e1914c52eb1a748630f473a45d0">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_unit&quot;, &quot;_deltaT&quot;, &quot;_syncValues&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__get_blood_volume_change_8sqf.html">fnc_getBloodVolumeChange.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_dc39b52e4bfa30dbe36e264d4ae12071.html">pharma</a></li><li class="navelem"><a class="el" href="dir_2a5e03e2d8a3b508cfdf78cd6a958ade.html">functions</a></li><li class="navelem"><a class="el" href="fnc__get_blood_volume_change_8sqf.html">fnc_getBloodVolumeChange.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
