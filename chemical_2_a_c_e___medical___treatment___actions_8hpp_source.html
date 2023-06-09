@@ -93,11 +93,13 @@ $(document).ready(function(){initNavTree('chemical_2_a_c_e___medical___treatment
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;Head&quot;</span>};</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        allowSelfTreatment = 0;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(giveUnitGasMask);</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        condition = QUOTE([ARR_2(_player, _patient)] call FUNC(canPutGasMask));</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        icon = QPATHTOF(ui\Gasmask_icon.paa);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        condition = QUOTE([ARR_2(_player, _patient)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(canPutGasMask));</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        icon = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(ui\Gasmask_icon.paa);</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    };</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
 <div class="ttc" id="aclass_a_c_e___medical___treatment___actions_html"><div class="ttname"><a href="class_a_c_e___medical___treatment___actions.html">ACE_Medical_Treatment_Actions</a></div><div class="ttdef"><b>Definition:</b> ACE_Medical_Treatment_Actions.hpp:1</div></div>
+<div class="ttc" id="afnc__treatment_advanced___cancel_recovery_position_local_8sqf_html_a580dc58ae22fa8819b4c837e05f75954"><div class="ttname"><a href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a></div><div class="ttdeci">_patient call FUNC(handlePuking)</div></div>
+<div class="ttc" id="afnc__update_body_image_8sqf_html_af41a1d49c983245ac4a43d01ec9b95e3"><div class="ttname"><a href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a></div><div class="ttdeci">_torso_infected ctrlSetText QPATHTOF(data\body_image\torso_i.paa)</div></div>
 <div class="ttc" id="ascript__macros_8hpp_html_a49cafa32cfe68863ede76d30e966817b"><div class="ttname"><a href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a></div><div class="ttdeci">#define QFUNC(var1)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

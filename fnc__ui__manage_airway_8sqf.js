@@ -1,0 +1,27 @@
+var fnc__ui__manage_airway_8sqf =
+[
+    [ "cbSetChecked", "fnc__ui__manage_airway_8sqf.html#a04a39f2d8eee53a2be7d8a8bef2bf00a", null ],
+    [ "cbSetChecked", "fnc__ui__manage_airway_8sqf.html#a0a10b499f30d4fa92555dc8026247b06", null ],
+    [ "cbSetChecked", "fnc__ui__manage_airway_8sqf.html#a04d11ea061679b80bffab97e33c859e8", null ],
+    [ "cbSetChecked", "fnc__ui__manage_airway_8sqf.html#aa287be1655269937e2fc266ba6bab76e", null ],
+    [ "cbSetChecked", "fnc__ui__manage_airway_8sqf.html#a82ca394734ab0b2a5d7688f5b32a9348", null ],
+    [ "sliderSetPosition", "fnc__ui__manage_airway_8sqf.html#af23a44e68fee4d6f78ccffad92ac386c", null ],
+    [ "switch", "fnc__ui__manage_airway_8sqf.html#aadcf4c1e4be0868b1deb77168215aad0", null ],
+    [ "_ctrlButtonOK", "fnc__ui__manage_airway_8sqf.html#a4e0fbc6aafb95ae06e68a3f149c8d890", null ],
+    [ "_curSpO2Val", "fnc__ui__manage_airway_8sqf.html#a4af3b406de7bf565b1c5482f12c49281", null ],
+    [ "_display", "fnc__ui__manage_airway_8sqf.html#a090bf0527824d2684fcb2ef4fd285bcb", null ],
+    [ "_fnc_error", "fnc__ui__manage_airway_8sqf.html#a92694b04a027bdfa16325743218a9ef0", null ],
+    [ "_fnc_onConfirm", "fnc__ui__manage_airway_8sqf.html#a2361e25dc1e46ed4e15dafc9fe5b068b", null ],
+    [ "_fnc_onUnload", "fnc__ui__manage_airway_8sqf.html#a607b3c43958a77ca48e43b6c88eac69e", null ],
+    [ "_fnc_sliderMove", "fnc__ui__manage_airway_8sqf.html#a609fc960ea378fe677d9ee95c2d76dad", null ],
+    [ "_logic", "fnc__ui__manage_airway_8sqf.html#afa4e62c69c40df20e18b7a30ffce787f", null ],
+    [ "_slider", "fnc__ui__manage_airway_8sqf.html#a3a3ceb91611e32d2a2310cd26db7a684", null ],
+    [ "_unit", "fnc__ui__manage_airway_8sqf.html#ab413c083aef5e0fe6a5e73845127b82c", null ],
+    [ "ctrlAddEventHandler", "fnc__ui__manage_airway_8sqf.html#aee3d67d274659760626c4af6431a65a8", null ],
+    [ "displayAddEventHandler", "fnc__ui__manage_airway_8sqf.html#a4cc7678a7e8290becc17137882006bb9", null ],
+    [ "Main", "fnc__ui__manage_airway_8sqf.html#ac21be588f40c9d948bde4adf4161eb20", null ],
+    [ "params", "fnc__ui__manage_airway_8sqf.html#ae88c4f766cea2dc79b346dd37b233839", null ],
+    [ "setFocus", "fnc__ui__manage_airway_8sqf.html#a1e79ddb3faaa22090408d9940a082d1e", null ],
+    [ "sliderSetRange", "fnc__ui__manage_airway_8sqf.html#aa03f8fa4c5130a4d965fd5363688221d", null ],
+    [ "sliderSetSpeed", "fnc__ui__manage_airway_8sqf.html#ad3ce7ef015b803fcea64b436beda3047", null ]
+];

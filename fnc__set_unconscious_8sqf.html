@@ -81,10 +81,179 @@ $(document).ready(function(){initNavTree('fnc__set_unconscious_8sqf.html',''); i
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">fnc_setUnconscious.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="airway_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a46ae98aeddf6f366b3733bbb8589e91a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__set_unconscious_8sqf.html#a46ae98aeddf6f366b3733bbb8589e91a">if</a> (<a class="el" href="fnc__update_actions_8sqf.html#a7f36fa16d1ac961acae6492609e42467">ACEGVAR</a>(common, settingsInitFinished)) exitWith</td></tr>
+<tr class="separator:a46ae98aeddf6f366b3733bbb8589e91a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6db269281011eb2282d5366c1464da34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__set_unconscious_8sqf.html#a6db269281011eb2282d5366c1464da34">if</a> ((isNull _unit)||{!alive _unit}||{!(_unit isKindOf &quot;CAManBase&quot;)}) exitWith</td></tr>
+<tr class="separator:a6db269281011eb2282d5366c1464da34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6656293841d151ec3d32020f8053a7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__set_unconscious_8sqf.html#ad6656293841d151ec3d32020f8053a7e">if</a> (!local _unit) exitWith</td></tr>
+<tr class="separator:ad6656293841d151ec3d32020f8053a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d315611eee9d6ff8b7928c80dd9f40a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__set_unconscious_8sqf.html#a7d315611eee9d6ff8b7928c80dd9f40a">if</a> (_knockOut isEqualTo(_unit <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[&quot;ACE_isUnconscious&quot;, false])) exitWith</td></tr>
+<tr class="separator:a7d315611eee9d6ff8b7928c80dd9f40a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa82c1446022c8498efec014666c4b390"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__set_unconscious_8sqf.html#aa82c1446022c8498efec014666c4b390">if</a> (currentWeapon _unit !=primaryWeapon _unit) then</td></tr>
+<tr class="separator:aa82c1446022c8498efec014666c4b390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78831c5541461d0f516b53858d3bb095"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__set_unconscious_8sqf.html#a78831c5541461d0f516b53858d3bb095">if</a> (_knockOut) then</td></tr>
+<tr class="separator:a78831c5541461d0f516b53858d3bb095"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a145361f1bfb87a858af9bd33cff10649"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__set_unconscious_8sqf.html#a145361f1bfb87a858af9bd33cff10649">params</a> [[&quot;_unit&quot;, objNull, [objNull]], [&quot;_knockOut&quot;, true, [<a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]], [&quot;_minWaitingTime&quot;, 0, [0]], [&quot;_forcedWakup&quot;, false, [<a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]]]</td></tr>
+<tr class="separator:a145361f1bfb87a858af9bd33cff10649"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0544c3fe466e421738dae463968b70ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__set_unconscious_8sqf.html#a0544c3fe466e421738dae463968b70ba">else</a></td></tr>
+<tr class="separator:a0544c3fe466e421738dae463968b70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ad6656293841d151ec3d32020f8053a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6656293841d151ec3d32020f8053a7e">&#9670;&nbsp;</a></span>if() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!local&#160;</td>
+          <td class="paramname"><em>_unit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6db269281011eb2282d5366c1464da34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6db269281011eb2282d5366c1464da34">&#9670;&nbsp;</a></span>if() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">(isNull _unit)||{!alive _unit}||{!(_unit isKindOf &quot;CAManBase&quot;)}                                                                                                                                             &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d315611eee9d6ff8b7928c80dd9f40a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d315611eee9d6ff8b7928c80dd9f40a">&#9670;&nbsp;</a></span>if() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">_knockOut  isEqualTo                                                                                                                                  &#160;</td>
+          <td class="paramname">_unit getVariable[&quot;ACE_isUnconscious&quot;, false]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78831c5541461d0f516b53858d3bb095"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78831c5541461d0f516b53858d3bb095">&#9670;&nbsp;</a></span>if() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">_knockOut                                                                                                                                            &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a46ae98aeddf6f366b3733bbb8589e91a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46ae98aeddf6f366b3733bbb8589e91a">&#9670;&nbsp;</a></span>if() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__update_actions_8sqf.html#a7f36fa16d1ac961acae6492609e42467">ACEGVAR</a>(common, settingsInitFinished)                                                                                                                                             &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa82c1446022c8498efec014666c4b390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa82c1446022c8498efec014666c4b390">&#9670;&nbsp;</a></span>if() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">currentWeapon _unit !                                                                                                                                             &#160;</td>
+          <td class="paramname"> = <code>primaryWeapon&#160;_unit</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a0544c3fe466e421738dae463968b70ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0544c3fe466e421738dae463968b70ba">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    [<a class="code" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,WakeUp), _unit] call <a class="code" href="fnc__full_heal_local_8sqf.html#a89861b1016b62ce409ba256d8470e207">CBA_fnc_localEvent</a></div>
+<div class="ttc" id="afnc__full_heal_local_8sqf_html_a89861b1016b62ce409ba256d8470e207"><div class="ttname"><a href="fnc__full_heal_local_8sqf.html#a89861b1016b62ce409ba256d8470e207">CBA_fnc_localEvent</a></div><div class="ttdeci">call CBA_fnc_localEvent</div><div class="ttdef"><b>Definition:</b> fnc_fullHealLocal.sqf:145</div></div>
+<div class="ttc" id="ascript__macros_8hpp_html_acd1b696f98a5c7658e5c5beb793c8abf"><div class="ttname"><a href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a></div><div class="ttdeci">#define QACEGVAR(module, var)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a145361f1bfb87a858af9bd33cff10649"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a145361f1bfb87a858af9bd33cff10649">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[[&quot;_unit&quot;, objNull,[objNull]],[&quot;_knockOut&quot;, true,[<a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]],[&quot;_minWaitingTime&quot;, 0,[0]],[&quot;_forcedWakup&quot;, false,[<a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]]]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

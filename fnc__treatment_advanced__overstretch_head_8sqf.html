@@ -81,10 +81,141 @@ $(document).ready(function(){initNavTree('fnc__treatment_advanced__overstretch_h
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">fnc_treatmentAdvanced_overstretchHead.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="airway_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a635fa05a080ec0da1d8853ce2eb83091"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a635fa05a080ec0da1d8853ce2eb83091">if</a> (_patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[QGVAR(overstretch), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]) exitWith</td></tr>
+<tr class="separator:a635fa05a080ec0da1d8853ce2eb83091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c5b80e83ee1efdfb3b6cd09380c4734"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a6c5b80e83ee1efdfb3b6cd09380c4734">if</a> (_patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[QGVAR(obstruction), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]) exitWith</td></tr>
+<tr class="separator:a6c5b80e83ee1efdfb3b6cd09380c4734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6dc0b1c1a488d07c684b60961e485c9"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#af6dc0b1c1a488d07c684b60961e485c9">ACEFUNC</a> (common, displayTextStructured)</td></tr>
+<tr class="separator:af6dc0b1c1a488d07c684b60961e485c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac2f7a6fc4758e3b78ba3d1994471d84a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#ac2f7a6fc4758e3b78ba3d1994471d84a">params</a> [&quot;_medic&quot;, &quot;_patient&quot;]</td></tr>
+<tr class="separator:ac2f7a6fc4758e3b78ba3d1994471d84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf597df7e8181c065c1c68245eb2d344"><td class="memItemLeft" align="right" valign="top">_patient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#aaf597df7e8181c065c1c68245eb2d344">setVariable</a> [QGVAR(overstretch), true, true]</td></tr>
+<tr class="separator:aaf597df7e8181c065c1c68245eb2d344"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93aad62033c9a7a96a7eba1ca5729a3"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#ae93aad62033c9a7a96a7eba1ca5729a3">CBA_fnc_waitUntilAndExecute</a></td></tr>
+<tr class="separator:ae93aad62033c9a7a96a7eba1ca5729a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="af6dc0b1c1a488d07c684b60961e485c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6dc0b1c1a488d07c684b60961e485c9">&#9670;&nbsp;</a></span>ACEFUNC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call ACEFUNC </td>
+          <td>(</td>
+          <td class="paramtype">common&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">displayTextStructured&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6c5b80e83ee1efdfb3b6cd09380c4734"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c5b80e83ee1efdfb3b6cd09380c4734">&#9670;&nbsp;</a></span>if() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">_patient&#160;</td>
+          <td class="paramname"><em>getVariable</em>[QGVAR(obstruction), false]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a635fa05a080ec0da1d8853ce2eb83091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a635fa05a080ec0da1d8853ce2eb83091">&#9670;&nbsp;</a></span>if() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">_patient&#160;</td>
+          <td class="paramname"><em>getVariable</em>[QGVAR(overstretch), false]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ae93aad62033c9a7a96a7eba1ca5729a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93aad62033c9a7a96a7eba1ca5729a3">&#9670;&nbsp;</a></span>CBA_fnc_waitUntilAndExecute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call CBA_fnc_waitUntilAndExecute</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2f7a6fc4758e3b78ba3d1994471d84a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2f7a6fc4758e3b78ba3d1994471d84a">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_medic&quot;, &quot;_patient&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaf597df7e8181c065c1c68245eb2d344"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf597df7e8181c065c1c68245eb2d344">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_patient setVariable[QGVAR(overstretch), true, true]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

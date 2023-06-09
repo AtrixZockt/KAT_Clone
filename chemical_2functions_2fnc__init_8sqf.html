@@ -81,10 +81,207 @@ $(document).ready(function(){initNavTree('chemical_2functions_2fnc__init_8sqf.ht
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">fnc_init.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="chemical_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad6656293841d151ec3d32020f8053a7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chemical_2functions_2fnc__init_8sqf.html#ad6656293841d151ec3d32020f8053a7e">if</a> (!local _unit) exitWith</td></tr>
+<tr class="separator:ad6656293841d151ec3d32020f8053a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace0966be71d61c43535d44bb18fcd6cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chemical_2functions_2fnc__init_8sqf.html#ace0966be71d61c43535d44bb18fcd6cc">GVAR</a> (availGasmaskList)</td></tr>
+<tr class="separator:ace0966be71d61c43535d44bb18fcd6cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b04831cb2aba6c473ca13bc2ae0f1fc"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chemical_2functions_2fnc__init_8sqf.html#a6b04831cb2aba6c473ca13bc2ae0f1fc">FUNC</a> (coughing)</td></tr>
+<tr class="separator:a6b04831cb2aba6c473ca13bc2ae0f1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94b407d855de75ea9b0ccdb340551088"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chemical_2functions_2fnc__init_8sqf.html#a94b407d855de75ea9b0ccdb340551088">FUNC</a> (handleGasMaskDur)</td></tr>
+<tr class="separator:a94b407d855de75ea9b0ccdb340551088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ca0af117a5e026b4319f0384bbc267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fnc__handle_respawn_8sqf.html#a100d6621d07c68e425c9a1dfcf80dbc3">spawn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chemical_2functions_2fnc__init_8sqf.html#a21ca0af117a5e026b4319f0384bbc267">FUNC</a> (chemDetector)</td></tr>
+<tr class="separator:a21ca0af117a5e026b4319f0384bbc267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d3b2ad7a4c843dd9d13a7befc36a972"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fnc__handle_respawn_8sqf.html#a100d6621d07c68e425c9a1dfcf80dbc3">spawn</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chemical_2functions_2fnc__init_8sqf.html#a7d3b2ad7a4c843dd9d13a7befc36a972">FUNC</a> (breathing)</td></tr>
+<tr class="separator:a7d3b2ad7a4c843dd9d13a7befc36a972"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a21fe779e34eda167fa15917319442e81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chemical_2functions_2fnc__init_8sqf.html#a21fe779e34eda167fa15917319442e81">params</a> [&quot;_unit&quot;, [&quot;_isRespawn&quot;, true]]</td></tr>
+<tr class="separator:a21fe779e34eda167fa15917319442e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3831760eeb217d730df8714deda54e19"><td class="memItemLeft" align="right" valign="top">_unit&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chemical_2functions_2fnc__init_8sqf.html#a3831760eeb217d730df8714deda54e19">setVariable</a> [QGVAR(timeleft), missionNamespace <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[QGVAR(infectionTime), 60], true]</td></tr>
+<tr class="separator:a3831760eeb217d730df8714deda54e19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17fd6c16715aed530ba88ff1233e8c94"><td class="memItemLeft" align="right" valign="top">_unit&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chemical_2functions_2fnc__init_8sqf.html#a17fd6c16715aed530ba88ff1233e8c94">addEventHandler</a> [&quot;SlotItemChanged&quot;, {_unit call <a class="el" href="fnc__treatment_advanced___pervitin_8sqf.html#a73dd26617d92011933755362f066b923">FUNC</a>(handleSlotItemChanged)}]</td></tr>
+<tr class="separator:a17fd6c16715aed530ba88ff1233e8c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0bfc41e1543a600ebfca28e4803f08"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="chemical_2functions_2fnc__init_8sqf.html#a3a0bfc41e1543a600ebfca28e4803f08">CBA_fnc_addPerFrameHandler</a></td></tr>
+<tr class="separator:a3a0bfc41e1543a600ebfca28e4803f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a7d3b2ad7a4c843dd9d13a7befc36a972"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d3b2ad7a4c843dd9d13a7befc36a972">&#9670;&nbsp;</a></span>FUNC() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__handle_respawn_8sqf.html#a100d6621d07c68e425c9a1dfcf80dbc3">spawn</a> FUNC </td>
+          <td>(</td>
+          <td class="paramtype">breathing&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21ca0af117a5e026b4319f0384bbc267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ca0af117a5e026b4319f0384bbc267">&#9670;&nbsp;</a></span>FUNC() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__handle_respawn_8sqf.html#a100d6621d07c68e425c9a1dfcf80dbc3">spawn</a> FUNC </td>
+          <td>(</td>
+          <td class="paramtype">chemDetector&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b04831cb2aba6c473ca13bc2ae0f1fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b04831cb2aba6c473ca13bc2ae0f1fc">&#9670;&nbsp;</a></span>FUNC() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call FUNC </td>
+          <td>(</td>
+          <td class="paramtype">coughing&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94b407d855de75ea9b0ccdb340551088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94b407d855de75ea9b0ccdb340551088">&#9670;&nbsp;</a></span>FUNC() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call FUNC </td>
+          <td>(</td>
+          <td class="paramtype">handleGasMaskDur&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace0966be71d61c43535d44bb18fcd6cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace0966be71d61c43535d44bb18fcd6cc">&#9670;&nbsp;</a></span>GVAR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GVAR </td>
+          <td>(</td>
+          <td class="paramtype">availGasmaskList&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6656293841d151ec3d32020f8053a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6656293841d151ec3d32020f8053a7e">&#9670;&nbsp;</a></span>if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!local&#160;</td>
+          <td class="paramname"><em>_unit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a17fd6c16715aed530ba88ff1233e8c94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17fd6c16715aed530ba88ff1233e8c94">&#9670;&nbsp;</a></span>addEventHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_unit addEventHandler[&quot;SlotItemChanged&quot;, {_unit call <a class="el" href="fnc__treatment_advanced___pervitin_8sqf.html#a73dd26617d92011933755362f066b923">FUNC</a>(handleSlotItemChanged)}]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a0bfc41e1543a600ebfca28e4803f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0bfc41e1543a600ebfca28e4803f08">&#9670;&nbsp;</a></span>CBA_fnc_addPerFrameHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call CBA_fnc_addPerFrameHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21fe779e34eda167fa15917319442e81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21fe779e34eda167fa15917319442e81">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_unit&quot;,[&quot;_isRespawn&quot;, true]]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3831760eeb217d730df8714deda54e19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3831760eeb217d730df8714deda54e19">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_unit setVariable[QGVAR(chemDetectorState), true, true]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

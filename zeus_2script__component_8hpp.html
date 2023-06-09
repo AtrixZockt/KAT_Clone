@@ -98,7 +98,7 @@ Macros</h2></td></tr>
 <tr class="separator:a5b6d014748674102c3db9f0270a12f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab01afd2e19e0811f8b29808f4eafe052"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zeus_2script__component_8hpp.html#ab01afd2e19e0811f8b29808f4eafe052">COMPONENT_BEAUTIFIED</a>&#160;&#160;&#160;KAT - ZEUS</td></tr>
 <tr class="separator:ab01afd2e19e0811f8b29808f4eafe052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d6d12a6ee0d7d77f3f180ed1b2a1e22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zeus_2script__component_8hpp.html#a3d6d12a6ee0d7d77f3f180ed1b2a1e22">SIZEX</a>&#160;&#160;&#160;((safeZoneW / safeZoneH) min 1.2)</td></tr>
+<tr class="memitem:a3d6d12a6ee0d7d77f3f180ed1b2a1e22"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zeus_2script__component_8hpp.html#a3d6d12a6ee0d7d77f3f180ed1b2a1e22">SIZEX</a>&#160;&#160;&#160;((safeZoneW / safeZoneH) <a class="el" href="fnc__fluid_local_8sqf.html#abd07070e3fe37935dd163f7bdb03c1d5">min</a> 1.2)</td></tr>
 <tr class="separator:a3d6d12a6ee0d7d77f3f180ed1b2a1e22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e1991fcd344daa8c9e423cfd3481a8c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zeus_2script__component_8hpp.html#a7e1991fcd344daa8c9e423cfd3481a8c">SIZEY</a>&#160;&#160;&#160;(<a class="el" href="zeus_2script__component_8hpp.html#a3d6d12a6ee0d7d77f3f180ed1b2a1e22">SIZEX</a> / 1.2)</td></tr>
 <tr class="separator:a7e1991fcd344daa8c9e423cfd3481a8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -110,7 +110,7 @@ Macros</h2></td></tr>
 <tr class="separator:ab9060ed94ff4603bdc26f1a5acb08ab0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68e90cb1decc02ace0acb52e452ecfe6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zeus_2script__component_8hpp.html#a68e90cb1decc02ace0acb52e452ecfe6">Y_PART</a>(num)&#160;&#160;&#160;(<a class="el" href="zeus_2script__component_8hpp.html#a932395e7296366503b6c6ff3cf63dabd">H_PART</a>(num) + (safeZoneY + (safeZoneH - <a class="el" href="zeus_2script__component_8hpp.html#a7e1991fcd344daa8c9e423cfd3481a8c">SIZEY</a>) / 2))</td></tr>
 <tr class="separator:a68e90cb1decc02ace0acb52e452ecfe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a904e85a7399d16900418aa103e871817"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zeus_2script__component_8hpp.html#a904e85a7399d16900418aa103e871817">MED_LOG_VARNAME</a>(type)&#160;&#160;&#160;(format [&quot;ace_medical_log_%1&quot;, type])</td></tr>
+<tr class="memitem:a904e85a7399d16900418aa103e871817"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zeus_2script__component_8hpp.html#a904e85a7399d16900418aa103e871817">MED_LOG_VARNAME</a>(type)&#160;&#160;&#160;(<a class="el" href="fnc__group_i_d_8sqf.html#af878a00abe6cb2d824dd3e0fd8b414b9">format</a> [&quot;ace_medical_log_%1&quot;, type])</td></tr>
 <tr class="separator:a904e85a7399d16900418aa103e871817"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf31ae497e432844e334de3cb26578cb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="zeus_2script__component_8hpp.html#aaf31ae497e432844e334de3cb26578cb">IDC_BODY_GROUP</a>&#160;&#160;&#160;6000</td></tr>
 <tr class="separator:aaf31ae497e432844e334de3cb26578cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -859,7 +859,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">type</td><td>)</td>
-          <td>&#160;&#160;&#160;(format [&quot;ace_medical_log_%1&quot;, type])</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="fnc__group_i_d_8sqf.html#af878a00abe6cb2d824dd3e0fd8b414b9">format</a> [&quot;ace_medical_log_%1&quot;, type])</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -873,7 +873,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define SIZEX&#160;&#160;&#160;((safeZoneW / safeZoneH) min 1.2)</td>
+          <td class="memname">#define SIZEX&#160;&#160;&#160;((safeZoneW / safeZoneH) <a class="el" href="fnc__fluid_local_8sqf.html#abd07070e3fe37935dd163f7bdb03c1d5">min</a> 1.2)</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -99,7 +99,7 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        medicRequired = QGVAR(fractureCheck_MedLevel);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        treatmentTime = QGVAR(fractureCheck_Time);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        items[] = {};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        condition = QUOTE(([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(fractureCheck)) &amp;&amp; (<a class="code" href="circulation_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a>(enable_fracture)));</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        condition = QUOTE(([ARR_4(_medic, _patient, _bodyPart, 5)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(fractureCheck)) &amp;&amp; (<a class="code" href="fnc__check_airway_8sqf.html#a7524d01865462f8e9b9eec66a7432d02">GVAR</a>(enable_fracture)));</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(fractureSelect);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    };</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">class </span>ClosedReduction: CheckFracture {</div>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        medicRequired = QGVAR(closedReduction_MedLevel);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        treatmentTime = QGVAR(closedTime);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        items[] = {};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 1)] call FUNC(fractureCheck));</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 1)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(fractureCheck));</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(closedReduction);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">class </span>OpenReduction: CheckFracture {</div>
@@ -126,7 +126,7 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        treatmentTime = QGVAR(openTime);</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_plate&quot;</span>};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        consumeItem = 1;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.5)] call FUNC(openReductionCheck));</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.5)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(openReductionCheck));</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(openReduction);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    };</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">class </span>Expose: BasicBandage {</div>
@@ -139,9 +139,9 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        medicRequired = QGVAR(surgicalAction_MedLevel);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        treatmentTime = QGVAR(intermediateTime);</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_retractor&quot;</span>};</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call FUNC(openReductionCheck));</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(openReductionCheck));</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        consumeItem = 0;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call FUNC(openReductionProgress));</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.1)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(openReductionProgress));</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    };</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">class </span>Incision: BasicBandage {</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        displayName = CSTRING(Scalpel_Use);</div>
@@ -153,7 +153,7 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        medicRequired = QGVAR(surgicalAction_MedLevel);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        treatmentTime = QGVAR(incisionTime);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_scalpel&quot;</span>};</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(openReductionCheck));</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 5)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(openReductionCheck));</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(incision);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">class </span>Clamp: BasicBandage {</div>
@@ -166,9 +166,9 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        medicRequired = QGVAR(surgicalAction_MedLevel);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        treatmentTime = QGVAR(intermediateTime);</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_clamp&quot;</span>};</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.3)] call FUNC(openReductionCheck));</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.3)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(openReductionCheck));</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        consumeItem = 0;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.3)] call FUNC(openReductionProgress));</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.3)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(openReductionProgress));</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    };</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">class </span>Irrigate: BasicBandage {</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        displayName = CSTRING(Irrigate_Use);</div>
@@ -180,8 +180,8 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        medicRequired = QGVAR(surgicalAction_MedLevel);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        treatmentTime = QGVAR(intermediateTime);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        items[] = {<span class="stringliteral">&quot;ACE_salineIV_250&quot;</span>};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openReductionCheck));</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call FUNC(openReductionProgress));</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(openReductionCheck));</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        callbackSuccess = QUOTE([ARR_4(_medic, _patient, _bodyPart, 2.3)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(openReductionProgress));</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    };</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keyword">class </span>Debridement: BasicBandage {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        displayName = CSTRING(Debride_Use);</div>
@@ -206,8 +206,9 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(npwtTreatment);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    };</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
-<div class="ttc" id="acirculation_2ui_2_cross_panel___dialog_8hpp_html_a13de54cc3d786b3d023285149a21f0d4"><div class="ttname"><a href="circulation_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a></div><div class="ttdeci">class GVAR(CrossPanel_Dialog)</div><div class="ttdef"><b>Definition:</b> CrossPanel_Dialog.hpp:1</div></div>
 <div class="ttc" id="aclass_a_c_e___medical___treatment___actions_html"><div class="ttname"><a href="class_a_c_e___medical___treatment___actions.html">ACE_Medical_Treatment_Actions</a></div><div class="ttdef"><b>Definition:</b> ACE_Medical_Treatment_Actions.hpp:1</div></div>
+<div class="ttc" id="afnc__check_airway_8sqf_html_a7524d01865462f8e9b9eec66a7432d02"><div class="ttname"><a href="fnc__check_airway_8sqf.html#a7524d01865462f8e9b9eec66a7432d02">GVAR</a></div><div class="ttdeci">&amp;&amp;_patient getVariable &amp;&amp;[QGVAR(obstruction), false] GVAR(autoTriage)) then</div><div class="ttdef"><b>Definition:</b> fnc_checkAirway.sqf:20</div></div>
+<div class="ttc" id="afnc__treatment_advanced___cancel_recovery_position_local_8sqf_html_a580dc58ae22fa8819b4c837e05f75954"><div class="ttname"><a href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a></div><div class="ttdeci">_patient call FUNC(handlePuking)</div></div>
 <div class="ttc" id="ascript__macros_8hpp_html_a49cafa32cfe68863ede76d30e966817b"><div class="ttname"><a href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a></div><div class="ttdeci">#define QFUNC(var1)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

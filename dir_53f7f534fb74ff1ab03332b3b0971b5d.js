@@ -18,6 +18,6 @@ var dir_53f7f534fb74ff1ab03332b3b0971b5d =
     ] ],
     [ "script_component.hpp", "zeus_2script__component_8hpp.html", "zeus_2script__component_8hpp" ],
     [ "XEH_postInit.sqf", "zeus_2_x_e_h__post_init_8sqf.html", null ],
-    [ "XEH_preInit.sqf", "zeus_2_x_e_h__pre_init_8sqf.html", null ],
+    [ "XEH_preInit.sqf", "zeus_2_x_e_h__pre_init_8sqf.html", "zeus_2_x_e_h__pre_init_8sqf" ],
     [ "XEH_PREP.hpp", "zeus_2_x_e_h___p_r_e_p_8hpp.html", "zeus_2_x_e_h___p_r_e_p_8hpp" ]
 ];
