@@ -35,7 +35,7 @@ var dir_5bf007d71e717921f629e4d4d868b95a =
       [ "B_APC_Wheeled_01_cannon_F", "class_b___a_p_c___wheeled__01__cannon___f.html", null ],
       [ "B_Heli_Transport_03_F", "class_b___heli___transport__03___f.html", null ]
     ] ],
-    [ "XEH_postInit.sqf", "misc_2_x_e_h__post_init_8sqf.html", "misc_2_x_e_h__post_init_8sqf" ],
-    [ "XEH_preInit.sqf", "misc_2_x_e_h__pre_init_8sqf.html", "misc_2_x_e_h__pre_init_8sqf" ],
+    [ "XEH_postInit.sqf", "misc_2_x_e_h__post_init_8sqf.html", null ],
+    [ "XEH_preInit.sqf", "misc_2_x_e_h__pre_init_8sqf.html", null ],
     [ "XEH_PREP.hpp", "misc_2_x_e_h___p_r_e_p_8hpp.html", "misc_2_x_e_h___p_r_e_p_8hpp" ]
 ];
