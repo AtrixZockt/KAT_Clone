@@ -329,7 +329,11 @@ OPTIMIZE_OUTPUT_SLICE  = NO
 # Note see also the list of default file extension mappings.
 
 #EXTENSION_MAPPING      = sqf=md
-EXTENSION_MAPPING      = sqf=Lua
+EXTENSION_MAPPING      = sqf=SQFScript
+
+ALIASES += SQFScript="{@}"
+MACRO_EXPANSION = YES
+EXPAND_ONLY_PREDEF = YES
 
 # If the MARKDOWN_SUPPORT tag is enabled then doxygen pre-processes all comments
 # according to the Markdown format, which allows for more readable
@@ -985,7 +989,8 @@ IMAGE_PATH             =
 # need to set EXTENSION_MAPPING for the extension otherwise the files are not
 # properly processed by doxygen.
 
-INPUT_FILTER           =
+INPUT_FILTER           =  /tools/doxygen-filter.py
+
 
 # The FILTER_PATTERNS tag can be used to specify filters on a per file pattern
 # basis. Doxygen will compare the file name with each pattern and apply the
@@ -2135,7 +2140,7 @@ ENABLE_PREPROCESSING   = YES
 # The default value is: NO.
 # This tag requires that the tag ENABLE_PREPROCESSING is set to YES.
 
-MACRO_EXPANSION        = NO
+MACRO_EXPANSION        = YES
 
 # If the EXPAND_ONLY_PREDEF and MACRO_EXPANSION tags are both set to YES then
 # the macro expansion is limited to the macros specified with the PREDEFINED and
@@ -2143,7 +2148,7 @@ MACRO_EXPANSION        = NO
 # The default value is: NO.
 # This tag requires that the tag ENABLE_PREPROCESSING is set to YES.
 
-EXPAND_ONLY_PREDEF     = NO
+EXPAND_ONLY_PREDEF     = YES
 
 # If the SEARCH_INCLUDES tag is set to YES, the include files in the
 # INCLUDE_PATH will be searched if a #include is found.
