@@ -14,8 +14,5 @@ var dir_6d7731ac1565474480b333012eec357f =
       [ "ACE_Medical_Menu", "class_a_c_e___medical___menu.html", null ]
     ] ],
     [ "script_component.hpp", "gui_2script__component_8hpp.html", "gui_2script__component_8hpp" ],
-    [ "XEH_postInit.sqf", "gui_2_x_e_h__post_init_8sqf.html", null ],
-    [ "XEH_preInit.sqf", "gui_2_x_e_h__pre_init_8sqf.html", null ],
-    [ "XEH_PREP.hpp", "gui_2_x_e_h___p_r_e_p_8hpp.html", "gui_2_x_e_h___p_r_e_p_8hpp" ],
-    [ "XEH_preStart.sqf", "_x_e_h__pre_start_8sqf.html", null ]
+    [ "XEH_PREP.hpp", "gui_2_x_e_h___p_r_e_p_8hpp.html", "gui_2_x_e_h___p_r_e_p_8hpp" ]
 ];

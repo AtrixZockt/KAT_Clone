@@ -81,135 +81,16 @@ $(document).ready(function(){initNavTree('fnc__add_load_action_8sqf.html',''); i
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">fnc_addLoadAction.sqf File Reference</div>  </div>
+<div class="title">addons/chemical/functions/fnc_addLoadAction.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="chemical_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a833c44dd392cdfb3d29b4bb4e390befb"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__add_load_action_8sqf.html#a833c44dd392cdfb3d29b4bb4e390befb">_condition</a></td></tr>
-<tr class="separator:a833c44dd392cdfb3d29b4bb4e390befb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf8369761857ea56a116db8d3892e271"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__add_load_action_8sqf.html#abf8369761857ea56a116db8d3892e271">_childenCode</a></td></tr>
-<tr class="separator:abf8369761857ea56a116db8d3892e271"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8e36a41ff23141a092556b0c1c6ea9f"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__add_load_action_8sqf.html#ae8e36a41ff23141a092556b0c1c6ea9f">_magazineLocation</a> = <a class="el" href="fnc__treatment_8sqf.html#a4a99dc966b3ceafa02b905137ea80975">getText</a> (configFile &gt;&gt; &quot;CfgVehicles&quot; &gt;&gt; &quot;Mortar_01_base_F&quot; &gt;&gt; &quot;ace_csw&quot; &gt;&gt; &quot;magazineLocation&quot;)</td></tr>
-<tr class="separator:ae8e36a41ff23141a092556b0c1c6ea9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e77cf8cf2924a9b0db9dfa2487aa281"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__add_load_action_8sqf.html#a4e77cf8cf2924a9b0db9dfa2487aa281">_positionCode</a> = compile <a class="el" href="fnc__add_load_action_8sqf.html#ae8e36a41ff23141a092556b0c1c6ea9f">_magazineLocation</a></td></tr>
-<tr class="separator:a4e77cf8cf2924a9b0db9dfa2487aa281"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a79f3bfaaa606503223cb93ca09c839b8"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__add_load_action_8sqf.html#a79f3bfaaa606503223cb93ca09c839b8">_ammoAction</a> = [&quot;ace_csw_magazine&quot;,ACELSTRING(CSW,ammoHandling_displayName), &quot;&quot;, {}, <a class="el" href="fnc__add_load_action_8sqf.html#a833c44dd392cdfb3d29b4bb4e390befb">_condition</a>, <a class="el" href="fnc__add_load_action_8sqf.html#abf8369761857ea56a116db8d3892e271">_childenCode</a>, [], <a class="el" href="fnc__add_load_action_8sqf.html#a4e77cf8cf2924a9b0db9dfa2487aa281">_positionCode</a>, 4] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(interact_menu,createAction)</td></tr>
-<tr class="separator:a79f3bfaaa606503223cb93ca09c839b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abbbc6bf3101317d4e25e1df4bb722cc2"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__add_load_action_8sqf.html#abbbc6bf3101317d4e25e1df4bb722cc2">_ammoActionPath</a> = [&quot;Mortar_01_base_F&quot;, 0, [], _ammoAction] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(interact_menu,addActionToClass)</td></tr>
-<tr class="separator:abbbc6bf3101317d4e25e1df4bb722cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a79f3bfaaa606503223cb93ca09c839b8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79f3bfaaa606503223cb93ca09c839b8">&#9670;&nbsp;</a></span>_ammoAction</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _ammoAction = [&quot;ace_csw_magazine&quot;,ACELSTRING(CSW,ammoHandling_displayName), &quot;&quot;, {}, <a class="el" href="fnc__add_load_action_8sqf.html#a833c44dd392cdfb3d29b4bb4e390befb">_condition</a>, <a class="el" href="fnc__add_load_action_8sqf.html#abf8369761857ea56a116db8d3892e271">_childenCode</a>, [], <a class="el" href="fnc__add_load_action_8sqf.html#a4e77cf8cf2924a9b0db9dfa2487aa281">_positionCode</a>, 4] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(interact_menu,createAction)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abbbc6bf3101317d4e25e1df4bb722cc2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abbbc6bf3101317d4e25e1df4bb722cc2">&#9670;&nbsp;</a></span>_ammoActionPath</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _ammoActionPath = [&quot;Mortar_01_base_F&quot;, 0, [], _ammoAction] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(interact_menu,addActionToClass)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abf8369761857ea56a116db8d3892e271"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf8369761857ea56a116db8d3892e271">&#9670;&nbsp;</a></span>_childenCode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _childenCode</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= {</div>
-<div class="line">    <span class="keyword">private</span> <a class="code" href="fnc__check_recovery_8sqf.html#a92e29a13f69e5d9de04d73823ed8ac8a">_return</a> = (call <a class="code" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(csw,reload_actionsLoad)) + (call <a class="code" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(csw,reload_actionUnload));</div>
-<div class="line">    <a class="code" href="fnc__check_recovery_8sqf.html#a92e29a13f69e5d9de04d73823ed8ac8a">_return</a></div>
-<div class="line">}</div>
-<div class="ttc" id="afnc__check_recovery_8sqf_html_a92e29a13f69e5d9de04d73823ed8ac8a"><div class="ttname"><a href="fnc__check_recovery_8sqf.html#a92e29a13f69e5d9de04d73823ed8ac8a">_return</a></div><div class="ttdeci">private _return</div><div class="ttdef"><b>Definition:</b> fnc_checkRecovery.sqf:17</div></div>
-<div class="ttc" id="ascript__macros_8hpp_html_ae1638a83048f3b2eed91fd36e6cbe4a8"><div class="ttname"><a href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a></div><div class="ttdeci">#define ACEFUNC(module, function)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:69</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a833c44dd392cdfb3d29b4bb4e390befb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a833c44dd392cdfb3d29b4bb4e390befb">&#9670;&nbsp;</a></span>_condition</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _condition</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">= { </div>
-<div class="line">    </div>
-<div class="line">    <span class="keywordflow">if</span> ((<a class="code" href="script__macros_8hpp.html#aa8d36e95205e25d880966a5df638a622">ACEGVAR</a>(csw,ammoHandling) == 0) &amp;&amp; {!([<span class="keyword">false</span>, <span class="keyword">true</span>, <span class="keyword">true</span>, <a class="code" href="script__macros_8hpp.html#aa8d36e95205e25d880966a5df638a622">ACEGVAR</a>(csw,defaultAssemblyMode)] select (<a class="code" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a> <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [<a class="code" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(csw,assemblyMode), 3]))}) exitWith { <span class="keyword">false</span> };</div>
-<div class="line">    [_player, <a class="code" href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a>, [<span class="stringliteral">&quot;isNotSwimming&quot;</span>, <span class="stringliteral">&quot;isNotSitting&quot;</span>]] call <a class="code" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(common,canInteractWith);</div>
-<div class="line">}</div>
-<div class="ttc" id="afnc__add_i_vbag_8sqf_html_ab66869fc55de9dc579d63c12af10753e"><div class="ttname"><a href="fnc__add_i_vbag_8sqf.html#ab66869fc55de9dc579d63c12af10753e">_target</a></div><div class="ttdeci">deleteVehicle _target</div><div class="ttdef"><b>Definition:</b> fnc_addIVbag.sqf:54</div></div>
-<div class="ttc" id="afnc__has_b_v_m_8sqf_html_aa4fbd01846b98cc49ae7f3daa1fef0fb"><div class="ttname"><a href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a></div><div class="ttdeci">_patient getVariable[QGVAR(BVM), false] _patient getVariable[QGVAR(pocketBVM), false]</div><div class="ttdef"><b>Definition:</b> fnc_hasBVM.sqf:20</div></div>
-<div class="ttc" id="ascript__macros_8hpp_html_aa8d36e95205e25d880966a5df638a622"><div class="ttname"><a href="script__macros_8hpp.html#aa8d36e95205e25d880966a5df638a622">ACEGVAR</a></div><div class="ttdeci">#define ACEGVAR(module, var)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:66</div></div>
-<div class="ttc" id="ascript__macros_8hpp_html_acd1b696f98a5c7658e5c5beb793c8abf"><div class="ttname"><a href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a></div><div class="ttdeci">#define QACEGVAR(module, var)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:67</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ae8e36a41ff23141a092556b0c1c6ea9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8e36a41ff23141a092556b0c1c6ea9f">&#9670;&nbsp;</a></span>_magazineLocation</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _magazineLocation = <a class="el" href="fnc__treatment_8sqf.html#a4a99dc966b3ceafa02b905137ea80975">getText</a> (configFile &gt;&gt; &quot;CfgVehicles&quot; &gt;&gt; &quot;Mortar_01_base_F&quot; &gt;&gt; &quot;ace_csw&quot; &gt;&gt; &quot;magazineLocation&quot;)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4e77cf8cf2924a9b0db9dfa2487aa281"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e77cf8cf2924a9b0db9dfa2487aa281">&#9670;&nbsp;</a></span>_positionCode</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _positionCode = compile <a class="el" href="fnc__add_load_action_8sqf.html#ae8e36a41ff23141a092556b0c1c6ea9f">_magazineLocation</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_70bdaf491c87277ceefb32489d937460.html">chemical</a></li><li class="navelem"><a class="el" href="dir_31799ff2aea244fcb084af843fe6cf02.html">functions</a></li><li class="navelem"><a class="el" href="fnc__add_load_action_8sqf.html">fnc_addLoadAction.sqf</a></li>
+    <li class="navelem"><a class="el" href="fnc__add_load_action_8sqf.html">fnc_addLoadAction.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

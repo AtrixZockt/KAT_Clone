@@ -81,113 +81,16 @@ $(document).ready(function(){initNavTree('fnc___a_e_d_x_condition_8sqf.html','')
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">fnc_AEDXCondition.sqf File Reference</div>  </div>
+<div class="title">addons/circulation/functions/fnc_AEDXCondition.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="circulation_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aee0bd6c73663e471a879153d492e162b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc___a_e_d_x_condition_8sqf.html#aee0bd6c73663e471a879153d492e162b">if</a> (((<a class="el" href="fnc___a_e_d_x_condition_8sqf.html#a519b95d252560257ab0454ae7e6172ee">_hasMonitor</a>)||([<a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a>, &quot;kat_X_AED&quot;] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(common, hasItem))) &amp;&amp;{!<a class="el" href="fnc___a_e_d_x_condition_8sqf.html#ad21bfd4b0b1e32e66e3308a49314bcf3">_recovery</a>} &amp;&amp;{<a class="el" href="fnc___a_e_d_x_condition_8sqf.html#a7f470a56ea2fafbdfce331d48c7dae86">_canCPR</a>}) exitWith</td></tr>
-<tr class="separator:aee0bd6c73663e471a879153d492e162b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ac2f7a6fc4758e3b78ba3d1994471d84a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc___a_e_d_x_condition_8sqf.html#ac2f7a6fc4758e3b78ba3d1994471d84a">params</a> [&quot;_medic&quot;, &quot;_patient&quot;]</td></tr>
-<tr class="separator:ac2f7a6fc4758e3b78ba3d1994471d84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f470a56ea2fafbdfce331d48c7dae86"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc___a_e_d_x_condition_8sqf.html#a7f470a56ea2fafbdfce331d48c7dae86">_canCPR</a> = [&quot;&quot;,_patient] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(medical_treatment,canCPR)</td></tr>
-<tr class="separator:a7f470a56ea2fafbdfce331d48c7dae86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a519b95d252560257ab0454ae7e6172ee"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc___a_e_d_x_condition_8sqf.html#a519b95d252560257ab0454ae7e6172ee">_hasMonitor</a> = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(X), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td></tr>
-<tr class="separator:a519b95d252560257ab0454ae7e6172ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad21bfd4b0b1e32e66e3308a49314bcf3"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc___a_e_d_x_condition_8sqf.html#ad21bfd4b0b1e32e66e3308a49314bcf3">_recovery</a> = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[QEGVAR(airway,recovery),<a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td></tr>
-<tr class="separator:ad21bfd4b0b1e32e66e3308a49314bcf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="aee0bd6c73663e471a879153d492e162b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee0bd6c73663e471a879153d492e162b">&#9670;&nbsp;</a></span>if()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">if </td>
-          <td>(</td>
-          <td class="paramtype">((<a class="el" href="fnc___a_e_d_x_condition_8sqf.html#a519b95d252560257ab0454ae7e6172ee">_hasMonitor</a>)||([<a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a>, &quot;kat_X_AED&quot;] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(common, hasItem))) &amp;&amp;{!<a class="el" href="fnc___a_e_d_x_condition_8sqf.html#ad21bfd4b0b1e32e66e3308a49314bcf3">_recovery</a>} &amp;&amp;{<a class="el" href="fnc___a_e_d_x_condition_8sqf.html#a7f470a56ea2fafbdfce331d48c7dae86">_canCPR</a>}                                                                                                                                         &#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a7f470a56ea2fafbdfce331d48c7dae86"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f470a56ea2fafbdfce331d48c7dae86">&#9670;&nbsp;</a></span>_canCPR</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _canCPR = [&quot;&quot;,_patient] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(medical_treatment,canCPR)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a519b95d252560257ab0454ae7e6172ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a519b95d252560257ab0454ae7e6172ee">&#9670;&nbsp;</a></span>_hasMonitor</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _hasMonitor = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(X), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad21bfd4b0b1e32e66e3308a49314bcf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad21bfd4b0b1e32e66e3308a49314bcf3">&#9670;&nbsp;</a></span>_recovery</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _recovery = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[QEGVAR(airway,recovery),<a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac2f7a6fc4758e3b78ba3d1994471d84a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2f7a6fc4758e3b78ba3d1994471d84a">&#9670;&nbsp;</a></span>params</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">params[&quot;_medic&quot;, &quot;_patient&quot;]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_5dbcfbcd78d4b03b14d2295126304954.html">circulation</a></li><li class="navelem"><a class="el" href="dir_23a0c90030228b43b5d4f90c150a5268.html">functions</a></li><li class="navelem"><a class="el" href="fnc___a_e_d_x_condition_8sqf.html">fnc_AEDXCondition.sqf</a></li>
+    <li class="navelem"><a class="el" href="fnc___a_e_d_x_condition_8sqf.html">fnc_AEDXCondition.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

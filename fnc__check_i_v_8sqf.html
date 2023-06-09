@@ -81,148 +81,16 @@ $(document).ready(function(){initNavTree('fnc__check_i_v_8sqf.html',''); initRes
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">fnc_checkIV.sqf File Reference</div>  </div>
+<div class="title">addons/pharma/functions/fnc_checkIV.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="pharma_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a551d644eb31b39fd821d2fab4abb684c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_i_v_8sqf.html#a551d644eb31b39fd821d2fab4abb684c">if</a> (<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(ivCheckLimbDamage)) exitWith</td></tr>
-<tr class="separator:a551d644eb31b39fd821d2fab4abb684c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78bd6604e7dfb79a525998c4e3045d51"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_i_v_8sqf.html#a78bd6604e7dfb79a525998c4e3045d51">if</a> (<a class="el" href="fnc__fluid_local_8sqf.html#a1e1b4d7b68c59311942747b6ba3edbfe">_final2</a>&lt; 7) then</td></tr>
-<tr class="separator:a78bd6604e7dfb79a525998c4e3045d51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a477708cf92e063f3d97f4ffcbb1eb713"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_i_v_8sqf.html#a477708cf92e063f3d97f4ffcbb1eb713">params</a> [&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;]</td></tr>
-<tr class="separator:a477708cf92e063f3d97f4ffcbb1eb713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33345ee29edf11feeed24fcd5c81c5a3"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_i_v_8sqf.html#a33345ee29edf11feeed24fcd5c81c5a3">_bodyPartDamage</a> = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,bodyPartDamage), [0, 0, 0, 0, 0, 0]]</td></tr>
-<tr class="separator:a33345ee29edf11feeed24fcd5c81c5a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51c5daf69b2ec252b9b7906f03aa1464"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_i_v_8sqf.html#a51c5daf69b2ec252b9b7906f03aa1464">_compare</a> = ALL_BODY_PARTS find toLower _bodyPart</td></tr>
-<tr class="separator:a51c5daf69b2ec252b9b7906f03aa1464"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a090dfc85a702b425554aedbe2b05fd1b"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_i_v_8sqf.html#a090dfc85a702b425554aedbe2b05fd1b">_final2</a> = 0</td></tr>
-<tr class="separator:a090dfc85a702b425554aedbe2b05fd1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92e29a13f69e5d9de04d73823ed8ac8a"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_i_v_8sqf.html#a92e29a13f69e5d9de04d73823ed8ac8a">_return</a> = <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a></td></tr>
-<tr class="separator:a92e29a13f69e5d9de04d73823ed8ac8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a78bd6604e7dfb79a525998c4e3045d51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78bd6604e7dfb79a525998c4e3045d51">&#9670;&nbsp;</a></span>if() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">if </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a551d644eb31b39fd821d2fab4abb684c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a551d644eb31b39fd821d2fab4abb684c">&#9670;&nbsp;</a></span>if() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">if </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(ivCheckLimbDamage)                                                                             &#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a33345ee29edf11feeed24fcd5c81c5a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33345ee29edf11feeed24fcd5c81c5a3">&#9670;&nbsp;</a></span>_bodyPartDamage</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _bodyPartDamage = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,bodyPartDamage), [0, 0, 0, 0, 0, 0]]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a51c5daf69b2ec252b9b7906f03aa1464"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a51c5daf69b2ec252b9b7906f03aa1464">&#9670;&nbsp;</a></span>_compare</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _compare = ALL_BODY_PARTS find toLower _bodyPart</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a090dfc85a702b425554aedbe2b05fd1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a090dfc85a702b425554aedbe2b05fd1b">&#9670;&nbsp;</a></span>_final2</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_final2 = 0</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a92e29a13f69e5d9de04d73823ed8ac8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92e29a13f69e5d9de04d73823ed8ac8a">&#9670;&nbsp;</a></span>_return</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _return = <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a477708cf92e063f3d97f4ffcbb1eb713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a477708cf92e063f3d97f4ffcbb1eb713">&#9670;&nbsp;</a></span>params</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">params[&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_dc39b52e4bfa30dbe36e264d4ae12071.html">pharma</a></li><li class="navelem"><a class="el" href="dir_2a5e03e2d8a3b508cfdf78cd6a958ade.html">functions</a></li><li class="navelem"><a class="el" href="fnc__check_i_v_8sqf.html">fnc_checkIV.sqf</a></li>
+    <li class="navelem"><a class="el" href="fnc__check_i_v_8sqf.html">fnc_checkIV.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

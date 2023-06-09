@@ -81,100 +81,16 @@ $(document).ready(function(){initNavTree('fnc__check_recovery_8sqf.html',''); in
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">fnc_checkRecovery.sqf File Reference</div>  </div>
+<div class="title">addons/airway/functions/fnc_checkRecovery.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="airway_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a65f7929a18f7c6c129e3644e7d33f9ad"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_recovery_8sqf.html#a65f7929a18f7c6c129e3644e7d33f9ad">if</a> ((_patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(airway_item), &quot;&quot;] <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a>[&quot;Larynxtubus&quot;,&quot;Guedeltubus&quot;])||!(isNull objectParent _patient)) then</td></tr>
-<tr class="memdesc:a65f7929a18f7c6c129e3644e7d33f9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if patient has inserted larynx or guedeltube  <a href="fnc__check_recovery_8sqf.html#a65f7929a18f7c6c129e3644e7d33f9ad">More...</a><br /></td></tr>
-<tr class="separator:a65f7929a18f7c6c129e3644e7d33f9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ad0590a935a3a58b09d43b1a14fa6ebe8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_recovery_8sqf.html#ad0590a935a3a58b09d43b1a14fa6ebe8">params</a> [&quot;_medic&quot;, &quot;_patient&quot;]</td></tr>
-<tr class="memdesc:ad0590a935a3a58b09d43b1a14fa6ebe8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Author: MiszczuZPolski Checks if guedel or larynx was placed before.  <a href="fnc__check_recovery_8sqf.html#ad0590a935a3a58b09d43b1a14fa6ebe8">More...</a><br /></td></tr>
-<tr class="separator:ad0590a935a3a58b09d43b1a14fa6ebe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92e29a13f69e5d9de04d73823ed8ac8a"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_recovery_8sqf.html#a92e29a13f69e5d9de04d73823ed8ac8a">_return</a> = <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a></td></tr>
-<tr class="separator:a92e29a13f69e5d9de04d73823ed8ac8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a65f7929a18f7c6c129e3644e7d33f9ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65f7929a18f7c6c129e3644e7d33f9ad">&#9670;&nbsp;</a></span>if()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">if </td>
-          <td>(</td>
-          <td class="paramtype">(_patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(airway_item), &quot;&quot;] <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a>[&quot;Larynxtubus&quot;,&quot;Guedeltubus&quot;])||!(isNull objectParent _patient)                       &#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>check if patient has inserted larynx or guedeltube </p>
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a92e29a13f69e5d9de04d73823ed8ac8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92e29a13f69e5d9de04d73823ed8ac8a">&#9670;&nbsp;</a></span>_return</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _return = <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad0590a935a3a58b09d43b1a14fa6ebe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0590a935a3a58b09d43b1a14fa6ebe8">&#9670;&nbsp;</a></span>params</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_args params</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">    <a class="code" href="fnc__check_recovery_8sqf.html#ad0590a935a3a58b09d43b1a14fa6ebe8">params</a>[<span class="stringliteral">&quot;_args&quot;</span>]</div>
-<div class="ttc" id="afnc__check_recovery_8sqf_html_ad0590a935a3a58b09d43b1a14fa6ebe8"><div class="ttname"><a href="fnc__check_recovery_8sqf.html#ad0590a935a3a58b09d43b1a14fa6ebe8">params</a></div><div class="ttdeci">params[&quot;_medic&quot;, &quot;_patient&quot;]</div><div class="ttdoc">Author: MiszczuZPolski Checks if guedel or larynx was placed before.</div><div class="ttdef"><b>Definition:</b> fnc_checkRecovery.sqf:15</div></div>
-</div><!-- fragment -->
-<p>Author: MiszczuZPolski Checks if guedel or larynx was placed before. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">Medic</td><td>&lt;OBJECT&gt; </td></tr>
-    <tr><td class="paramname">Patient</td><td>&lt;OBJECT&gt; </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>&lt;BOOLEAN&gt;</dd></dl>
-<p>Example: [player, cursorTarget] call kat_airway_fnc_checvery;</p>
-<p>Public: No </p>
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_68f08f543d8ef57c72dcb751e88f2db9.html">airway</a></li><li class="navelem"><a class="el" href="dir_0ec7ac071fffc5968f5248906b55ba45.html">functions</a></li><li class="navelem"><a class="el" href="fnc__check_recovery_8sqf.html">fnc_checkRecovery.sqf</a></li>
+    <li class="navelem"><a class="el" href="fnc__check_recovery_8sqf.html">fnc_checkRecovery.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

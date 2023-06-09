@@ -81,133 +81,16 @@ $(document).ready(function(){initNavTree('fnc__heli_stretcher_attach_8sqf.html',
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">fnc_heliStretcherAttach.sqf File Reference</div>  </div>
+<div class="title">addons/misc/functions/fnc_heliStretcherAttach.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="misc_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a5ae73ff906a5e5be662bb737590cfbbe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a5ae73ff906a5e5be662bb737590cfbbe">if</a> (<a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a2a0fa512101b3481c03ca64afee37cf3">_h</a> isKindOf &quot;Helicopter&quot;) exitWith</td></tr>
-<tr class="separator:a5ae73ff906a5e5be662bb737590cfbbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a25eca7eaadb869c40838dc9f24eaaf2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a25eca7eaadb869c40838dc9f24eaaf2e">if</a> (player distance2D <a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a2a0fa512101b3481c03ca64afee37cf3">_h</a>&lt;=15) exitWith</td></tr>
-<tr class="separator:a25eca7eaadb869c40838dc9f24eaaf2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:a2a0fa512101b3481c03ca64afee37cf3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a2a0fa512101b3481c03ca64afee37cf3">_h</a> = cursorObject</td></tr>
-<tr class="separator:a2a0fa512101b3481c03ca64afee37cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ccaac534a99b8103b7cb3fcf07210fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a9ccaac534a99b8103b7cb3fcf07210fb">_s</a> = <a class="el" href="fnc__stretcher_8sqf.html#acdd0d8af6ef3a329702fcb15bd4fbb53">createVehicle</a> [&quot;kat_stretcher&quot;, (_h modelToWorld [0,0,-5])]</td></tr>
-<tr class="separator:a9ccaac534a99b8103b7cb3fcf07210fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a65b4c2d0132ad55b3e6b49acef35d6f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a9ccaac534a99b8103b7cb3fcf07210fb">_s</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a65b4c2d0132ad55b3e6b49acef35d6f7">attachTo</a> [<a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a2a0fa512101b3481c03ca64afee37cf3">_h</a>,[0, 0,-.1],&quot;slingload0&quot;]</td></tr>
-<tr class="separator:a65b4c2d0132ad55b3e6b49acef35d6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64aa68dc273f468655aeb34c5bacdf69"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a64aa68dc273f468655aeb34c5bacdf69">kat_misc_fnc_heliAddActionDeploy</a></td></tr>
-<tr class="separator:a64aa68dc273f468655aeb34c5bacdf69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a5ae73ff906a5e5be662bb737590cfbbe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ae73ff906a5e5be662bb737590cfbbe">&#9670;&nbsp;</a></span>if() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">if </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a2a0fa512101b3481c03ca64afee37cf3">_h</a> isKindOf &quot;Helicopter&quot;                                                                                      &#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a25eca7eaadb869c40838dc9f24eaaf2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a25eca7eaadb869c40838dc9f24eaaf2e">&#9670;&nbsp;</a></span>if() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">if </td>
-          <td>(</td>
-          <td class="paramtype">player distance2D <a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a2a0fa512101b3481c03ca64afee37cf3">_h</a>&lt;=&#160;</td>
-          <td class="paramname"><em>15</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a2a0fa512101b3481c03ca64afee37cf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a0fa512101b3481c03ca64afee37cf3">&#9670;&nbsp;</a></span>_h</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_h = cursorObject</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9ccaac534a99b8103b7cb3fcf07210fb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ccaac534a99b8103b7cb3fcf07210fb">&#9670;&nbsp;</a></span>_s</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_s = <a class="el" href="fnc__stretcher_8sqf.html#acdd0d8af6ef3a329702fcb15bd4fbb53">createVehicle</a> [&quot;kat_stretcher&quot;, (_h modelToWorld [0,0,-5])]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a65b4c2d0132ad55b3e6b49acef35d6f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65b4c2d0132ad55b3e6b49acef35d6f7">&#9670;&nbsp;</a></span>attachTo</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a9ccaac534a99b8103b7cb3fcf07210fb">_s</a> attachTo[<a class="el" href="fnc__heli_stretcher_attach_8sqf.html#a2a0fa512101b3481c03ca64afee37cf3">_h</a>, [0, 0,-.1],&quot;slingload0&quot;]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a64aa68dc273f468655aeb34c5bacdf69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64aa68dc273f468655aeb34c5bacdf69">&#9670;&nbsp;</a></span>kat_misc_fnc_heliAddActionDeploy</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">call kat_misc_fnc_heliAddActionDeploy</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_5bf007d71e717921f629e4d4d868b95a.html">misc</a></li><li class="navelem"><a class="el" href="dir_046437928829a29414e49d7cf44b9da2.html">functions</a></li><li class="navelem"><a class="el" href="fnc__heli_stretcher_attach_8sqf.html">fnc_heliStretcherAttach.sqf</a></li>
+    <li class="navelem"><a class="el" href="fnc__heli_stretcher_attach_8sqf.html">fnc_heliStretcherAttach.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

@@ -81,131 +81,16 @@ $(document).ready(function(){initNavTree('fnc__treatment_advanced___reorientatio
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">fnc_treatmentAdvanced_ReorientationLocal.sqf File Reference</div>  </div>
+<div class="title">addons/pharma/functions/fnc_treatmentAdvanced_ReorientationLocal.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="pharma_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a033cfa4374c3d787751b9a79af813ecf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced___reorientation_local_8sqf.html#a033cfa4374c3d787751b9a79af813ecf">if</a> (<a class="el" href="fnc__treatment_advanced___reorientation_local_8sqf.html#a6a692fbc44f4f8263f0919799e52dc13">_pulse</a> &gt;=70 &amp;&amp;<a class="el" href="fnc__treatment_advanced___reorientation_local_8sqf.html#a6a692fbc44f4f8263f0919799e52dc13">_pulse</a>&lt;=100 &amp;&amp;(random 100&lt;=<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(reorientationChance)) &amp;&amp;{[_patient] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(medical_status, hasStableVitals)}) then</td></tr>
-<tr class="separator:a033cfa4374c3d787751b9a79af813ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6dc0b1c1a488d07c684b60961e485c9"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced___reorientation_local_8sqf.html#af6dc0b1c1a488d07c684b60961e485c9">ACEFUNC</a> (common, displayTextStructured)</td></tr>
-<tr class="separator:af6dc0b1c1a488d07c684b60961e485c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ac2f7a6fc4758e3b78ba3d1994471d84a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced___reorientation_local_8sqf.html#ac2f7a6fc4758e3b78ba3d1994471d84a">params</a> [&quot;_medic&quot;, &quot;_patient&quot;]</td></tr>
-<tr class="separator:ac2f7a6fc4758e3b78ba3d1994471d84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a692fbc44f4f8263f0919799e52dc13"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced___reorientation_local_8sqf.html#a6a692fbc44f4f8263f0919799e52dc13">_pulse</a> = GET_HEART_RATE(_patient)</td></tr>
-<tr class="separator:a6a692fbc44f4f8263f0919799e52dc13"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0544c3fe466e421738dae463968b70ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced___reorientation_local_8sqf.html#a0544c3fe466e421738dae463968b70ba">else</a></td></tr>
-<tr class="separator:a0544c3fe466e421738dae463968b70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="af6dc0b1c1a488d07c684b60961e485c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6dc0b1c1a488d07c684b60961e485c9">&#9670;&nbsp;</a></span>ACEFUNC()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">call ACEFUNC </td>
-          <td>(</td>
-          <td class="paramtype">common&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">displayTextStructured&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a033cfa4374c3d787751b9a79af813ecf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a033cfa4374c3d787751b9a79af813ecf">&#9670;&nbsp;</a></span>if()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">if </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="fnc__treatment_advanced___reorientation_local_8sqf.html#a6a692fbc44f4f8263f0919799e52dc13">_pulse</a> &gt;=70 &amp;&amp;<a class="el" href="fnc__treatment_advanced___reorientation_local_8sqf.html#a6a692fbc44f4f8263f0919799e52dc13">_pulse</a>&lt;=100 &amp;&amp;(random 100&lt;=<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(reorientationChance)) &amp;&amp;{[_patient] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(medical_status, hasStableVitals)}                                           &#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a6a692fbc44f4f8263f0919799e52dc13"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6a692fbc44f4f8263f0919799e52dc13">&#9670;&nbsp;</a></span>_pulse</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">private _pulse = GET_HEART_RATE(_patient)</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0544c3fe466e421738dae463968b70ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0544c3fe466e421738dae463968b70ba">&#9670;&nbsp;</a></span>else</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">else</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">    <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a937d8cd5f2a2542f6460882a5e7822af">_output</a> = <a class="code" href="fnc__refill_oxygen_tank_8sqf.html#aa2383aba099098ebe7ab1be227d8a2f7">LLSTRING</a>(Reorienting_Info)</div>
-<div class="ttc" id="afnc__refill_oxygen_tank_8sqf_html_aa2383aba099098ebe7ab1be227d8a2f7"><div class="ttname"><a href="fnc__refill_oxygen_tank_8sqf.html#aa2383aba099098ebe7ab1be227d8a2f7">LLSTRING</a></div><div class="ttdeci">LLSTRING(RefillPortableOxygenTank_Progress)] call ACEFUNC(common</div></div>
-<div class="ttc" id="afnc__treatment_advanced___cancel_recovery_position_local_8sqf_html_a937d8cd5f2a2542f6460882a5e7822af"><div class="ttname"><a href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a937d8cd5f2a2542f6460882a5e7822af">_output</a></div><div class="ttdeci">private _output</div><div class="ttdef"><b>Definition:</b> fnc_treatmentAdvanced_CancelRecoveryPositionLocal.sqf:25</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ac2f7a6fc4758e3b78ba3d1994471d84a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2f7a6fc4758e3b78ba3d1994471d84a">&#9670;&nbsp;</a></span>params</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">params[&quot;_medic&quot;, &quot;_patient&quot;]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_dc39b52e4bfa30dbe36e264d4ae12071.html">pharma</a></li><li class="navelem"><a class="el" href="dir_2a5e03e2d8a3b508cfdf78cd6a958ade.html">functions</a></li><li class="navelem"><a class="el" href="fnc__treatment_advanced___reorientation_local_8sqf.html">fnc_treatmentAdvanced_ReorientationLocal.sqf</a></li>
+    <li class="navelem"><a class="el" href="fnc__treatment_advanced___reorientation_local_8sqf.html">fnc_treatmentAdvanced_ReorientationLocal.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
