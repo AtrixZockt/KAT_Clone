@@ -113,13 +113,13 @@ $(document).ready(function(){initNavTree('circulation_2_cfg_vehicles_8hpp_source
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        vehicleClass = <span class="stringliteral">&quot;Items&quot;</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        model = <span class="stringliteral">&quot;\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d&quot;</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">class </span>TransportItems {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(<a class="code" href="fnc__place_a_e_d_8sqf.html#a0c1ef3921e1a6fc5c3ac3d873eb01959">kat_AED</a>,1);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_AED,1);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        };</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">class </span>kat_X_AEDItem: kat_AEDItem {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        displayName = CSTRING(X_Display);</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        model = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(models\aedx\aedx.p3d);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        model = QPATHTOF(models\aedx\aedx.p3d);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">class </span>TransportItems {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_X_AED,1);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        };</div>
@@ -128,7 +128,7 @@ $(document).ready(function(){initNavTree('circulation_2_cfg_vehicles_8hpp_source
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">class </span>ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">class </span>TransportItems: TransportItems {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_X_AED,1);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(<a class="code" href="fnc__place_a_e_d_8sqf.html#a0c1ef3921e1a6fc5c3ac3d873eb01959">kat_AED</a>,1);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_AED,1);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(KAT_Empty_bloodIV_500,10);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(KAT_Empty_bloodIV_250,20);</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_crossPanel,5);</div>
@@ -188,16 +188,16 @@ $(document).ready(function(){initNavTree('circulation_2_cfg_vehicles_8hpp_source
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keyword">class </span>ACE_Equipment {</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <span class="keyword">class </span>AED_X_removeSound {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                    displayName = CSTRING(X_Action_removeSound);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                    condition = QUOTE(<span class="stringliteral">&#39;kat_X_AED&#39;</span> in (items _player) &amp;&amp; (_player <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [ARR_2(QQGVAR(AED_X_Volume), <span class="keyword">false</span>])));</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    statement = QUOTE(_player <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(AED_X_Volume), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                    condition = QUOTE(<span class="stringliteral">&#39;kat_X_AED&#39;</span> in (items _player) &amp;&amp; (_player getVariable [ARR_2(QQGVAR(AED_X_Volume), <span class="keyword">false</span>])));</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_Volume), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                    showDisabled = 0;</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                    exceptions[] = {<span class="stringliteral">&quot;isNotInside&quot;</span>, <span class="stringliteral">&quot;isNotSitting&quot;</span>};</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    icon = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(ui\X_Series-Device_W.paa);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;                    icon = QPATHTOF(ui\X_Series-Device_W.paa);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                };</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                <span class="keyword">class </span>AED_X_addSound : AED_X_removeSound {</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                    displayName = CSTRING(X_Action_addSound);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    condition = QUOTE(<span class="stringliteral">&#39;kat_X_AED&#39;</span> in (items _player) &amp;&amp; !(_player <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [ARR_2(QQGVAR(AED_X_Volume), <span class="keyword">false</span>])));</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    statement = QUOTE(_player <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(AED_X_Volume), <span class="keyword">true</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                    condition = QUOTE(<span class="stringliteral">&#39;kat_X_AED&#39;</span> in (items _player) &amp;&amp; !(_player getVariable [ARR_2(QQGVAR(AED_X_Volume), <span class="keyword">false</span>])));</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(AED_X_Volume), <span class="keyword">true</span>, <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                };</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                <span class="keyword">class </span>openCrossPanel {</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;                    displayName = CSTRING(open_crosspanel);</div>
@@ -228,10 +228,6 @@ $(document).ready(function(){initNavTree('circulation_2_cfg_vehicles_8hpp_source
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    };</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;};</div>
 <div class="ttc" id="aclass_cfg_vehicles_html"><div class="ttname"><a href="class_cfg_vehicles.html">CfgVehicles</a></div><div class="ttdoc">Hallo ich bin ein text \params Int Di.</div><div class="ttdef"><b>Definition:</b> CfgVehicles.hpp:1</div></div>
-<div class="ttc" id="afnc__check_airway_8sqf_html_a847c9b96415ea629e855c5a3c85929bb"><div class="ttname"><a href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a></div><div class="ttdeci">_patient setVariable[QACEGVAR(medical, triageLevel), 3, true]</div><div class="ttdef"><b>Definition:</b> fnc_checkAirway.sqf:19</div></div>
-<div class="ttc" id="afnc__has_b_v_m_8sqf_html_aa4fbd01846b98cc49ae7f3daa1fef0fb"><div class="ttname"><a href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a></div><div class="ttdeci">_patient getVariable[QGVAR(BVM), false] _patient getVariable[QGVAR(pocketBVM), false]</div><div class="ttdef"><b>Definition:</b> fnc_hasBVM.sqf:20</div></div>
-<div class="ttc" id="afnc__place_a_e_d_8sqf_html_a0c1ef3921e1a6fc5c3ac3d873eb01959"><div class="ttname"><a href="fnc__place_a_e_d_8sqf.html#a0c1ef3921e1a6fc5c3ac3d873eb01959">kat_AED</a></div><div class="ttdeci">ACE_player removeItem kat_AED</div><div class="ttdef"><b>Definition:</b> fnc_placeAED.sqf:16</div></div>
-<div class="ttc" id="afnc__update_body_image_8sqf_html_af41a1d49c983245ac4a43d01ec9b95e3"><div class="ttname"><a href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a></div><div class="ttdeci">_torso_infected ctrlSetText QPATHTOF(data\body_image\torso_i.paa)</div></div>
 <div class="ttc" id="ascript__macros_8hpp_html_a85fd80b4d2e700817a6ceddb5dbca6e4"><div class="ttname"><a href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a></div><div class="ttdeci">#define MACRO_ADDITEM(ITEM, COUNT)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:48</div></div>
 <div class="ttc" id="ascript__macros_8hpp_html_aa5ac1958702e084bd2b05d755a5dbc14"><div class="ttname"><a href="script__macros_8hpp.html#aa5ac1958702e084bd2b05d755a5dbc14">MACRO_ADDMAGAZINE</a></div><div class="ttdeci">#define MACRO_ADDMAGAZINE(MAGAZINE, COUNT)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:53</div></div>
 </div><!-- fragment --></div><!-- contents -->

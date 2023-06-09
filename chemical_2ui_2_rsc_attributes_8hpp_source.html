@@ -114,7 +114,7 @@ $(document).ready(function(){initNavTree('chemical_2ui_2_rsc_attributes_8hpp_sou
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>GVAR(kat_RscAtributeRadius): RscControlsGroupNoScrollbars {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    onSetFocus = QUOTE(_this call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(AttributeRadius));</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    onSetFocus = QUOTE(_this call FUNC(AttributeRadius));</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    idc = 26422;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    x = 0;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    y = 0;</div>
@@ -201,28 +201,27 @@ $(document).ready(function(){initNavTree('chemical_2ui_2_rsc_attributes_8hpp_sou
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">class </span>GVAR(kat_RscGasModul): <a class="code" href="class_rsc_display_attributes.html">RscDisplayAttributes</a> {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    onLoad = QUOTE([ARR_3(<span class="stringliteral">&#39;onLoad&#39;</span>, _this, QQGVAR(kat_RscGasModul))] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(zeusAttributes));</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    onUnload = QUOTE([ARR_3(<span class="stringliteral">&#39;onUnload&#39;</span>, _this, QQGVAR(kat_RscGasModul))] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(zeusAttributes));</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    onLoad = QUOTE([ARR_3(<span class="stringliteral">&#39;onLoad&#39;</span>, _this, QQGVAR(kat_RscGasModul))] call FUNC(zeusAttributes));</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    onUnload = QUOTE([ARR_3(<span class="stringliteral">&#39;onUnload&#39;</span>, _this, QQGVAR(kat_RscGasModul))] call FUNC(zeusAttributes));</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">class </span>Controls: Controls {</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keyword">class </span>Background: Background {};</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keyword">class </span>Title: Title {};</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keyword">class </span>Content: Content {</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keyword">class </span>Controls {</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="keyword">class </span>radius: <a class="code" href="fnc__check_airway_8sqf.html#a7524d01865462f8e9b9eec66a7432d02">GVAR</a>(kat_RscAtributeRadius) {};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                <span class="keyword">class </span>radius: <a class="code" href="circulation_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a>(kat_RscAtributeRadius) {};</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            };</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        };</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="keyword">class </span>ButtonOK: ButtonOK {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            onSetFocus = QUOTE(_this call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(ui_gasModule));</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            onSetFocus = QUOTE(_this call FUNC(ui_gasModule));</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        };</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">class </span>ButtonCancel: ButtonCancel {};</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    };</div>
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;};</div>
 <div class="ttc" id="achemical_2script__component_8hpp_html_a932395e7296366503b6c6ff3cf63dabd"><div class="ttname"><a href="chemical_2script__component_8hpp.html#a932395e7296366503b6c6ff3cf63dabd">H_PART</a></div><div class="ttdeci">#define H_PART(num)</div><div class="ttdef"><b>Definition:</b> script_component.hpp:132</div></div>
 <div class="ttc" id="achemical_2script__component_8hpp_html_ae7bbe4aab13d57ac492c36831c5b967e"><div class="ttname"><a href="chemical_2script__component_8hpp.html#ae7bbe4aab13d57ac492c36831c5b967e">W_PART</a></div><div class="ttdeci">#define W_PART(num)</div><div class="ttdef"><b>Definition:</b> script_component.hpp:131</div></div>
+<div class="ttc" id="acirculation_2ui_2_cross_panel___dialog_8hpp_html_a13de54cc3d786b3d023285149a21f0d4"><div class="ttname"><a href="circulation_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a></div><div class="ttdeci">class GVAR(CrossPanel_Dialog)</div><div class="ttdef"><b>Definition:</b> CrossPanel_Dialog.hpp:1</div></div>
 <div class="ttc" id="aclass_rsc_display_attributes_html"><div class="ttname"><a href="class_rsc_display_attributes.html">RscDisplayAttributes</a></div><div class="ttdef"><b>Definition:</b> RscAttributes.hpp:17</div></div>
-<div class="ttc" id="afnc__check_airway_8sqf_html_a7524d01865462f8e9b9eec66a7432d02"><div class="ttname"><a href="fnc__check_airway_8sqf.html#a7524d01865462f8e9b9eec66a7432d02">GVAR</a></div><div class="ttdeci">&amp;&amp;_patient getVariable &amp;&amp;[QGVAR(obstruction), false] GVAR(autoTriage)) then</div><div class="ttdef"><b>Definition:</b> fnc_checkAirway.sqf:20</div></div>
-<div class="ttc" id="afnc__treatment_advanced___cancel_recovery_position_local_8sqf_html_a580dc58ae22fa8819b4c837e05f75954"><div class="ttname"><a href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a></div><div class="ttdeci">_patient call FUNC(handlePuking)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
