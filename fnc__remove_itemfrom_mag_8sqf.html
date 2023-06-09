@@ -81,108 +81,10 @@ $(document).ready(function(){initNavTree('fnc__remove_itemfrom_mag_8sqf.html',''
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#func-members">Functions</a> &#124;
-<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">fnc_removeItemfromMag.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="pharma_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
-</div><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a1f2de8cd89eef7bd19bba103f9072478"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_itemfrom_mag_8sqf.html#a1f2de8cd89eef7bd19bba103f9072478">if</a> ((_oldMag select 1) &gt; 1) then</td></tr>
-<tr class="separator:a1f2de8cd89eef7bd19bba103f9072478"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
-Variables</h2></td></tr>
-<tr class="memitem:ad49f41aa0a07ef285ae04ca599e1d141"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_itemfrom_mag_8sqf.html#ad49f41aa0a07ef285ae04ca599e1d141">params</a> [&quot;_player&quot;, &quot;<a class="el" href="fnc__remove_itemfrom_mag_8sqf.html#a0dc06837e70299d81980ea5eef61ca9f">_mag</a>&quot;]</td></tr>
-<tr class="separator:ad49f41aa0a07ef285ae04ca599e1d141"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc06837e70299d81980ea5eef61ca9f"><td class="memItemLeft" align="right" valign="top">_player removeMagazineGlobal&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_itemfrom_mag_8sqf.html#a0dc06837e70299d81980ea5eef61ca9f">_mag</a></td></tr>
-<tr class="separator:a0dc06837e70299d81980ea5eef61ca9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0544c3fe466e421738dae463968b70ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__remove_itemfrom_mag_8sqf.html#a0544c3fe466e421738dae463968b70ba">else</a></td></tr>
-<tr class="separator:a0544c3fe466e421738dae463968b70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="a1f2de8cd89eef7bd19bba103f9072478"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f2de8cd89eef7bd19bba103f9072478">&#9670;&nbsp;</a></span>if()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">if </td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>(_oldMag select 1)</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>1</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Variable Documentation</h2>
-<a id="a0dc06837e70299d81980ea5eef61ca9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dc06837e70299d81980ea5eef61ca9f">&#9670;&nbsp;</a></span>_mag</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">_player removeMagazineGlobal _mag</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0544c3fe466e421738dae463968b70ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0544c3fe466e421738dae463968b70ba">&#9670;&nbsp;</a></span>else</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">else</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Initial value:</b><div class="fragment"><div class="line">{</div>
-<div class="line">    [<a class="code" href="fnc__handle_slot_item_changed_8sqf.html#ac86810036ea1146bd7a4ef3512d8bdce">format</a> [<a class="code" href="fnc__refill_oxygen_tank_8sqf.html#aa2383aba099098ebe7ab1be227d8a2f7">LLSTRING</a>(Pain_empty), <a class="code" href="fnc__treatment_advanced__airway_local_8sqf.html#af6920bbf7bb4cf294707b8ce72c6ca64">getText</a> (configFile &gt;&gt; <span class="stringliteral">&quot;CfgMagazines&quot;</span> &gt;&gt; <a class="code" href="fnc__remove_itemfrom_mag_8sqf.html#a0dc06837e70299d81980ea5eef61ca9f">_mag</a> &gt;&gt; <span class="stringliteral">&quot;displayName&quot;</span>)], 2.5, _player] call <a class="code" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(common,displayTextStructured)</div>
-<div class="ttc" id="afnc__handle_slot_item_changed_8sqf_html_ac86810036ea1146bd7a4ef3512d8bdce"><div class="ttname"><a href="fnc__handle_slot_item_changed_8sqf.html#ac86810036ea1146bd7a4ef3512d8bdce">format</a></div><div class="ttdeci">hintSilent parseText format[&quot;Unit: %1&lt;br/&gt;Name: %2&lt;br/&gt;Slot: %3&lt;br/&gt;Assigned: %4&quot;, _unit, _name, _slot, _assigned]</div><div class="ttdef"><b>Definition:</b> fnc_handleSlotItemChanged.sqf:4</div></div>
-<div class="ttc" id="afnc__refill_oxygen_tank_8sqf_html_aa2383aba099098ebe7ab1be227d8a2f7"><div class="ttname"><a href="fnc__refill_oxygen_tank_8sqf.html#aa2383aba099098ebe7ab1be227d8a2f7">LLSTRING</a></div><div class="ttdeci">LLSTRING(RefillPortableOxygenTank_Progress)] call ACEFUNC(common</div></div>
-<div class="ttc" id="afnc__remove_itemfrom_mag_8sqf_html_a0dc06837e70299d81980ea5eef61ca9f"><div class="ttname"><a href="fnc__remove_itemfrom_mag_8sqf.html#a0dc06837e70299d81980ea5eef61ca9f">_mag</a></div><div class="ttdeci">_player removeMagazineGlobal _mag</div><div class="ttdef"><b>Definition:</b> fnc_removeItemfromMag.sqf:22</div></div>
-<div class="ttc" id="afnc__treatment_advanced__airway_local_8sqf_html_af6920bbf7bb4cf294707b8ce72c6ca64"><div class="ttname"><a href="fnc__treatment_advanced__airway_local_8sqf.html#af6920bbf7bb4cf294707b8ce72c6ca64">getText</a></div><div class="ttdeci">call getText(configFile &gt;&gt; &quot;CfgWeapons&quot; &gt;&gt; _usedItem &gt;&gt; &quot;displayName&quot;)]] call ACEFUNC(medical_treatment</div></div>
-<div class="ttc" id="ascript__macros_8hpp_html_ae1638a83048f3b2eed91fd36e6cbe4a8"><div class="ttname"><a href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a></div><div class="ttdeci">#define ACEFUNC(module, function)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:69</div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="ad49f41aa0a07ef285ae04ca599e1d141"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad49f41aa0a07ef285ae04ca599e1d141">&#9670;&nbsp;</a></span>params</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">params[&quot;_player&quot;, &quot;<a class="el" href="fnc__remove_itemfrom_mag_8sqf.html#a0dc06837e70299d81980ea5eef61ca9f">_mag</a>&quot;]</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

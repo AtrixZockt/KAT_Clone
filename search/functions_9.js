@@ -1,4 +1,0 @@
-var searchData=
-[
-  ['round_969',['round',['../fnc__attach_a_e_d_x_8sqf.html#aaf52b4d956cf5305308302f443fbfdc5',1,'round(_patient getVariable[QACEGVAR(medical, bloodPressure), [0, 0]] select 1)):&#160;fnc_attachAEDX.sqf'],['../fnc__attach_a_e_d_x_8sqf.html#af67e0cb2c15d86be6f2cf711d6bfbbc9',1,'round(_patient getVariable[QACEGVAR(medical, bloodPressure), [80, 120]] select 0)):&#160;fnc_attachAEDX.sqf'],['../fnc__attach_a_e_d_x_vehicle_8sqf.html#aaf52b4d956cf5305308302f443fbfdc5',1,'round(_patient getVariable[QACEGVAR(medical, bloodPressure), [0, 0]] select 1)):&#160;fnc_attachAEDXVehicle.sqf'],['../fnc__attach_a_e_d_x_vehicle_8sqf.html#af67e0cb2c15d86be6f2cf711d6bfbbc9',1,'round(_patient getVariable[QACEGVAR(medical, bloodPressure), [80, 120]] select 0)):&#160;fnc_attachAEDXVehicle.sqf']]]
-];
