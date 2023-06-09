@@ -1,3 +1,8 @@
+/*!
+ this is an example file
+ \params Int
+!*/
+
 class Extended_PreInit_EventHandlers {
     class ADDON {
         init = QUOTE(call COMPILE_FILE(XEH_preInit));
