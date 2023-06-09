@@ -7,7 +7,7 @@
 * @return <BOOLEAN>
 * 
 * Example:
-* [player, cursorTarget] call kat_airway_fnc_chvery;
+* [player, cursorTarget] call kat_airw_chvery;
 *
 * Public: No
 */
