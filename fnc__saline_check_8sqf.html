@@ -81,10 +81,179 @@ $(document).ready(function(){initNavTree('fnc__saline_check_8sqf.html',''); init
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">fnc_salineCheck.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="pharma_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abb5d322dd0850022d844ca18abc8b971"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__saline_check_8sqf.html#abb5d322dd0850022d844ca18abc8b971">if</a> (<a class="el" href="fnc__treatment_advanced___t_x_a_local_8sqf.html#a6fc31df2f6193351b4f9c86b5d6cb034">_IVactual</a> !=3) exitWith</td></tr>
+<tr class="separator:abb5d322dd0850022d844ca18abc8b971"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af559848dd4e4fbabf1eb4a8e95b67e99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__saline_check_8sqf.html#af559848dd4e4fbabf1eb4a8e95b67e99">if</a> (<a class="el" href="fnc__listen_lungs_8sqf.html#acf9c0a9c4d131e82abc5a6fc86232f7a">_type</a> isEqualTo &quot;Saline&quot; &amp;&amp;_bagVolumeRemaining &gt;=30) exitWith</td></tr>
+<tr class="separator:af559848dd4e4fbabf1eb4a8e95b67e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9030058b75dff363eb6e03839876c1e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__saline_check_8sqf.html#aa9030058b75dff363eb6e03839876c1e">if</a> (<a class="el" href="fnc__debridement_check_8sqf.html#ad07b1524a9f9ad4d272cb973a1cd21b8">_check</a>) exitWith</td></tr>
+<tr class="separator:aa9030058b75dff363eb6e03839876c1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a477708cf92e063f3d97f4ffcbb1eb713"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__saline_check_8sqf.html#a477708cf92e063f3d97f4ffcbb1eb713">params</a> [&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;]</td></tr>
+<tr class="separator:a477708cf92e063f3d97f4ffcbb1eb713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24b18e20f094d8990bf39121de3b3d3c"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__saline_check_8sqf.html#a24b18e20f094d8990bf39121de3b3d3c">_partIndex</a> = ALL_BODY_PARTS find toLower _bodyPart</td></tr>
+<tr class="separator:a24b18e20f094d8990bf39121de3b3d3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c070e3bffbbdc9c2f1ebe603d63485"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__saline_check_8sqf.html#ae1c070e3bffbbdc9c2f1ebe603d63485">_IVarray</a> = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(IV), [0,0,0,0,0,0]]</td></tr>
+<tr class="separator:ae1c070e3bffbbdc9c2f1ebe603d63485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fc31df2f6193351b4f9c86b5d6cb034"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__saline_check_8sqf.html#a6fc31df2f6193351b4f9c86b5d6cb034">_IVactual</a> = <a class="el" href="fnc__treatment_advanced___t_x_a_local_8sqf.html#ae1c070e3bffbbdc9c2f1ebe603d63485">_IVarray</a> select <a class="el" href="fnc__treatment_advanced___t_x_a_local_8sqf.html#a24b18e20f094d8990bf39121de3b3d3c">_partIndex</a></td></tr>
+<tr class="separator:a6fc31df2f6193351b4f9c86b5d6cb034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6fd8cb46c37c659ab7e30685fd737cb"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__saline_check_8sqf.html#ac6fd8cb46c37c659ab7e30685fd737cb">_fluidCheck</a> = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,ivBags), []]</td></tr>
+<tr class="separator:ac6fd8cb46c37c659ab7e30685fd737cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07b1524a9f9ad4d272cb973a1cd21b8"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__saline_check_8sqf.html#ad07b1524a9f9ad4d272cb973a1cd21b8">_check</a> = <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a></td></tr>
+<tr class="separator:ad07b1524a9f9ad4d272cb973a1cd21b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aa9030058b75dff363eb6e03839876c1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9030058b75dff363eb6e03839876c1e">&#9670;&nbsp;</a></span>if() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__debridement_check_8sqf.html#ad07b1524a9f9ad4d272cb973a1cd21b8">_check</a>  &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb5d322dd0850022d844ca18abc8b971"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb5d322dd0850022d844ca18abc8b971">&#9670;&nbsp;</a></span>if() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__treatment_advanced___t_x_a_local_8sqf.html#a6fc31df2f6193351b4f9c86b5d6cb034">_IVactual</a> !                                                            &#160;</td>
+          <td class="paramname"> = <code>3</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af559848dd4e4fbabf1eb4a8e95b67e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af559848dd4e4fbabf1eb4a8e95b67e99">&#9670;&nbsp;</a></span>if() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__listen_lungs_8sqf.html#acf9c0a9c4d131e82abc5a6fc86232f7a">_type</a> isEqualTo &quot;Saline&quot; &amp;&amp;_bagVolumeRemaining &gt;=&#160;</td>
+          <td class="paramname"><em>30</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="ad07b1524a9f9ad4d272cb973a1cd21b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad07b1524a9f9ad4d272cb973a1cd21b8">&#9670;&nbsp;</a></span>_check</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _check = <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac6fd8cb46c37c659ab7e30685fd737cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6fd8cb46c37c659ab7e30685fd737cb">&#9670;&nbsp;</a></span>_fluidCheck</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__treatment_advanced___naloxone_local_8sqf.html#a00880a9e6fb8c0b0c753f72fb5f4d0c3">forEach</a> _fluidCheck = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,ivBags), []]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6fc31df2f6193351b4f9c86b5d6cb034"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fc31df2f6193351b4f9c86b5d6cb034">&#9670;&nbsp;</a></span>_IVactual</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _IVactual = <a class="el" href="fnc__treatment_advanced___t_x_a_local_8sqf.html#ae1c070e3bffbbdc9c2f1ebe603d63485">_IVarray</a> select <a class="el" href="fnc__treatment_advanced___t_x_a_local_8sqf.html#a24b18e20f094d8990bf39121de3b3d3c">_partIndex</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae1c070e3bffbbdc9c2f1ebe603d63485"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1c070e3bffbbdc9c2f1ebe603d63485">&#9670;&nbsp;</a></span>_IVarray</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _IVarray = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(IV), [0,0,0,0,0,0]]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24b18e20f094d8990bf39121de3b3d3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24b18e20f094d8990bf39121de3b3d3c">&#9670;&nbsp;</a></span>_partIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _partIndex = ALL_BODY_PARTS find toLower _bodyPart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a477708cf92e063f3d97f4ffcbb1eb713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a477708cf92e063f3d97f4ffcbb1eb713">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

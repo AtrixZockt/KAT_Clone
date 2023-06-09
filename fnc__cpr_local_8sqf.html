@@ -81,10 +81,368 @@ $(document).ready(function(){initNavTree('fnc__cpr_local_8sqf.html',''); initRes
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">fnc_cprLocal.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="circulation_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0afeaa1f089471fbabdefa4f7e8945f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a0afeaa1f089471fbabdefa4f7e8945f0">if</a> (<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(AdvRhythm)) then</td></tr>
+<tr class="separator:a0afeaa1f089471fbabdefa4f7e8945f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48593c47dfde2a30f16fadb9168f87f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a48593c47dfde2a30f16fadb9168f87f6">switch</a> (_medication) do</td></tr>
+<tr class="separator:a48593c47dfde2a30f16fadb9168f87f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d8bc0ad8b75e6d2398ab477444575d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a8d8bc0ad8b75e6d2398ab477444575d6">forEach</a> (_patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical, medications), []])</td></tr>
+<tr class="separator:a8d8bc0ad8b75e6d2398ab477444575d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20f08566f2ae18bbcd01be9bbadde3e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a20f08566f2ae18bbcd01be9bbadde3e4">switch</a> (_reviveObject) do</td></tr>
+<tr class="separator:a20f08566f2ae18bbcd01be9bbadde3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2349926d84171da8eecfa4d0527a322"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#ab2349926d84171da8eecfa4d0527a322">if</a> (_reviveObject isEqualTo &quot;AED&quot;||_reviveObject isEqualTo &quot;AEDX&quot;||_reviveObject isEqualTo &quot;AEDStation&quot;||_reviveObject isEqualTo &quot;AEDXVehicle&quot;) exitWith</td></tr>
+<tr class="separator:ab2349926d84171da8eecfa4d0527a322"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ba80cfda1d5cde5ea43fdba62b974e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a0ba80cfda1d5cde5ea43fdba62b974e0">if</a> (<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(enable_CPR_Chances)) then</td></tr>
+<tr class="separator:a0ba80cfda1d5cde5ea43fdba62b974e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35a61c90493d13566ced59a0c1f00c36"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a35a61c90493d13566ced59a0c1f00c36">if</a> (<a class="el" href="fnc__treatment_advanced___lorazepam_local_8sqf.html#a24de7cefac25694c764dd685bc2eb318">_random</a>&lt;=<a class="el" href="fnc__cpr_local_8sqf.html#abd1599c32b8c558c869fb5675c291dd1">_chance</a>) then</td></tr>
+<tr class="separator:a35a61c90493d13566ced59a0c1f00c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac035c6c11500c2976a638dfb3470e331"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#ac035c6c11500c2976a638dfb3470e331">params</a> [&quot;_medic&quot;, &quot;_patient&quot;, &quot;_reviveObject&quot;]</td></tr>
+<tr class="separator:ac035c6c11500c2976a638dfb3470e331"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada69b1ec1a7b0a71e20af44496abcda6"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#ada69b1ec1a7b0a71e20af44496abcda6">_bloodLoss</a> = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,bloodVolume), 6.0]</td></tr>
+<tr class="separator:ada69b1ec1a7b0a71e20af44496abcda6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd1599c32b8c558c869fb5675c291dd1"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#abd1599c32b8c558c869fb5675c291dd1">_chance</a> = 0</td></tr>
+<tr class="separator:abd1599c32b8c558c869fb5675c291dd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24de7cefac25694c764dd685bc2eb318"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a24de7cefac25694c764dd685bc2eb318">_random</a> = random 100</td></tr>
+<tr class="separator:a24de7cefac25694c764dd685bc2eb318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36f61f4eaeb5cc800dae1e506b8e100c"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a36f61f4eaeb5cc800dae1e506b8e100c">_randomAmi</a> = random 4</td></tr>
+<tr class="separator:a36f61f4eaeb5cc800dae1e506b8e100c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42fa556072652b0e57b7916a9b706514"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a42fa556072652b0e57b7916a9b706514">_randomCPR</a> = random 1</td></tr>
+<tr class="separator:a42fa556072652b0e57b7916a9b706514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8bd2590b6eecc101ceb99127e41acb1"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#ae8bd2590b6eecc101ceb99127e41acb1">_epiBoost</a> = 1</td></tr>
+<tr class="separator:ae8bd2590b6eecc101ceb99127e41acb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44188283278f594d7045e80fc1f8de62"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a44188283278f594d7045e80fc1f8de62">_amiBoost</a> = 0</td></tr>
+<tr class="separator:a44188283278f594d7045e80fc1f8de62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111903705280120b43e9afb653bc861f"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a111903705280120b43e9afb653bc861f">_lidoBoost</a> = 0</td></tr>
+<tr class="separator:a111903705280120b43e9afb653bc861f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d4fe4c63bf02a913a591ef79db76890"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a9d4fe4c63bf02a913a591ef79db76890">_asystole</a> = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(asystole), 1]</td></tr>
+<tr class="separator:a9d4fe4c63bf02a913a591ef79db76890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78a2e9a9daf958d3050fc548e82e0a60"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a78a2e9a9daf958d3050fc548e82e0a60">_CPRcount</a> = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(CPRcount), 0]</td></tr>
+<tr class="separator:a78a2e9a9daf958d3050fc548e82e0a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0544c3fe466e421738dae463968b70ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__cpr_local_8sqf.html#a0544c3fe466e421738dae463968b70ba">else</a></td></tr>
+<tr class="separator:a0544c3fe466e421738dae463968b70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a8d8bc0ad8b75e6d2398ab477444575d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d8bc0ad8b75e6d2398ab477444575d6">&#9670;&nbsp;</a></span>forEach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">forEach </td>
+          <td>(</td>
+          <td class="paramtype">_patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>]&#160;</td>
+          <td class="paramname">[QACEGVAR(medical, medications),[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a35a61c90493d13566ced59a0c1f00c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35a61c90493d13566ced59a0c1f00c36">&#9670;&nbsp;</a></span>if() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__treatment_advanced___lorazepam_local_8sqf.html#a24de7cefac25694c764dd685bc2eb318">_random</a>&lt;=&#160;</td>
+          <td class="paramname"><em>_chance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab2349926d84171da8eecfa4d0527a322"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2349926d84171da8eecfa4d0527a322">&#9670;&nbsp;</a></span>if() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">_reviveObject isEqualTo &quot;AED&quot;||_reviveObject isEqualTo &quot;AEDX&quot;||_reviveObject isEqualTo &quot;AEDStation&quot;||_reviveObject isEqualTo &quot;AEDXVehicle&quot;                                                                                                                          &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0afeaa1f089471fbabdefa4f7e8945f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0afeaa1f089471fbabdefa4f7e8945f0">&#9670;&nbsp;</a></span>if() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(AdvRhythm)                                                                                                                           &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ba80cfda1d5cde5ea43fdba62b974e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ba80cfda1d5cde5ea43fdba62b974e0">&#9670;&nbsp;</a></span>if() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(enable_CPR_Chances)                                                                                                                         &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48593c47dfde2a30f16fadb9168f87f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48593c47dfde2a30f16fadb9168f87f6">&#9670;&nbsp;</a></span>switch() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch </td>
+          <td>(</td>
+          <td class="paramtype">_medication&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a20f08566f2ae18bbcd01be9bbadde3e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20f08566f2ae18bbcd01be9bbadde3e4">&#9670;&nbsp;</a></span>switch() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch </td>
+          <td>(</td>
+          <td class="paramtype">_reviveObject&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a44188283278f594d7045e80fc1f8de62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44188283278f594d7045e80fc1f8de62">&#9670;&nbsp;</a></span>_amiBoost</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _amiBoost = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d4fe4c63bf02a913a591ef79db76890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d4fe4c63bf02a913a591ef79db76890">&#9670;&nbsp;</a></span>_asystole</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _asystole = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(asystole), 1]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ada69b1ec1a7b0a71e20af44496abcda6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada69b1ec1a7b0a71e20af44496abcda6">&#9670;&nbsp;</a></span>_bloodLoss</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _bloodLoss = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,bloodVolume), 6.0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abd1599c32b8c558c869fb5675c291dd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd1599c32b8c558c869fb5675c291dd1">&#9670;&nbsp;</a></span>_chance</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _chance = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a78a2e9a9daf958d3050fc548e82e0a60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78a2e9a9daf958d3050fc548e82e0a60">&#9670;&nbsp;</a></span>_CPRcount</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _CPRcount = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(CPRcount), 0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8bd2590b6eecc101ceb99127e41acb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8bd2590b6eecc101ceb99127e41acb1">&#9670;&nbsp;</a></span>_epiBoost</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _epiBoost = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a111903705280120b43e9afb653bc861f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a111903705280120b43e9afb653bc861f">&#9670;&nbsp;</a></span>_lidoBoost</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _lidoBoost = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a24de7cefac25694c764dd685bc2eb318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24de7cefac25694c764dd685bc2eb318">&#9670;&nbsp;</a></span>_random</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _random = random 100</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36f61f4eaeb5cc800dae1e506b8e100c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36f61f4eaeb5cc800dae1e506b8e100c">&#9670;&nbsp;</a></span>_randomAmi</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _randomAmi = random 4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42fa556072652b0e57b7916a9b706514"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42fa556072652b0e57b7916a9b706514">&#9670;&nbsp;</a></span>_randomCPR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _randomCPR = random 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0544c3fe466e421738dae463968b70ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0544c3fe466e421738dae463968b70ba">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    <span class="keywordflow">if</span> (<a class="code" href="fnc__cpr_local_8sqf.html#ada69b1ec1a7b0a71e20af44496abcda6">_bloodLoss</a> &gt; 3.6) then {</div>
+<div class="line">        _patient <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [<a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(asystole), 1, <span class="keyword">true</span>];</div>
+<div class="line">        <a class="code" href="fnc__cpr_local_8sqf.html#a9d4fe4c63bf02a913a591ef79db76890">_asystole</a> = _patient <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [<a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(asystole), 1];</div>
+<div class="line">    } <span class="keywordflow">else</span> {</div>
+<div class="line">        _patient <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [<a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(asystole), 2, <span class="keyword">true</span>];</div>
+<div class="line">        <a class="code" href="fnc__cpr_local_8sqf.html#a9d4fe4c63bf02a913a591ef79db76890">_asystole</a> = _patient <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [<a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(asystole), 2];</div>
+<div class="line">    }</div>
+<div class="ttc" id="afnc__check_airway_8sqf_html_a847c9b96415ea629e855c5a3c85929bb"><div class="ttname"><a href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a></div><div class="ttdeci">_patient setVariable[QACEGVAR(medical, triageLevel), 3, true]</div><div class="ttdef"><b>Definition:</b> fnc_checkAirway.sqf:19</div></div>
+<div class="ttc" id="afnc__cpr_local_8sqf_html_a9d4fe4c63bf02a913a591ef79db76890"><div class="ttname"><a href="fnc__cpr_local_8sqf.html#a9d4fe4c63bf02a913a591ef79db76890">_asystole</a></div><div class="ttdeci">private _asystole</div><div class="ttdef"><b>Definition:</b> fnc_cprLocal.sqf:32</div></div>
+<div class="ttc" id="afnc__cpr_local_8sqf_html_ada69b1ec1a7b0a71e20af44496abcda6"><div class="ttname"><a href="fnc__cpr_local_8sqf.html#ada69b1ec1a7b0a71e20af44496abcda6">_bloodLoss</a></div><div class="ttdeci">private _bloodLoss</div><div class="ttdef"><b>Definition:</b> fnc_cprLocal.sqf:23</div></div>
+<div class="ttc" id="afnc__handle_gas_mask_dur_8sqf_html_a525da65154600d184c197d96adf518c5"><div class="ttname"><a href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a></div><div class="ttdeci">!isNil QGVAR(availGasmaskList) &amp;&amp;_unit getVariable[QGVAR(enteredPoison)</div></div>
+<div class="ttc" id="afnc__has_b_v_m_8sqf_html_aa4fbd01846b98cc49ae7f3daa1fef0fb"><div class="ttname"><a href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a></div><div class="ttdeci">_patient getVariable[QGVAR(BVM), false] _patient getVariable[QGVAR(pocketBVM), false]</div><div class="ttdef"><b>Definition:</b> fnc_hasBVM.sqf:20</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ac035c6c11500c2976a638dfb3470e331"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac035c6c11500c2976a638dfb3470e331">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_medic&quot;, &quot;_patient&quot;, &quot;_reviveObject&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

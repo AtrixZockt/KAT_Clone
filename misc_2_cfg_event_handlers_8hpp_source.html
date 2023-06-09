@@ -95,22 +95,22 @@ $(document).ready(function(){initNavTree('misc_2_cfg_event_handlers_8hpp_source.
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">class </span><a class="code" href="class_extended___init___event_handlers.html">Extended_Init_EventHandlers</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">class </span>CAManBase {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <span class="keyword">class </span><a class="code" href="class_a_d_d_o_n.html">ADDON</a> {</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            init = QUOTE([ARR_2((_this select 0), <span class="keyword">false</span>)] call FUNC(init));</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;            init = QUOTE([ARR_2((_this select 0), <span class="keyword">false</span>)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(init));</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        };</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    };</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">class </span>Land_IntravenStand_01_empty_F {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keyword">class </span><a class="code" href="class_a_d_d_o_n.html">ADDON</a> {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            init = QUOTE((_this select 0) setVariable [ARR_3(QQGVAR(stand), [], <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;            init = QUOTE((_this select 0) <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(stand), [], <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        };</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    };</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">class </span>Land_IntravenStand_01_1bag_F {</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        <span class="keyword">class </span><a class="code" href="class_a_d_d_o_n.html">ADDON</a> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            init = QUOTE((_this select 0) setVariable [ARR_3(QQGVAR(stand), [1000], <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;            init = QUOTE((_this select 0) <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(stand), [1000], <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        };</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    };</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">class </span>Land_IntravenStand_01_2bags_F {</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">class </span><a class="code" href="class_a_d_d_o_n.html">ADDON</a> {</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            init = QUOTE((_this select 0) setVariable [ARR_3(QQGVAR(stand), [ARR_2(1000, 1000)], <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;            init = QUOTE((_this select 0) <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(stand), [ARR_2(1000, 1000)], <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        };</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    };</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('misc_2_cfg_event_handlers_8hpp_source.
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_extended___respawn___event_handlers.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_extended___respawn___event_handlers.html">Extended_Respawn_EventHandlers</a> {</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">class </span>CAManBase {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">class </span><a class="code" href="class_a_d_d_o_n.html">ADDON</a> {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            respawn = QUOTE(_this call FUNC(handleRespawn));</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            respawn = QUOTE(_this call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(handleRespawn));</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        };</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    };</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
@@ -132,6 +132,8 @@ $(document).ready(function(){initNavTree('misc_2_cfg_event_handlers_8hpp_source.
 <div class="ttc" id="aclass_extended___post_init___event_handlers_html"><div class="ttname"><a href="class_extended___post_init___event_handlers.html">Extended_PostInit_EventHandlers</a></div><div class="ttdef"><b>Definition:</b> CfgEventHandlers.hpp:21</div></div>
 <div class="ttc" id="aclass_extended___pre_init___event_handlers_html"><div class="ttname"><a href="class_extended___pre_init___event_handlers.html">Extended_PreInit_EventHandlers</a></div><div class="ttdef"><b>Definition:</b> CfgEventHandlers.hpp:6</div></div>
 <div class="ttc" id="aclass_extended___respawn___event_handlers_html"><div class="ttname"><a href="class_extended___respawn___event_handlers.html">Extended_Respawn_EventHandlers</a></div><div class="ttdef"><b>Definition:</b> CfgEventHandlers.hpp:36</div></div>
+<div class="ttc" id="afnc__check_airway_8sqf_html_a847c9b96415ea629e855c5a3c85929bb"><div class="ttname"><a href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a></div><div class="ttdeci">_patient setVariable[QACEGVAR(medical, triageLevel), 3, true]</div><div class="ttdef"><b>Definition:</b> fnc_checkAirway.sqf:19</div></div>
+<div class="ttc" id="afnc__treatment_advanced___cancel_recovery_position_local_8sqf_html_a580dc58ae22fa8819b4c837e05f75954"><div class="ttname"><a href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a></div><div class="ttdeci">_patient call FUNC(handlePuking)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

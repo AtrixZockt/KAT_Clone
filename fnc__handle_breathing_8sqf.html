@@ -81,10 +81,459 @@ $(document).ready(function(){initNavTree('fnc__handle_breathing_8sqf.html',''); 
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">fnc_handleBreathing.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="breathing_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5b04f62365a0a1af6784ba29888c53f8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a5b04f62365a0a1af6784ba29888c53f8">if</a> ((<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[&quot;kat_O2Breathing_PFH&quot;, false])||!(<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(enable))||(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[&quot;KAT_SpO2Change_Exclusion&quot;, false])) exitWith</td></tr>
+<tr class="separator:a5b04f62365a0a1af6784ba29888c53f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3588e1d32a8adc138de7cc88e7171fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#ad3588e1d32a8adc138de7cc88e7171fe">if</a> (!local <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a>) then</td></tr>
+<tr class="separator:ad3588e1d32a8adc138de7cc88e7171fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9cc6d7a1dbd776a1b0faf2e9d473d13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#ae9cc6d7a1dbd776a1b0faf2e9d473d13">if</a> (alive <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a>) exitWith</td></tr>
+<tr class="memdesc:ae9cc6d7a1dbd776a1b0faf2e9d473d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">3m  <a href="fnc__handle_breathing_8sqf.html#ae9cc6d7a1dbd776a1b0faf2e9d473d13">More...</a><br /></td></tr>
+<tr class="separator:ae9cc6d7a1dbd776a1b0faf2e9d473d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb434046dbfa7b6e20f5cb8e6337030d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#acb434046dbfa7b6e20f5cb8e6337030d">if</a> (!(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(lowSpO2ppActive), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]) &amp;&amp;hasInterface &amp;&amp;ACE_Player==<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a>) then</td></tr>
+<tr class="separator:acb434046dbfa7b6e20f5cb8e6337030d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b073fc383621df6e4e0b3e9ead4b8f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a85b073fc383621df6e4e0b3e9ead4b8f">if</a> ((<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[QEGVAR(chemical, airPoisoning), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])||(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(tensionpneumothorax), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])||(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(hemopneumothorax), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])||(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(pneumothorax), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])) then</td></tr>
+<tr class="separator:a85b073fc383621df6e4e0b3e9ead4b8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18865dd4276b3e417d7d1ca1229b0830"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a18865dd4276b3e417d7d1ca1229b0830">if</a> ((<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[QEGVAR(airway, occluded), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])||(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[QEGVAR(airway, obstruction), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])) then</td></tr>
+<tr class="separator:a18865dd4276b3e417d7d1ca1229b0830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af800319b2a383c3946cd76f56c636853"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#af800319b2a383c3946cd76f56c636853">if</a> ((<a class="el" href="fnc__handle_breathing_8sqf.html#a11385af093ebde3f23415bd101545591">_status</a>&lt;=<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(SpO2_dieValue)) &amp;&amp;{ <a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(SpO2_dieActive) &amp;&amp;{ !<a class="el" href="fnc__handle_breathing_8sqf.html#ac3e31e70211966515d4194f03edd7c6a">_blockDeath</a> } }) exitWith</td></tr>
+<tr class="separator:af800319b2a383c3946cd76f56c636853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68da90cccc01fd07be142c06942d6495"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a68da90cccc01fd07be142c06942d6495">if</a> (<a class="el" href="fnc__handle_breathing_8sqf.html#a11385af093ebde3f23415bd101545591">_status</a> &gt; 100) exitWith</td></tr>
+<tr class="separator:a68da90cccc01fd07be142c06942d6495"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a863476035955908124f7ac1888db880a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a863476035955908124f7ac1888db880a">if</a> ([<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a>] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(common, isAwake)) exitWith</td></tr>
+<tr class="separator:a863476035955908124f7ac1888db880a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae71699e61d278fd96dfd65b2570a5a43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#ae71699e61d278fd96dfd65b2570a5a43">params</a> [&quot;_unit&quot;]</td></tr>
+<tr class="separator:ae71699e61d278fd96dfd65b2570a5a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a420fe313fa49f1ec801e4d717e6aade9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a420fe313fa49f1ec801e4d717e6aade9">setVariable</a> [&quot;kat_O2Breathing_PFH&quot;, true]</td></tr>
+<tr class="separator:a420fe313fa49f1ec801e4d717e6aade9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb38871aa009716272be609286fc272"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#adeb38871aa009716272be609286fc272">_airway</a> = <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a></td></tr>
+<tr class="separator:adeb38871aa009716272be609286fc272"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8164399e1cb46aff72ab56009752ea89"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a8164399e1cb46aff72ab56009752ea89">_breathing</a> = <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a></td></tr>
+<tr class="separator:a8164399e1cb46aff72ab56009752ea89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11385af093ebde3f23415bd101545591"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a11385af093ebde3f23415bd101545591">_status</a> = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(airwayStatus), 100]</td></tr>
+<tr class="separator:a11385af093ebde3f23415bd101545591"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c817349c0be2aec1a1e592abe525f34"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a2c817349c0be2aec1a1e592abe525f34">_overstretch</a> = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [QEGVAR(airway,overstretch), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td></tr>
+<tr class="separator:a2c817349c0be2aec1a1e592abe525f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7dccee75143586e01bd1d98a5d1f702"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#ad7dccee75143586e01bd1d98a5d1f702">_heartRate</a> = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,heartRate), 0]</td></tr>
+<tr class="separator:ad7dccee75143586e01bd1d98a5d1f702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e31e70211966515d4194f03edd7c6a"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#ac3e31e70211966515d4194f03edd7c6a">_blockDeath</a> = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,deathblocked), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td></tr>
+<tr class="separator:ac3e31e70211966515d4194f03edd7c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a492d6e2f4f5689190b0b7c7e8b7abaee"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a492d6e2f4f5689190b0b7c7e8b7abaee">_BVMInUse</a> = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(BVMInUse), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td></tr>
+<tr class="separator:a492d6e2f4f5689190b0b7c7e8b7abaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaecd8fe6ebc8cfa6008d9424775d63e7"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#aaecd8fe6ebc8cfa6008d9424775d63e7">_oxygenAssisted</a> = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(oxygenTankConnected), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td></tr>
+<tr class="separator:aaecd8fe6ebc8cfa6008d9424775d63e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a937d8cd5f2a2542f6460882a5e7822af"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a937d8cd5f2a2542f6460882a5e7822af">_output</a> = 0</td></tr>
+<tr class="separator:a937d8cd5f2a2542f6460882a5e7822af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a9be8c574353f8c87edf98834a6b70a"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a0a9be8c574353f8c87edf98834a6b70a">_finalOutput</a> = 0</td></tr>
+<tr class="separator:a0a9be8c574353f8c87edf98834a6b70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80032cd2921c75749834a052b9fbb648"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a80032cd2921c75749834a052b9fbb648">_multiplierPositive</a> = <a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(SpO2_MultiplyPositive)</td></tr>
+<tr class="separator:a80032cd2921c75749834a052b9fbb648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071fdbfff2554f05d0b974db5404dff0"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a071fdbfff2554f05d0b974db5404dff0">_multiplierNegative</a> = <a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(SpO2_MultiplyNegative)</td></tr>
+<tr class="separator:a071fdbfff2554f05d0b974db5404dff0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0bfc41e1543a600ebfca28e4803f08"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__handle_breathing_8sqf.html#a3a0bfc41e1543a600ebfca28e4803f08">CBA_fnc_addPerFrameHandler</a></td></tr>
+<tr class="separator:a3a0bfc41e1543a600ebfca28e4803f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="acb434046dbfa7b6e20f5cb8e6337030d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb434046dbfa7b6e20f5cb8e6337030d">&#9670;&nbsp;</a></span>if() <span class="overload">[1/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(lowSpO2ppActive), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]) &amp;&amp;hasInterface &amp;&amp;&#160;</td>
+          <td class="paramname"><em>ACE_Player</em> = <code>=&#160;<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a></code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad3588e1d32a8adc138de7cc88e7171fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3588e1d32a8adc138de7cc88e7171fe">&#9670;&nbsp;</a></span>if() <span class="overload">[2/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!local&#160;</td>
+          <td class="paramname"><em>_unit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af800319b2a383c3946cd76f56c636853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af800319b2a383c3946cd76f56c636853">&#9670;&nbsp;</a></span>if() <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="fnc__handle_breathing_8sqf.html#a11385af093ebde3f23415bd101545591">_status</a>&lt;=<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(SpO2_dieValue)) &amp;&amp;{ <a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(SpO2_dieActive) &amp;&amp;{ !<a class="el" href="fnc__handle_breathing_8sqf.html#ac3e31e70211966515d4194f03edd7c6a">_blockDeath</a> } }                                                                                                                                                                           &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b04f62365a0a1af6784ba29888c53f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b04f62365a0a1af6784ba29888c53f8">&#9670;&nbsp;</a></span>if() <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[&quot;kat_O2Breathing_PFH&quot;, false])||!(<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(enable))||(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[&quot;KAT_SpO2Change_Exclusion&quot;, false])                                                                                                                                                                              &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18865dd4276b3e417d7d1ca1229b0830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18865dd4276b3e417d7d1ca1229b0830">&#9670;&nbsp;</a></span>if() <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[QEGVAR(airway, occluded), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])||(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[QEGVAR(airway, obstruction), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])                                                                                                                                                                            &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85b073fc383621df6e4e0b3e9ead4b8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b073fc383621df6e4e0b3e9ead4b8f">&#9670;&nbsp;</a></span>if() <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[QEGVAR(chemical, airPoisoning), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])||(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(tensionpneumothorax), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])||(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(hemopneumothorax), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])||(<a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(pneumothorax), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])                                                                                                                                                                             &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a863476035955908124f7ac1888db880a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a863476035955908124f7ac1888db880a">&#9670;&nbsp;</a></span>if() <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">[_unit] call &#160;</td>
+          <td class="paramname"><em>ACEFUNC</em>common, isAwake</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68da90cccc01fd07be142c06942d6495"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68da90cccc01fd07be142c06942d6495">&#9670;&nbsp;</a></span>if() <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__handle_breathing_8sqf.html#a11385af093ebde3f23415bd101545591">_status</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">100&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae9cc6d7a1dbd776a1b0faf2e9d473d13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9cc6d7a1dbd776a1b0faf2e9d473d13">&#9670;&nbsp;</a></span>if() <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">alive&#160;</td>
+          <td class="paramname"><em>_unit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>3m </p>
+<p>8:30m</p>
+<p>6m</p>
+<p>4m </p>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="adeb38871aa009716272be609286fc272"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adeb38871aa009716272be609286fc272">&#9670;&nbsp;</a></span>_airway</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _airway = <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac3e31e70211966515d4194f03edd7c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3e31e70211966515d4194f03edd7c6a">&#9670;&nbsp;</a></span>_blockDeath</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _blockDeath = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,deathblocked), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8164399e1cb46aff72ab56009752ea89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8164399e1cb46aff72ab56009752ea89">&#9670;&nbsp;</a></span>_breathing</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _breathing = <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a492d6e2f4f5689190b0b7c7e8b7abaee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a492d6e2f4f5689190b0b7c7e8b7abaee">&#9670;&nbsp;</a></span>_BVMInUse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _BVMInUse = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(BVMInUse), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0a9be8c574353f8c87edf98834a6b70a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a9be8c574353f8c87edf98834a6b70a">&#9670;&nbsp;</a></span>_finalOutput</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _finalOutput = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad7dccee75143586e01bd1d98a5d1f702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7dccee75143586e01bd1d98a5d1f702">&#9670;&nbsp;</a></span>_heartRate</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _heartRate = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,heartRate), 0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a071fdbfff2554f05d0b974db5404dff0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a071fdbfff2554f05d0b974db5404dff0">&#9670;&nbsp;</a></span>_multiplierNegative</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _multiplierNegative = <a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(SpO2_MultiplyNegative)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80032cd2921c75749834a052b9fbb648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80032cd2921c75749834a052b9fbb648">&#9670;&nbsp;</a></span>_multiplierPositive</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _multiplierPositive = <a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(SpO2_MultiplyPositive)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a937d8cd5f2a2542f6460882a5e7822af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a937d8cd5f2a2542f6460882a5e7822af">&#9670;&nbsp;</a></span>_output</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _output = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c817349c0be2aec1a1e592abe525f34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c817349c0be2aec1a1e592abe525f34">&#9670;&nbsp;</a></span>_overstretch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _overstretch = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [QEGVAR(airway,overstretch), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaecd8fe6ebc8cfa6008d9424775d63e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaecd8fe6ebc8cfa6008d9424775d63e7">&#9670;&nbsp;</a></span>_oxygenAssisted</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _oxygenAssisted = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(oxygenTankConnected), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a11385af093ebde3f23415bd101545591"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11385af093ebde3f23415bd101545591">&#9670;&nbsp;</a></span>_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _status = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(airwayStatus), 100]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a0bfc41e1543a600ebfca28e4803f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0bfc41e1543a600ebfca28e4803f08">&#9670;&nbsp;</a></span>CBA_fnc_addPerFrameHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call CBA_fnc_addPerFrameHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae71699e61d278fd96dfd65b2570a5a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71699e61d278fd96dfd65b2570a5a43">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_args params[&quot;_unit&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a420fe313fa49f1ec801e4d717e6aade9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a420fe313fa49f1ec801e4d717e6aade9">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__ui__manage_airway_8sqf.html#a337b41a7c0f477ea0db64ed9e061c763">_unit</a> setVariable[&quot;kat_O2Breathing_PFH&quot;, true]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
