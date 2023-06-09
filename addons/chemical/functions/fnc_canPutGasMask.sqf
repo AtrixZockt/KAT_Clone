@@ -1,19 +1,13 @@
 #include "script_component.hpp"
-/*
- * Author: DiGii
- * 
- * Arguments:
- * 0: Caller <OBJECT>
- * 1: Target <OBJECT>
+/**
+ * A brief history of JavaDoc-style (C-style) comments.
  *
- * Return Value:
- * NONE
+ * This is the typical JavaDoc-style C-style comment. It starts with two
+ * asterisks.
  *
- * Example:
- * [player, cursorTarget] call kat_chemical_fnc_canPutGasMask;
- *
- * Public: No
-*/
+ * @param theory Even if there is only one possible unified theory. it is just a
+ *               set of rules and equations.
+ */
 
 params ["_medic", "_patient"];
 
