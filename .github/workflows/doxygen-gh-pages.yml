@@ -12,7 +12,7 @@ jobs:
     - name: Set execute permission for sqf_filter.py
       uses: ./set_permission
       with:
-        working_directory: ./
+        working_directory: ..
 
     - name: doxygen-github-pages-action
       uses: DenverCoder1/doxygen-github-pages-action@v1.3.0
