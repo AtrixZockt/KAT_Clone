@@ -158,12 +158,14 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">private</span> var = getText (cfg); \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">private</span> var = <a class="code" href="fnc__treatment_advanced__airway_local_8sqf.html#af6920bbf7bb4cf294707b8ce72c6ca64">getText</a> (cfg); \</div>
 <div class="line">    if (isNil var) then { \</div>
 <div class="line">        var = compile var; \</div>
 <div class="line">    } <span class="keywordflow">else</span> { \</div>
-<div class="line">        var = missionNamespace getVariable var; \</div>
+<div class="line">        var = missionNamespace <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> var; \</div>
 <div class="line">    }</div>
+<div class="ttc" id="afnc__has_b_v_m_8sqf_html_aa4fbd01846b98cc49ae7f3daa1fef0fb"><div class="ttname"><a href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a></div><div class="ttdeci">_patient getVariable[QGVAR(BVM), false] _patient getVariable[QGVAR(pocketBVM), false]</div><div class="ttdef"><b>Definition:</b> fnc_hasBVM.sqf:20</div></div>
+<div class="ttc" id="afnc__treatment_advanced__airway_local_8sqf_html_af6920bbf7bb4cf294707b8ce72c6ca64"><div class="ttname"><a href="fnc__treatment_advanced__airway_local_8sqf.html#af6920bbf7bb4cf294707b8ce72c6ca64">getText</a></div><div class="ttdeci">call getText(configFile &gt;&gt; &quot;CfgWeapons&quot; &gt;&gt; _usedItem &gt;&gt; &quot;displayName&quot;)]] call ACEFUNC(medical_treatment</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -183,7 +185,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (isText (cfg)) then { \</div>
-<div class="line">        missionNamespace getVariable [getText (cfg), 0]; \</div>
+<div class="line">        missionNamespace <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [<a class="code" href="fnc__treatment_advanced__airway_local_8sqf.html#af6920bbf7bb4cf294707b8ce72c6ca64">getText</a> (cfg), 0]; \</div>
 <div class="line">    } <span class="keywordflow">else</span> { \</div>
 <div class="line">        getNumber (cfg); \</div>
 <div class="line">    }</div>

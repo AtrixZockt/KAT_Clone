@@ -81,16 +81,221 @@ $(document).ready(function(){initNavTree('fnc__chem_detector_8sqf.html',''); ini
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/chemical/functions/fnc_chemDetector.sqf File Reference</div>  </div>
+<div class="title">fnc_chemDetector.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="chemical_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a33e05611d7aff5be80ebabc243f43e99"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__chem_detector_8sqf.html#a33e05611d7aff5be80ebabc243f43e99">if</a> (!(<a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(enteredPoison), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])) then</td></tr>
+<tr class="separator:a33e05611d7aff5be80ebabc243f43e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add01a021402bd917c6fdba78ee7dcd23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> &amp;&amp;[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(enteredPoison), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>] ChemicalDetector_01_watch_F&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a> (assigneditems <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a>) }</td></tr>
+<tr class="separator:add01a021402bd917c6fdba78ee7dcd23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d333d1b0632c73e3bfb292c29acb68f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__chem_detector_8sqf.html#a7d333d1b0632c73e3bfb292c29acb68f">if</a> (_thread&lt; 0) then</td></tr>
+<tr class="separator:a7d333d1b0632c73e3bfb292c29acb68f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87d25d342460c50e62c2a64c6b51b46a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__chem_detector_8sqf.html#a87d25d342460c50e62c2a64c6b51b46a">if</a> (_thread &gt; 1) then</td></tr>
+<tr class="separator:a87d25d342460c50e62c2a64c6b51b46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7d0f484d778e784992dd0bebdfa4b75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__chem_detector_8sqf.html#af7d0f484d778e784992dd0bebdfa4b75">if</a> (<a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(chemDetectorState), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>] &amp;&amp;<a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(gasPercentage), 0] &gt;=0.1 &amp;&amp;&quot;ChemicalDetector_01_watch_F&quot; in(assigneditems <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a>)) then</td></tr>
+<tr class="separator:af7d0f484d778e784992dd0bebdfa4b75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ae71699e61d278fd96dfd65b2570a5a43"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__chem_detector_8sqf.html#ae71699e61d278fd96dfd65b2570a5a43">params</a> [&quot;_unit&quot;]</td></tr>
+<tr class="separator:ae71699e61d278fd96dfd65b2570a5a43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bcbe59d3404eaa90c3bbbf33b93325a"><td class="memItemLeft" align="right" valign="top">KAT_CHEM_DETECTOR&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__chem_detector_8sqf.html#a1bcbe59d3404eaa90c3bbbf33b93325a">cutRsc</a> [&quot;RscWeaponChemicalDetector&quot;, &quot;PLAIN&quot;, 1, false]</td></tr>
+<tr class="separator:a1bcbe59d3404eaa90c3bbbf33b93325a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d005117da0e8d4509f2ee385ea13403"><td class="memItemLeft" align="right" valign="top">_obj&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__chem_detector_8sqf.html#a9d005117da0e8d4509f2ee385ea13403">ctrlAnimateModel</a> [&quot;Threat_Level_Source&quot;, _thread, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td></tr>
+<tr class="separator:a9d005117da0e8d4509f2ee385ea13403"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3d114cf8a1ff3fa41546d72dc1d119"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__chem_detector_8sqf.html#aab3d114cf8a1ff3fa41546d72dc1d119">CBA_fnc_addPerFramehandler</a></td></tr>
+<tr class="separator:aab3d114cf8a1ff3fa41546d72dc1d119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93aad62033c9a7a96a7eba1ca5729a3"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__chem_detector_8sqf.html#ae93aad62033c9a7a96a7eba1ca5729a3">CBA_fnc_waitUntilAndExecute</a></td></tr>
+<tr class="separator:ae93aad62033c9a7a96a7eba1ca5729a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a33e05611d7aff5be80ebabc243f43e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33e05611d7aff5be80ebabc243f43e99">&#9670;&nbsp;</a></span>if() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!&#160;</td>
+          <td class="paramname"><em>_unit getVariable</em>[QGVAR(enteredPoison), false]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87d25d342460c50e62c2a64c6b51b46a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87d25d342460c50e62c2a64c6b51b46a">&#9670;&nbsp;</a></span>if() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>_thread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d333d1b0632c73e3bfb292c29acb68f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d333d1b0632c73e3bfb292c29acb68f">&#9670;&nbsp;</a></span>if() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7d0f484d778e784992dd0bebdfa4b75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7d0f484d778e784992dd0bebdfa4b75">&#9670;&nbsp;</a></span>if() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> &amp;&amp;<a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> &gt;=0.1 &amp;&amp;&quot;ChemicalDetector_01_watch_F&quot;  in   &#160;</td>
+          <td class="paramname">(assigneditems _unit)[QGVAR(chemDetectorState), false][QGVAR(gasPercentage), 0]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="add01a021402bd917c6fdba78ee7dcd23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add01a021402bd917c6fdba78ee7dcd23">&#9670;&nbsp;</a></span>in()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>&amp;&amp; [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(enteredPoison), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>] ChemicalDetector_01_watch_F in </td>
+          <td>(</td>
+          <td class="paramtype">assigneditems&#160;</td>
+          <td class="paramname"><em>_unit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aab3d114cf8a1ff3fa41546d72dc1d119"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3d114cf8a1ff3fa41546d72dc1d119">&#9670;&nbsp;</a></span>CBA_fnc_addPerFramehandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call CBA_fnc_addPerFramehandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae93aad62033c9a7a96a7eba1ca5729a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93aad62033c9a7a96a7eba1ca5729a3">&#9670;&nbsp;</a></span>CBA_fnc_waitUntilAndExecute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call CBA_fnc_waitUntilAndExecute</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9d005117da0e8d4509f2ee385ea13403"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d005117da0e8d4509f2ee385ea13403">&#9670;&nbsp;</a></span>ctrlAnimateModel</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_obj ctrlAnimateModel[&quot;Threat_Level_Source&quot;, _thread, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1bcbe59d3404eaa90c3bbbf33b93325a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bcbe59d3404eaa90c3bbbf33b93325a">&#9670;&nbsp;</a></span>cutRsc</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">KAT_CHEM_DETECTOR cutRsc[&quot;RscWeaponChemicalDetector&quot;, &quot;PLAIN&quot;, 1, false]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae71699e61d278fd96dfd65b2570a5a43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae71699e61d278fd96dfd65b2570a5a43">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_args params[&quot;_unit&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        <a class="code" href="fnc__chem_detector_8sqf.html#ae71699e61d278fd96dfd65b2570a5a43">params</a>[<span class="stringliteral">&quot;_unit&quot;</span>, <span class="stringliteral">&quot;_obj&quot;</span>]</div>
+<div class="ttc" id="afnc__chem_detector_8sqf_html_ae71699e61d278fd96dfd65b2570a5a43"><div class="ttname"><a href="fnc__chem_detector_8sqf.html#ae71699e61d278fd96dfd65b2570a5a43">params</a></div><div class="ttdeci">params[&quot;_unit&quot;]</div><div class="ttdef"><b>Definition:</b> fnc_chemDetector.sqf:16</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__chem_detector_8sqf.html">fnc_chemDetector.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_70bdaf491c87277ceefb32489d937460.html">chemical</a></li><li class="navelem"><a class="el" href="dir_31799ff2aea244fcb084af843fe6cf02.html">functions</a></li><li class="navelem"><a class="el" href="fnc__chem_detector_8sqf.html">fnc_chemDetector.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

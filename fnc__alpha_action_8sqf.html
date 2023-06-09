@@ -81,16 +81,131 @@ $(document).ready(function(){initNavTree('fnc__alpha_action_8sqf.html',''); init
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/pharma/functions/fnc_alphaAction.sqf File Reference</div>  </div>
+<div class="title">fnc_alphaAction.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="pharma_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:aaafdb3f3dced1fe82ccb112e0edf5fa6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__alpha_action_8sqf.html#aaafdb3f3dced1fe82ccb112e0edf5fa6">STRING_BODY_PARTS</a>&#160;&#160;&#160;[&quot;head&quot;, &quot;body&quot;, &quot;left arm&quot;, &quot;right arm&quot;, &quot;left leg&quot;, &quot;right leg&quot;]</td></tr>
+<tr class="separator:aaafdb3f3dced1fe82ccb112e0edf5fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a3d9a182df7feb5e142d800af4ec704a4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__alpha_action_8sqf.html#a3d9a182df7feb5e142d800af4ec704a4">if</a> (_alphaAction &gt; 2) exitWith</td></tr>
+<tr class="separator:a3d9a182df7feb5e142d800af4ec704a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc65c1eb8c5c86fb2b9bd9c3a995fc7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__alpha_action_8sqf.html#abc65c1eb8c5c86fb2b9bd9c3a995fc7b">if</a> (_alphaAction&lt; 0.5) exitWith</td></tr>
+<tr class="separator:abc65c1eb8c5c86fb2b9bd9c3a995fc7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a27c78036dcd29de564a6d1449e244b41"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__alpha_action_8sqf.html#a27c78036dcd29de564a6d1449e244b41">params</a> [&quot;_patient&quot;, &quot;_value&quot;]</td></tr>
+<tr class="separator:a27c78036dcd29de564a6d1449e244b41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b15f991133837c568a47e4ae494566"><td class="memItemLeft" align="right" valign="top">_patient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__alpha_action_8sqf.html#a06b15f991133837c568a47e4ae494566">setVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(alphaAction), _alphaAction, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td></tr>
+<tr class="separator:a06b15f991133837c568a47e4ae494566"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="aaafdb3f3dced1fe82ccb112e0edf5fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaafdb3f3dced1fe82ccb112e0edf5fa6">&#9670;&nbsp;</a></span>STRING_BODY_PARTS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define STRING_BODY_PARTS&#160;&#160;&#160;[&quot;head&quot;, &quot;body&quot;, &quot;left arm&quot;, &quot;right arm&quot;, &quot;left leg&quot;, &quot;right leg&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a3d9a182df7feb5e142d800af4ec704a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d9a182df7feb5e142d800af4ec704a4">&#9670;&nbsp;</a></span>if() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>_alphaAction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abc65c1eb8c5c86fb2b9bd9c3a995fc7b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc65c1eb8c5c86fb2b9bd9c3a995fc7b">&#9670;&nbsp;</a></span>if() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a27c78036dcd29de564a6d1449e244b41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27c78036dcd29de564a6d1449e244b41">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_patient&quot;, &quot;_value&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06b15f991133837c568a47e4ae494566"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06b15f991133837c568a47e4ae494566">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_patient setVariable[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(alphaAction), _alphaAction, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__alpha_action_8sqf.html">fnc_alphaAction.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_dc39b52e4bfa30dbe36e264d4ae12071.html">pharma</a></li><li class="navelem"><a class="el" href="dir_2a5e03e2d8a3b508cfdf78cd6a958ade.html">functions</a></li><li class="navelem"><a class="el" href="fnc__alpha_action_8sqf.html">fnc_alphaAction.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

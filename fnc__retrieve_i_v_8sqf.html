@@ -81,16 +81,137 @@ $(document).ready(function(){initNavTree('fnc__retrieve_i_v_8sqf.html',''); init
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/pharma/functions/fnc_retrieveIV.sqf File Reference</div>  </div>
+<div class="title">fnc_retrieveIV.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="pharma_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a4098313ee08eceda9820982460da4eee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__retrieve_i_v_8sqf.html#a4098313ee08eceda9820982460da4eee">if</a> (<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(IVreuse)) then</td></tr>
+<tr class="separator:a4098313ee08eceda9820982460da4eee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab557c8e1af61a5142fa969dd7c438f6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__retrieve_i_v_8sqf.html#ab557c8e1af61a5142fa969dd7c438f6b">forEach</a> (_patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical, ivBags), []])</td></tr>
+<tr class="separator:ab557c8e1af61a5142fa969dd7c438f6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f59fd35d1d001e72331e9a5dd0ed883"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__retrieve_i_v_8sqf.html#a0f59fd35d1d001e72331e9a5dd0ed883">if</a> (_totalIvVolume &gt;=1) then</td></tr>
+<tr class="separator:a0f59fd35d1d001e72331e9a5dd0ed883"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a477708cf92e063f3d97f4ffcbb1eb713"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__retrieve_i_v_8sqf.html#a477708cf92e063f3d97f4ffcbb1eb713">params</a> [&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;]</td></tr>
+<tr class="separator:a477708cf92e063f3d97f4ffcbb1eb713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a130954b87d2fdd3913298a37e0daa9d3"><td class="memItemLeft" align="right" valign="top">_IVarray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__retrieve_i_v_8sqf.html#a130954b87d2fdd3913298a37e0daa9d3">set</a> [_partIndex, 0]</td></tr>
+<tr class="separator:a130954b87d2fdd3913298a37e0daa9d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cdc3b9abdd111629f1e1dd103321ea2"><td class="memItemLeft" align="right" valign="top">_patient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__retrieve_i_v_8sqf.html#a6cdc3b9abdd111629f1e1dd103321ea2">setVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(IV), _IVarray, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td></tr>
+<tr class="separator:a6cdc3b9abdd111629f1e1dd103321ea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ab557c8e1af61a5142fa969dd7c438f6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab557c8e1af61a5142fa969dd7c438f6b">&#9670;&nbsp;</a></span>forEach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">forEach </td>
+          <td>(</td>
+          <td class="paramtype">_patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>]&#160;</td>
+          <td class="paramname">[QACEGVAR(medical, ivBags),[]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0f59fd35d1d001e72331e9a5dd0ed883"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f59fd35d1d001e72331e9a5dd0ed883">&#9670;&nbsp;</a></span>if() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">_totalIvVolume &gt;=&#160;</td>
+          <td class="paramname"><em>1</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4098313ee08eceda9820982460da4eee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4098313ee08eceda9820982460da4eee">&#9670;&nbsp;</a></span>if() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>GVAR(IVreuse)</em> = <code>=&#160;_partIndex</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a477708cf92e063f3d97f4ffcbb1eb713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a477708cf92e063f3d97f4ffcbb1eb713">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a130954b87d2fdd3913298a37e0daa9d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a130954b87d2fdd3913298a37e0daa9d3">&#9670;&nbsp;</a></span>set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_IVarray set[_partIndex, 0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6cdc3b9abdd111629f1e1dd103321ea2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cdc3b9abdd111629f1e1dd103321ea2">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_patient setVariable[<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical, ivBags), _newArray, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__retrieve_i_v_8sqf.html">fnc_retrieveIV.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_dc39b52e4bfa30dbe36e264d4ae12071.html">pharma</a></li><li class="navelem"><a class="el" href="dir_2a5e03e2d8a3b508cfdf78cd6a958ade.html">functions</a></li><li class="navelem"><a class="el" href="fnc__retrieve_i_v_8sqf.html">fnc_retrieveIV.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

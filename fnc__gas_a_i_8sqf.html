@@ -81,16 +81,121 @@ $(document).ready(function(){initNavTree('fnc__gas_a_i_8sqf.html',''); initResiz
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/chemical/functions/fnc_gasAI.sqf File Reference</div>  </div>
+<div class="title">fnc_gasAI.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="chemical_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad31d4bc67ed2a7cdfa541bb325872e70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__gas_a_i_8sqf.html#ad31d4bc67ed2a7cdfa541bb325872e70">if</a> (!(<a class="el" href="fnc__open_medical_menu_8sqf.html#ac4fa1228de3ea3580e7ae776830e1c1b">_logic</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(gas_active), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])||!(alive <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a>)||isNull <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a>) then</td></tr>
+<tr class="separator:ad31d4bc67ed2a7cdfa541bb325872e70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae39b8767e5eab95fe8d2a457797f7a52"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__gas_a_i_8sqf.html#ae39b8767e5eab95fe8d2a457797f7a52">if</a> (!(<a class="el" href="fnc__open_medical_menu_8sqf.html#ac4fa1228de3ea3580e7ae776830e1c1b">_logic</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(gas_active), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])||isNull <a class="el" href="fnc__open_medical_menu_8sqf.html#ac4fa1228de3ea3580e7ae776830e1c1b">_logic</a>||!(alive <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a>)||<a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[&quot;ACE_isUnconscious&quot;, false]) exitWith</td></tr>
+<tr class="separator:ae39b8767e5eab95fe8d2a457797f7a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06df6c2405efe273423d91e1cfd5a31a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__gas_a_i_8sqf.html#a06df6c2405efe273423d91e1cfd5a31a">if</a> ((<a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> distance <a class="el" href="fnc__gas_check_local_8sqf.html#afd13d052360380af7478b2b2f5c22be6">_pos</a>)&lt;=_radius_max &amp;&amp;!(<a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(enteredPoison), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])) then</td></tr>
+<tr class="separator:a06df6c2405efe273423d91e1cfd5a31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a4181bc454de28eae76b9673353d60494"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__gas_a_i_8sqf.html#a4181bc454de28eae76b9673353d60494">params</a> [&quot;_unit&quot;, &quot;<a class="el" href="fnc__open_medical_menu_8sqf.html#ac4fa1228de3ea3580e7ae776830e1c1b">_logic</a>&quot;, &quot;<a class="el" href="fnc__gas_check_local_8sqf.html#afd13d052360380af7478b2b2f5c22be6">_pos</a>&quot;, &quot;_radius_max&quot;, &quot;_gastype&quot;]</td></tr>
+<tr class="separator:a4181bc454de28eae76b9673353d60494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0bfc41e1543a600ebfca28e4803f08"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__gas_a_i_8sqf.html#a3a0bfc41e1543a600ebfca28e4803f08">CBA_fnc_addPerFrameHandler</a></td></tr>
+<tr class="separator:a3a0bfc41e1543a600ebfca28e4803f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ad31d4bc67ed2a7cdfa541bb325872e70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad31d4bc67ed2a7cdfa541bb325872e70">&#9670;&nbsp;</a></span>if() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!(<a class="el" href="fnc__open_medical_menu_8sqf.html#ac4fa1228de3ea3580e7ae776830e1c1b">_logic</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(gas_active), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])||!(alive <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a>)||isNull&#160;</td>
+          <td class="paramname"><em>_unit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae39b8767e5eab95fe8d2a457797f7a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae39b8767e5eab95fe8d2a457797f7a52">&#9670;&nbsp;</a></span>if() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!(<a class="el" href="fnc__open_medical_menu_8sqf.html#ac4fa1228de3ea3580e7ae776830e1c1b">_logic</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(gas_active), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>])||isNull <a class="el" href="fnc__open_medical_menu_8sqf.html#ac4fa1228de3ea3580e7ae776830e1c1b">_logic</a>||!(alive <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a>)||<a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a>&#160;</td>
+          <td class="paramname"><em>getVariable</em>[&quot;ACE_isUnconscious&quot;, false]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06df6c2405efe273423d91e1cfd5a31a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06df6c2405efe273423d91e1cfd5a31a">&#9670;&nbsp;</a></span>if() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>(_unit distance _pos)&lt;=_radius_max &amp;&amp;!(_unit getVariable[QGVAR(enteredPoison), false])</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a3a0bfc41e1543a600ebfca28e4803f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0bfc41e1543a600ebfca28e4803f08">&#9670;&nbsp;</a></span>CBA_fnc_addPerFrameHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call CBA_fnc_addPerFrameHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4181bc454de28eae76b9673353d60494"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4181bc454de28eae76b9673353d60494">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_args params[&quot;_unit&quot;, &quot;<a class="el" href="fnc__open_medical_menu_8sqf.html#ac4fa1228de3ea3580e7ae776830e1c1b">_logic</a>&quot;, &quot;<a class="el" href="fnc__gas_check_local_8sqf.html#afd13d052360380af7478b2b2f5c22be6">_pos</a>&quot;, &quot;_radius_max&quot;, &quot;_gastype&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__gas_a_i_8sqf.html">fnc_gasAI.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_70bdaf491c87277ceefb32489d937460.html">chemical</a></li><li class="navelem"><a class="el" href="dir_31799ff2aea244fcb084af843fe6cf02.html">functions</a></li><li class="navelem"><a class="el" href="fnc__gas_a_i_8sqf.html">fnc_gasAI.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

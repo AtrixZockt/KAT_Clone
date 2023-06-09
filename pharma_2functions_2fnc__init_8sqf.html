@@ -81,16 +81,177 @@ $(document).ready(function(){initNavTree('pharma_2functions_2fnc__init_8sqf.html
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/pharma/functions/fnc_init.sqf File Reference</div>  </div>
+<div class="title">fnc_init.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="pharma_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ad6656293841d151ec3d32020f8053a7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pharma_2functions_2fnc__init_8sqf.html#ad6656293841d151ec3d32020f8053a7e">if</a> (!local <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a>) exitWith</td></tr>
+<tr class="separator:ad6656293841d151ec3d32020f8053a7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9deaec9814cbe30bed35f7b1c4b61094"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pharma_2functions_2fnc__init_8sqf.html#a9deaec9814cbe30bed35f7b1c4b61094">if</a> (!_alive) exitWith</td></tr>
+<tr class="separator:a9deaec9814cbe30bed35f7b1c4b61094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13241ac8f0a439efa26833b0f08878e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pharma_2functions_2fnc__init_8sqf.html#aa13241ac8f0a439efa26833b0f08878e">if</a> (_medication <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a>[&quot;Epinephrine&quot;, &quot;Phenylephrine&quot;, &quot;Nitroglycerin&quot;, &quot;Lidocaine&quot;, &quot;Norepinephrine&quot;]) exitWith</td></tr>
+<tr class="separator:aa13241ac8f0a439efa26833b0f08878e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00880a9e6fb8c0b0c753f72fb5f4d0c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pharma_2functions_2fnc__init_8sqf.html#a00880a9e6fb8c0b0c753f72fb5f4d0c3">forEach</a> (_medicationArray)</td></tr>
+<tr class="separator:a00880a9e6fb8c0b0c753f72fb5f4d0c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea981f0f6783726c909a754969bf51e1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pharma_2functions_2fnc__init_8sqf.html#aea981f0f6783726c909a754969bf51e1">if</a> (_action) then</td></tr>
+<tr class="separator:aea981f0f6783726c909a754969bf51e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a150db98a66c81c8f5c1cfd8308ba1465"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pharma_2functions_2fnc__init_8sqf.html#a150db98a66c81c8f5c1cfd8308ba1465">params</a> [&quot;_unit&quot;, [&quot;_isRespawn&quot;, true]]</td></tr>
+<tr class="separator:a150db98a66c81c8f5c1cfd8308ba1465"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a477e415fa9fa99ccbe6b18d48875f069"><td class="memItemLeft" align="right" valign="top"><a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pharma_2functions_2fnc__init_8sqf.html#a477e415fa9fa99ccbe6b18d48875f069">setVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(IV), [0, 0, 0, 0, 0, 0], <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td></tr>
+<tr class="separator:a477e415fa9fa99ccbe6b18d48875f069"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0bfc41e1543a600ebfca28e4803f08"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pharma_2functions_2fnc__init_8sqf.html#a3a0bfc41e1543a600ebfca28e4803f08">CBA_fnc_addPerFrameHandler</a></td></tr>
+<tr class="separator:a3a0bfc41e1543a600ebfca28e4803f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a00880a9e6fb8c0b0c753f72fb5f4d0c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00880a9e6fb8c0b0c753f72fb5f4d0c3">&#9670;&nbsp;</a></span>forEach()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">forEach </td>
+          <td>(</td>
+          <td class="paramtype">_medicationArray&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9deaec9814cbe30bed35f7b1c4b61094"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9deaec9814cbe30bed35f7b1c4b61094">&#9670;&nbsp;</a></span>if() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!&#160;</td>
+          <td class="paramname"><em>_alive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6656293841d151ec3d32020f8053a7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6656293841d151ec3d32020f8053a7e">&#9670;&nbsp;</a></span>if() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!local&#160;</td>
+          <td class="paramname"><em>_unit</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aea981f0f6783726c909a754969bf51e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea981f0f6783726c909a754969bf51e1">&#9670;&nbsp;</a></span>if() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>_action</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa13241ac8f0a439efa26833b0f08878e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa13241ac8f0a439efa26833b0f08878e">&#9670;&nbsp;</a></span>if() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">_medication <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a>   &#160;</td>
+          <td class="paramname">[&quot;Epinephrine&quot;, &quot;Phenylephrine&quot;, &quot;Nitroglycerin&quot;, &quot;Lidocaine&quot;, &quot;Norepinephrine&quot;]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a3a0bfc41e1543a600ebfca28e4803f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0bfc41e1543a600ebfca28e4803f08">&#9670;&nbsp;</a></span>CBA_fnc_addPerFrameHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call CBA_fnc_addPerFrameHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a150db98a66c81c8f5c1cfd8308ba1465"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a150db98a66c81c8f5c1cfd8308ba1465">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_args params[&quot;_unit&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a477e415fa9fa99ccbe6b18d48875f069"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a477e415fa9fa99ccbe6b18d48875f069">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> setVariable[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(kidneyPressure), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="pharma_2functions_2fnc__init_8sqf.html">fnc_init.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_dc39b52e4bfa30dbe36e264d4ae12071.html">pharma</a></li><li class="navelem"><a class="el" href="dir_2a5e03e2d8a3b508cfdf78cd6a958ade.html">functions</a></li><li class="navelem"><a class="el" href="pharma_2functions_2fnc__init_8sqf.html">fnc_init.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

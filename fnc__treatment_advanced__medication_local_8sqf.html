@@ -81,16 +81,248 @@ $(document).ready(function(){initNavTree('fnc__treatment_advanced__medication_lo
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/pharma/functions/fnc_treatmentAdvanced_medicationLocal.sqf File Reference</div>  </div>
+<div class="title">fnc_treatmentAdvanced_medicationLocal.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="pharma_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:add789fc60a669cc19dfe058173907236"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__medication_local_8sqf.html#add789fc60a669cc19dfe058173907236">MORPHINE_PAIN_SUPPRESSION</a>&#160;&#160;&#160;0.6</td></tr>
+<tr class="separator:add789fc60a669cc19dfe058173907236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a6cac94cdf42efbaa3e4c6eab01dfe878"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__medication_local_8sqf.html#a6cac94cdf42efbaa3e4c6eab01dfe878">TRACE_3</a> (&quot;medicationLocal&quot;, _patient, _bodyPart, _classname)</td></tr>
+<tr class="separator:a6cac94cdf42efbaa3e4c6eab01dfe878"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2163fe612d5f217d1d27bdd5b82fdc34"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__medication_local_8sqf.html#a2163fe612d5f217d1d27bdd5b82fdc34">if</a> (!alive _patient) exitWith</td></tr>
+<tr class="separator:a2163fe612d5f217d1d27bdd5b82fdc34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad57ccd1ba84b94f4bda9fc693df4c7aa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__medication_local_8sqf.html#ad57ccd1ba84b94f4bda9fc693df4c7aa">if</a> (!<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(advancedMedication)) exitWith</td></tr>
+<tr class="separator:ad57ccd1ba84b94f4bda9fc693df4c7aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59420d5dad29f823b116abb4a96515c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__medication_local_8sqf.html#a59420d5dad29f823b116abb4a96515c0">TRACE_1</a> (&quot;Running treatmentMedicationLocal with Advanced configuration for&quot;, _patient)</td></tr>
+<tr class="separator:a59420d5dad29f823b116abb4a96515c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a447c4664fb7fd775f13fd960ab18152e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__medication_local_8sqf.html#a447c4664fb7fd775f13fd960ab18152e">if</a> (<a class="el" href="misc_2script__component_8hpp.html#a908292e87267caa221dd040b9e2a3944">HAS_TOURNIQUET_APPLIED_ON</a>(_patient, _partIndex)) exitWith</td></tr>
+<tr class="separator:a447c4664fb7fd775f13fd960ab18152e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11a0f975ae067c42dcc3d4bae25d7c67"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__medication_local_8sqf.html#a11a0f975ae067c42dcc3d4bae25d7c67">ACEFUNC</a> (medical_status, addMedicationAdjustment)</td></tr>
+<tr class="separator:a11a0f975ae067c42dcc3d4bae25d7c67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a435674e98b7de25bf9da62fd9adcd7"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__medication_local_8sqf.html#a7a435674e98b7de25bf9da62fd9adcd7">FUNC</a> (alphaAction)</td></tr>
+<tr class="separator:a7a435674e98b7de25bf9da62fd9adcd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a55ddb7a452a13dd01034758e9ddce545"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__medication_local_8sqf.html#a55ddb7a452a13dd01034758e9ddce545">params</a> [&quot;_patient&quot;, &quot;_bodyPart&quot;, &quot;_classname&quot;]</td></tr>
+<tr class="separator:a55ddb7a452a13dd01034758e9ddce545"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="add789fc60a669cc19dfe058173907236"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add789fc60a669cc19dfe058173907236">&#9670;&nbsp;</a></span>MORPHINE_PAIN_SUPPRESSION</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MORPHINE_PAIN_SUPPRESSION&#160;&#160;&#160;0.6</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a11a0f975ae067c42dcc3d4bae25d7c67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11a0f975ae067c42dcc3d4bae25d7c67">&#9670;&nbsp;</a></span>ACEFUNC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call ACEFUNC </td>
+          <td>(</td>
+          <td class="paramtype">medical_status&#160;</td>
+          <td class="paramname"><em>medical_status</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">addMedicationAdjustment&#160;</td>
+          <td class="paramname"><em>addMedicationAdjustment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7a435674e98b7de25bf9da62fd9adcd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a435674e98b7de25bf9da62fd9adcd7">&#9670;&nbsp;</a></span>FUNC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call FUNC </td>
+          <td>(</td>
+          <td class="paramtype">alphaAction&#160;</td>
+          <td class="paramname"><em>alphaAction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2163fe612d5f217d1d27bdd5b82fdc34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2163fe612d5f217d1d27bdd5b82fdc34">&#9670;&nbsp;</a></span>if() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!alive&#160;</td>
+          <td class="paramname"><em>_patient</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad57ccd1ba84b94f4bda9fc693df4c7aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad57ccd1ba84b94f4bda9fc693df4c7aa">&#9670;&nbsp;</a></span>if() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">!&#160;</td>
+          <td class="paramname"><em>GVAR</em>advancedMedication</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a447c4664fb7fd775f13fd960ab18152e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a447c4664fb7fd775f13fd960ab18152e">&#9670;&nbsp;</a></span>if() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>HAS_TOURNIQUET_APPLIED_ON(_patient, _partIndex)</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a59420d5dad29f823b116abb4a96515c0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59420d5dad29f823b116abb4a96515c0">&#9670;&nbsp;</a></span>TRACE_1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TRACE_1 </td>
+          <td>(</td>
+          <td class="paramtype">&quot;Running treatmentMedicationLocal with Advanced configuration for&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_patient&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6cac94cdf42efbaa3e4c6eab01dfe878"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6cac94cdf42efbaa3e4c6eab01dfe878">&#9670;&nbsp;</a></span>TRACE_3()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TRACE_3 </td>
+          <td>(</td>
+          <td class="paramtype">&quot;medicationLocal&quot;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_patient&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_bodyPart&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_classname&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a55ddb7a452a13dd01034758e9ddce545"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55ddb7a452a13dd01034758e9ddce545">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_hrIncrease params[&quot;_minIncrease&quot;, &quot;_maxIncrease&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__treatment_advanced__medication_local_8sqf.html">fnc_treatmentAdvanced_medicationLocal.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_dc39b52e4bfa30dbe36e264d4ae12071.html">pharma</a></li><li class="navelem"><a class="el" href="dir_2a5e03e2d8a3b508cfdf78cd6a958ade.html">functions</a></li><li class="navelem"><a class="el" href="fnc__treatment_advanced__medication_local_8sqf.html">fnc_treatmentAdvanced_medicationLocal.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

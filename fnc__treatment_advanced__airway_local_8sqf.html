@@ -81,16 +81,147 @@ $(document).ready(function(){initNavTree('fnc__treatment_advanced__airway_local_
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/airway/functions/fnc_treatmentAdvanced_airwayLocal.sqf File Reference</div>  </div>
+<div class="title">fnc_treatmentAdvanced_airwayLocal.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="airway_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a0c574d7c097f264512702e4b37514918"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__airway_local_8sqf.html#a0c574d7c097f264512702e4b37514918">if</a> (_patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(occluded), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]) exitWith</td></tr>
+<tr class="separator:a0c574d7c097f264512702e4b37514918"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ec1a781749ee79c75ddf041a4cb73a"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__airway_local_8sqf.html#a77ec1a781749ee79c75ddf041a4cb73a">ACEFUNC</a> (medical_treatment, addToTriageCard)</td></tr>
+<tr class="separator:a77ec1a781749ee79c75ddf041a4cb73a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6920bbf7bb4cf294707b8ce72c6ca64"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__airway_local_8sqf.html#af6920bbf7bb4cf294707b8ce72c6ca64">getText</a> (configFile &gt;&gt; &quot;CfgWeapons&quot; &gt;&gt; _usedItem &gt;&gt; &quot;displayName&quot;)]] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#a4824f13815feb568dc30d7f56b4410d9">ACEFUNC</a>(medical_treatment</td></tr>
+<tr class="separator:af6920bbf7bb4cf294707b8ce72c6ca64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a4c65664afbadc03b6f46c7ac387f6641"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__airway_local_8sqf.html#a4c65664afbadc03b6f46c7ac387f6641">params</a> [&quot;_medic&quot;, &quot;_patient&quot;,&quot;_classname&quot;, &quot;<a class="el" href="fnc__handle_treatment_8sqf.html#a4fd740f7e8fb60d72dbcde9b69010cc8">_usedItem</a>&quot;]</td></tr>
+<tr class="separator:a4c65664afbadc03b6f46c7ac387f6641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94bff415900c068d637e90331a517f2e"><td class="memItemLeft" align="right" valign="top">_patient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__airway_local_8sqf.html#a94bff415900c068d637e90331a517f2e">setVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(airway), <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td></tr>
+<tr class="separator:a94bff415900c068d637e90331a517f2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a487f5e669abedfee5b02bc0726e0d23d"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced__airway_local_8sqf.html#a487f5e669abedfee5b02bc0726e0d23d">addToLog</a></td></tr>
+<tr class="separator:a487f5e669abedfee5b02bc0726e0d23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a77ec1a781749ee79c75ddf041a4cb73a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77ec1a781749ee79c75ddf041a4cb73a">&#9670;&nbsp;</a></span>ACEFUNC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call ACEFUNC </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>medical_treatment</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>addToTriageCard</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6920bbf7bb4cf294707b8ce72c6ca64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6920bbf7bb4cf294707b8ce72c6ca64">&#9670;&nbsp;</a></span>getText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call getText </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>configFile &gt;&gt; &quot;CfgWeapons&quot; &gt;&gt; _usedItem &gt;&gt; &quot;displayName&quot;</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c574d7c097f264512702e4b37514918"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c574d7c097f264512702e4b37514918">&#9670;&nbsp;</a></span>if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">_patient&#160;</td>
+          <td class="paramname"><em>getVariable</em>[QGVAR(occluded), false]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a487f5e669abedfee5b02bc0726e0d23d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a487f5e669abedfee5b02bc0726e0d23d">&#9670;&nbsp;</a></span>addToLog</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call addToLog</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4c65664afbadc03b6f46c7ac387f6641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c65664afbadc03b6f46c7ac387f6641">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_medic&quot;, &quot;_patient&quot;,&quot;_classname&quot;, &quot;<a class="el" href="fnc__handle_treatment_8sqf.html#a4fd740f7e8fb60d72dbcde9b69010cc8">_usedItem</a>&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94bff415900c068d637e90331a517f2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94bff415900c068d637e90331a517f2e">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_patient setVariable[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(airway_item), _classname, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__treatment_advanced__airway_local_8sqf.html">fnc_treatmentAdvanced_airwayLocal.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_68f08f543d8ef57c72dcb751e88f2db9.html">airway</a></li><li class="navelem"><a class="el" href="dir_0ec7ac071fffc5968f5248906b55ba45.html">functions</a></li><li class="navelem"><a class="el" href="fnc__treatment_advanced__airway_local_8sqf.html">fnc_treatmentAdvanced_airwayLocal.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

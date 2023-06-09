@@ -81,16 +81,177 @@ $(document).ready(function(){initNavTree('fnc__npwt_treatment_local_8sqf.html','
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/surgery/functions/fnc_npwtTreatmentLocal.sqf File Reference</div>  </div>
+<div class="title">fnc_npwtTreatmentLocal.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="surgery_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa7ee5806c9891bf5449c6fa95246c7bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#aa7ee5806c9891bf5449c6fa95246c7bc">if</a> ((_debridement select _part) !=1) exitWith</td></tr>
+<tr class="separator:aa7ee5806c9891bf5449c6fa95246c7bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a285adf863dd852b70c60a656ac249d3e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a285adf863dd852b70c60a656ac249d3e">if</a> (_bodyPart==_part &amp;&amp;_amount &gt; 0) exitWith</td></tr>
+<tr class="separator:a285adf863dd852b70c60a656ac249d3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb8d4a2d1f8cac8e4ee42357c9c16b62"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#abb8d4a2d1f8cac8e4ee42357c9c16b62">switch</a> (_part) do</td></tr>
+<tr class="separator:abb8d4a2d1f8cac8e4ee42357c9c16b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab008d57ff2e859352a95cdf84e1cc075"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#ab008d57ff2e859352a95cdf84e1cc075">ACEFUNC</a> (medical_engine, updateDamageEffects)</td></tr>
+<tr class="separator:ab008d57ff2e859352a95cdf84e1cc075"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a477708cf92e063f3d97f4ffcbb1eb713"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a477708cf92e063f3d97f4ffcbb1eb713">params</a> [&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;]</td></tr>
+<tr class="separator:a477708cf92e063f3d97f4ffcbb1eb713"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c93c799dc3640787f2eafd5ab54b50b"><td class="memItemLeft" align="right" valign="top">_patient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a7c93c799dc3640787f2eafd5ab54b50b">setVariable</a> [<a class="el" href="surgery_2functions_2script__component_8hpp.html#aa712cc3083f141755da739ae4066df4e">VAR_BANDAGED_WOUNDS</a>, _bandaged, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td></tr>
+<tr class="separator:a7c93c799dc3640787f2eafd5ab54b50b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48fd25b37661fd69b9122cb3d1876cf3"><td class="memItemLeft" align="right" valign="top">_debridement&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__npwt_treatment_local_8sqf.html#a48fd25b37661fd69b9122cb3d1876cf3">set</a> [_part, 0]</td></tr>
+<tr class="separator:a48fd25b37661fd69b9122cb3d1876cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="ab008d57ff2e859352a95cdf84e1cc075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab008d57ff2e859352a95cdf84e1cc075">&#9670;&nbsp;</a></span>ACEFUNC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call ACEFUNC </td>
+          <td>(</td>
+          <td class="paramtype">medical_engine&#160;</td>
+          <td class="paramname"><em>medical_engine</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">updateDamageEffects&#160;</td>
+          <td class="paramname"><em>updateDamageEffects</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa7ee5806c9891bf5449c6fa95246c7bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7ee5806c9891bf5449c6fa95246c7bc">&#9670;&nbsp;</a></span>if() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>(_debridement select _part) !</em> = <code>1</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a285adf863dd852b70c60a656ac249d3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a285adf863dd852b70c60a656ac249d3e">&#9670;&nbsp;</a></span>if() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>_bodyPart</em> = <code>=&#160;_part&#160;&amp;&amp;&#160;_amount</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>0</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abb8d4a2d1f8cac8e4ee42357c9c16b62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb8d4a2d1f8cac8e4ee42357c9c16b62">&#9670;&nbsp;</a></span>switch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>_part</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a477708cf92e063f3d97f4ffcbb1eb713"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a477708cf92e063f3d97f4ffcbb1eb713">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a48fd25b37661fd69b9122cb3d1876cf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48fd25b37661fd69b9122cb3d1876cf3">&#9670;&nbsp;</a></span>set</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_debridement set[_part, 0]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c93c799dc3640787f2eafd5ab54b50b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c93c799dc3640787f2eafd5ab54b50b">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_patient setVariable[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(debridement), _debridement, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__npwt_treatment_local_8sqf.html">fnc_npwtTreatmentLocal.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_881826e38e25fb00b5e36ff124b2249a.html">surgery</a></li><li class="navelem"><a class="el" href="dir_60f9061eb176bae83fdd4d003cfcb468.html">functions</a></li><li class="navelem"><a class="el" href="fnc__npwt_treatment_local_8sqf.html">fnc_npwtTreatmentLocal.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

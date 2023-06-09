@@ -25,5 +25,7 @@ var dir_19324090db7fa5ae9be4a5fd923b156d =
       [ "CfgWeapons", "class_cfg_weapons.html", null ]
     ] ],
     [ "script_component.hpp", "breathing_2script__component_8hpp.html", "breathing_2script__component_8hpp" ],
+    [ "XEH_postInit.sqf", "breathing_2_x_e_h__post_init_8sqf.html", "breathing_2_x_e_h__post_init_8sqf" ],
+    [ "XEH_preInit.sqf", "breathing_2_x_e_h__pre_init_8sqf.html", "breathing_2_x_e_h__pre_init_8sqf" ],
     [ "XEH_PREP.hpp", "breathing_2_x_e_h___p_r_e_p_8hpp.html", "breathing_2_x_e_h___p_r_e_p_8hpp" ]
 ];

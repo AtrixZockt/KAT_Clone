@@ -81,16 +81,293 @@ $(document).ready(function(){initNavTree('fnc__treatment_8sqf.html',''); initRes
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/circulation/functions/fnc_treatment.sqf File Reference</div>  </div>
+<div class="title">fnc_treatment.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="circulation_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a075e80e5a7250bbe7acb21b118d0acd3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_8sqf.html#a075e80e5a7250bbe7acb21b118d0acd3">if</a> (uiNamespace <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(interact_menu, cursorMenuOpened), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]) exitWith</td></tr>
+<tr class="separator:a075e80e5a7250bbe7acb21b118d0acd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76d31100ce20fac7939bf0d1b6ec585e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_8sqf.html#a76d31100ce20fac7939bf0d1b6ec585e">if</a> (_this call <a class="el" href="fnc__menu_p_f_h_8sqf.html#a4824f13815feb568dc30d7f56b4410d9">ACEFUNC</a>(medical_treatment, canTreat)) exitWith</td></tr>
+<tr class="separator:a76d31100ce20fac7939bf0d1b6ec585e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d010afa1a62ea2627eb7627dab938e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_8sqf.html#a7d010afa1a62ea2627eb7627dab938e8">if</a> (_treatmentTime==0) exitWith</td></tr>
+<tr class="separator:a7d010afa1a62ea2627eb7627dab938e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc27f1f0bf867acca1f3cd1b497bf3d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_8sqf.html#affc27f1f0bf867acca1f3cd1b497bf3d">if</a> (alive _patient) then</td></tr>
+<tr class="separator:affc27f1f0bf867acca1f3cd1b497bf3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2888b4cf6b91df442c60b33fa46ff91"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_8sqf.html#aa2888b4cf6b91df442c60b33fa46ff91">if</a> (weaponLowered <a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a>) then</td></tr>
+<tr class="separator:aa2888b4cf6b91df442c60b33fa46ff91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87f84a3b63e3d4a0220be68ef4a5bf74"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_8sqf.html#a87f84a3b63e3d4a0220be68ef4a5bf74">if</a> (vehicle <a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a>==<a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a> &amp;&amp;{_medicAnim !=&quot;&quot;}) then</td></tr>
+<tr class="separator:a87f84a3b63e3d4a0220be68ef4a5bf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9204f3aae5df3d22e57c0501080d1a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_8sqf.html#ab9204f3aae5df3d22e57c0501080d1a7">GET_FUNCTION</a> (<a class="el" href="fnc__treatment_8sqf.html#a05ffff12bd142d61d6ae9a9627d42b1f">_callbackStart</a>, _config &gt;&gt; &quot;callbackStart&quot;)</td></tr>
+<tr class="separator:ab9204f3aae5df3d22e57c0501080d1a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b80c2c3cac6d021e9403433ff2bb51c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_8sqf.html#a9b80c2c3cac6d021e9403433ff2bb51c">ACEFUNC</a> (medical_treatment, treatmentSuccess)</td></tr>
+<tr class="separator:a9b80c2c3cac6d021e9403433ff2bb51c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a99dc966b3ceafa02b905137ea80975"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_8sqf.html#a4a99dc966b3ceafa02b905137ea80975">getText</a> (_config &gt;&gt; &quot;displayNameProgress&quot;)</td></tr>
+<tr class="separator:a4a99dc966b3ceafa02b905137ea80975"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aca814d99be4d8a14dd5421fcf79f5c39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_8sqf.html#aca814d99be4d8a14dd5421fcf79f5c39">params</a> [&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;, &quot;_classname&quot;]</td></tr>
+<tr class="separator:aca814d99be4d8a14dd5421fcf79f5c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e998f119dbea820e02678e62cebed5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_8sqf.html#a15e998f119dbea820e02678e62cebed5">setVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical_treatment, selectedWeaponOnTreatment), weaponState <a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a>]</td></tr>
+<tr class="separator:a15e998f119dbea820e02678e62cebed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05ffff12bd142d61d6ae9a9627d42b1f"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_8sqf.html#a05ffff12bd142d61d6ae9a9627d42b1f">_callbackStart</a></td></tr>
+<tr class="separator:a05ffff12bd142d61d6ae9a9627d42b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e14e8f84c8562a8ca70f82c06928e1f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_8sqf.html#a7e14e8f84c8562a8ca70f82c06928e1f">_callbackProgress</a></td></tr>
+<tr class="separator:a7e14e8f84c8562a8ca70f82c06928e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a9b80c2c3cac6d021e9403433ff2bb51c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b80c2c3cac6d021e9403433ff2bb51c">&#9670;&nbsp;</a></span>ACEFUNC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ACEFUNC </td>
+          <td>(</td>
+          <td class="paramtype">medical_treatment&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">treatmentSuccess&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9204f3aae5df3d22e57c0501080d1a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9204f3aae5df3d22e57c0501080d1a7">&#9670;&nbsp;</a></span>GET_FUNCTION()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">GET_FUNCTION </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__treatment_8sqf.html#a05ffff12bd142d61d6ae9a9627d42b1f">_callbackStart</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">_config &gt;&gt; &quot;callbackStart&quot;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4a99dc966b3ceafa02b905137ea80975"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a99dc966b3ceafa02b905137ea80975">&#9670;&nbsp;</a></span>getText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">getText </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>_config &gt;&gt; &quot;displayNameProgress&quot;</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a76d31100ce20fac7939bf0d1b6ec585e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76d31100ce20fac7939bf0d1b6ec585e">&#9670;&nbsp;</a></span>if() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">_this call &#160;</td>
+          <td class="paramname"><em>ACEFUNC</em>medical_treatment, canTreat</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7d010afa1a62ea2627eb7627dab938e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d010afa1a62ea2627eb7627dab938e8">&#9670;&nbsp;</a></span>if() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>_treatmentTime</em> = <code>=&#160;0</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="affc27f1f0bf867acca1f3cd1b497bf3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc27f1f0bf867acca1f3cd1b497bf3d">&#9670;&nbsp;</a></span>if() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">alive&#160;</td>
+          <td class="paramname"><em>_patient</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a075e80e5a7250bbe7acb21b118d0acd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a075e80e5a7250bbe7acb21b118d0acd3">&#9670;&nbsp;</a></span>if() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">uiNamespace&#160;</td>
+          <td class="paramname"><em>getVariable</em>[QACEGVAR(interact_menu, cursorMenuOpened), false]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a87f84a3b63e3d4a0220be68ef4a5bf74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87f84a3b63e3d4a0220be68ef4a5bf74">&#9670;&nbsp;</a></span>if() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">vehicle&#160;</td>
+          <td class="paramname"><em>_medic</em> = <code>=&#160;<a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a>&#160;&amp;&amp;&#160;{_medicAnim&#160;!=&#160;&quot;&quot;}</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa2888b4cf6b91df442c60b33fa46ff91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2888b4cf6b91df442c60b33fa46ff91">&#9670;&nbsp;</a></span>if() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">weaponLowered&#160;</td>
+          <td class="paramname"><em>_medic</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a7e14e8f84c8562a8ca70f82c06928e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e14e8f84c8562a8ca70f82c06928e1f">&#9670;&nbsp;</a></span>_callbackProgress</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_callbackProgress</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a05ffff12bd142d61d6ae9a9627d42b1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a05ffff12bd142d61d6ae9a9627d42b1f">&#9670;&nbsp;</a></span>_callbackStart</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call _callbackStart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aca814d99be4d8a14dd5421fcf79f5c39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca814d99be4d8a14dd5421fcf79f5c39">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_userAndItem params[&quot;_itemUser&quot;, &quot;<a class="el" href="fnc__handle_treatment_8sqf.html#a4fd740f7e8fb60d72dbcde9b69010cc8">_usedItem</a>&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15e998f119dbea820e02678e62cebed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15e998f119dbea820e02678e62cebed5">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a> setVariable[<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical_treatment, selectedWeaponOnTreatment), weaponState <a class="el" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__treatment_8sqf.html">fnc_treatment.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_5dbcfbcd78d4b03b14d2295126304954.html">circulation</a></li><li class="navelem"><a class="el" href="dir_23a0c90030228b43b5d4f90c150a5268.html">functions</a></li><li class="navelem"><a class="el" href="fnc__treatment_8sqf.html">fnc_treatment.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

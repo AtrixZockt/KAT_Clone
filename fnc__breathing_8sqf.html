@@ -81,16 +81,150 @@ $(document).ready(function(){initNavTree('fnc__breathing_8sqf.html',''); initRes
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
-<div class="title">addons/chemical/functions/fnc_breathing.sqf File Reference</div>  </div>
+<div class="title">fnc_breathing.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="chemical_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:afe3b1e63ae704d9b228dd24179a91d8c"><td class="memItemLeft" align="right" valign="top">goggles <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__breathing_8sqf.html#afe3b1e63ae704d9b228dd24179a91d8c">GVAR</a> (availGasmaskList) }</td></tr>
+<tr class="separator:afe3b1e63ae704d9b228dd24179a91d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18ae849217632486a86f7353cca59ca6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__breathing_8sqf.html#a18ae849217632486a86f7353cca59ca6">if</a> (goggles <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a> <a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(availGasmaskList)||!(alive <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a>)||<a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>[<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical, heartrate), 80]&lt;=0) then</td></tr>
+<tr class="separator:a18ae849217632486a86f7353cca59ca6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ad80e6dbf5370eb74d066e518bb6c753b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__breathing_8sqf.html#ad80e6dbf5370eb74d066e518bb6c753b">params</a> [&quot;_unit&quot;]</td></tr>
+<tr class="separator:ad80e6dbf5370eb74d066e518bb6c753b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0544c3fe466e421738dae463968b70ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__breathing_8sqf.html#a0544c3fe466e421738dae463968b70ba">else</a></td></tr>
+<tr class="separator:a0544c3fe466e421738dae463968b70ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a0bfc41e1543a600ebfca28e4803f08"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__breathing_8sqf.html#a3a0bfc41e1543a600ebfca28e4803f08">CBA_fnc_addPerFrameHandler</a></td></tr>
+<tr class="separator:a3a0bfc41e1543a600ebfca28e4803f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93aad62033c9a7a96a7eba1ca5729a3"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__breathing_8sqf.html#ae93aad62033c9a7a96a7eba1ca5729a3">CBA_fnc_waitUntilAndExecute</a></td></tr>
+<tr class="separator:ae93aad62033c9a7a96a7eba1ca5729a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="afe3b1e63ae704d9b228dd24179a91d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe3b1e63ae704d9b228dd24179a91d8c">&#9670;&nbsp;</a></span>GVAR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">goggles <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a> GVAR </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>availGasmaskList</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a18ae849217632486a86f7353cca59ca6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18ae849217632486a86f7353cca59ca6">&#9670;&nbsp;</a></span>if()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">goggles <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a> <a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(availGasmaskList)||!(alive <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a>)||<a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>&lt;=&#160;</td>
+          <td class="paramname"><em>0</em>[QACEGVAR(medical, heartrate), 80]</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a3a0bfc41e1543a600ebfca28e4803f08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a0bfc41e1543a600ebfca28e4803f08">&#9670;&nbsp;</a></span>CBA_fnc_addPerFrameHandler</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call CBA_fnc_addPerFrameHandler</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae93aad62033c9a7a96a7eba1ca5729a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae93aad62033c9a7a96a7eba1ca5729a3">&#9670;&nbsp;</a></span>CBA_fnc_waitUntilAndExecute</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call CBA_fnc_waitUntilAndExecute</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0544c3fe466e421738dae463968b70ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0544c3fe466e421738dae463968b70ba">&#9670;&nbsp;</a></span>else</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">else</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">                    <span class="keywordflow">if</span> (<a class="code" href="chemical_2script__component_8hpp.html#a88bac3d01f9ad8b451a1265439921276">GET_PAIN_PERCEIVED</a>(<a class="code" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a>) &gt;= 0.4 || {<a class="code" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a>[<a class="code" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical,heartrate), 80] &gt;= 105}) then {</div>
+<div class="line">                        <a class="code" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="code" href="breathing_2_x_e_h__post_init_8sqf.html#a54f7cc9a63f7c1d56feeff76525d0d4c">say3D</a> <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(mask_breath_heavy);</div>
+<div class="line">                    } <span class="keywordflow">else</span> {</div>
+<div class="line">                        <span class="keyword">private</span> <a class="code" href="fnc__listen_lungs_8sqf.html#ac8a33599e1e0ac71c63927f407e3d614">_random</a> = selectRandom[<a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(mask_breath_1), <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(mask_breath_2)];</div>
+<div class="line">                        <a class="code" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="code" href="breathing_2_x_e_h__post_init_8sqf.html#a54f7cc9a63f7c1d56feeff76525d0d4c">say3D</a> <a class="code" href="fnc__listen_lungs_8sqf.html#ac8a33599e1e0ac71c63927f407e3d614">_random</a>;</div>
+<div class="line">                    }</div>
+<div class="ttc" id="abreathing_2_x_e_h__post_init_8sqf_html_a54f7cc9a63f7c1d56feeff76525d0d4c"><div class="ttname"><a href="breathing_2_x_e_h__post_init_8sqf.html#a54f7cc9a63f7c1d56feeff76525d0d4c">say3D</a></div><div class="ttdeci">_unit say3D[QGVAR(pneumothoraxcough), 15]</div><div class="ttdef"><b>Definition:</b> XEH_postInit.sqf:12</div></div>
+<div class="ttc" id="achemical_2script__component_8hpp_html_a88bac3d01f9ad8b451a1265439921276"><div class="ttname"><a href="chemical_2script__component_8hpp.html#a88bac3d01f9ad8b451a1265439921276">GET_PAIN_PERCEIVED</a></div><div class="ttdeci">#define GET_PAIN_PERCEIVED(unit)</div><div class="ttdef"><b>Definition:</b> script_component.hpp:74</div></div>
+<div class="ttc" id="afnc__handle_gas_mask_dur_8sqf_html_a525da65154600d184c197d96adf518c5"><div class="ttname"><a href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a></div><div class="ttdeci">!isNil QGVAR(availGasmaskList) &amp;&amp;_unit getVariable[QGVAR(enteredPoison)</div></div>
+<div class="ttc" id="afnc__has_b_v_m_8sqf_html_aa4fbd01846b98cc49ae7f3daa1fef0fb"><div class="ttname"><a href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a></div><div class="ttdeci">_patient getVariable[QGVAR(BVM), false] _patient getVariable[QGVAR(pocketBVM), false]</div><div class="ttdef"><b>Definition:</b> fnc_hasBVM.sqf:20</div></div>
+<div class="ttc" id="afnc__listen_lungs_8sqf_html_ac8a33599e1e0ac71c63927f407e3d614"><div class="ttname"><a href="fnc__listen_lungs_8sqf.html#ac8a33599e1e0ac71c63927f407e3d614">_random</a></div><div class="ttdeci">_random</div><div class="ttdef"><b>Definition:</b> fnc_listenLungs.sqf:43</div></div>
+<div class="ttc" id="amisc_2_x_e_h__post_init_8sqf_html_adebe514339078247364baad3d019e446"><div class="ttname"><a href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a></div><div class="ttdeci">call call call call call call _unit</div><div class="ttdef"><b>Definition:</b> XEH_postInit.sqf:27</div></div>
+<div class="ttc" id="ascript__macros_8hpp_html_acd1b696f98a5c7658e5c5beb793c8abf"><div class="ttname"><a href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a></div><div class="ttdeci">#define QACEGVAR(module, var)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:67</div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad80e6dbf5370eb74d066e518bb6c753b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad80e6dbf5370eb74d066e518bb6c753b">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">goggles <a class="el" href="misc_2_x_e_h__post_init_8sqf.html#adebe514339078247364baad3d019e446">_unit</a> <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a> _args params[&quot;_unit&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">        <a class="code" href="fnc__breathing_8sqf.html#ad80e6dbf5370eb74d066e518bb6c753b">params</a> [<span class="stringliteral">&quot;_unit&quot;</span>]</div>
+<div class="ttc" id="afnc__breathing_8sqf_html_ad80e6dbf5370eb74d066e518bb6c753b"><div class="ttname"><a href="fnc__breathing_8sqf.html#ad80e6dbf5370eb74d066e518bb6c753b">params</a></div><div class="ttdeci">params[&quot;_unit&quot;]</div><div class="ttdef"><b>Definition:</b> fnc_breathing.sqf:18</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="fnc__breathing_8sqf.html">fnc_breathing.sqf</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_70bdaf491c87277ceefb32489d937460.html">chemical</a></li><li class="navelem"><a class="el" href="dir_31799ff2aea244fcb084af843fe6cf02.html">functions</a></li><li class="navelem"><a class="el" href="fnc__breathing_8sqf.html">fnc_breathing.sqf</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
