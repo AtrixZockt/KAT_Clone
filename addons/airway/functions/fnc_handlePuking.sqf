@@ -1,13 +1,11 @@
 #include "script_component.hpp"
-/*
+/**
  * Author: Katalam, edited by MiszczuZPolski
  * Called when a unit enters the unconscious state. Will add a FrameHandler for puking while unconscious.
  *
- * Arguments:
- * 0: Unit <OBJECT>
+ * @param Unit <OBJECT>
  *
- * Return Value:
- * None
+ * @return None
  *
  * Example:
  * [player] call kat_airway_fnc_handlePuking;
