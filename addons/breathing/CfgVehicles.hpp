@@ -1,3 +1,8 @@
+/**
+* Hallo ich bin ein text
+* \params Int Di
+*/
+
 class CfgVehicles {
     class Item_Base_F;
 
