@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Set execute permission for sqf_filter.py
-      uses: ./.github/workflows/set_permission
+      uses: /.github/workflows/set_permission
       with:
         working_directory: ..
 
