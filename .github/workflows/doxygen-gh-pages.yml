@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Set execute permission for sqf_filter.py
-      uses: /.github/workflows/set_permission
+      uses: ./set_permission
       with:
-        working_directory: ..
+        working_directory: .
 
     - name: doxygen-github-pages-action
       uses: DenverCoder1/doxygen-github-pages-action@v1.3.0
