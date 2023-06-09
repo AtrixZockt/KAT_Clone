@@ -81,115 +81,12 @@ $(document).ready(function(){initNavTree('surgery_2script__component_8hpp.html',
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">script_component.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;\x\kat\addons\main\script_mod.hpp&quot;</code><br />
-<code>#include &quot;\x\kat\addons\main\script_macros.hpp&quot;</code><br />
-<code>#include &quot;\z\ace\addons\medical_engine\script_macros_medical.hpp&quot;</code><br />
-</div>
+
 <p><a href="surgery_2script__component_8hpp_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:a5b6d014748674102c3db9f0270a12f60"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="surgery_2script__component_8hpp.html#a5b6d014748674102c3db9f0270a12f60">COMPONENT</a>&#160;&#160;&#160;surgery</td></tr>
-<tr class="separator:a5b6d014748674102c3db9f0270a12f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab01afd2e19e0811f8b29808f4eafe052"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="surgery_2script__component_8hpp.html#ab01afd2e19e0811f8b29808f4eafe052">COMPONENT_BEAUTIFIED</a>&#160;&#160;&#160;KAT - Surgery</td></tr>
-<tr class="separator:ab01afd2e19e0811f8b29808f4eafe052"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b668e972036d1ec2f7cefd2f96300f7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="surgery_2script__component_8hpp.html#a5b668e972036d1ec2f7cefd2f96300f7">GET_FUNCTION</a>(var,  cfg)</td></tr>
-<tr class="separator:a5b668e972036d1ec2f7cefd2f96300f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a54da3217c44d7c1b70f5ef9f5bb50f91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="surgery_2script__component_8hpp.html#a54da3217c44d7c1b70f5ef9f5bb50f91">GET_NUMBER_ENTRY</a>(cfg)</td></tr>
-<tr class="separator:a54da3217c44d7c1b70f5ef9f5bb50f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="a5b6d014748674102c3db9f0270a12f60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b6d014748674102c3db9f0270a12f60">&#9670;&nbsp;</a></span>COMPONENT</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define COMPONENT&#160;&#160;&#160;surgery</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab01afd2e19e0811f8b29808f4eafe052"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab01afd2e19e0811f8b29808f4eafe052">&#9670;&nbsp;</a></span>COMPONENT_BEAUTIFIED</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define COMPONENT_BEAUTIFIED&#160;&#160;&#160;KAT - Surgery</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5b668e972036d1ec2f7cefd2f96300f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b668e972036d1ec2f7cefd2f96300f7">&#9670;&nbsp;</a></span>GET_FUNCTION</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GET_FUNCTION</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">var, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">cfg&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">private</span> var = getText (cfg); \</div>
-<div class="line">    if (isNil var) then { \</div>
-<div class="line">        var = compile var; \</div>
-<div class="line">    } <span class="keywordflow">else</span> { \</div>
-<div class="line">        var = missionNamespace getVariable var; \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
-</div>
-</div>
-<a id="a54da3217c44d7c1b70f5ef9f5bb50f91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54da3217c44d7c1b70f5ef9f5bb50f91">&#9670;&nbsp;</a></span>GET_NUMBER_ENTRY</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define GET_NUMBER_ENTRY</td>
-          <td>(</td>
-          <td class="paramtype">&#160;</td>
-          <td class="paramname">cfg</td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (isText (cfg)) then { \</div>
-<div class="line">        missionNamespace getVariable [getText (cfg), 0]; \</div>
-<div class="line">    } <span class="keywordflow">else</span> { \</div>
-<div class="line">        getNumber (cfg); \</div>
-<div class="line">    }</div>
-</div><!-- fragment -->
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

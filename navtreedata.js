@@ -25,18 +25,8 @@
 var NAVTREE =
 [
   [ "KAT - Advanced Medical", "index.html", [
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ]
-    ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", "globals_func" ],
-        [ "Macros", "globals_defs.html", "globals_defs" ]
-      ] ]
+      [ "File List", "files.html", "files_dup" ]
     ] ]
   ] ]
 ];
@@ -44,11 +34,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_blood___medical_8hpp.html",
-"chemical_2script__component_8hpp.html#a0571bcfbc82568b97d395c76d8a830d4",
-"dir_0ec7ac071fffc5968f5248906b55ba45.html",
-"globals_e.html",
-"pharma_2script__component_8hpp.html",
-"zeus_2script__component_8hpp.html#af844ad99414bc8aac6b4c3420bf98a43"
+"fnc__remove_i_vbag_8sqf.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

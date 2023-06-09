@@ -85,20 +85,18 @@ $(document).ready(function(){initNavTree('chemical_2_a_c_e___medical___treatment
 <div class="title">ACE_Medical_Treatment_Actions.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="chemical_2_a_c_e___medical___treatment___actions_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span><a class="code" href="class_a_c_e___medical___treatment___actions.html">ACE_Medical_Treatment_Actions</a> { </div>
+<a href="chemical_2_a_c_e___medical___treatment___actions_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span>ACE_Medical_Treatment_Actions { </div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    <span class="keyword">class </span>Diagnose;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    <span class="keyword">class </span>putonGasMask: Diagnose {</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;        displayName = CSTRING(giveGasMask_action);</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;        displayNameProgress = CSTRING(giveGasMask_progress);</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;Head&quot;</span>};</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        allowSelfTreatment = 0;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(giveUnitGasMask);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        callbackSuccess = QFUNC(giveUnitGasMask);</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        condition = QUOTE([ARR_2(_player, _patient)] call FUNC(canPutGasMask));</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        icon = QPATHTOF(ui\Gasmask_icon.paa);</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    };</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
-<div class="ttc" id="aclass_a_c_e___medical___treatment___actions_html"><div class="ttname"><a href="class_a_c_e___medical___treatment___actions.html">ACE_Medical_Treatment_Actions</a></div><div class="ttdef"><b>Definition:</b> ACE_Medical_Treatment_Actions.hpp:1</div></div>
-<div class="ttc" id="ascript__macros_8hpp_html_a49cafa32cfe68863ede76d30e966817b"><div class="ttname"><a href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a></div><div class="ttdeci">#define QFUNC(var1)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

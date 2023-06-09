@@ -85,9 +85,9 @@ $(document).ready(function(){initNavTree('circulation_2_cfg_vehicles_8hpp_source
 <div class="title">CfgVehicles.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="circulation_2_cfg_vehicles_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno"><a class="line" href="circulation_2_cfg_vehicles_8hpp.html#a2756c68845fc3aec150bc401a8300c1f">    1</a></span>&#160;<span class="preprocessor">#define QQPATHTOF(var1) QUOTE(QPATHTOF(var1))</span></div>
+<a href="circulation_2_cfg_vehicles_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#define QQPATHTOF(var1) QUOTE(QPATHTOF(var1))</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">class </span><a class="code" href="class_cfg_vehicles.html">CfgVehicles</a> {</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">class </span>CfgVehicles {</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="keyword">class </span>Item_Base_F;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="keyword">class </span>Items_base_F;</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;    <span class="keyword">class </span>WeaponHolder_Single_limited_item_F;</div>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('circulation_2_cfg_vehicles_8hpp_source
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        vehicleClass = <span class="stringliteral">&quot;Items&quot;</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        model = <span class="stringliteral">&quot;\A3\Structures_F_EPA\Items\Medical\Defibrillator_F.p3d&quot;</span>;</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">class </span>TransportItems {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_AED,1);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            MACRO_ADDITEM(kat_AED,1);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        };</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    };</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
@@ -121,54 +121,54 @@ $(document).ready(function(){initNavTree('circulation_2_cfg_vehicles_8hpp_source
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        displayName = CSTRING(X_Display);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        model = QPATHTOF(models\aedx\aedx.p3d);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">class </span>TransportItems {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_X_AED,1);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            MACRO_ADDITEM(kat_X_AED,1);</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        };</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    };</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">class </span>ACE_medicalSupplyCrate_advanced: ACE_medicalSupplyCrate {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        <span class="keyword">class </span>TransportItems: TransportItems {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_X_AED,1);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_AED,1);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(KAT_Empty_bloodIV_500,10);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(KAT_Empty_bloodIV_250,20);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_crossPanel,5);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            MACRO_ADDITEM(kat_X_AED,1);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            MACRO_ADDITEM(kat_AED,1);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            MACRO_ADDITEM(KAT_Empty_bloodIV_500,10);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            MACRO_ADDITEM(KAT_Empty_bloodIV_250,20);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            MACRO_ADDITEM(kat_crossPanel,5);</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        };</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keyword">class </span>TransportMagazines: TransportMagazines {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            <a class="code" href="script__macros_8hpp.html#aa5ac1958702e084bd2b05d755a5dbc14">MACRO_ADDMAGAZINE</a>(kat_Painkiller,10);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            MACRO_ADDMAGAZINE(kat_Painkiller,10);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        };</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    };</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">class </span>kat_medicalSupplyCrate: ACE_medicalSupplyCrate {</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        displayName = CSTRING(bloodbank);</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">class </span>TransportItems: TransportItems {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_crossPanel,2);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_IO_FAST,15);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_IV_16,15);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(KAT_Empty_bloodIV_250,7);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(KAT_Empty_bloodIV_500,7);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_O,7);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_O_N,7);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_A,7);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_A_N,7);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_B,7);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_B_N,7);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_AB,7);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_AB_N,7);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_O_500,7);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_O_N_500,7);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_A_500,7);</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_A_N_500,7);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_B_500,7);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_B_N_500,7);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_AB_500,7);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_AB_N_500,7);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_O_250,7);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_O_N_250,7);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_A_250,7);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_A_N_250,7);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_B_250,7);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_B_N_250,7);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_AB_250,7);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a>(kat_bloodIV_AB_N_250,7);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            MACRO_ADDITEM(kat_crossPanel,2);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            MACRO_ADDITEM(kat_IO_FAST,15);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            MACRO_ADDITEM(kat_IV_16,15);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            MACRO_ADDITEM(KAT_Empty_bloodIV_250,7);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            MACRO_ADDITEM(KAT_Empty_bloodIV_500,7);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            MACRO_ADDITEM(kat_bloodIV_O,7);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            MACRO_ADDITEM(kat_bloodIV_O_N,7);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            MACRO_ADDITEM(kat_bloodIV_A,7);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            MACRO_ADDITEM(kat_bloodIV_A_N,7);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            MACRO_ADDITEM(kat_bloodIV_B,7);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            MACRO_ADDITEM(kat_bloodIV_B_N,7);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            MACRO_ADDITEM(kat_bloodIV_AB,7);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            MACRO_ADDITEM(kat_bloodIV_AB_N,7);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            MACRO_ADDITEM(kat_bloodIV_O_500,7);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            MACRO_ADDITEM(kat_bloodIV_O_N_500,7);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            MACRO_ADDITEM(kat_bloodIV_A_500,7);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            MACRO_ADDITEM(kat_bloodIV_A_N_500,7);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            MACRO_ADDITEM(kat_bloodIV_B_500,7);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            MACRO_ADDITEM(kat_bloodIV_B_N_500,7);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            MACRO_ADDITEM(kat_bloodIV_AB_500,7);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            MACRO_ADDITEM(kat_bloodIV_AB_N_500,7);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            MACRO_ADDITEM(kat_bloodIV_O_250,7);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            MACRO_ADDITEM(kat_bloodIV_O_N_250,7);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            MACRO_ADDITEM(kat_bloodIV_A_250,7);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            MACRO_ADDITEM(kat_bloodIV_A_N_250,7);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            MACRO_ADDITEM(kat_bloodIV_B_250,7);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            MACRO_ADDITEM(kat_bloodIV_B_N_250,7);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            MACRO_ADDITEM(kat_bloodIV_AB_250,7);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            MACRO_ADDITEM(kat_bloodIV_AB_N_250,7);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        };</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    };</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
@@ -227,9 +227,6 @@ $(document).ready(function(){initNavTree('circulation_2_cfg_vehicles_8hpp_source
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        };</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    };</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;};</div>
-<div class="ttc" id="aclass_cfg_vehicles_html"><div class="ttname"><a href="class_cfg_vehicles.html">CfgVehicles</a></div><div class="ttdoc">Hallo ich bin ein text \params Int Di.</div><div class="ttdef"><b>Definition:</b> CfgVehicles.hpp:1</div></div>
-<div class="ttc" id="ascript__macros_8hpp_html_a85fd80b4d2e700817a6ceddb5dbca6e4"><div class="ttname"><a href="script__macros_8hpp.html#a85fd80b4d2e700817a6ceddb5dbca6e4">MACRO_ADDITEM</a></div><div class="ttdeci">#define MACRO_ADDITEM(ITEM, COUNT)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:48</div></div>
-<div class="ttc" id="ascript__macros_8hpp_html_aa5ac1958702e084bd2b05d755a5dbc14"><div class="ttname"><a href="script__macros_8hpp.html#aa5ac1958702e084bd2b05d755a5dbc14">MACRO_ADDMAGAZINE</a></div><div class="ttdeci">#define MACRO_ADDMAGAZINE(MAGAZINE, COUNT)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

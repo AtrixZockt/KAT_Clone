@@ -50,5 +50,5 @@ var dir_2a5e03e2d8a3b508cfdf78cd6a958ade =
     [ "fnc_treatmentAdvanced_TXA.sqf", "fnc__treatment_advanced___t_x_a_8sqf.html", null ],
     [ "fnc_treatmentAdvanced_TXALocal.sqf", "fnc__treatment_advanced___t_x_a_local_8sqf.html", null ],
     [ "fnc_vehicleCheckDialysis.sqf", "fnc__vehicle_check_dialysis_8sqf.html", null ],
-    [ "script_component.hpp", "pharma_2functions_2script__component_8hpp.html", "pharma_2functions_2script__component_8hpp" ]
+    [ "script_component.hpp", "pharma_2functions_2script__component_8hpp.html", null ]
 ];

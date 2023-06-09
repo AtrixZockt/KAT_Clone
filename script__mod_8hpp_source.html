@@ -87,25 +87,25 @@ $(document).ready(function(){initNavTree('script__mod_8hpp_source.html',''); ini
 <div class="contents">
 <a href="script__mod_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// COMPONENT should be defined in the script_component.hpp and included BEFORE this hpp</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="script__mod_8hpp.html#a988864bc1cdb03a5a3931864a3bad752">    3</a></span>&#160;<span class="preprocessor">#define MAINPREFIX x</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="script__mod_8hpp.html#add51b53e8b628f95078327028dccb20c">    4</a></span>&#160;<span class="preprocessor">#define PREFIX kat</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define MAINPREFIX x</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#define PREFIX kat</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="script__version_8hpp.html">script_version.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="script__mod_8hpp.html#a1c6d5de492ac61ad29aec7aa9a436bbf">    8</a></span>&#160;<span class="preprocessor">#define VERSION     MAJOR.MINOR</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="script__mod_8hpp.html#acfc1668731750cb1ee8974b8a7c133ef">    9</a></span>&#160;<span class="preprocessor">#define VERSION_STR MAJOR.MINOR.PATCH</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="script__mod_8hpp.html#a4c1b91eafb0992f6ec588e2ca1a960c7">   10</a></span>&#160;<span class="preprocessor">#define VERSION_AR  MAJOR,MINOR,PATCH</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define VERSION     MAJOR.MINOR</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define VERSION_STR MAJOR.MINOR.PATCH</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define VERSION_AR  MAJOR,MINOR,PATCH</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="script__mod_8hpp.html#a2a938dcd755f71b8be6c76018b91d091">   12</a></span>&#160;<span class="preprocessor">#define VERSION_CONFIG version = MAJOR.MINOR; versionStr = QUOTE(MAJOR.MINOR.PATCH); versionAr[] = {MAJOR,MINOR,PATCH}</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define VERSION_CONFIG version = MAJOR.MINOR; versionStr = QUOTE(MAJOR.MINOR.PATCH); versionAr[] = {MAJOR,MINOR,PATCH}</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">// MINIMAL required version for the Mod. Components can specify others..</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="script__mod_8hpp.html#a185980e93205bf6af3d271feb12f7118">   15</a></span>&#160;<span class="preprocessor">#define REQUIRED_VERSION 1.88</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="script__mod_8hpp.html#ad08d733c6a706ac15bf52b048248ec38">   16</a></span>&#160;<span class="preprocessor">#define REQUIRED_CBA_VERSION {3,8,0}</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define REQUIRED_VERSION 1.88</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define REQUIRED_CBA_VERSION {3,8,0}</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifdef COMPONENT_BEAUTIFIED</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">    #define COMPONENT_NAME QUOTE(KAT - COMPONENT_BEAUTIFIED)</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="script__mod_8hpp.html#a9146ade7ce24e3db226a973a59063892">   21</a></span>&#160;<span class="preprocessor">    #define COMPONENT_NAME QUOTE(KAT - COMPONENT)</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">    #define COMPONENT_NAME QUOTE(KAT - COMPONENT)</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="ascript__version_8hpp_html"><div class="ttname"><a href="script__version_8hpp.html">script_version.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->

@@ -85,12 +85,12 @@ $(document).ready(function(){initNavTree('circulation_2_a_c_e___medical___treatm
 <div class="title">ACE_Medical_Treatment_Actions.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="circulation_2_a_c_e___medical___treatment___actions_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span><a class="code" href="class_a_c_e___medical___treatment___actions.html">ACE_Medical_Treatment_Actions</a> {</div>
+<a href="circulation_2_a_c_e___medical___treatment___actions_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span>ACE_Medical_Treatment_Actions {</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    <span class="keyword">class </span>FieldDressing;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    <span class="keyword">class </span>Morphine;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    <span class="keyword">class </span>CheckPulse;</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="keyword">class </span>CPR {</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        condition = QUOTE(([ARR_2(_medic,_patient)] call <a class="code" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(medical_treatment,canCPR)) &amp;&amp; !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),<span class="keyword">false</span>)]));</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        condition = QUOTE(([ARR_2(_medic,_patient)] call ACEFUNC(medical_treatment,canCPR)) &amp;&amp; !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),<span class="keyword">false</span>)]));</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    };</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">class </span>CheckDogtags: CheckPulse {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        displayName = CSTRING(DogTag);</div>
@@ -98,7 +98,7 @@ $(document).ready(function(){initNavTree('circulation_2_a_c_e___medical___treatm
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        treatmentTime = 2;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;Head&quot;</span>};</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        allowSelfTreatment = 1;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#ad725866c29bb89711fd94ed3795ee949">QACEFUNC</a>(dogtags,checkDogtag);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        callbackSuccess = QACEFUNC(dogtags,checkDogtag);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        condition = <span class="stringliteral">&quot;true&quot;</span>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        animationPatient = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        animationPatientUnconscious = <span class="stringliteral">&quot;AinjPpneMstpSnonWrflDnon_rolltoback&quot;</span>;</div>
@@ -116,8 +116,8 @@ $(document).ready(function(){initNavTree('circulation_2_a_c_e___medical___treatm
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;Body&quot;</span>};</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        treatmentTime = 2;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        items[] = {};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X),<span class="keyword">false</span>)]) || ([ARR_2(_medic,<span class="stringliteral">&#39;kat_AED&#39;</span>)] call <a class="code" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(common,hasItem)));</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        callbackStart = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(AEDanalyze);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        condition = QUOTE((_patient getVariable [ARR_2(QQGVAR(X),<span class="keyword">false</span>)]) || ([ARR_2(_medic,<span class="stringliteral">&#39;kat_AED&#39;</span>)] call ACEFUNC(common,hasItem)));</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        callbackStart = QFUNC(AEDanalyze);</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        callbackSuccess = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        animationPatient = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        animationPatientUnconscious = <span class="stringliteral">&quot;AinjPpneMstpSnonWrflDnon_rolltoback&quot;</span>;</div>
@@ -164,11 +164,11 @@ $(document).ready(function(){initNavTree('circulation_2_a_c_e___medical___treatm
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        icon = QPATHTOF(ui\defib.paa);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_AED&quot;</span>};</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        treatmentTime = 10;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        condition = QUOTE(([ARR_2(_medic,_patient)] call <a class="code" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(medical_treatment,canCPR)) &amp;&amp; !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),<span class="keyword">false</span>)]));</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        callbackStart = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(AEDStart);</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        callbackProgress = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(AEDProgress);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(AEDSuccess);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        callbackFailure = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(AEDFailure);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        condition = QUOTE(([ARR_2(_medic,_patient)] call ACEFUNC(medical_treatment,canCPR)) &amp;&amp; !(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),<span class="keyword">false</span>)]));</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        callbackStart = QFUNC(AEDStart);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        callbackProgress = QFUNC(AEDProgress);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        callbackSuccess = QFUNC(AEDSuccess);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        callbackFailure = QFUNC(AEDFailure);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        animationMedic = <span class="stringliteral">&quot;AinvPknlMstpSnonWnonDr_medic0&quot;</span>;</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        treatmentLocations = QGVAR(useLocation_AED);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        medicRequired = QGVAR(medLvl_AED);</div>
@@ -179,14 +179,14 @@ $(document).ready(function(){initNavTree('circulation_2_a_c_e___medical___treatm
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keyword">class </span>AEDStation: AED {</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        displayName = CSTRING(DefibS_Action_Use);</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        items[] = {};</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        condition = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(AEDStationCondition);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        condition = QFUNC(AEDStationCondition);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        treatmentLocations = 0;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    };</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keyword">class </span>AEDX: AED {</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        displayName = CSTRING(AED_X_Action_Use);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        displayNameProgress = CSTRING(AED_X_Action_Progress);</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        items[] = {};</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        condition = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(AEDXCondition);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        condition = QFUNC(AEDXCondition);</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        medicRequired = QGVAR(medLvl_AED_X);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        icon = QPATHTOF(ui\X_Series-Device_W.paa);</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    };</div>
@@ -201,7 +201,7 @@ $(document).ready(function(){initNavTree('circulation_2_a_c_e___medical___treatm
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        callbackProgress = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        callbackStart = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        callbackFailure = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(attachAEDX);</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        callbackSuccess = QFUNC(attachAEDX);</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        icon = QPATHTOF(ui\X_Series-Device_W.paa);</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    };</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keyword">class </span>DetachAEDX: AttachAEDX {</div>
@@ -229,7 +229,7 @@ $(document).ready(function(){initNavTree('circulation_2_a_c_e___medical___treatm
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        condition = QUOTE(!(_patient getVariable [ARR_2(QQGVAR(X), <span class="keyword">false</span>)]) &amp;&amp; FUNC(vehicleCheck));</div>
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        consumeItem = 0;</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        medicRequired = QGVAR(medLvl_AED_X);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(attachAEDXVehicle);</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        callbackSuccess = QFUNC(attachAEDXVehicle);</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        icon = QPATHTOF(ui\X_Series-Device_W.paa);</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    };</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keyword">class </span>DetachAEDXVehicle: DetachAEDX {</div>
@@ -264,10 +264,6 @@ $(document).ready(function(){initNavTree('circulation_2_a_c_e___medical___treatm
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    };</div>
 <div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;};</div>
 <div class="ttc" id="a_blood___medical_8hpp_html"><div class="ttname"><a href="_blood___medical_8hpp.html">Blood_Medical.hpp</a></div></div>
-<div class="ttc" id="aclass_a_c_e___medical___treatment___actions_html"><div class="ttname"><a href="class_a_c_e___medical___treatment___actions.html">ACE_Medical_Treatment_Actions</a></div><div class="ttdef"><b>Definition:</b> ACE_Medical_Treatment_Actions.hpp:1</div></div>
-<div class="ttc" id="ascript__macros_8hpp_html_a49cafa32cfe68863ede76d30e966817b"><div class="ttname"><a href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a></div><div class="ttdeci">#define QFUNC(var1)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:15</div></div>
-<div class="ttc" id="ascript__macros_8hpp_html_ad725866c29bb89711fd94ed3795ee949"><div class="ttname"><a href="script__macros_8hpp.html#ad725866c29bb89711fd94ed3795ee949">QACEFUNC</a></div><div class="ttdeci">#define QACEFUNC(module, function)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:70</div></div>
-<div class="ttc" id="ascript__macros_8hpp_html_ae1638a83048f3b2eed91fd36e6cbe4a8"><div class="ttname"><a href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a></div><div class="ttdeci">#define ACEFUNC(module, function)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:69</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

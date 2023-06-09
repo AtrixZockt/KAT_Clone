@@ -17,5 +17,5 @@ var dir_046437928829a29414e49d7cf44b9da2 =
     [ "fnc_removeIVbag.sqf", "fnc__remove_i_vbag_8sqf.html", null ],
     [ "fnc_stretcher.sqf", "fnc__stretcher_8sqf.html", null ],
     [ "fnc_treatmentIV.sqf", "fnc__treatment_i_v_8sqf.html", null ],
-    [ "script_component.hpp", "misc_2functions_2script__component_8hpp.html", "misc_2functions_2script__component_8hpp" ]
+    [ "script_component.hpp", "misc_2functions_2script__component_8hpp.html", null ]
 ];

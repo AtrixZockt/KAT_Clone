@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="title">ACE_Medical_Treatment_Actions.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="surgery_2_a_c_e___medical___treatment___actions_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span><a class="code" href="class_a_c_e___medical___treatment___actions.html">ACE_Medical_Treatment_Actions</a> {</div>
+<a href="surgery_2_a_c_e___medical___treatment___actions_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span>ACE_Medical_Treatment_Actions {</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    <span class="keyword">class </span>BasicBandage;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    <span class="keyword">class </span>CheckPulse;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
@@ -99,8 +99,8 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        medicRequired = QGVAR(fractureCheck_MedLevel);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        treatmentTime = QGVAR(fractureCheck_Time);</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        items[] = {};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        condition = QUOTE(([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(fractureCheck)) &amp;&amp; (<a class="code" href="circulation_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a>(enable_fracture)));</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(fractureSelect);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        condition = QUOTE(([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(fractureCheck)) &amp;&amp; (GVAR(enable_fracture)));</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        callbackSuccess = QFUNC(fractureSelect);</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    };</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">class </span>ClosedReduction: CheckFracture {</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        displayName = CSTRING(fracture_closed);</div>
@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        treatmentTime = QGVAR(closedTime);</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        items[] = {};</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 1)] call FUNC(fractureCheck));</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(closedReduction);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        callbackSuccess = QFUNC(closedReduction);</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    };</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">class </span>OpenReduction: CheckFracture {</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        displayName = CSTRING(fracture_open);</div>
@@ -127,7 +127,7 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_plate&quot;</span>};</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        consumeItem = 1;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 3.5)] call FUNC(openReductionCheck));</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(openReduction);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        callbackSuccess = QFUNC(openReduction);</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    };</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">class </span>Expose: BasicBandage {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        displayName = CSTRING(Retractor_Use);</div>
@@ -154,7 +154,7 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        treatmentTime = QGVAR(incisionTime);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_scalpel&quot;</span>};</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        condition = QUOTE([ARR_4(_medic, _patient, _bodyPart, 5)] call FUNC(openReductionCheck));</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(incision);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        callbackSuccess = QFUNC(incision);</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    };</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keyword">class </span>Clamp: BasicBandage {</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        displayName = CSTRING(Clamp_Use);</div>
@@ -193,9 +193,9 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        medicRequired = QGVAR(debridementAction_MedLevel);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        treatmentTime = QGVAR(debrideTime);</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_scalpel&quot;</span>};</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        condition = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(debridementCheck);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        condition = QFUNC(debridementCheck);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        consumeItem = 0;</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(debridement);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        callbackSuccess = QFUNC(debridement);</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    };</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keyword">class </span>NPWT: Debridement {</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        displayName = CSTRING(Vacuum_Use);</div>
@@ -203,12 +203,9 @@ $(document).ready(function(){initNavTree('surgery_2_a_c_e___medical___treatment_
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        treatmentTime = QGVAR(npwtTime);</div>
 <div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_vacuum&quot;</span>};</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        sounds[] = {{QPATHTO_R(sounds\vacuum.ogg),8,1,15}};</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(npwtTreatment);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        callbackSuccess = QFUNC(npwtTreatment);</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    };</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
-<div class="ttc" id="acirculation_2ui_2_cross_panel___dialog_8hpp_html_a13de54cc3d786b3d023285149a21f0d4"><div class="ttname"><a href="circulation_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a></div><div class="ttdeci">class GVAR(CrossPanel_Dialog)</div><div class="ttdef"><b>Definition:</b> CrossPanel_Dialog.hpp:1</div></div>
-<div class="ttc" id="aclass_a_c_e___medical___treatment___actions_html"><div class="ttname"><a href="class_a_c_e___medical___treatment___actions.html">ACE_Medical_Treatment_Actions</a></div><div class="ttdef"><b>Definition:</b> ACE_Medical_Treatment_Actions.hpp:1</div></div>
-<div class="ttc" id="ascript__macros_8hpp_html_a49cafa32cfe68863ede76d30e966817b"><div class="ttname"><a href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a></div><div class="ttdeci">#define QFUNC(var1)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

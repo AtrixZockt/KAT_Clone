@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('chemical_2_cfg_vehicles_8hpp_source.ht
 <div class="title">CfgVehicles.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="chemical_2_cfg_vehicles_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span><a class="code" href="class_cfg_vehicles.html">CfgVehicles</a> {</div>
+<a href="chemical_2_cfg_vehicles_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span>CfgVehicles {</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    <span class="keyword">class </span>Man;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    <span class="keyword">class </span>CAManBase: Man {</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;        <span class="keyword">class </span>ACE_SelfActions {</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('chemical_2_cfg_vehicles_8hpp_source.ht
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        side=7;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        displayName = CSTRING(GasModule_Displayname);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        category = QEGVAR(zeus,KAM);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">function</span> = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(gasmodule);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">function</span> = QFUNC(gasmodule);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        isTriggerActivated = 0;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        functionPriority = 1;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        isGlobal = 1;</div>
@@ -280,15 +280,15 @@ $(document).ready(function(){initNavTree('chemical_2_cfg_vehicles_8hpp_source.ht
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    };</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">class </span>ACE_Box_82mm_Mo_Combo: ACE_Box_82mm_Mo_HE {</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keyword">class </span>TransportMagazines: TransportMagazines {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <a class="code" href="script__macros_8hpp.html#aa5ac1958702e084bd2b05d755a5dbc14">MACRO_ADDMAGAZINE</a>(KAT_1Rnd_82mm_Mo_Type0,8);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <a class="code" href="script__macros_8hpp.html#aa5ac1958702e084bd2b05d755a5dbc14">MACRO_ADDMAGAZINE</a>(KAT_1Rnd_82mm_Mo_TypeCS,8);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_TypeCS,8);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        };</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    };</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">class </span>ACE_Box_82mm_Mo_Gas: ACE_Box_82mm_Mo_HE {</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        displayName = CSTRING(GasBox_Displayname);</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keyword">class </span>TransportMagazines {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            <a class="code" href="script__macros_8hpp.html#aa5ac1958702e084bd2b05d755a5dbc14">MACRO_ADDMAGAZINE</a>(KAT_1Rnd_82mm_Mo_Type0,8);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <a class="code" href="script__macros_8hpp.html#aa5ac1958702e084bd2b05d755a5dbc14">MACRO_ADDMAGAZINE</a>(KAT_1Rnd_82mm_Mo_TypeCS,8);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_TypeCS,8);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        };</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    };</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
@@ -300,9 +300,6 @@ $(document).ready(function(){initNavTree('chemical_2_cfg_vehicles_8hpp_source.ht
 <div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        displayName = CSTRING(TriWire_Gas_Name);</div>
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    };</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;};</div>
-<div class="ttc" id="aclass_cfg_vehicles_html"><div class="ttname"><a href="class_cfg_vehicles.html">CfgVehicles</a></div><div class="ttdoc">Hallo ich bin ein text \params Int Di.</div><div class="ttdef"><b>Definition:</b> CfgVehicles.hpp:1</div></div>
-<div class="ttc" id="ascript__macros_8hpp_html_a49cafa32cfe68863ede76d30e966817b"><div class="ttname"><a href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a></div><div class="ttdeci">#define QFUNC(var1)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:15</div></div>
-<div class="ttc" id="ascript__macros_8hpp_html_aa5ac1958702e084bd2b05d755a5dbc14"><div class="ttname"><a href="script__macros_8hpp.html#aa5ac1958702e084bd2b05d755a5dbc14">MACRO_ADDMAGAZINE</a></div><div class="ttdeci">#define MACRO_ADDMAGAZINE(MAGAZINE, COUNT)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
