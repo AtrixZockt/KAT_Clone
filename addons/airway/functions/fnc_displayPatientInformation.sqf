@@ -4,7 +4,7 @@
  * Opens the patient information display for given target.
  *
  * @param Target <OBJECT>
- * @param Body part <NUMBER>
+ * @param Body part <NUER>
  *
  * Return Value:
  * @return None
