@@ -8,6 +8,9 @@ var dir_6d7731ac1565474480b333012eec357f =
     [ "CfgFunctions.hpp", "gui_2_cfg_functions_8hpp.html", [
       [ "CfgFunctions", "class_cfg_functions.html", null ]
     ] ],
+    [ "config.cpp", "gui_2config_8cpp.html", [
+      [ "CfgPatches", "class_cfg_patches.html", null ]
+    ] ],
     [ "gui.hpp", "gui_8hpp.html", [
       [ "ace_medical_gui_TriageToggle", "classace__medical__gui___triage_toggle.html", null ],
       [ "ace_medical_gui_TriageSelect", "classace__medical__gui___triage_select.html", null ],

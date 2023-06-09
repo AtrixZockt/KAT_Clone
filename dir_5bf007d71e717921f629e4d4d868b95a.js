@@ -23,6 +23,9 @@ var dir_5bf007d71e717921f629e4d4d868b95a =
     [ "CfgWeapons.hpp", "misc_2_cfg_weapons_8hpp.html", [
       [ "CfgWeapons", "class_cfg_weapons.html", null ]
     ] ],
+    [ "config.cpp", "misc_2config_8cpp.html", [
+      [ "CfgPatches", "class_cfg_patches.html", null ]
+    ] ],
     [ "script_component.hpp", "misc_2script__component_8hpp.html", "misc_2script__component_8hpp" ],
     [ "vehicle_stretcher.hpp", "vehicle__stretcher_8hpp.html", [
       [ "B_LSV_01_unarmed_F", "class_b___l_s_v__01__unarmed___f.html", null ],

@@ -12,6 +12,10 @@ var dir_53f7f534fb74ff1ab03332b3b0971b5d =
     [ "CfgVehicles.hpp", "zeus_2_cfg_vehicles_8hpp.html", [
       [ "cfgVehicles", "classcfg_vehicles.html", null ]
     ] ],
+    [ "config.cpp", "zeus_2config_8cpp.html", [
+      [ "CfgPatches", "class_cfg_patches.html", null ],
+      [ "CfgFunctions", "class_cfg_functions.html", null ]
+    ] ],
     [ "script_component.hpp", "zeus_2script__component_8hpp.html", "zeus_2script__component_8hpp" ],
     [ "XEH_PREP.hpp", "zeus_2_x_e_h___p_r_e_p_8hpp.html", "zeus_2_x_e_h___p_r_e_p_8hpp" ]
 ];

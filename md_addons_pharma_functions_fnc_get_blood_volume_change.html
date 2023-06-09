@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('md_addons_pharma_functions_fnc_get_blo
 <li>Public: No */</li>
 </ul>
 <p>params ["_unit", "_deltaT", "_syncValues"];</p>
-<p>private _bloodLoss = [_unit] call EFUNC(pharma,getBloodLoss); private _internalBleeding = GET_INTERNAL_BLEEDING(_unit); private _bloodVolumeChange = -_deltaT * (_bloodLoss + _internalBleeding);</p>
+<p>private _bloodLoss = [_unit] call EFUNC(pharma,getBloodLoss); private _internalBleeding = <a class="el" href="pharma_2config_8cpp.html#a3723ace32fa83fea4d7dee29d1646afa">GET_INTERNAL_BLEEDING(_unit)</a>; private _bloodVolumeChange = -_deltaT * (_bloodLoss + _internalBleeding);</p>
 <p>if (!isNil {_unit getVariable [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR(medical,ivBags)</a>,[]]}) then { private _bloodBags = _unit getVariable [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR(medical,ivBags)</a>, []]; private _tourniquets = <a class="el" href="misc_2script__component_8hpp.html#aef25003f262f21a179db88065667d856">GET_TOURNIQUETS(_unit)</a>; private _IVarray = _unit getVariable [QGVAR(IV), [0,0,0,0,0,0]]; private _flowCalculation = <a class="el" href="script__macros_8hpp.html#aa8d36e95205e25d880966a5df638a622">ACEGVAR(medical,ivFlowRate)</a> * (_unit getVariable [QGVAR(alphaAction), 1]) * _deltaT * 4.16;</p>
 <p>if (GET_HEART_RATE(_unit) &lt; 20) then { _flowCalculation = _flowCalculation / 1.5; };</p>
 <p>_bloodBags = _bloodBags apply { _x params ["_bagVolumeRemaining", "_type", "_bodyPart"];</p>

@@ -40,6 +40,9 @@ var dir_70bdaf491c87277ceefb32489d937460 =
     [ "CfgWeapons.hpp", "chemical_2_cfg_weapons_8hpp.html", [
       [ "CfgWeapons", "class_cfg_weapons.html", null ]
     ] ],
+    [ "config.cpp", "chemical_2config_8cpp.html", [
+      [ "CfgPatches", "class_cfg_patches.html", null ]
+    ] ],
     [ "script_component.hpp", "chemical_2script__component_8hpp.html", "chemical_2script__component_8hpp" ],
     [ "XEH_PREP.hpp", "chemical_2_x_e_h___p_r_e_p_8hpp.html", "chemical_2_x_e_h___p_r_e_p_8hpp" ]
 ];

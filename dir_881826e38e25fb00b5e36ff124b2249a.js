@@ -19,6 +19,9 @@ var dir_881826e38e25fb00b5e36ff124b2249a =
     [ "CfgWeapons.hpp", "surgery_2_cfg_weapons_8hpp.html", [
       [ "CfgWeapons", "class_cfg_weapons.html", null ]
     ] ],
+    [ "config.cpp", "surgery_2config_8cpp.html", [
+      [ "CfgPatches", "class_cfg_patches.html", null ]
+    ] ],
     [ "script_component.hpp", "surgery_2script__component_8hpp.html", "surgery_2script__component_8hpp" ],
     [ "XEH_PREP.hpp", "surgery_2_x_e_h___p_r_e_p_8hpp.html", "surgery_2_x_e_h___p_r_e_p_8hpp" ]
 ];

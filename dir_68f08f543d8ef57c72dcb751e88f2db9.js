@@ -21,6 +21,9 @@ var dir_68f08f543d8ef57c72dcb751e88f2db9 =
     [ "CfgWeapons.hpp", "airway_2_cfg_weapons_8hpp.html", [
       [ "CfgWeapons", "class_cfg_weapons.html", null ]
     ] ],
+    [ "config.cpp", "airway_2config_8cpp.html", [
+      [ "CfgPatches", "class_cfg_patches.html", null ]
+    ] ],
     [ "script_component.hpp", "airway_2script__component_8hpp.html", "airway_2script__component_8hpp" ],
     [ "XEH_PREP.hpp", "airway_2_x_e_h___p_r_e_p_8hpp.html", "airway_2_x_e_h___p_r_e_p_8hpp" ]
 ];

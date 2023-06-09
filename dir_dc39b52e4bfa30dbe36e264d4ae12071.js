@@ -26,6 +26,7 @@ var dir_dc39b52e4bfa30dbe36e264d4ae12071 =
     [ "CfgWeapons.hpp", "pharma_2_cfg_weapons_8hpp.html", [
       [ "CfgWeapons", "class_cfg_weapons.html", null ]
     ] ],
+    [ "config.cpp", "pharma_2config_8cpp.html", "pharma_2config_8cpp" ],
     [ "script_component.hpp", "pharma_2script__component_8hpp.html", "pharma_2script__component_8hpp" ],
     [ "XEH_PREP.hpp", "pharma_2_x_e_h___p_r_e_p_8hpp.html", "pharma_2_x_e_h___p_r_e_p_8hpp" ]
 ];
