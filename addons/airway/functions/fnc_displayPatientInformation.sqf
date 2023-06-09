@@ -1,14 +1,13 @@
 #include "script_component.hpp"
-/*
+/**
  * Author: Glowbal, mharis001
  * Opens the patient information display for given target.
  *
- * Arguments:
- * 0: Target <OBJECT>
- * 1: Body part <NUMBER>
+ * @param Target <OBJECT>
+ * @param Body part <NUMBER>
  *
  * Return Value:
- * None
+ * @return None
  *
  * Example:
  * [_target, 0] call ace_medical_gui_fnc_displayPatientInformation
