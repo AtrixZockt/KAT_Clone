@@ -1,5 +1,5 @@
 #include "script_component.hpp"
-/*
+/**
 * Author: DiGii
 *
 * Arguments:
