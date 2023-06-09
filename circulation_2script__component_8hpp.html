@@ -103,7 +103,7 @@ Macros</h2></td></tr>
 <tr class="separator:a5b668e972036d1ec2f7cefd2f96300f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54da3217c44d7c1b70f5ef9f5bb50f91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circulation_2script__component_8hpp.html#a54da3217c44d7c1b70f5ef9f5bb50f91">GET_NUMBER_ENTRY</a>(cfg)</td></tr>
 <tr class="separator:a54da3217c44d7c1b70f5ef9f5bb50f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b23c70ca72134c35b98bf3e50752722"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circulation_2script__component_8hpp.html#a0b23c70ca72134c35b98bf3e50752722">VAR_INTERNAL_BLEEDING</a>&#160;&#160;&#160;QGVAR(internalBleeding)</td></tr>
+<tr class="memitem:a0b23c70ca72134c35b98bf3e50752722"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="circulation_2script__component_8hpp.html#a0b23c70ca72134c35b98bf3e50752722">VAR_INTERNAL_BLEEDING</a>&#160;&#160;&#160;<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(internalBleeding)</td></tr>
 <tr class="separator:a0b23c70ca72134c35b98bf3e50752722"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -160,12 +160,14 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">private</span> var = getText (cfg); \</div>
+<b>Value:</b><div class="fragment"><div class="line">    <span class="keyword">private</span> var = <a class="code" href="fnc__treatment_8sqf.html#a4a99dc966b3ceafa02b905137ea80975">getText</a> (cfg); \</div>
 <div class="line">    if (isNil var) then { \</div>
 <div class="line">        var = compile var; \</div>
 <div class="line">    } <span class="keywordflow">else</span> { \</div>
-<div class="line">        var = missionNamespace getVariable var; \</div>
+<div class="line">        var = missionNamespace <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> var; \</div>
 <div class="line">    }</div>
+<div class="ttc" id="afnc__has_b_v_m_8sqf_html_aa4fbd01846b98cc49ae7f3daa1fef0fb"><div class="ttname"><a href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a></div><div class="ttdeci">_patient getVariable[QGVAR(BVM), false] _patient getVariable[QGVAR(pocketBVM), false]</div><div class="ttdef"><b>Definition:</b> fnc_hasBVM.sqf:20</div></div>
+<div class="ttc" id="afnc__treatment_8sqf_html_a4a99dc966b3ceafa02b905137ea80975"><div class="ttname"><a href="fnc__treatment_8sqf.html#a4a99dc966b3ceafa02b905137ea80975">getText</a></div><div class="ttdeci">getText(_config &gt;&gt; &quot;displayNameProgress&quot;)</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -185,7 +187,7 @@ Macros</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">    <span class="keywordflow">if</span> (isText (cfg)) then { \</div>
-<div class="line">        missionNamespace getVariable [getText (cfg), 0]; \</div>
+<div class="line">        missionNamespace <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [<a class="code" href="fnc__treatment_8sqf.html#a4a99dc966b3ceafa02b905137ea80975">getText</a> (cfg), 0]; \</div>
 <div class="line">    } <span class="keywordflow">else</span> { \</div>
 <div class="line">        getNumber (cfg); \</div>
 <div class="line">    }</div>
@@ -199,7 +201,7 @@ Macros</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VAR_INTERNAL_BLEEDING&#160;&#160;&#160;QGVAR(internalBleeding)</td>
+          <td class="memname">#define VAR_INTERNAL_BLEEDING&#160;&#160;&#160;<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(internalBleeding)</td>
         </tr>
       </table>
 </div><div class="memdoc">

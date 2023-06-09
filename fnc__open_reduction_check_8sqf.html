@@ -81,10 +81,157 @@ $(document).ready(function(){initNavTree('fnc__open_reduction_check_8sqf.html','
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">fnc_openReductionCheck.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="surgery_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:af7b4b25abc0726e07b6a46d3a37806f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__open_reduction_check_8sqf.html#af7b4b25abc0726e07b6a46d3a37806f1">if</a> (<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a900f3676def8a2118638bed6eac80e90">_liveFracture</a> &gt; 3) then</td></tr>
+<tr class="separator:af7b4b25abc0726e07b6a46d3a37806f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e8b38d531b701a61f269ac6220a2071"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__open_reduction_check_8sqf.html#a4e8b38d531b701a61f269ac6220a2071">if</a> ((<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a510a4991611f69a63067659b8c985154">_number</a>==5) &amp;&amp;(<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a900f3676def8a2118638bed6eac80e90">_liveFracture</a>==2||<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a900f3676def8a2118638bed6eac80e90">_liveFracture</a>==3)) exitWith</td></tr>
+<tr class="separator:a4e8b38d531b701a61f269ac6220a2071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2431c5d724158c7de6d1626fea53e38b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__open_reduction_check_8sqf.html#a2431c5d724158c7de6d1626fea53e38b">if</a> ((<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a510a4991611f69a63067659b8c985154">_number</a> !=5) &amp;&amp;(<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a900f3676def8a2118638bed6eac80e90">_liveFracture</a> &gt;=2.1) &amp;&amp;(<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a900f3676def8a2118638bed6eac80e90">_liveFracture</a>&lt;=2.7)) exitWith</td></tr>
+<tr class="separator:a2431c5d724158c7de6d1626fea53e38b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ab1e3ed0a44173f9f127a149e6575ce2c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__open_reduction_check_8sqf.html#ab1e3ed0a44173f9f127a149e6575ce2c">params</a> [&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;, &quot;<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a510a4991611f69a63067659b8c985154">_number</a>&quot;]</td></tr>
+<tr class="separator:ab1e3ed0a44173f9f127a149e6575ce2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d084cf05481e26badcc963215953f3c"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__open_reduction_check_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a> = ALL_BODY_PARTS find toLower _bodyPart</td></tr>
+<tr class="separator:a3d084cf05481e26badcc963215953f3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d10bead74471952805c26c62ca949aa"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__open_reduction_check_8sqf.html#a7d10bead74471952805c26c62ca949aa">_fractureArray</a> = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(fractures), [0,0,0,0,0,0]]</td></tr>
+<tr class="separator:a7d10bead74471952805c26c62ca949aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a900f3676def8a2118638bed6eac80e90"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__open_reduction_check_8sqf.html#a900f3676def8a2118638bed6eac80e90">_liveFracture</a> = <a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a7d10bead74471952805c26c62ca949aa">_fractureArray</a> select <a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a></td></tr>
+<tr class="separator:a900f3676def8a2118638bed6eac80e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a2431c5d724158c7de6d1626fea53e38b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2431c5d724158c7de6d1626fea53e38b">&#9670;&nbsp;</a></span>if() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a510a4991611f69a63067659b8c985154">_number</a> !=5) &amp;&amp;(<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a900f3676def8a2118638bed6eac80e90">_liveFracture</a> &gt;=2.1) &amp;&amp;(<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a900f3676def8a2118638bed6eac80e90">_liveFracture</a>&lt;=2.7)              &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e8b38d531b701a61f269ac6220a2071"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e8b38d531b701a61f269ac6220a2071">&#9670;&nbsp;</a></span>if() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype">(<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a510a4991611f69a63067659b8c985154">_number</a>==5) &amp;&amp;(<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a900f3676def8a2118638bed6eac80e90">_liveFracture</a>==2||<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a900f3676def8a2118638bed6eac80e90">_liveFracture</a>==3)               &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7b4b25abc0726e07b6a46d3a37806f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7b4b25abc0726e07b6a46d3a37806f1">&#9670;&nbsp;</a></span>if() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a900f3676def8a2118638bed6eac80e90">_liveFracture</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">3&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a7d10bead74471952805c26c62ca949aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d10bead74471952805c26c62ca949aa">&#9670;&nbsp;</a></span>_fractureArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _fractureArray = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(fractures), [0,0,0,0,0,0]]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a900f3676def8a2118638bed6eac80e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a900f3676def8a2118638bed6eac80e90">&#9670;&nbsp;</a></span>_liveFracture</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _liveFracture = <a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a7d10bead74471952805c26c62ca949aa">_fractureArray</a> select <a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a3d084cf05481e26badcc963215953f3c">_part</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3d084cf05481e26badcc963215953f3c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d084cf05481e26badcc963215953f3c">&#9670;&nbsp;</a></span>_part</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _part = ALL_BODY_PARTS find toLower _bodyPart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab1e3ed0a44173f9f127a149e6575ce2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1e3ed0a44173f9f127a149e6575ce2c">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_medic&quot;, &quot;_patient&quot;, &quot;_bodyPart&quot;, &quot;<a class="el" href="fnc__open_reduction_progress_local_8sqf.html#a510a4991611f69a63067659b8c985154">_number</a>&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

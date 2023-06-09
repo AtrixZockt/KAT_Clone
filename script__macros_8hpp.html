@@ -99,9 +99,9 @@ Macros</h2></td></tr>
 <tr class="separator:a8731b068a6b54bf1abc5b97e28ece2c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f13e04596492ea15bf0dd6115a7ba15"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a5f13e04596492ea15bf0dd6115a7ba15">DEFAULT_VERSIONING_LEVEL</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:a5f13e04596492ea15bf0dd6115a7ba15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3d3d500d7171c155dff73546b3f1f36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#aa3d3d500d7171c155dff73546b3f1f36">DGVAR</a>(varName)&#160;&#160;&#160;if(isNil &quot;KAT_DEBUG_NAMESPACE&quot;) then { KAT_DEBUG_NAMESPACE = []; }; if(!(QUOTE(<a class="el" href="pharma_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a>(varName)) in KAT_DEBUG_NAMESPACE)) then { PUSH(KAT_DEBUG_NAMESPACE, QUOTE(<a class="el" href="pharma_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a>(varName))); }; <a class="el" href="pharma_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a>(varName)</td></tr>
+<tr class="memitem:aa3d3d500d7171c155dff73546b3f1f36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#aa3d3d500d7171c155dff73546b3f1f36">DGVAR</a>(varName)&#160;&#160;&#160;<a class="el" href="fnc__show_message_8sqf.html#ad75832fa5547d1be46beb2dbb20411f7">if</a>(isNil &quot;KAT_DEBUG_NAMESPACE&quot;) then { KAT_DEBUG_NAMESPACE = []; }; <a class="el" href="fnc__show_message_8sqf.html#ad75832fa5547d1be46beb2dbb20411f7">if</a>(!(QUOTE(<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(varName)) <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a> KAT_DEBUG_NAMESPACE)) then { PUSH(KAT_DEBUG_NAMESPACE, QUOTE(<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(varName))); }; <a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(varName)</td></tr>
 <tr class="separator:aa3d3d500d7171c155dff73546b3f1f36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afff2146f245a8ad3a118feb944ed07c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#afff2146f245a8ad3a118feb944ed07c0">DVAR</a>(varName)&#160;&#160;&#160;if(isNil &quot;KAT_DEBUG_NAMESPACE&quot;) then { KAT_DEBUG_NAMESPACE = []; }; if(!(QUOTE(varName) in KAT_DEBUG_NAMESPACE)) then { PUSH(KAT_DEBUG_NAMESPACE, QUOTE(varName)); }; varName</td></tr>
+<tr class="memitem:afff2146f245a8ad3a118feb944ed07c0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#afff2146f245a8ad3a118feb944ed07c0">DVAR</a>(varName)&#160;&#160;&#160;<a class="el" href="fnc__show_message_8sqf.html#ad75832fa5547d1be46beb2dbb20411f7">if</a>(isNil &quot;KAT_DEBUG_NAMESPACE&quot;) then { KAT_DEBUG_NAMESPACE = []; }; <a class="el" href="fnc__show_message_8sqf.html#ad75832fa5547d1be46beb2dbb20411f7">if</a>(!(QUOTE(varName) <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a> KAT_DEBUG_NAMESPACE)) then { PUSH(KAT_DEBUG_NAMESPACE, QUOTE(varName)); }; varName</td></tr>
 <tr class="separator:afff2146f245a8ad3a118feb944ed07c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a92ead51ffce7eecc6178dc4dce27d93c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a92ead51ffce7eecc6178dc4dce27d93c">DFUNC</a>(var1)&#160;&#160;&#160;TRIPLES(<a class="el" href="class_a_d_d_o_n.html">ADDON</a>,fnc,var1)</td></tr>
 <tr class="separator:a92ead51ffce7eecc6178dc4dce27d93c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -111,11 +111,11 @@ Macros</h2></td></tr>
 <tr class="separator:a49cafa32cfe68863ede76d30e966817b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c5674383b3197618809001e2989b5d3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a9c5674383b3197618809001e2989b5d3">QEFUNC</a>(var1,  var2)&#160;&#160;&#160;QUOTE(<a class="el" href="script__macros_8hpp.html#ac941ca854564745638cafad11ea2fb59">DEFUNC</a>(var1,var2))</td></tr>
 <tr class="separator:a9c5674383b3197618809001e2989b5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69ac5a32622d10bd8e0140df624b9f86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a69ac5a32622d10bd8e0140df624b9f86">GETVAR_SYS</a>(var1,  var2)&#160;&#160;&#160;getVariable [ARR_2(QUOTE(var1),var2)]</td></tr>
+<tr class="memitem:a69ac5a32622d10bd8e0140df624b9f86"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a69ac5a32622d10bd8e0140df624b9f86">GETVAR_SYS</a>(var1,  var2)&#160;&#160;&#160;<a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [ARR_2(QUOTE(var1),var2)]</td></tr>
 <tr class="separator:a69ac5a32622d10bd8e0140df624b9f86"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0e11611882f43abcf34426f4a44aa9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#ae0e11611882f43abcf34426f4a44aa9f">SETVAR_SYS</a>(var1,  var2)&#160;&#160;&#160;setVariable [ARR_2(QUOTE(var1),var2)]</td></tr>
+<tr class="memitem:ae0e11611882f43abcf34426f4a44aa9f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#ae0e11611882f43abcf34426f4a44aa9f">SETVAR_SYS</a>(var1,  var2)&#160;&#160;&#160;<a class="el" href="fnc__npwt_treatment_local_8sqf.html#a7c93c799dc3640787f2eafd5ab54b50b">setVariable</a> [ARR_2(QUOTE(var1),var2)]</td></tr>
 <tr class="separator:ae0e11611882f43abcf34426f4a44aa9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affa8c365be0d3a1a02936973d194c046"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#affa8c365be0d3a1a02936973d194c046">SETPVAR_SYS</a>(var1,  var2)&#160;&#160;&#160;setVariable [ARR_3(QUOTE(var1),var2,true)]</td></tr>
+<tr class="memitem:affa8c365be0d3a1a02936973d194c046"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#affa8c365be0d3a1a02936973d194c046">SETPVAR_SYS</a>(var1,  var2)&#160;&#160;&#160;<a class="el" href="fnc__npwt_treatment_local_8sqf.html#a7c93c799dc3640787f2eafd5ab54b50b">setVariable</a> [ARR_3(QUOTE(var1),var2,<a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>)]</td></tr>
 <tr class="separator:affa8c365be0d3a1a02936973d194c046"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a721d83aec7203b926e0c1d3b9a8f2631"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a721d83aec7203b926e0c1d3b9a8f2631">GETVAR</a>(var1,  var2,  var3)&#160;&#160;&#160;(var1 <a class="el" href="script__macros_8hpp.html#a69ac5a32622d10bd8e0140df624b9f86">GETVAR_SYS</a>(var2,var3))</td></tr>
 <tr class="separator:a721d83aec7203b926e0c1d3b9a8f2631"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,11 +139,11 @@ Macros</h2></td></tr>
 <tr class="separator:a4feb1ccaffdccead5c5ecad667125700"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a816755eff874fc863fed88c9986d3225"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a816755eff874fc863fed88c9986d3225">SETPAVAR</a>(var1,  var2)&#160;&#160;&#160;parsingNamespace <a class="el" href="script__macros_8hpp.html#ae0e11611882f43abcf34426f4a44aa9f">SETVAR_SYS</a>(var1,var2)</td></tr>
 <tr class="separator:a816755eff874fc863fed88c9986d3225"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d8f4ced2ae4d11102502ca6de750ca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a2d8f4ced2ae4d11102502ca6de750ca4">GETGVAR</a>(var1,  var2)&#160;&#160;&#160;<a class="el" href="script__macros_8hpp.html#a0bb14c36b5eea3672e43d97c9ee4b5f3">GETMVAR</a>(<a class="el" href="pharma_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a>(var1),var2)</td></tr>
+<tr class="memitem:a2d8f4ced2ae4d11102502ca6de750ca4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a2d8f4ced2ae4d11102502ca6de750ca4">GETGVAR</a>(var1,  var2)&#160;&#160;&#160;<a class="el" href="script__macros_8hpp.html#a0bb14c36b5eea3672e43d97c9ee4b5f3">GETMVAR</a>(<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(var1),var2)</td></tr>
 <tr class="separator:a2d8f4ced2ae4d11102502ca6de750ca4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b9798a8e41f2d5d7576a0af87351e48"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a3b9798a8e41f2d5d7576a0af87351e48">GETEGVAR</a>(var1,  var2,  var3)&#160;&#160;&#160;<a class="el" href="script__macros_8hpp.html#a0bb14c36b5eea3672e43d97c9ee4b5f3">GETMVAR</a>(EGVAR(var1,var2),var3)</td></tr>
 <tr class="separator:a3b9798a8e41f2d5d7576a0af87351e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a724e61ecb23170b7ad237f71aaf70066"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a724e61ecb23170b7ad237f71aaf70066">ARR_SELECT</a>(ARRAY,  INDEX,  DEFAULT)&#160;&#160;&#160;(if (count ARRAY &gt; INDEX) then {ARRAY select INDEX} else {DEFAULT})</td></tr>
+<tr class="memitem:a724e61ecb23170b7ad237f71aaf70066"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a724e61ecb23170b7ad237f71aaf70066">ARR_SELECT</a>(ARRAY,  INDEX,  DEFAULT)&#160;&#160;&#160;(<a class="el" href="fnc__show_message_8sqf.html#ad75832fa5547d1be46beb2dbb20411f7">if</a> (count ARRAY &gt; INDEX) then {ARRAY select INDEX} <a class="el" href="fnc__open_medical_menu_8sqf.html#a0544c3fe466e421738dae463968b70ba">else</a> {DEFAULT})</td></tr>
 <tr class="separator:a724e61ecb23170b7ad237f71aaf70066"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7ebb35f1707c9fe6f33838466d9479f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#ae7ebb35f1707c9fe6f33838466d9479f">MACRO_ADDWEAPON</a>(WEAPON,  COUNT)</td></tr>
 <tr class="separator:ae7ebb35f1707c9fe6f33838466d9479f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -157,11 +157,11 @@ Macros</h2></td></tr>
 <tr class="separator:a3c3287cf4a8ac209f850e750a08389ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8d36e95205e25d880966a5df638a622"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#aa8d36e95205e25d880966a5df638a622">ACEGVAR</a>(module,  var)&#160;&#160;&#160;TRIPLES(<a class="el" href="script__macros_8hpp.html#a3c3287cf4a8ac209f850e750a08389ae">ACE_PREFIX</a>,module,var)</td></tr>
 <tr class="separator:aa8d36e95205e25d880966a5df638a622"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd1b696f98a5c7658e5c5beb793c8abf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(module,  var)&#160;&#160;&#160;QUOTE(<a class="el" href="script__macros_8hpp.html#aa8d36e95205e25d880966a5df638a622">ACEGVAR</a>(module,var))</td></tr>
+<tr class="memitem:acd1b696f98a5c7658e5c5beb793c8abf"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(module,  var)&#160;&#160;&#160;QUOTE(<a class="el" href="fnc__update_actions_8sqf.html#a7f36fa16d1ac961acae6492609e42467">ACEGVAR</a>(module,var))</td></tr>
 <tr class="separator:acd1b696f98a5c7658e5c5beb793c8abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1638a83048f3b2eed91fd36e6cbe4a8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(module,  function)&#160;&#160;&#160;TRIPLES(DOUBLES(<a class="el" href="script__macros_8hpp.html#a3c3287cf4a8ac209f850e750a08389ae">ACE_PREFIX</a>,module),fnc,function)</td></tr>
 <tr class="separator:ae1638a83048f3b2eed91fd36e6cbe4a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad725866c29bb89711fd94ed3795ee949"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#ad725866c29bb89711fd94ed3795ee949">QACEFUNC</a>(module,  function)&#160;&#160;&#160;QUOTE(<a class="el" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(module,function))</td></tr>
+<tr class="memitem:ad725866c29bb89711fd94ed3795ee949"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#ad725866c29bb89711fd94ed3795ee949">QACEFUNC</a>(module,  function)&#160;&#160;&#160;QUOTE(<a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(module,function))</td></tr>
 <tr class="separator:ad725866c29bb89711fd94ed3795ee949"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac0d098d3f92b4b580c86685cd6d79b4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#aac0d098d3f92b4b580c86685cd6d79b4">ACELSTRING</a>(module,  string)&#160;&#160;&#160;QUOTE(TRIPLES(STR,DOUBLES(<a class="el" href="script__macros_8hpp.html#a3c3287cf4a8ac209f850e750a08389ae">ACE_PREFIX</a>,module),string))</td></tr>
 <tr class="separator:aac0d098d3f92b4b580c86685cd6d79b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -211,17 +211,17 @@ Macros</h2></td></tr>
 <tr class="separator:a891f90dbaf30f24540e9945dddb376b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e50ee96c4084e2a01113128cd8cc332"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a6e50ee96c4084e2a01113128cd8cc332">TYPE_BACKPACK</a>&#160;&#160;&#160;901</td></tr>
 <tr class="separator:a6e50ee96c4084e2a01113128cd8cc332"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0adafe8cc0f6fb4c1d05d769e7a56d27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a0adafe8cc0f6fb4c1d05d769e7a56d27">PREP</a>(fncName)&#160;&#160;&#160;[QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), <a class="el" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(fncName)] call CBA_fnc_compileFunction</td></tr>
+<tr class="memitem:a0adafe8cc0f6fb4c1d05d769e7a56d27"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a0adafe8cc0f6fb4c1d05d769e7a56d27">PREP</a>(fncName)&#160;&#160;&#160;[<a class="el" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(functions\DOUBLES(fnc,fncName).sqf), <a class="el" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(fncName)] call CBA_fnc_compileFunction</td></tr>
 <tr class="separator:a0adafe8cc0f6fb4c1d05d769e7a56d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0faf7ee13f600b59de63c41026651b62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a0faf7ee13f600b59de63c41026651b62">PREP_MODULE</a>(folder)&#160;&#160;&#160;[] call compile preprocessFileLineNumbers QPATHTOF(folder\__PREP__.sqf)</td></tr>
+<tr class="memitem:a0faf7ee13f600b59de63c41026651b62"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a0faf7ee13f600b59de63c41026651b62">PREP_MODULE</a>(folder)&#160;&#160;&#160;[] call compile preprocessFileLineNumbers <a class="el" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(folder\__PREP__.sqf)</td></tr>
 <tr class="separator:a0faf7ee13f600b59de63c41026651b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13285b9e827c8ee51c57823b81b9e4f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a13285b9e827c8ee51c57823b81b9e4f8">KAT_isHC</a>&#160;&#160;&#160;(!hasInterface &amp;&amp; !isDedicated)</td></tr>
 <tr class="separator:a13285b9e827c8ee51c57823b81b9e4f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af51140c327f013c9faa6970b5a3dd124"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#af51140c327f013c9faa6970b5a3dd124">IDC_STAMINA_BAR</a>&#160;&#160;&#160;193</td></tr>
 <tr class="separator:af51140c327f013c9faa6970b5a3dd124"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85f309520badfc30cbab60bfd944318e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a85f309520badfc30cbab60bfd944318e">KAT_DEPRECATED</a>(arg1,  arg2,  arg3)&#160;&#160;&#160;WARNING_3(&quot;%1 is deprecated. Support will be dropped in version %2. Replaced by: %3&quot;,arg1,arg2,arg3)</td></tr>
+<tr class="memitem:a85f309520badfc30cbab60bfd944318e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a85f309520badfc30cbab60bfd944318e">KAT_DEPRECATED</a>(arg1,  arg2,  arg3)&#160;&#160;&#160;WARNING_3(&quot;%1 is deprecated. Support will be dropped <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a> version %2. Replaced by: %3&quot;,arg1,arg2,arg3)</td></tr>
 <tr class="separator:a85f309520badfc30cbab60bfd944318e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04fe20ec123d3991e2199fa44ead030a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a04fe20ec123d3991e2199fa44ead030a">PFORMAT_10</a>(MESSAGE,  A,  B,  C,  D,  E,  F,  G,  H,  I,  J)&#160;&#160;&#160;    format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8, H=%9, I=%10 J=%11', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G), RETNIL(H), RETNIL(I), RETNIL(J)]</td></tr>
+<tr class="memitem:a04fe20ec123d3991e2199fa44ead030a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a04fe20ec123d3991e2199fa44ead030a">PFORMAT_10</a>(MESSAGE,  A,  B,  C,  D,  E,  F,  G,  H,  I,  J)&#160;&#160;&#160;    <a class="el" href="fnc__group_i_d_8sqf.html#af878a00abe6cb2d824dd3e0fd8b414b9">format</a> ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8, H=%9, I=%10 J=%11', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G), RETNIL(H), RETNIL(I), RETNIL(J)]</td></tr>
 <tr class="separator:a04fe20ec123d3991e2199fa44ead030a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86f6c17aa6321caa0ef9f31da6c50847"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="script__macros_8hpp.html#a86f6c17aa6321caa0ef9f31da6c50847">TRACE_10</a>(MESSAGE,  A,  B,  C,  D,  E,  F,  G,  H,  I,  J)&#160;&#160;&#160;/* disabled */</td></tr>
 <tr class="separator:a86f6c17aa6321caa0ef9f31da6c50847"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -402,7 +402,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;(if (count ARRAY &gt; INDEX) then {ARRAY select INDEX} else {DEFAULT})</td>
+          <td></td><td>&#160;&#160;&#160;(<a class="el" href="fnc__show_message_8sqf.html#ad75832fa5547d1be46beb2dbb20411f7">if</a> (count ARRAY &gt; INDEX) then {ARRAY select INDEX} <a class="el" href="fnc__open_medical_menu_8sqf.html#a0544c3fe466e421738dae463968b70ba">else</a> {DEFAULT})</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -530,7 +530,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">varName</td><td>)</td>
-          <td>&#160;&#160;&#160;if(isNil &quot;KAT_DEBUG_NAMESPACE&quot;) then { KAT_DEBUG_NAMESPACE = []; }; if(!(QUOTE(<a class="el" href="pharma_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a>(varName)) in KAT_DEBUG_NAMESPACE)) then { PUSH(KAT_DEBUG_NAMESPACE, QUOTE(<a class="el" href="pharma_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a>(varName))); }; <a class="el" href="pharma_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a>(varName)</td>
+          <td>&#160;&#160;&#160;<a class="el" href="fnc__show_message_8sqf.html#ad75832fa5547d1be46beb2dbb20411f7">if</a>(isNil &quot;KAT_DEBUG_NAMESPACE&quot;) then { KAT_DEBUG_NAMESPACE = []; }; <a class="el" href="fnc__show_message_8sqf.html#ad75832fa5547d1be46beb2dbb20411f7">if</a>(!(QUOTE(<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(varName)) <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a> KAT_DEBUG_NAMESPACE)) then { PUSH(KAT_DEBUG_NAMESPACE, QUOTE(<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(varName))); }; <a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(varName)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -548,7 +548,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">varName</td><td>)</td>
-          <td>&#160;&#160;&#160;if(isNil &quot;KAT_DEBUG_NAMESPACE&quot;) then { KAT_DEBUG_NAMESPACE = []; }; if(!(QUOTE(varName) in KAT_DEBUG_NAMESPACE)) then { PUSH(KAT_DEBUG_NAMESPACE, QUOTE(varName)); }; varName</td>
+          <td>&#160;&#160;&#160;<a class="el" href="fnc__show_message_8sqf.html#ad75832fa5547d1be46beb2dbb20411f7">if</a>(isNil &quot;KAT_DEBUG_NAMESPACE&quot;) then { KAT_DEBUG_NAMESPACE = []; }; <a class="el" href="fnc__show_message_8sqf.html#ad75832fa5547d1be46beb2dbb20411f7">if</a>(!(QUOTE(varName) <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a> KAT_DEBUG_NAMESPACE)) then { PUSH(KAT_DEBUG_NAMESPACE, QUOTE(varName)); }; varName</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -610,7 +610,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;<a class="el" href="script__macros_8hpp.html#a0bb14c36b5eea3672e43d97c9ee4b5f3">GETMVAR</a>(<a class="el" href="pharma_2ui_2_cross_panel___dialog_8hpp.html#a13de54cc3d786b3d023285149a21f0d4">GVAR</a>(var1),var2)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="script__macros_8hpp.html#a0bb14c36b5eea3672e43d97c9ee4b5f3">GETMVAR</a>(<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(var1),var2)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -784,7 +784,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;getVariable [ARR_2(QUOTE(var1),var2)]</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [ARR_2(QUOTE(var1),var2)]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -846,7 +846,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;WARNING_3(&quot;%1 is deprecated. Support will be dropped in version %2. Replaced by: %3&quot;,arg1,arg2,arg3)</td>
+          <td></td><td>&#160;&#160;&#160;WARNING_3(&quot;%1 is deprecated. Support will be dropped <a class="el" href="fnc__chem_detector_8sqf.html#add01a021402bd917c6fdba78ee7dcd23">in</a> version %2. Replaced by: %3&quot;,arg1,arg2,arg3)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1160,7 +1160,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;    format ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8, H=%9, I=%10 J=%11', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G), RETNIL(H), RETNIL(I), RETNIL(J)]</td>
+          <td></td><td>&#160;&#160;&#160;    <a class="el" href="fnc__group_i_d_8sqf.html#af878a00abe6cb2d824dd3e0fd8b414b9">format</a> ['%1: A=%2, B=%3, C=%4, D=%5, E=%6, F=%7, G=%8, H=%9, I=%10 J=%11', MESSAGE, RETNIL(A), RETNIL(B), RETNIL(C), RETNIL(D), RETNIL(E), RETNIL(F), RETNIL(G), RETNIL(H), RETNIL(I), RETNIL(J)]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1178,7 +1178,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">fncName</td><td>)</td>
-          <td>&#160;&#160;&#160;[QPATHTOF(functions\DOUBLES(fnc,fncName).sqf), <a class="el" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(fncName)] call CBA_fnc_compileFunction</td>
+          <td>&#160;&#160;&#160;[<a class="el" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(functions\DOUBLES(fnc,fncName).sqf), <a class="el" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(fncName)] call CBA_fnc_compileFunction</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1196,7 +1196,7 @@ Macros</h2></td></tr>
           <td>(</td>
           <td class="paramtype">&#160;</td>
           <td class="paramname">folder</td><td>)</td>
-          <td>&#160;&#160;&#160;[] call compile preprocessFileLineNumbers QPATHTOF(folder\__PREP__.sqf)</td>
+          <td>&#160;&#160;&#160;[] call compile preprocessFileLineNumbers <a class="el" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(folder\__PREP__.sqf)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1224,7 +1224,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;QUOTE(<a class="el" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(module,function))</td>
+          <td></td><td>&#160;&#160;&#160;QUOTE(<a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(module,function))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1252,7 +1252,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;QUOTE(<a class="el" href="script__macros_8hpp.html#aa8d36e95205e25d880966a5df638a622">ACEGVAR</a>(module,var))</td>
+          <td></td><td>&#160;&#160;&#160;QUOTE(<a class="el" href="fnc__update_actions_8sqf.html#a7f36fa16d1ac961acae6492609e42467">ACEGVAR</a>(module,var))</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1498,7 +1498,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;setVariable [ARR_3(QUOTE(var1),var2,true)]</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="fnc__npwt_treatment_local_8sqf.html#a7c93c799dc3640787f2eafd5ab54b50b">setVariable</a> [ARR_3(QUOTE(var1),var2,<a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>)]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1588,7 +1588,7 @@ Macros</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td>&#160;&#160;&#160;setVariable [ARR_2(QUOTE(var1),var2)]</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="fnc__npwt_treatment_local_8sqf.html#a7c93c799dc3640787f2eafd5ab54b50b">setVariable</a> [ARR_2(QUOTE(var1),var2)]</td>
         </tr>
       </table>
 </div><div class="memdoc">

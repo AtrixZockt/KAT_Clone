@@ -81,10 +81,127 @@ $(document).ready(function(){initNavTree('fnc__treatment_advanced___carbonate_lo
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">fnc_treatmentAdvanced_CarbonateLocal.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="pharma_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ae349779218d6032e64894960704ba3fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#ae349779218d6032e64894960704ba3fc">if</a> (<a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#a42d74a4508d57de8539eb62a72302d85">_sedated</a>) exitWith</td></tr>
+<tr class="separator:ae349779218d6032e64894960704ba3fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd9427b0a54d3acb498f6c17dc2fd29c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#abd9427b0a54d3acb498f6c17dc2fd29c">if</a> (<a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#a21c35a425a8673744e2ea3fedf5ec555">_bloodPressureH</a> &gt;=100 &amp;&amp;<a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#a21c35a425a8673744e2ea3fedf5ec555">_bloodPressureH</a>&lt;=140 &amp;&amp;(random 100&lt;=<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(carbonateChance)) &amp;&amp;{[_patient] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(medical_status, hasStableVitals)}) then</td></tr>
+<tr class="separator:abd9427b0a54d3acb498f6c17dc2fd29c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:ac2f7a6fc4758e3b78ba3d1994471d84a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#ac2f7a6fc4758e3b78ba3d1994471d84a">params</a> [&quot;_medic&quot;, &quot;_patient&quot;]</td></tr>
+<tr class="separator:ac2f7a6fc4758e3b78ba3d1994471d84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42d74a4508d57de8539eb62a72302d85"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#a42d74a4508d57de8539eb62a72302d85">_sedated</a> = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [QEGVAR(surgery,sedated), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td></tr>
+<tr class="separator:a42d74a4508d57de8539eb62a72302d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef757dd8e1a986ed90846f281d55416"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#a6ef757dd8e1a986ed90846f281d55416">_bloodPressure</a> = [_patient] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(medical_status,getBloodPressure)</td></tr>
+<tr class="separator:a6ef757dd8e1a986ed90846f281d55416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21c35a425a8673744e2ea3fedf5ec555"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#a21c35a425a8673744e2ea3fedf5ec555">_bloodPressureH</a> = <a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#a6ef757dd8e1a986ed90846f281d55416">_bloodPressure</a> select 1</td></tr>
+<tr class="separator:a21c35a425a8673744e2ea3fedf5ec555"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="abd9427b0a54d3acb498f6c17dc2fd29c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd9427b0a54d3acb498f6c17dc2fd29c">&#9670;&nbsp;</a></span>if() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#a21c35a425a8673744e2ea3fedf5ec555">_bloodPressureH</a> &gt;=100 &amp;&amp;<a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#a21c35a425a8673744e2ea3fedf5ec555">_bloodPressureH</a>&lt;=140 &amp;&amp;(random 100&lt;=<a class="el" href="fnc__incision_local_8sqf.html#a997acb2dbbbc767df6186945acb9e682">GVAR</a>(carbonateChance)) &amp;&amp;{[_patient] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(medical_status, hasStableVitals)}                                                   &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae349779218d6032e64894960704ba3fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae349779218d6032e64894960704ba3fc">&#9670;&nbsp;</a></span>if() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">if </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#a42d74a4508d57de8539eb62a72302d85">_sedated</a>                                                    &#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a6ef757dd8e1a986ed90846f281d55416"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef757dd8e1a986ed90846f281d55416">&#9670;&nbsp;</a></span>_bloodPressure</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _bloodPressure = [_patient] call <a class="el" href="fnc__menu_p_f_h_8sqf.html#aa259c211cc554fdac2f6e32a19fd1e9c">ACEFUNC</a>(medical_status,getBloodPressure)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a21c35a425a8673744e2ea3fedf5ec555"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21c35a425a8673744e2ea3fedf5ec555">&#9670;&nbsp;</a></span>_bloodPressureH</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_bloodPressureH = <a class="el" href="fnc__treatment_advanced___carbonate_local_8sqf.html#a6ef757dd8e1a986ed90846f281d55416">_bloodPressure</a> select 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a42d74a4508d57de8539eb62a72302d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42d74a4508d57de8539eb62a72302d85">&#9670;&nbsp;</a></span>_sedated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _sedated = _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [QEGVAR(surgery,sedated), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac2f7a6fc4758e3b78ba3d1994471d84a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac2f7a6fc4758e3b78ba3d1994471d84a">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_medic&quot;, &quot;_patient&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
