@@ -50,7 +50,5 @@ var dir_5dbcfbcd78d4b03b14d2295126304954 =
       [ "CfgWeapons", "class_cfg_weapons.html", null ]
     ] ],
     [ "script_component.hpp", "circulation_2script__component_8hpp.html", "circulation_2script__component_8hpp" ],
-    [ "XEH_postInit.sqf", "circulation_2_x_e_h__post_init_8sqf.html", null ],
-    [ "XEH_preInit.sqf", "circulation_2_x_e_h__pre_init_8sqf.html", null ],
     [ "XEH_PREP.hpp", "circulation_2_x_e_h___p_r_e_p_8hpp.html", "circulation_2_x_e_h___p_r_e_p_8hpp" ]
 ];
