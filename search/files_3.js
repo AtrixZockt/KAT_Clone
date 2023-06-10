@@ -95,7 +95,7 @@ var searchData=
   ['fnc_5fincision_2esqf_1078',['fnc_incision.sqf',['../fnc__incision_8sqf.html',1,'']]],
   ['fnc_5fincisionlocal_2esqf_1079',['fnc_incisionLocal.sqf',['../fnc__incision_local_8sqf.html',1,'']]],
   ['fnc_5fincompatibilitywarning_2esqf_1080',['fnc_incompatibilityWarning.sqf',['../fnc__incompatibility_warning_8sqf.html',1,'']]],
-  ['fnc_5finit_2esqf_1081',['fnc_init.sqf',['../circulation_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)'],['../breathing_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)'],['../chemical_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)'],['../airway_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)'],['../surgery_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)'],['../pharma_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)'],['../misc_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)']]],
+  ['fnc_5finit_2esqf_1081',['fnc_init.sqf',['../pharma_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)'],['../airway_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)'],['../surgery_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)'],['../misc_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)'],['../circulation_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)'],['../chemical_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)'],['../breathing_2functions_2fnc__init_8sqf.html',1,'(Global Namespace)']]],
   ['fnc_5finitmodule_2esqf_1082',['fnc_initModule.sqf',['../fnc__init_module_8sqf.html',1,'']]],
   ['fnc_5finspectbreath_2esqf_1083',['fnc_inspectBreath.sqf',['../fnc__inspect_breath_8sqf.html',1,'']]],
   ['fnc_5finspectcatheter_2esqf_1084',['fnc_inspectCatheter.sqf',['../fnc__inspect_catheter_8sqf.html',1,'']]],

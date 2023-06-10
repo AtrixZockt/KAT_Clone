@@ -1,7 +1,6 @@
 var dir_0ec7ac071fffc5968f5248906b55ba45 =
 [
     [ "fnc_checkAirway.sqf", "fnc__check_airway_8sqf.html", "fnc__check_airway_8sqf" ],
-    [ "fnc_checkRecovery.sqf", "fnc__check_recovery_8sqf.html", "fnc__check_recovery_8sqf" ],
     [ "fnc_displayPatientInformation.sqf", "fnc__display_patient_information_8sqf.html", "fnc__display_patient_information_8sqf" ],
     [ "fnc_handleAirway.sqf", "fnc__handle_airway_8sqf.html", "fnc__handle_airway_8sqf" ],
     [ "fnc_handlePuking.sqf", "fnc__handle_puking_8sqf.html", "fnc__handle_puking_8sqf" ],

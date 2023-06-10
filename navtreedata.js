@@ -49,11 +49,11 @@ var NAVTREEINDEX =
 "circulation_2_x_e_h__pre_init_8sqf.html#a9ab327c9197510165b66b8b8d3206f19",
 "fnc__attach_a_e_d_x_8sqf.html#acbcaa545336379a4391c4e21812dd61f",
 "fnc__display_gas_mask_dur_8sqf.html#a2e9857c1b0caf41fba1695257b6f1064",
-"fnc__handle_pulmo_hit_8sqf.html#aa89597e335f9b843263975553aa4ba83",
-"fnc__open_reduction_check_8sqf.html#a3d084cf05481e26badcc963215953f3c",
-"fnc__treatment_advanced___carbonate_local_8sqf.html#ae349779218d6032e64894960704ba3fc",
-"fnc__treatment_advanced__remove_pulseoximeter_8sqf.html#a0556acf70a1ad33bad4345d2dc540ddb",
-"globals_defs_s.html",
+"fnc__handle_pulmo_hit_8sqf.html#ae5b694beff560c03cad322dadca31813",
+"fnc__open_reduction_check_8sqf.html#a4e8b38d531b701a61f269ac6220a2071",
+"fnc__treatment_advanced___cyanosis_8sqf.html",
+"fnc__treatment_advanced__remove_pulseoximeter_8sqf.html#a0c8066f9d06553b9d56076e508eca502",
+"globals_defs_t.html",
 "pharma_2_x_e_h___p_r_e_p_8hpp.html#a44957a3eed749f7f3e1caa463486581f",
 "surgery_2functions_2script__component_8hpp.html#a8b9ee0db07f4375e13d94f74e3d096f4"
 ];
