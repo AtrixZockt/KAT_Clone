@@ -85,8 +85,8 @@ $(document).ready(function(){initNavTree('misc_2_cfg_vehicles_8hpp_source.html',
 <div class="title">CfgVehicles.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span><a class="code" href="class_cfg_vehicles.html">CfgVehicles</a> {</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">    #include &quot;vehicle_stretcher.hpp&quot;</span></div>
+<a href="misc_2_cfg_vehicles_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span><a class="code" href="class_cfg_vehicles.html">CfgVehicles</a> {</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">    #include &quot;<a class="code" href="vehicle__stretcher_8hpp.html">vehicle_stretcher.hpp</a>&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    <span class="keyword">class </span>Land_IntravenStand_01_base_F;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="keyword">class </span>Land_IntravenStand_01_empty_F: Land_IntravenStand_01_base_F {</div>
@@ -165,7 +165,7 @@ $(document).ready(function(){initNavTree('misc_2_cfg_vehicles_8hpp_source.html',
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        camouflage = 10;</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        armor = 20;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        displayName = CSTRING(Stretcher_Display);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        model = QPATHTOF(models\stretcher\vurtual_stretcher.p3d);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        model = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(models\stretcher\vurtual_stretcher.p3d);</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        simulation = <span class="stringliteral">&quot;tankX&quot;</span>;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        crewVulnerable = 1;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        explosionShielding = 0;</div>
@@ -182,8 +182,8 @@ $(document).ready(function(){initNavTree('misc_2_cfg_vehicles_8hpp_source.html',
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keyword">class </span>Damage {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            tex[] = {};</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            mat[] = {</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                QPATHTOF(models\stretcher\seat.rvmat),</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                QPATHTOF(models\stretcher\seat_destruct.rvmat)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(models\stretcher\seat.rvmat),</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(models\stretcher\seat_destruct.rvmat)</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            };</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        };</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keyword">class </span>animationSources {</div>
@@ -230,7 +230,7 @@ $(document).ready(function(){initNavTree('misc_2_cfg_vehicles_8hpp_source.html',
 <div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            };</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        };</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="keyword">class </span>EventHandlers {</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            init = QUOTE(_this call FUNC(stretcher));</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            init = QUOTE(_this call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(stretcher));</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        };</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    };</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;    <span class="keyword">class </span>Land_Stretcher_01_base_F;</div>
@@ -333,12 +333,15 @@ $(document).ready(function(){initNavTree('misc_2_cfg_vehicles_8hpp_source.html',
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    };</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;};</div>
 <div class="ttc" id="aclass_cfg_vehicles_html"><div class="ttname"><a href="class_cfg_vehicles.html">CfgVehicles</a></div><div class="ttdoc">Hallo ich bin ein text \params Int Di.</div><div class="ttdef"><b>Definition:</b> CfgVehicles.hpp:1</div></div>
+<div class="ttc" id="afnc__treatment_advanced___cancel_recovery_position_local_8sqf_html_a580dc58ae22fa8819b4c837e05f75954"><div class="ttname"><a href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a></div><div class="ttdeci">_patient call FUNC(handlePuking)</div></div>
+<div class="ttc" id="afnc__update_body_image_8sqf_html_af41a1d49c983245ac4a43d01ec9b95e3"><div class="ttname"><a href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a></div><div class="ttdeci">_torso_infected ctrlSetText QPATHTOF(data\body_image\torso_i.paa)</div></div>
+<div class="ttc" id="avehicle__stretcher_8hpp_html"><div class="ttname"><a href="vehicle__stretcher_8hpp.html">vehicle_stretcher.hpp</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_5bf007d71e717921f629e4d4d868b95a.html">misc</a></li><li class="navelem"><b>CfgVehicles.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_5bf007d71e717921f629e4d4d868b95a.html">misc</a></li><li class="navelem"><a class="el" href="misc_2_cfg_vehicles_8hpp.html">CfgVehicles.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

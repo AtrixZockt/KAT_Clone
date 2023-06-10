@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('gui_8hpp_source.html',''); initResizab
 <div class="title">gui.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span>RscText;</div>
+<a href="gui_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span>RscText;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">class </span>RscButton;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">class </span>RscPicture;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">class </span>RscListBox;</div>
@@ -94,16 +94,16 @@ $(document).ready(function(){initNavTree('gui_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">class </span>RscControlsGroupNoScrollbars;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classace__medical__gui___triage_toggle.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classace__medical__gui___triage_toggle.html">ace_medical_gui_TriageToggle</a>: RscButton {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    x = QUOTE(POS_X(14.33));</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    w = QUOTE(POS_W(10.3));</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    x = QUOTE(<a class="code" href="airway_2script__component_8hpp.html#ad88227d3c1ae5481924169a38eec4f48">POS_X</a>(14.33));</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    w = QUOTE(<a class="code" href="airway_2script__component_8hpp.html#aed3ca8a7140d22c4b4ba04ca2164b5aa">POS_W</a>(10.3));</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;};</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classace__medical__gui___triage_select.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classace__medical__gui___triage_select.html">ace_medical_gui_TriageSelect</a>: RscControlsGroupNoScrollbars {</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    x = QUOTE(POS_X(14.33));</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    w = QUOTE(POS_W(10.3));</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    x = QUOTE(<a class="code" href="airway_2script__component_8hpp.html#ad88227d3c1ae5481924169a38eec4f48">POS_X</a>(14.33));</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    w = QUOTE(<a class="code" href="airway_2script__component_8hpp.html#aed3ca8a7140d22c4b4ba04ca2164b5aa">POS_W</a>(10.3));</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">class </span>controls {</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        <span class="keyword">class </span>None: RscButton {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            w = QUOTE(POS_W(10.3));</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;            w = QUOTE(<a class="code" href="airway_2script__component_8hpp.html#aed3ca8a7140d22c4b4ba04ca2164b5aa">POS_W</a>(10.3));</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        };</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    };</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
@@ -112,36 +112,43 @@ $(document).ready(function(){initNavTree('gui_8hpp_source.html',''); initResizab
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">class </span>controls {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keyword">class </span>Triage: RscActivePicture {};</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">class </span>Surgury: Triage {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            idc = IDC_SURGERY;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            idc = <a class="code" href="gui_2script__component_8hpp.html#a7acdfb0edbd5ed886a4ab04d4370e7fd">IDC_SURGERY</a>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            onButtonClick = QUOTE(ace_medical_gui_selectedCategory = <span class="stringliteral">&#39;surgery&#39;</span>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            text = QPATHTOF(data\categories\plate.paa);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            text = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(data\categories\plate.paa);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;            tooltip = <span class="stringliteral">&quot;Surgery&quot;</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            x = QUOTE(POS_X(13.5));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;            x = QUOTE(<a class="code" href="airway_2script__component_8hpp.html#ad88227d3c1ae5481924169a38eec4f48">POS_X</a>(13.5));</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        };</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">class </span>Action1: RscButtonMenu {};</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">class </span>Action10: Action1 {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            idc = IDC_ACTION_10;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            y = QUOTE(POS_Y(14.4));</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            idc = <a class="code" href="gui_2script__component_8hpp.html#a950fdb2b54019e684dfc8d439d76a50d">IDC_ACTION_10</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            y = QUOTE(<a class="code" href="airway_2script__component_8hpp.html#a8dc04382734289245605789d6a3ae43d">POS_Y</a>(14.4));</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        };</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">class </span>Action11: Action1 {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            idc = IDC_ACTION_11;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            y = QUOTE(POS_Y(15.5));</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            idc = <a class="code" href="gui_2script__component_8hpp.html#a69f530c2450ab67aa2b2da38308ce8bc">IDC_ACTION_11</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;            y = QUOTE(<a class="code" href="airway_2script__component_8hpp.html#a8dc04382734289245605789d6a3ae43d">POS_Y</a>(15.5));</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        };</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="keyword">class </span>TriageStatus: RscText {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            x = QUOTE(POS_X(14.33));</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            w = QUOTE(POS_W(10.33));</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            x = QUOTE(<a class="code" href="airway_2script__component_8hpp.html#ad88227d3c1ae5481924169a38eec4f48">POS_X</a>(14.33));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            w = QUOTE(<a class="code" href="airway_2script__component_8hpp.html#aed3ca8a7140d22c4b4ba04ca2164b5aa">POS_W</a>(10.33));</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        };</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    };</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
+<div class="ttc" id="aairway_2script__component_8hpp_html_a8dc04382734289245605789d6a3ae43d"><div class="ttname"><a href="airway_2script__component_8hpp.html#a8dc04382734289245605789d6a3ae43d">POS_Y</a></div><div class="ttdeci">#define POS_Y(N)</div><div class="ttdef"><b>Definition:</b> script_component.hpp:26</div></div>
+<div class="ttc" id="aairway_2script__component_8hpp_html_ad88227d3c1ae5481924169a38eec4f48"><div class="ttname"><a href="airway_2script__component_8hpp.html#ad88227d3c1ae5481924169a38eec4f48">POS_X</a></div><div class="ttdeci">#define POS_X(N)</div><div class="ttdef"><b>Definition:</b> script_component.hpp:25</div></div>
+<div class="ttc" id="aairway_2script__component_8hpp_html_aed3ca8a7140d22c4b4ba04ca2164b5aa"><div class="ttname"><a href="airway_2script__component_8hpp.html#aed3ca8a7140d22c4b4ba04ca2164b5aa">POS_W</a></div><div class="ttdeci">#define POS_W(N)</div><div class="ttdef"><b>Definition:</b> script_component.hpp:27</div></div>
 <div class="ttc" id="aclass_a_c_e___medical___menu_html"><div class="ttname"><a href="class_a_c_e___medical___menu.html">ACE_Medical_Menu</a></div><div class="ttdef"><b>Definition:</b> gui.hpp:24</div></div>
 <div class="ttc" id="aclassace__medical__gui___triage_select_html"><div class="ttname"><a href="classace__medical__gui___triage_select.html">ace_medical_gui_TriageSelect</a></div><div class="ttdef"><b>Definition:</b> gui.hpp:14</div></div>
 <div class="ttc" id="aclassace__medical__gui___triage_toggle_html"><div class="ttname"><a href="classace__medical__gui___triage_toggle.html">ace_medical_gui_TriageToggle</a></div><div class="ttdef"><b>Definition:</b> gui.hpp:9</div></div>
+<div class="ttc" id="afnc__update_body_image_8sqf_html_af41a1d49c983245ac4a43d01ec9b95e3"><div class="ttname"><a href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a></div><div class="ttdeci">_torso_infected ctrlSetText QPATHTOF(data\body_image\torso_i.paa)</div></div>
+<div class="ttc" id="agui_2script__component_8hpp_html_a69f530c2450ab67aa2b2da38308ce8bc"><div class="ttname"><a href="gui_2script__component_8hpp.html#a69f530c2450ab67aa2b2da38308ce8bc">IDC_ACTION_11</a></div><div class="ttdeci">#define IDC_ACTION_11</div><div class="ttdef"><b>Definition:</b> script_component.hpp:65</div></div>
+<div class="ttc" id="agui_2script__component_8hpp_html_a7acdfb0edbd5ed886a4ab04d4370e7fd"><div class="ttname"><a href="gui_2script__component_8hpp.html#a7acdfb0edbd5ed886a4ab04d4370e7fd">IDC_SURGERY</a></div><div class="ttdeci">#define IDC_SURGERY</div><div class="ttdef"><b>Definition:</b> script_component.hpp:48</div></div>
+<div class="ttc" id="agui_2script__component_8hpp_html_a950fdb2b54019e684dfc8d439d76a50d"><div class="ttname"><a href="gui_2script__component_8hpp.html#a950fdb2b54019e684dfc8d439d76a50d">IDC_ACTION_10</a></div><div class="ttdeci">#define IDC_ACTION_10</div><div class="ttdef"><b>Definition:</b> script_component.hpp:64</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_6d7731ac1565474480b333012eec357f.html">gui</a></li><li class="navelem"><b>gui.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_6d7731ac1565474480b333012eec357f.html">gui</a></li><li class="navelem"><a class="el" href="gui_8hpp.html">gui.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

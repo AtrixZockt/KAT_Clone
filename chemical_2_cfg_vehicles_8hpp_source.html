@@ -85,40 +85,40 @@ $(document).ready(function(){initNavTree('chemical_2_cfg_vehicles_8hpp_source.ht
 <div class="title">CfgVehicles.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span><a class="code" href="class_cfg_vehicles.html">CfgVehicles</a> {</div>
+<a href="chemical_2_cfg_vehicles_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span><a class="code" href="class_cfg_vehicles.html">CfgVehicles</a> {</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    <span class="keyword">class </span>Man;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    <span class="keyword">class </span>CAManBase: Man {</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;        <span class="keyword">class </span>ACE_SelfActions {</div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;            <span class="keyword">class </span>ACE_Equipment {</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;                <span class="keyword">class </span>KAT_CheckGasMaskDur {</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;                    displayName = CSTRING(CheckGasMaskDurability);</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                    condition = QUOTE([_player] call FUNC(hasGasMaskOn));</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;                    condition = QUOTE([_player] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(hasGasMaskOn));</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;                    exceptions[] = {<span class="stringliteral">&quot;isNotSwimming&quot;</span>, <span class="stringliteral">&quot;isNotInside&quot;</span>, <span class="stringliteral">&quot;isNotSitting&quot;</span>};</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                    statement = QUOTE(_this call FUNC(checkGasMaskDur));</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                    statement = QUOTE(_this call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(checkGasMaskDur));</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                    showDisabled = 0;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                    icon = QPATHTOF(ui\Gasmask_icon.paa);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;                    icon = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(ui\Gasmask_icon.paa);</div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                };</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;                <span class="keyword">class </span>KAT_ChangeGasMaskFilter {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                    displayName = CSTRING(ChangeGasMaskFilter); </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                    condition = QUOTE([_player] call FUNC(canReplaceFilter));</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                    condition = QUOTE([_player] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(canReplaceFilter));</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                    exceptions[] = {<span class="stringliteral">&quot;isNotSwimming&quot;</span>, <span class="stringliteral">&quot;isNotInside&quot;</span>, <span class="stringliteral">&quot;isNotSitting&quot;</span>};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                    statement = QUOTE(_this call FUNC(changeGasMaskFilter));</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                    statement = QUOTE(_this call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(changeGasMaskFilter));</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                    showDisabled = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                    icon = QPATHTOF(ui\gasmaskfilter_ca.paa);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                    icon = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(ui\gasmaskfilter_ca.paa);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                };</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                <span class="keyword">class </span>KAT_MuteChemDetector {</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                    displayName = CSTRING(ChemDetector_Mute);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                    condition = QUOTE([ARR_2(_player, <span class="keyword">true</span>)] call FUNC(getChemDetectorState));</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(chemDetectorState), <span class="keyword">false</span> , <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                    condition = QUOTE([ARR_2(_player, <span class="keyword">true</span>)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(getChemDetectorState));</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                    statement = QUOTE(_player <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(chemDetectorState), <span class="keyword">false</span> , <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                    showDisabled = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                    icon = QPATHTOF(ui\ChemDetectorIcon.paa);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                    icon = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(ui\ChemDetectorIcon.paa);</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                };</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keyword">class </span>KAT_UnmuteChemDetector {</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                    displayName = CSTRING(ChemDetector_Unmute);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    condition = QUOTE([ARR_2(_player, <span class="keyword">false</span>)] call FUNC(getChemDetectorState));</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                    statement = QUOTE(_player setVariable [ARR_3(QQGVAR(chemDetectorState), <span class="keyword">true</span> , <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                    condition = QUOTE([ARR_2(_player, <span class="keyword">false</span>)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(getChemDetectorState));</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                    statement = QUOTE(_player <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(chemDetectorState), <span class="keyword">true</span> , <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                    showDisabled = 0;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    icon = QPATHTOF(ui\ChemDetectorIcon.paa);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                    icon = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(ui\ChemDetectorIcon.paa);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                };</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;            }; </div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        };</div>
@@ -180,7 +180,7 @@ $(document).ready(function(){initNavTree('chemical_2_cfg_vehicles_8hpp_source.ht
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        side=7;</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        displayName = CSTRING(GasModule_Displayname);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        category = QEGVAR(zeus,KAM);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">function</span> = QFUNC(gasmodule);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keyword">function</span> = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(gasmodule);</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        isTriggerActivated = 0;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        functionPriority = 1;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        isGlobal = 1;</div>
@@ -247,7 +247,7 @@ $(document).ready(function(){initNavTree('chemical_2_cfg_vehicles_8hpp_source.ht
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        curatorCanAttach = 1;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        displayName = CSTRING(GasModule_Displayname);</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        category = QEGVAR(zeus,KAM);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        curatorInfoType = QGVAR(kat_RscGasModul);</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        curatorInfoType = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(kat_RscGasModul);</div>
 <div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        isTriggerActivated = 0;</div>
 <div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        functionPriority = 1;</div>
 <div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        isGlobal = 1;</div>
@@ -280,15 +280,15 @@ $(document).ready(function(){initNavTree('chemical_2_cfg_vehicles_8hpp_source.ht
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    };</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keyword">class </span>ACE_Box_82mm_Mo_Combo: ACE_Box_82mm_Mo_HE {</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keyword">class </span>TransportMagazines: TransportMagazines {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_TypeCS,8);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <a class="code" href="script__macros_8hpp.html#aa5ac1958702e084bd2b05d755a5dbc14">MACRO_ADDMAGAZINE</a>(KAT_1Rnd_82mm_Mo_Type0,8);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            <a class="code" href="script__macros_8hpp.html#aa5ac1958702e084bd2b05d755a5dbc14">MACRO_ADDMAGAZINE</a>(KAT_1Rnd_82mm_Mo_TypeCS,8);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        };</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    };</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">class </span>ACE_Box_82mm_Mo_Gas: ACE_Box_82mm_Mo_HE {</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        displayName = CSTRING(GasBox_Displayname);</div>
 <div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        <span class="keyword">class </span>TransportMagazines {</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_Type0,8);</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            MACRO_ADDMAGAZINE(KAT_1Rnd_82mm_Mo_TypeCS,8);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;            <a class="code" href="script__macros_8hpp.html#aa5ac1958702e084bd2b05d755a5dbc14">MACRO_ADDMAGAZINE</a>(KAT_1Rnd_82mm_Mo_Type0,8);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <a class="code" href="script__macros_8hpp.html#aa5ac1958702e084bd2b05d755a5dbc14">MACRO_ADDMAGAZINE</a>(KAT_1Rnd_82mm_Mo_TypeCS,8);</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        };</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    };</div>
 <div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160; </div>
@@ -301,12 +301,18 @@ $(document).ready(function(){initNavTree('chemical_2_cfg_vehicles_8hpp_source.ht
 <div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    };</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;};</div>
 <div class="ttc" id="aclass_cfg_vehicles_html"><div class="ttname"><a href="class_cfg_vehicles.html">CfgVehicles</a></div><div class="ttdoc">Hallo ich bin ein text \params Int Di.</div><div class="ttdef"><b>Definition:</b> CfgVehicles.hpp:1</div></div>
+<div class="ttc" id="afnc__check_airway_8sqf_html_a847c9b96415ea629e855c5a3c85929bb"><div class="ttname"><a href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a></div><div class="ttdeci">_patient setVariable[QACEGVAR(medical, triageLevel), 3, true]</div><div class="ttdef"><b>Definition:</b> fnc_checkAirway.sqf:19</div></div>
+<div class="ttc" id="afnc__handle_gas_mask_dur_8sqf_html_a525da65154600d184c197d96adf518c5"><div class="ttname"><a href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a></div><div class="ttdeci">!isNil QGVAR(availGasmaskList) &amp;&amp;_unit getVariable[QGVAR(enteredPoison)</div></div>
+<div class="ttc" id="afnc__treatment_advanced___cancel_recovery_position_local_8sqf_html_a580dc58ae22fa8819b4c837e05f75954"><div class="ttname"><a href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a></div><div class="ttdeci">_patient call FUNC(handlePuking)</div></div>
+<div class="ttc" id="afnc__update_body_image_8sqf_html_af41a1d49c983245ac4a43d01ec9b95e3"><div class="ttname"><a href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a></div><div class="ttdeci">_torso_infected ctrlSetText QPATHTOF(data\body_image\torso_i.paa)</div></div>
+<div class="ttc" id="ascript__macros_8hpp_html_a49cafa32cfe68863ede76d30e966817b"><div class="ttname"><a href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a></div><div class="ttdeci">#define QFUNC(var1)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:15</div></div>
+<div class="ttc" id="ascript__macros_8hpp_html_aa5ac1958702e084bd2b05d755a5dbc14"><div class="ttname"><a href="script__macros_8hpp.html#aa5ac1958702e084bd2b05d755a5dbc14">MACRO_ADDMAGAZINE</a></div><div class="ttdeci">#define MACRO_ADDMAGAZINE(MAGAZINE, COUNT)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:53</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_70bdaf491c87277ceefb32489d937460.html">chemical</a></li><li class="navelem"><b>CfgVehicles.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_70bdaf491c87277ceefb32489d937460.html">chemical</a></li><li class="navelem"><a class="el" href="chemical_2_cfg_vehicles_8hpp.html">CfgVehicles.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

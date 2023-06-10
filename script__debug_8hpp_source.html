@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('script__debug_8hpp_source.html',''); i
 <div class="title">script_debug.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<a href="script__debug_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// #define DISABLE_COMPILE_CACHE</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// To Use: [] call KEKO_PREP_RECOMPILE;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
@@ -94,9 +94,9 @@ $(document).ready(function(){initNavTree('script__debug_8hpp_source.html',''); i
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">    #define PREP_RECOMPILE_START    if (isNil &quot;KAT_PREP_RECOMPILE&quot;</span>) then {KAT_RECOMPILES = []; KAT_PREP_RECOMPILE = {{call _x} forEach KAT_RECOMPILES;}}; private _recomp = {</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">    #define PREP_RECOMPILE_END      }; call _recomp; KAT_RECOMPILES pushBack _recomp;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">    #define LINKFUNC(x) FUNC(x)</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">    #define PREP_RECOMPILE_START; </span><span class="comment">/* disabled */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">    #define PREP_RECOMPILE_END; </span><span class="comment">/* disabled */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="script__debug_8hpp.html#ab25d181fc7198cda8f01312cef511efb">   12</a></span>&#160;<span class="preprocessor">    #define LINKFUNC(x) FUNC(x)</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="script__debug_8hpp.html#a7d91c894ffb29af1a2aa36fafc699db2">   13</a></span>&#160;<span class="preprocessor">    #define PREP_RECOMPILE_START; </span><span class="comment">/* disabled */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="script__debug_8hpp.html#aaf93a250a4f0eb471c9810607d7722e0">   14</a></span>&#160;<span class="preprocessor">    #define PREP_RECOMPILE_END; </span><span class="comment">/* disabled */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
@@ -112,9 +112,9 @@ $(document).ready(function(){initNavTree('script__debug_8hpp_source.html',''); i
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">    #define FUNC(var1) {if(KAT_IS_ERRORED) then { [&#39;AUTO&#39;,&#39;AUTO&#39;] call KAT_DUMPSTACK_FNC; KAT_IS_ERRORED = false; }; KAT_IS_ERRORED = true; KAT_STACK_TRACE set [KAT_STACK_DEPTH, [diag_tickTime, __FILE__, __LINE__, KAT_CURRENT_FUNCTION, &#39;TRIPLES(ADDON,fnc,var1)&#39;, _this]]; KAT_STACK_DEPTH = KAT_STACK_DEPTH + 1; KAT_CURRENT_FUNCTION = &#39;TRIPLES(ADDON,fnc,var1)&#39;; private _ret = _this call TRIPLES(ADDON,fnc,var1); KAT_STACK_DEPTH = KAT_STACK_DEPTH - 1; KAT_IS_ERRORED = false; _ret;}</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">    #define EFUNC(var1,var2) {if(KAT_IS_ERRORED) then { [&#39;AUTO&#39;,&#39;AUTO&#39;] call KAT_DUMPSTACK_FNC; KAT_IS_ERRORED = false; }; KAT_IS_ERRORED = true; KAT_STACK_TRACE set [KAT_STACK_DEPTH, [diag_tickTime, __FILE__, __LINE__, KAT_CURRENT_FUNCTION, &#39;TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)&#39;, _this]]; KAT_STACK_DEPTH = KAT_STACK_DEPTH + 1; KAT_CURRENT_FUNCTION = &#39;TRIPLES(DOUBLES(PREFIX,var1),fnc,var2)&#39;; private _ret = _this call TRIPLES(DOUBLES(PREFIX,var1),fnc,var2); KAT_STACK_DEPTH = KAT_STACK_DEPTH - 1; KAT_IS_ERRORED = false; _ret;}</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">    #define CALLSTACK(function) function</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">    #define CALLSTACK_NAMED(function, functionName) function</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">    #define DUMPSTACK</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="script__debug_8hpp.html#a4082e392613aae44e74b2bcdc9759551">   33</a></span>&#160;<span class="preprocessor">    #define CALLSTACK(function) function</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="script__debug_8hpp.html#a379de9087e7967b7acd0e490ccc7a1c5">   34</a></span>&#160;<span class="preprocessor">    #define CALLSTACK_NAMED(function, functionName) function</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="script__debug_8hpp.html#ac2420afd95fa30ba6b1044375fa30046">   35</a></span>&#160;<span class="preprocessor">    #define DUMPSTACK</span></div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
@@ -130,17 +130,17 @@ $(document).ready(function(){initNavTree('script__debug_8hpp_source.html',''); i
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">    #define DUMP_COUNTERS ([__FILE__, __LINE__] call KAT_DUMPCOUNTERS_FNC)</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">    #define CREATE_COUNTER(x) </span><span class="comment">/* disabled */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">    #define BEGIN_COUNTER(x) </span><span class="comment">/* disabled */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">    #define END_COUNTER(x) </span><span class="comment">/* disabled */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">    #define DUMP_COUNTERS  </span><span class="comment">/* disabled */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="script__debug_8hpp.html#adc1a8530004c80772d377393e524726e">   54</a></span>&#160;<span class="preprocessor">    #define CREATE_COUNTER(x) </span><span class="comment">/* disabled */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="script__debug_8hpp.html#a329428ad362629beca3252ea7e395e5c">   55</a></span>&#160;<span class="preprocessor">    #define BEGIN_COUNTER(x) </span><span class="comment">/* disabled */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="script__debug_8hpp.html#af82b88d67ce4f51ff93fddbf78d56555">   56</a></span>&#160;<span class="preprocessor">    #define END_COUNTER(x) </span><span class="comment">/* disabled */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="script__debug_8hpp.html#ad15a1eb2e5088bcf1fe6f24ba7e7377d">   57</a></span>&#160;<span class="preprocessor">    #define DUMP_COUNTERS  </span><span class="comment">/* disabled */</span><span class="preprocessor"></span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_9d03c2c36cca1da9b4d8c6f24ca0050f.html">main</a></li><li class="navelem"><b>script_debug.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_9d03c2c36cca1da9b4d8c6f24ca0050f.html">main</a></li><li class="navelem"><a class="el" href="script__debug_8hpp.html">script_debug.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

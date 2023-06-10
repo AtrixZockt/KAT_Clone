@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('breathing_2_a_c_e___medical___treatmen
 <div class="title">ACE_Medical_Treatment_Actions.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span><a class="code" href="class_a_c_e___medical___treatment___actions.html">ACE_Medical_Treatment_Actions</a> {</div>
+<a href="breathing_2_a_c_e___medical___treatment___actions_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span><a class="code" href="class_a_c_e___medical___treatment___actions.html">ACE_Medical_Treatment_Actions</a> {</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    <span class="keyword">class </span>CheckPulse;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    <span class="keyword">class </span>Pulseoximeter {</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;        displayName = CSTRING(Pulseoximeter_Display);</div>
@@ -94,11 +94,11 @@ $(document).ready(function(){initNavTree('breathing_2_a_c_e___medical___treatmen
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        treatmentLocations = 0;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;LeftArm&quot;</span>, <span class="stringliteral">&quot;RightArm&quot;</span>};</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        allowSelfTreatment = 1;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        medicRequired = QGVAR(medLvl_Pulseoximeter);</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        medicRequired = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(medLvl_Pulseoximeter);</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        treatmentTime = 2;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_Pulseoximeter&quot;</span>};</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        condition = QUOTE(missionNamespace getVariable [ARR_2(QQGVAR(enable),<span class="keyword">true</span>)] &amp;&amp; !(_patient getVariable [ARR_2(QQGVAR(pulseoximeter), <span class="keyword">false</span>)]) &amp;&amp; !([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter)));</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        callbackSuccess = QFUNC(treatmentAdvanced_pulseoximeter);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        condition = QUOTE(missionNamespace <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [ARR_2(QQGVAR(enable),<span class="keyword">true</span>)] &amp;&amp; !(_patient <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [ARR_2(QQGVAR(pulseoximeter), <span class="keyword">false</span>)]) &amp;&amp; !([ARR_2(_patient,_bodyPart)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(checkPulseOximeter)));</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(treatmentAdvanced_pulseoximeter);</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        callbackFailure = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        callbackProgress = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        consumeItem = 1;</div>
@@ -118,11 +118,11 @@ $(document).ready(function(){initNavTree('breathing_2_a_c_e___medical___treatmen
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        treatmentLocations = 0;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;LeftArm&quot;</span>, <span class="stringliteral">&quot;RightArm&quot;</span>};</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        allowSelfTreatment = 1;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        medicRequired = QGVAR(medLvl_Pulseoximeter);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        medicRequired = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(medLvl_Pulseoximeter);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        treatmentTime = 2;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        items[] = {};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter));</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        callbackSuccess = QFUNC(treatmentAdvanced_removePulseoximeter);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        condition = QUOTE([ARR_2(_patient,_bodyPart)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(checkPulseOximeter));</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(treatmentAdvanced_removePulseoximeter);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        callbackFailure = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        callbackProgress = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        consumeItem = 0;</div>
@@ -141,12 +141,12 @@ $(document).ready(function(){initNavTree('breathing_2_a_c_e___medical___treatmen
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        category = <span class="stringliteral">&quot;airway&quot;</span>;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        treatmentLocations = 0;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;Body&quot;</span>};</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        allowSelfTreatment = QGVAR(enable_selfChestseal);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        medicRequired = QGVAR(medLvl_Chestseal);</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        allowSelfTreatment = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(enable_selfChestseal);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        medicRequired = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(medLvl_Chestseal);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        treatmentTime = 7;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_chestSeal&quot;</span>};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),<span class="keyword">false</span>)]));</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        callbackSuccess = QFUNC(treatmentAdvanced_chestSeal);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        condition = QUOTE(!(_patient <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [ARR_2(QQEGVAR(airway,recovery),<span class="keyword">false</span>)]));</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(treatmentAdvanced_chestSeal);</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        callbackFailure = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        callbackProgress = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        consumeItem = 1;</div>
@@ -166,11 +166,11 @@ $(document).ready(function(){initNavTree('breathing_2_a_c_e___medical___treatmen
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        treatmentLocations = 0;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;Body&quot;</span>};</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        allowSelfTreatment = 0;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        medicRequired = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(medLvl_hemopneumothoraxTreatment);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        treatmentTime = 7;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_aatKit&quot;</span>};</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),<span class="keyword">false</span>)]));</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        callbackSuccess = QFUNC(treatmentAdvanced_hemopneumothorax);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        condition = QUOTE(!(_patient <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [ARR_2(QQEGVAR(airway,recovery),<span class="keyword">false</span>)]));</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(treatmentAdvanced_hemopneumothorax);</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        callbackFailure = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        callbackProgress = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        consumeItem = 1;</div>
@@ -190,11 +190,11 @@ $(document).ready(function(){initNavTree('breathing_2_a_c_e___medical___treatmen
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        treatmentLocations = 0;</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;Body&quot;</span>};</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        allowSelfTreatment = 0;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        medicRequired = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(medLvl_hemopneumothoraxTreatment);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        treatmentTime = 7;</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_aatKit&quot;</span>};</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),<span class="keyword">false</span>)]));</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        callbackSuccess = QFUNC(treatmentAdvanced_tensionpneumothorax);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        condition = QUOTE(!(_patient <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [ARR_2(QQEGVAR(airway,recovery),<span class="keyword">false</span>)]));</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(treatmentAdvanced_tensionpneumothorax);</div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        callbackFailure = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        callbackProgress = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        consumeItem = 1;</div>
@@ -214,11 +214,11 @@ $(document).ready(function(){initNavTree('breathing_2_a_c_e___medical___treatmen
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        treatmentLocations = 0;</div>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;Body&quot;</span>};</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        allowSelfTreatment = 0;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        medicRequired = QGVAR(medLvl_hemopneumothoraxTreatment);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        medicRequired = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(medLvl_hemopneumothoraxTreatment);</div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        treatmentTime = 7;</div>
 <div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_ncdKit&quot;</span>};</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        condition = QUOTE(!(_patient getVariable [ARR_2(QQEGVAR(airway,recovery),<span class="keyword">false</span>)]));</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        callbackSuccess = QFUNC(treatmentAdvanced_tensionpneumothorax);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        condition = QUOTE(!(_patient <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [ARR_2(QQEGVAR(airway,recovery),<span class="keyword">false</span>)]));</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(treatmentAdvanced_tensionpneumothorax);</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        callbackFailure = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        callbackProgress = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        consumeItem = 1;</div>
@@ -234,16 +234,16 @@ $(document).ready(function(){initNavTree('breathing_2_a_c_e___medical___treatmen
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <span class="keyword">class </span>ListenToLungs: CheckPulse {</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        displayName = CSTRING(auscultateLung_display);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        displayNameProgress = CSTRING(listening_progress);</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        treatmentTime = QGVAR(stethoscopeListeningTime);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        treatmentTime = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(stethoscopeListeningTime);</div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;Body&quot;</span>};</div>
 <div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        allowSelfTreatment = 0;</div>
 <div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        category = <span class="stringliteral">&quot;airway&quot;</span>;</div>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        medicRequired = 0;</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        consumeItem = 0;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        callbackStart = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), <span class="keyword">true</span>, <span class="keyword">true</span>)]; [ARR_2(_medic, _patient)] spawn FUNC(listenLungs));</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        callbackSuccess = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        callbackStart = QUOTE(<a class="code" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a> <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(usingStethoscope), <span class="keyword">true</span>, <span class="keyword">true</span>)]; [ARR_2(<a class="code" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a>, _patient)] <a class="code" href="airway_2functions_2fnc__init_8sqf.html#adf0c3dbaa47dc966e256a9787bd57c10">spawn</a> <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(listenLungs));</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        callbackSuccess = QUOTE(<a class="code" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a> <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(usingStethoscope), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        callbackProgress = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        callbackFailure = QUOTE(_medic setVariable [ARR_3(QQGVAR(usingStethoscope), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        callbackFailure = QUOTE(<a class="code" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a> <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(usingStethoscope), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        condition = <span class="stringliteral">&quot;true&quot;</span>;</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_stethoscope&quot;</span>};</div>
 <div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        animationPatient = <span class="stringliteral">&quot;&quot;</span>;</div>
@@ -256,9 +256,9 @@ $(document).ready(function(){initNavTree('breathing_2_a_c_e___medical___treatmen
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        treatmentTime = 3;</div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;Head&quot;</span>, <span class="stringliteral">&quot;LeftArm&quot;</span>, <span class="stringliteral">&quot;RightArm&quot;</span>};</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        allowSelfTreatment = 1;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        medicRequired = QGVAR(medLvl_Cyanosis);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        condition = QUOTE(GVAR(enableCyanosis) &amp;&amp; !(GVAR(cyanosisShowInMenu)));</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        callbackSuccess = QFUNC(treatmentAdvanced_Cyanosis);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        medicRequired = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(medLvl_Cyanosis);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        condition = QUOTE(<a class="code" href="fnc__check_airway_8sqf.html#a7524d01865462f8e9b9eec66a7432d02">GVAR</a>(enableCyanosis) &amp;&amp; !(<a class="code" href="fnc__check_airway_8sqf.html#a7524d01865462f8e9b9eec66a7432d02">GVAR</a>(cyanosisShowInMenu)));</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        callbackSuccess = <a class="code" href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a>(treatmentAdvanced_Cyanosis);</div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    };</div>
 <div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keyword">class </span>DisablePulseOximeterAudio {</div>
 <div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        displayName = CSTRING(PulseOximeter_Action_removeSound);</div>
@@ -270,19 +270,19 @@ $(document).ready(function(){initNavTree('breathing_2_a_c_e___medical___treatmen
 <div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        allowSelfTreatment = 1;</div>
 <div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;LeftArm&quot;</span>, <span class="stringliteral">&quot;RightArm&quot;</span>};</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        treatmentTime = 0.01;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter) &amp;&amp; _patient getVariable [ARR_2(QQGVAR(PulseOximeter_VolumePatient), <span class="keyword">false</span>)]);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        condition = QUOTE([ARR_2(_patient,_bodyPart)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(checkPulseOximeter) &amp;&amp; _patient <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [ARR_2(QQGVAR(PulseOximeter_VolumePatient), <span class="keyword">false</span>)]);</div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        callbackProgress = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        callbackStart = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        callbackFailure = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(PulseOximeter_VolumePatient), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        callbackSuccess = QUOTE(_patient <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(PulseOximeter_VolumePatient), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        animationPatient = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        animationMedic = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        litter[] = {};</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    };</div>
 <div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keyword">class </span>EnablePulseOximeterAudio: DisablePulseOximeterAudio {</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        displayName = CSTRING(PulseOximeter_Action_addSound);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        condition = QUOTE([ARR_2(_patient,_bodyPart)] call FUNC(checkPulseOximeter) &amp;&amp; !(_patient getVariable [ARR_2(QQGVAR(PulseOximeter_VolumePatient), <span class="keyword">false</span>)]));</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(PulseOximeter_VolumePatient), <span class="keyword">true</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        condition = QUOTE([ARR_2(_patient,_bodyPart)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(checkPulseOximeter) &amp;&amp; !(_patient <a class="code" href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a> [ARR_2(QQGVAR(PulseOximeter_VolumePatient), <span class="keyword">false</span>)]));</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        callbackSuccess = QUOTE(_patient <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(PulseOximeter_VolumePatient), <span class="keyword">true</span>, <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    };</div>
 <div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">class </span>UseBVM {</div>
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        displayName = CSTRING(UseBVM);</div>
@@ -291,14 +291,14 @@ $(document).ready(function(){initNavTree('breathing_2_a_c_e___medical___treatmen
 <div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;        treatmentLocations = 0;</div>
 <div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;        allowedSelections[] = {<span class="stringliteral">&quot;Head&quot;</span>};</div>
 <div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        allowSelfTreatment = 0;</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        medicRequired = QGVAR(medLvl_BVM);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        treatmentTime = QGVAR(BVMTime);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        medicRequired = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(medLvl_BVM);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        treatmentTime = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(BVMTime);</div>
 <div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;        consumeItem = 0;</div>
 <div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_BVM&quot;</span>};</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        condition = QUOTE(_patient call FUNC(canUseBVM));</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        callbackStart = QUOTE([ARR_2(_medic, _patient)] call FUNC(useBVM));</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        condition = QUOTE(_patient call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(canUseBVM));</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        callbackStart = QUOTE([ARR_2(<a class="code" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a>, _patient)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(useBVM));</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        callbackSuccess = QUOTE(_patient <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        callbackFailure = QUOTE(_patient <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        callbackProgress = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        animationPatient = <span class="stringliteral">&quot;&quot;</span>;</div>
 <div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        animationPatientUnconscious = <span class="stringliteral">&quot;AinjPpneMstpSnonWrflDnon_rolltoback&quot;</span>;</div>
@@ -306,46 +306,56 @@ $(document).ready(function(){initNavTree('breathing_2_a_c_e___medical___treatmen
 <div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        animationMedic = <span class="stringliteral">&quot;AinvPknlMstpSnonWnonDr_medic0&quot;</span>;</div>
 <div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        animationMedicProne = <span class="stringliteral">&quot;AinvPknlMstpSnonWnonDr_medic0&quot;</span>;</div>
 <div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        litter[] = {};</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        icon = QPATHTOF(ui\BVM_ui.paa);</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        icon = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(ui\BVM_ui.paa);</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    };</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    <span class="keyword">class </span>UsePocketBVM: UseBVM {</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        displayName = CSTRING(UsePocketBVM);</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        displayNameProgress = CSTRING(UsePocketBVM_Progress);</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        medicRequired = QGVAR(medLvl_PocketBVM);</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        medicRequired = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(medLvl_PocketBVM);</div>
 <div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_pocketBVM&quot;</span>};</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        condition = QUOTE(_patient call FUNC(canUseBVM));</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        callbackStart = QUOTE([ARR_4(_medic, _patient, <span class="keyword">true</span>, <span class="keyword">false</span>)] call FUNC(useBVM));</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        condition = QUOTE(_patient call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(canUseBVM));</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        callbackStart = QUOTE([ARR_4(<a class="code" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a>, _patient, <span class="keyword">true</span>, <span class="keyword">false</span>)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(useBVM));</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        callbackSuccess = QUOTE(_patient <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        callbackFailure = QUOTE(_patient <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    };</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <span class="keyword">class </span>UseBVMPortableOxygen: UseBVM {</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        displayName = CSTRING(UseBVM_PortableOxygen);</div>
 <div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        displayNameProgress = CSTRING(UseBVM_PortableOxygen_Progress);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        medicRequired = QGVAR(medLvl_BVM_Oxygen);</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        medicRequired = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(medLvl_BVM_Oxygen);</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_BVM&quot;</span>};</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        condition = QUOTE(_patient call FUNC(canUseBVM) &amp;&amp; _medic call FUNC(hasOxygenTank) &amp;&amp; !(_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)));</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        callbackStart = QUOTE([ARR_5(_medic, _patient, <span class="keyword">false</span>, <span class="keyword">true</span>, <span class="keyword">true</span>)] call FUNC(useBVM));</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        condition = QUOTE(_patient call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(canUseBVM) &amp;&amp; <a class="code" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a> call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(hasOxygenTank) &amp;&amp; !(_patient call <a class="code" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(medical_treatment,isInMedicalFacility) || _patient call <a class="code" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(medical_treatment,isInMedicalVehicle)));</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        callbackStart = QUOTE([ARR_5(<a class="code" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a>, _patient, <span class="keyword">false</span>, <span class="keyword">true</span>, <span class="keyword">true</span>)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(useBVM));</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        callbackSuccess = QUOTE(_patient <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        callbackFailure = QUOTE(_patient <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    };</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keyword">class </span>UseBVMOxygen: UseBVM {</div>
 <div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;        displayName = CSTRING(UseBVM_Oxygen);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        displayNameProgress = CSTRING(UseBVM_Oxygen_Progress);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        medicRequired = QGVAR(medLvl_BVM_Oxygen);</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        medicRequired = <a class="code" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(medLvl_BVM_Oxygen);</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        items[] = {<span class="stringliteral">&quot;kat_BVM&quot;</span>};</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        condition = QUOTE(_patient call FUNC(canUseBVM) &amp;&amp; (_patient call ACEFUNC(medical_treatment,isInMedicalFacility) || _patient call ACEFUNC(medical_treatment,isInMedicalVehicle)));</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        callbackStart = QUOTE([ARR_4(_medic, _patient, <span class="keyword">false</span>, <span class="keyword">true</span>)] call FUNC(useBVM));</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        callbackSuccess = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        callbackFailure = QUOTE(_patient setVariable [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        condition = QUOTE(_patient call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(canUseBVM) &amp;&amp; (_patient call <a class="code" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(medical_treatment,isInMedicalFacility) || _patient call <a class="code" href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a>(medical_treatment,isInMedicalVehicle)));</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        callbackStart = QUOTE([ARR_4(<a class="code" href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a>, _patient, <span class="keyword">false</span>, <span class="keyword">true</span>)] call <a class="code" href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a>(useBVM));</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        callbackSuccess = QUOTE(_patient <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        callbackFailure = QUOTE(_patient <a class="code" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [ARR_3(QQGVAR(BVMInUse), <span class="keyword">false</span>, <span class="keyword">true</span>)]);</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    };</div>
 <div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;};</div>
+<div class="ttc" id="aairway_2functions_2fnc__init_8sqf_html_adf0c3dbaa47dc966e256a9787bd57c10"><div class="ttname"><a href="airway_2functions_2fnc__init_8sqf.html#adf0c3dbaa47dc966e256a9787bd57c10">spawn</a></div><div class="ttdeci">_unit spawn</div><div class="ttdef"><b>Definition:</b> fnc_init.sqf:31</div></div>
 <div class="ttc" id="aclass_a_c_e___medical___treatment___actions_html"><div class="ttname"><a href="class_a_c_e___medical___treatment___actions.html">ACE_Medical_Treatment_Actions</a></div><div class="ttdef"><b>Definition:</b> ACE_Medical_Treatment_Actions.hpp:1</div></div>
+<div class="ttc" id="afnc__check_airway_8sqf_html_a7524d01865462f8e9b9eec66a7432d02"><div class="ttname"><a href="fnc__check_airway_8sqf.html#a7524d01865462f8e9b9eec66a7432d02">GVAR</a></div><div class="ttdeci">&amp;&amp;_patient getVariable &amp;&amp;[QGVAR(obstruction), false] GVAR(autoTriage)) then</div><div class="ttdef"><b>Definition:</b> fnc_checkAirway.sqf:20</div></div>
+<div class="ttc" id="afnc__check_airway_8sqf_html_a847c9b96415ea629e855c5a3c85929bb"><div class="ttname"><a href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a></div><div class="ttdeci">_patient setVariable[QACEGVAR(medical, triageLevel), 3, true]</div><div class="ttdef"><b>Definition:</b> fnc_checkAirway.sqf:19</div></div>
+<div class="ttc" id="afnc__handle_gas_mask_dur_8sqf_html_a525da65154600d184c197d96adf518c5"><div class="ttname"><a href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a></div><div class="ttdeci">!isNil QGVAR(availGasmaskList) &amp;&amp;_unit getVariable[QGVAR(enteredPoison)</div></div>
+<div class="ttc" id="afnc__has_b_v_m_8sqf_html_aa4fbd01846b98cc49ae7f3daa1fef0fb"><div class="ttname"><a href="fnc__has_b_v_m_8sqf.html#aa4fbd01846b98cc49ae7f3daa1fef0fb">getVariable</a></div><div class="ttdeci">_patient getVariable[QGVAR(BVM), false] _patient getVariable[QGVAR(pocketBVM), false]</div><div class="ttdef"><b>Definition:</b> fnc_hasBVM.sqf:20</div></div>
+<div class="ttc" id="afnc__treatment_advanced___cancel_recovery_position_local_8sqf_html_a580dc58ae22fa8819b4c837e05f75954"><div class="ttname"><a href="fnc__treatment_advanced___cancel_recovery_position_local_8sqf.html#a580dc58ae22fa8819b4c837e05f75954">FUNC</a></div><div class="ttdeci">_patient call FUNC(handlePuking)</div></div>
+<div class="ttc" id="afnc__treatment_advanced__overstretch_head_8sqf_html_a8b11dddb531d7dc991e063e1026ddbd9"><div class="ttname"><a href="fnc__treatment_advanced__overstretch_head_8sqf.html#a8b11dddb531d7dc991e063e1026ddbd9">_medic</a></div><div class="ttdeci">_patient distance2D _medic</div><div class="ttdef"><b>Definition:</b> fnc_treatmentAdvanced_overstretchHead.sqf:36</div></div>
+<div class="ttc" id="afnc__update_body_image_8sqf_html_af41a1d49c983245ac4a43d01ec9b95e3"><div class="ttname"><a href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a></div><div class="ttdeci">_torso_infected ctrlSetText QPATHTOF(data\body_image\torso_i.paa)</div></div>
+<div class="ttc" id="ascript__macros_8hpp_html_a49cafa32cfe68863ede76d30e966817b"><div class="ttname"><a href="script__macros_8hpp.html#a49cafa32cfe68863ede76d30e966817b">QFUNC</a></div><div class="ttdeci">#define QFUNC(var1)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:15</div></div>
+<div class="ttc" id="ascript__macros_8hpp_html_ae1638a83048f3b2eed91fd36e6cbe4a8"><div class="ttname"><a href="script__macros_8hpp.html#ae1638a83048f3b2eed91fd36e6cbe4a8">ACEFUNC</a></div><div class="ttdeci">#define ACEFUNC(module, function)</div><div class="ttdef"><b>Definition:</b> script_macros.hpp:69</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_19324090db7fa5ae9be4a5fd923b156d.html">breathing</a></li><li class="navelem"><b>ACE_Medical_Treatment_Actions.hpp</b></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_19324090db7fa5ae9be4a5fd923b156d.html">breathing</a></li><li class="navelem"><a class="el" href="breathing_2_a_c_e___medical___treatment___actions_8hpp.html">ACE_Medical_Treatment_Actions.hpp</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
