@@ -85,14 +85,14 @@ $(document).ready(function(){initNavTree('surgery_2_cfg_weapons_8hpp_source.html
 <div class="title">CfgWeapons.hpp</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="surgery_2_cfg_weapons_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span><a class="code" href="class_cfg_weapons.html">CfgWeapons</a> {</div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">class </span><a class="code" href="class_cfg_weapons.html">CfgWeapons</a> {</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;    <span class="keyword">class </span>ACE_ItemCore;</div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    <span class="keyword">class </span>CBA_MiscItem_ItemInfo;</div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    <span class="keyword">class </span>kat_scalpel: ACE_ItemCore {</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;        scope = 2;</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;        displayName = CSTRING(Scalpel_displayName);</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        picture = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(ui\scalpel.paa);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;        picture = QPATHTOF(ui\scalpel.paa);</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        model = <span class="stringliteral">&quot;\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d&quot;</span>;</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        descriptionShort = CSTRING(Scalpel_DescShort);</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keyword">class </span>ItemInfo: CBA_MiscItem_ItemInfo {</div>
@@ -102,7 +102,7 @@ $(document).ready(function(){initNavTree('surgery_2_cfg_weapons_8hpp_source.html
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">class </span>kat_retractor: ACE_ItemCore {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        scope = 2;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        displayName = CSTRING(Retractor_displayName);</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        picture = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(ui\retractor.paa);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        picture = QPATHTOF(ui\retractor.paa);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        model = <span class="stringliteral">&quot;\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d&quot;</span>;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        descriptionShort = CSTRING(Retractor_DescShort);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keyword">class </span>ItemInfo: CBA_MiscItem_ItemInfo {</div>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('surgery_2_cfg_weapons_8hpp_source.html
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">class </span>kat_clamp: ACE_ItemCore {</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        scope = 2;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        displayName = CSTRING(Clamp_displayName);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        picture = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(ui\clamp.paa);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        picture = QPATHTOF(ui\clamp.paa);</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        model = <span class="stringliteral">&quot;\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d&quot;</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        descriptionShort = CSTRING(Clamp_DescShort);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keyword">class </span>ItemInfo: CBA_MiscItem_ItemInfo {</div>
@@ -122,7 +122,7 @@ $(document).ready(function(){initNavTree('surgery_2_cfg_weapons_8hpp_source.html
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">class </span>kat_plate: ACE_ItemCore {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        scope = 2;</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        displayName = CSTRING(Plate_Display);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        picture = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(ui\plate.paa);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        picture = QPATHTOF(ui\plate.paa);</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        model = <span class="stringliteral">&quot;\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d&quot;</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        descriptionShort = CSTRING(Plate_DescShort);</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keyword">class </span>ItemInfo: CBA_MiscItem_ItemInfo {</div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('surgery_2_cfg_weapons_8hpp_source.html
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keyword">class </span>kat_vacuum: ACE_ItemCore {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        scope = 2;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        displayName = CSTRING(Vacuum_displayName);</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        picture = <a class="code" href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a>(ui\vacuum.paa);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        picture = QPATHTOF(ui\vacuum.paa);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        model = <span class="stringliteral">&quot;\A3\Structures_F_EPA\Items\Medical\Painkillers_F.p3d&quot;</span>;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        descriptionShort = CSTRING(Vacuum_DescShort);</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keyword">class </span>ItemInfo: CBA_MiscItem_ItemInfo {</div>
@@ -141,13 +141,12 @@ $(document).ready(function(){initNavTree('surgery_2_cfg_weapons_8hpp_source.html
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    };</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
 <div class="ttc" id="aclass_cfg_weapons_html"><div class="ttname"><a href="class_cfg_weapons.html">CfgWeapons</a></div><div class="ttdef"><b>Definition:</b> CfgWeapons.hpp:1</div></div>
-<div class="ttc" id="afnc__update_body_image_8sqf_html_af41a1d49c983245ac4a43d01ec9b95e3"><div class="ttname"><a href="fnc__update_body_image_8sqf.html#af41a1d49c983245ac4a43d01ec9b95e3">QPATHTOF</a></div><div class="ttdeci">_torso_infected ctrlSetText QPATHTOF(data\body_image\torso_i.paa)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_881826e38e25fb00b5e36ff124b2249a.html">surgery</a></li><li class="navelem"><a class="el" href="surgery_2_cfg_weapons_8hpp.html">CfgWeapons.hpp</a></li>
+    <li class="navelem"><a class="el" href="dir_1233bc0a3e869c10318208e4553a4fcb.html">addons</a></li><li class="navelem"><a class="el" href="dir_881826e38e25fb00b5e36ff124b2249a.html">surgery</a></li><li class="navelem"><b>CfgWeapons.hpp</b></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
