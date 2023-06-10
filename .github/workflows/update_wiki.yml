@@ -22,7 +22,7 @@ jobs:
         id: changed_files
         uses: tj-actions/changed-files@v36
         with:
-          ref: main
+          files: addons/**
 
       - name: Install dependencies
         run: npm install markdown-it
