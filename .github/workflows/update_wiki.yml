@@ -21,17 +21,17 @@ jobs:
           git diff --name-only origin/main..HEAD > changed_files.txt
           if [ -s changed_files.txt ]; then
             echo "Changes detected."
-            echo "::set-output name=changes::true"
+            echo "CHANGES=true" >> $GITHUB_ENV
           else
             echo "No changes detected."
-            echo "::set-output name=changes::false"
+            echo "CHANGES=false" >> $GITHUB_ENV
           fi
 
       - name: Install dependencies
         run: npm install markdown-it
 
       - name: Generate documentation from .sqf files
-        if: steps.file_changes.outputs.changes == 'true'
+        if: env.CHANGES == 'true'
         run: node generate_documentation.js
 
       - name: Upload Release Notes to Wiki
