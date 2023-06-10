@@ -15,7 +15,8 @@ jobs:
     - name: Set execute permission for sqf_filter.py
       uses: ./.github/workflows/set_permission
       with:
-        working_directory: ./tools
+        env:
+          WORKING_DIRECTORY: ./tools
 
     - name: doxygen-github-pages-action
       uses: DenverCoder1/doxygen-github-pages-action@v1.3.0

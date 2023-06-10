@@ -1,10 +1,17 @@
-import os
 import sys
-import win32file
+import os
+import subprocess
 
-script_path = "sqf_filter.py"
+def main():
+    working_directory = sys.argv[1]
+    script_directory = os.path.dirname(os.path.abspath(__file__))
 
-if sys.platform == "win32":
-    file_handle = win32file.Open(script_path, win32file.FILE_ATTRIBUTE_NORMAL)
-    win32file.SetFileTime(file_handle, 0, 0, 0)
-    win32file.CloseHandle(file_handle)
+    # Set the working directory in the Dockerfile
+    os.chdir(os.path.join(script_directory, working_directory))
+
+    # Change the permissions of sqf_filter.py
+    file_path = os.path.join(working_directory, 'sqf_filter.py')
+    subprocess.run(['chmod', '+x', file_path])
+
+if __name__ == "__main__":
+    main()
