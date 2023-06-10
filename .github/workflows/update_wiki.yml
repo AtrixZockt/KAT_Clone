@@ -16,17 +16,16 @@ jobs:
       - name: Install dependencies
         run: npm install markdown-it
 
-      - name: Clone wiki repository
-        run: git clone https://github.com/AtrixZockt/KAT_Clone.wiki.git wiki
-
       - name: Generate documentation from .sqf files
         run: node generate_documentation.js
 
-      - name: Update wiki
-        uses: Decathlon/wiki-page-creator-action@v1
+      - name: Upload Release Notes to Wiki
+        uses: Decathlon/wiki-page-creator-action@v2.0.0
         with:
           GH_PAT: ${{ secrets.GITHUB_TOKEN }}
-          REPO_NAME: YOUR_REPOSITORY
-          MD_FOLDER: addons
+          ACTION_MAIL: atrixzockt@web.de
+          ACTION_NAME: AtrixZockt
+          OWNER: AtrixZockt
+          REPO_NAME: Kat_Clone
           PAGE_NAME: documentation
           PAGE_CONTENT: "documentation.md"
