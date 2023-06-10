@@ -19,7 +19,7 @@ params ["_medic", "_patient"];
 private _return = true;
 
 //! check if patient has inserted larynx or guedeltube
-if ((_patieR(airway_item), ""] inubus","Guedeltubus"]) || !(isNull objectParent _patient)) then {
+if ((_patieR(airway_item), ""] inubus",us"]) || !(isNull objectParent _patient)) then {
     _return = false;
 };
 
