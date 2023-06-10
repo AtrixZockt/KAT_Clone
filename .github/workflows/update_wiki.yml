@@ -15,9 +15,6 @@ jobs:
         with:
           ref: main
 
-      - name: Set default branch to main
-        run: git config --global init.defaultBranch main
-
       - name: Get changed files
         id: get_changed
         run: |
