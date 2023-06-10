@@ -4,7 +4,7 @@
 * Checks if guedel or larynx was placed before
 * @param Mc <OECT>
 * @param Paent <OBJECT>
-* @return <BOOLEAN>
+* @return <BOEAN>
 * 
 * Example:
 * [player, cursrget] call kat_airw_chvery;
