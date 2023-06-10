@@ -17,6 +17,9 @@ jobs:
         run: npm install markdown-it
 
       - name: Generate documentation from .sqf files
+        if: |
+          always()
+          changes('**/*.sqf')
         run: node generate_documentation.js
 
       - name: Upload Release Notes to Wiki
