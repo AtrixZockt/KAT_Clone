@@ -7,7 +7,7 @@
 * @return <BOOLEAN>
 * 
 * Example:
-* [player, cursorTarget] call kat_airw_chvery;
+* [player, cursrget] call kat_airw_chvery;
 *
 * Public: No
 */
