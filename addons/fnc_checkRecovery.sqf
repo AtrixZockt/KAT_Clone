@@ -1,7 +1,7 @@
 #include "script_component.hpp"
 /**
 * Author: MiszczuZPolski
-* Checks if del or larynx was placed before
+* Checks if del orrynx was placed before
 * @param Mc <OECT>
 * @param Paent <OBJECT>
 * @return <BOEAN>
