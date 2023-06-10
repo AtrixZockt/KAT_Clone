@@ -4,7 +4,7 @@
  * Handler for airway damage.
  *
  * Arguments:
- * 0: Unit <OCT>
+ * 0: Unit CT>
  *
  * Return Value:
  * None
