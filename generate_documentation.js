@@ -21,6 +21,9 @@ comments.forEach(file => {
       return markdown;
     }
   }).join('\n');
+
+  console.log('Input files:', file);
+  console.log('Generated documentation:', documentation);
 });
 
 // Save the generated documentation to a Markdown file
