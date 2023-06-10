@@ -9,16 +9,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Set execute permission for sqf_filter.py
-      uses: ./.github/workflows/set_permission
-      with:
-        env:
-          WORKING_DIRECTORY: ./tools
-
-    - name: doxygen-github-pages-action
-      uses: DenverCoder1/doxygen-github-pages-action@v1.3.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: DenverCoder1/doxygen-github-pages-action@v1.3.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
