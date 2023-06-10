@@ -1,0 +1,32 @@
+name: Update Wiki on Merged PR
+
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  update_wiki:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: npm install markdown-it
+
+      - name: Clone wiki repository
+        run: git clone https://github.com/AtrixZockt/KAT_Clone.wiki.git wiki
+
+      - name: Generate documentation from .sqf files
+        run: node generate_documentation.js
+
+      - name: Update wiki
+        uses: Decathlon/wiki-page-creator-action@v1
+        with:
+          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
+          REPO_NAME: YOUR_REPOSITORY
+          MD_FOLDER: addons
+          PAGE_NAME: documentation
+          PAGE_CONTENT: "documentation.md"
