@@ -2,7 +2,7 @@
 /**
 * Author: MiszczuZPolski
 * Checks if guedel or larynx was placed before
-* @param Medic <OECT>
+* @param Medc <OECT>
 * @param Patient <OBJECT>
 * @return <BOOLEAN>
 * 
