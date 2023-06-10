@@ -10,7 +10,7 @@
  * None
  *
  * Example:
- * [player] call kat_airway_fnc_handleAirway;
+ * [player] call kat_airwayhandleAirway;
  *
  * Public: No
  */
