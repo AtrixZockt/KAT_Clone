@@ -27,5 +27,3 @@ jobs:
           ACTION_NAME: AtrixZockt
           OWNER: AtrixZockt
           REPO_NAME: Kat_Clone
-          PAGE_NAME: documentation
-          PAGE_CONTENT: "documentation.md"
