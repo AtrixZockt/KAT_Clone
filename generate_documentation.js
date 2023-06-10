@@ -24,4 +24,4 @@ comments.forEach(file => {
 });
 
 // Save the generated documentation to a Markdown file
-fs.writeFileSync('addons/documentation.md', documentation);
+fs.writeFileSync('documentation.md', documentation);
