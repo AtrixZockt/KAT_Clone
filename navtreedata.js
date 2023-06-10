@@ -35,6 +35,7 @@ var NAVTREE =
       [ "Globals", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
         [ "Functions", "globals_func.html", "globals_func" ],
+        [ "Variables", "globals_vars.html", "globals_vars" ],
         [ "Macros", "globals_defs.html", "globals_defs" ]
       ] ]
     ] ]
@@ -44,11 +45,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_blood___medical_8hpp.html",
-"chemical_2script__component_8hpp.html#a03b6249a27810de2a6e31e3ac2866388",
-"classace__medical__gui___triage_toggle.html",
+"chemical_2_x_e_h___p_r_e_p_8hpp.html#a475fa24636461d594aaecca0bd72a717",
+"circulation_2_x_e_h__pre_init_8sqf.html#a9ab327c9197510165b66b8b8d3206f19",
+"fnc__attach_a_e_d_x_8sqf.html#acbcaa545336379a4391c4e21812dd61f",
+"fnc__display_gas_mask_dur_8sqf.html#a2e9857c1b0caf41fba1695257b6f1064",
+"fnc__handle_pulmo_hit_8sqf.html#aa89597e335f9b843263975553aa4ba83",
+"fnc__open_reduction_check_8sqf.html#a3d084cf05481e26badcc963215953f3c",
+"fnc__treatment_advanced___carbonate_local_8sqf.html#ae349779218d6032e64894960704ba3fc",
+"fnc__treatment_advanced__remove_pulseoximeter_8sqf.html#a0556acf70a1ad33bad4345d2dc540ddb",
 "globals_defs_s.html",
-"pharma_2functions_2script__component_8hpp.html#a7cc3ba4399b8223570a029d2e6133f19",
-"zeus_2script__component_8hpp.html#aaf31ae497e432844e334de3cb26578cb"
+"pharma_2_x_e_h___p_r_e_p_8hpp.html#a44957a3eed749f7f3e1caa463486581f",
+"surgery_2functions_2script__component_8hpp.html#a8b9ee0db07f4375e13d94f74e3d096f4"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

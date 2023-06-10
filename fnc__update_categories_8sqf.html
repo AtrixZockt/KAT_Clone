@@ -81,10 +81,98 @@ $(document).ready(function(){initNavTree('fnc__update_categories_8sqf.html','');
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">fnc_updateCategories.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="gui_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a44229769101cf804d204566dd395f3cd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__update_categories_8sqf.html#a44229769101cf804d204566dd395f3cd">params</a> [&quot;_display&quot;]</td></tr>
+<tr class="separator:a44229769101cf804d204566dd395f3cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2757eb227fd727e90b2b8be43cdf2302"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__update_categories_8sqf.html#a2757eb227fd727e90b2b8be43cdf2302">_ctrl</a> = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a528ed63e4e791557747143ca8173564e">_display</a> displayCtrl _idc</td></tr>
+<tr class="separator:a2757eb227fd727e90b2b8be43cdf2302"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b2f845f58df6fbdac90508b8049d6fe"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__update_categories_8sqf.html#a5b2f845f58df6fbdac90508b8049d6fe">_enable</a> = <a class="el" href="fnc__update_actions_8sqf.html#a7f36fa16d1ac961acae6492609e42467">ACEGVAR</a>(medical_gui,actions) findIf {_category == _x select 1 &amp;&amp; {call (_x select 2)}} &gt; -1</td></tr>
+<tr class="separator:a5b2f845f58df6fbdac90508b8049d6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aded779d5afcb243c941a5ed11daf4d72"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__update_categories_8sqf.html#aded779d5afcb243c941a5ed11daf4d72">_color</a> = select <a class="el" href="fnc__update_categories_8sqf.html#a5b2f845f58df6fbdac90508b8049d6fe">_enable</a></td></tr>
+<tr class="separator:aded779d5afcb243c941a5ed11daf4d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a563947f767344dc176499a579d6ddcb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__update_categories_8sqf.html#a563947f767344dc176499a579d6ddcb9">forEach</a> [[<a class="el" href="zeus_2script__component_8hpp.html#a38ec596c2bd988da27c290718323587c">IDC_EXAMINE</a>, &quot;examine&quot;], [IDC_BANDAGE, &quot;bandage&quot;], [IDC_MEDICATION, &quot;medication&quot;], [IDC_AIRWAY, &quot;airway&quot;], [IDC_ADVANCED, &quot;advanced&quot;], [IDC_DRAG, &quot;drag&quot;], [IDC_SURGERY, &quot;surgery&quot;]]</td></tr>
+<tr class="separator:a563947f767344dc176499a579d6ddcb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aded779d5afcb243c941a5ed11daf4d72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aded779d5afcb243c941a5ed11daf4d72">&#9670;&nbsp;</a></span>_color</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__update_categories_8sqf.html#a2757eb227fd727e90b2b8be43cdf2302">_ctrl</a> ctrlSetTextColor _color = select <a class="el" href="fnc__update_categories_8sqf.html#a5b2f845f58df6fbdac90508b8049d6fe">_enable</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2757eb227fd727e90b2b8be43cdf2302"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2757eb227fd727e90b2b8be43cdf2302">&#9670;&nbsp;</a></span>_ctrl</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _ctrl = <a class="el" href="fnc__ui__manage_airway_8sqf.html#a528ed63e4e791557747143ca8173564e">_display</a> displayCtrl _idc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5b2f845f58df6fbdac90508b8049d6fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b2f845f58df6fbdac90508b8049d6fe">&#9670;&nbsp;</a></span>_enable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="fnc__update_categories_8sqf.html#a2757eb227fd727e90b2b8be43cdf2302">_ctrl</a> ctrlEnable _enable = <a class="el" href="fnc__update_actions_8sqf.html#a7f36fa16d1ac961acae6492609e42467">ACEGVAR</a>(medical_gui,actions) findIf {_category == _x select 1 &amp;&amp; {call (_x select 2)}} &gt; -1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a563947f767344dc176499a579d6ddcb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a563947f767344dc176499a579d6ddcb9">&#9670;&nbsp;</a></span>forEach</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">forEach[[<a class="el" href="zeus_2script__component_8hpp.html#a38ec596c2bd988da27c290718323587c">IDC_EXAMINE</a>, &quot;examine&quot;],[IDC_BANDAGE, &quot;bandage&quot;],[IDC_MEDICATION, &quot;medication&quot;],[IDC_AIRWAY, &quot;airway&quot;],[IDC_ADVANCED, &quot;advanced&quot;],[IDC_DRAG, &quot;drag&quot;],[IDC_SURGERY, &quot;surgery&quot;]]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a44229769101cf804d204566dd395f3cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44229769101cf804d204566dd395f3cd">&#9670;&nbsp;</a></span>params</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">params[&quot;_display&quot;]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

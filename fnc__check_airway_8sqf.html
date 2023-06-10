@@ -81,10 +81,133 @@ $(document).ready(function(){initNavTree('fnc__check_airway_8sqf.html',''); init
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a> &#124;
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">fnc_checkAirway.sqf File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><code>#include &quot;<a class="el" href="airway_2functions_2script__component_8hpp_source.html">script_component.hpp</a>&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a5d61f5615ab763118f52ad1f0bf545b3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_airway_8sqf.html#a5d61f5615ab763118f52ad1f0bf545b3">GET_SPO2</a>(unit)&#160;&#160;&#160;(unit <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="airway_2functions_2script__component_8hpp.html#a4c3e1c9f489bec97c3639fd374a767df">VAR_SPO2</a>, 100])</td></tr>
+<tr class="separator:a5d61f5615ab763118f52ad1f0bf545b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a7524d01865462f8e9b9eec66a7432d02"><td class="memItemLeft" align="right" valign="top">&amp;&amp;_patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> &amp;&amp;[<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(obstruction), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_airway_8sqf.html#a7524d01865462f8e9b9eec66a7432d02">GVAR</a> (autoTriage)) then</td></tr>
+<tr class="separator:a7524d01865462f8e9b9eec66a7432d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6dc0b1c1a488d07c684b60961e485c9"><td class="memItemLeft" align="right" valign="top">call&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_airway_8sqf.html#af6dc0b1c1a488d07c684b60961e485c9">ACEFUNC</a> (common, displayTextStructured)</td></tr>
+<tr class="separator:af6dc0b1c1a488d07c684b60961e485c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a847c9b96415ea629e855c5a3c85929bb"><td class="memItemLeft" align="right" valign="top">_patient&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_airway_8sqf.html#a847c9b96415ea629e855c5a3c85929bb">setVariable</a> [<a class="el" href="script__macros_8hpp.html#acd1b696f98a5c7658e5c5beb793c8abf">QACEGVAR</a>(medical, triageLevel), 3, <a class="el" href="fnc__treatment_advanced___pervitin_local_8sqf.html#a8ab6a201e821728b5c8b9c94f271e39f">true</a>]</td></tr>
+<tr class="separator:a847c9b96415ea629e855c5a3c85929bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abddbb9bea3f939e2914cf0201d7ae132"><td class="memItemLeft" align="right" valign="top">private&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="fnc__check_airway_8sqf.html#abddbb9bea3f939e2914cf0201d7ae132">_message</a> = <a class="el" href="fnc__group_i_d_8sqf.html#af878a00abe6cb2d824dd3e0fd8b414b9">format</a> [&quot;%1, %2&quot;, _messageairwayobstruction, _messageairwayOccluded]</td></tr>
+<tr class="separator:abddbb9bea3f939e2914cf0201d7ae132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a5d61f5615ab763118f52ad1f0bf545b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d61f5615ab763118f52ad1f0bf545b3">&#9670;&nbsp;</a></span>GET_SPO2</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GET_SPO2</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">unit</td><td>)</td>
+          <td>&#160;&#160;&#160;(unit <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a> [<a class="el" href="airway_2functions_2script__component_8hpp.html#a4c3e1c9f489bec97c3639fd374a767df">VAR_SPO2</a>, 100])</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="af6dc0b1c1a488d07c684b60961e485c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6dc0b1c1a488d07c684b60961e485c9">&#9670;&nbsp;</a></span>ACEFUNC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">call ACEFUNC </td>
+          <td>(</td>
+          <td class="paramtype">common&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">displayTextStructured&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7524d01865462f8e9b9eec66a7432d02"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7524d01865462f8e9b9eec66a7432d02">&#9670;&nbsp;</a></span>GVAR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">&amp;&amp; _patient <a class="el" href="fnc__blood_type_8sqf.html#ac2306f9fa6edfee94462f72f310f90c3">getVariable</a>&amp;&amp; [<a class="el" href="fnc__handle_gas_mask_dur_8sqf.html#a525da65154600d184c197d96adf518c5">QGVAR</a>(obstruction), <a class="el" href="fnc__condition_i_vstand_8sqf.html#ae6c865df784842196d411c1466b01686">false</a>] GVAR </td>
+          <td>(</td>
+          <td class="paramtype">autoTriage&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="abddbb9bea3f939e2914cf0201d7ae132"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abddbb9bea3f939e2914cf0201d7ae132">&#9670;&nbsp;</a></span>_message</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">private _message = <a class="el" href="fnc__group_i_d_8sqf.html#af878a00abe6cb2d824dd3e0fd8b414b9">format</a> [&quot;%1, %2&quot;, _messageairwayobstruction, _messageairwayOccluded]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a847c9b96415ea629e855c5a3c85929bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a847c9b96415ea629e855c5a3c85929bb">&#9670;&nbsp;</a></span>setVariable</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">_patient setVariable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    <a class="code" href="fnc__check_recovery_8sqf.html#ad0590a935a3a58b09d43b1a14fa6ebe8">params</a> [<span class="stringliteral">&quot;_medic&quot;</span>, <span class="stringliteral">&quot;_patient&quot;</span>]</div>
+<div class="ttc" id="afnc__check_recovery_8sqf_html_ad0590a935a3a58b09d43b1a14fa6ebe8"><div class="ttname"><a href="fnc__check_recovery_8sqf.html#ad0590a935a3a58b09d43b1a14fa6ebe8">params</a></div><div class="ttdeci">params[&quot;_medic&quot;, &quot;_patient&quot;]</div><div class="ttdoc">Author: MiszczuZPolski Checks if guedel or larynx was placed before.</div><div class="ttdef"><b>Definition:</b> fnc_checkRecovery.sqf:15</div></div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

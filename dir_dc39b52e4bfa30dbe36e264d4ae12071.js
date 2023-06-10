@@ -28,7 +28,7 @@ var dir_dc39b52e4bfa30dbe36e264d4ae12071 =
     ] ],
     [ "config.cpp", "pharma_2config_8cpp.html", "pharma_2config_8cpp" ],
     [ "script_component.hpp", "pharma_2script__component_8hpp.html", "pharma_2script__component_8hpp" ],
-    [ "XEH_postInit.sqf", "pharma_2_x_e_h__post_init_8sqf.html", null ],
-    [ "XEH_preInit.sqf", "pharma_2_x_e_h__pre_init_8sqf.html", null ],
+    [ "XEH_postInit.sqf", "pharma_2_x_e_h__post_init_8sqf.html", "pharma_2_x_e_h__post_init_8sqf" ],
+    [ "XEH_preInit.sqf", "pharma_2_x_e_h__pre_init_8sqf.html", "pharma_2_x_e_h__pre_init_8sqf" ],
     [ "XEH_PREP.hpp", "pharma_2_x_e_h___p_r_e_p_8hpp.html", "pharma_2_x_e_h___p_r_e_p_8hpp" ]
 ];
