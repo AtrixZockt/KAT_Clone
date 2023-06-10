@@ -16,10 +16,18 @@ jobs:
       - name: Install dependencies
         run: npm install markdown-it
 
+      - name: Check for changes in .sqf files
+        id: check_sqf_changes
+        run: |
+          git diff --name-only --diff-filter=d *.sqf > changes.txt
+          if [ -s changes.txt ]; then
+            echo "::set-output name=has_changes::true"
+          else
+            echo "::set-output name=has_changes::false"
+          fi
+
       - name: Generate documentation from .sqf files
-        if: |
-          always()
-          changes('**/*.sqf')
+        if: steps.check_sqf_changes.outputs.has_changes == 'true'
         run: node generate_documentation.js
 
       - name: Upload Release Notes to Wiki
