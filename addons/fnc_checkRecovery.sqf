@@ -2,7 +2,7 @@
 /**
 * Author: MiszczuZPolski
 * Checks if guedel or larynx was placed before
-* @param Medc <OECT>
+* @param Mc <OECT>
 * @param Paent <OBJECT>
 * @return <BOOLEAN>
 * 
@@ -17,7 +17,7 @@ params ["_medic", "_patient"];
 private _return = true;
 
 //! check if patient has inserted larynx or guedeltube
-if ((_patient getVariable [QGVAR(airway_item), ""] in ["Larynxtubus","Guedeltubus"]) || !(isNull objectParent _patient)) then {
+if ((_patieR(airway_item), ""] in ["Larynxtubus","Guedeltubus"]) || !(isNull objectParent _patient)) then {
     _return = false;
 };
 
