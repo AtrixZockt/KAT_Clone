@@ -20,10 +20,10 @@ jobs:
         run: node generate_documentation.js
 
       - name: Upload Release Notes to Wiki
-        uses: Decathlon/wiki-page-creator-action@v2.0.0
-        with:
-          GH_PAT: ${{ secrets.GITHUB_TOKEN }}
+        uses: docker://decathlon/wiki-page-creator-action:latest
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
           ACTION_MAIL: atrixzockt@web.de
           ACTION_NAME: AtrixZockt
           OWNER: AtrixZockt
-          REPO_NAME: Kat_Clone
+          REPO_NAME: KAT_Clone
