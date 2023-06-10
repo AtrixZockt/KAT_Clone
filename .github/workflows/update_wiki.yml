@@ -1,32 +1,14 @@
-name: Update Wiki on Merged PR
+name: Doxygen GitHub Pages Deploy Action
 
 on:
-  pull_request:
-    types:
-      - closed
+  push:
+    branches:
+      - main
 
 jobs:
-  update_wiki:
-    if: github.event.pull_request.merged == true
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: DenverCoder1/doxygen-github-pages-action@v1.3.0
         with:
-          ref: main
-
-      - name: Install dependencies
-        run: npm install markdown-it
-
-      - name: Generate documentation from .sqf files
-        run: node generate_documentation.js
-
-      - name: Upload Release Notes to Wiki
-        uses: docker://decathlon/wiki-page-creator-action:latest
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-          ACTION_MAIL: atrixzockt@web.de
-          ACTION_NAME: AtrixZockt
-          OWNER: AtrixZockt
-          REPO_NAME: KAT_Clone
-          SKIP_MD: README.md
+          github_token: ${{ secrets.GITHUB_TOKEN }}
