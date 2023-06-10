@@ -15,22 +15,30 @@ jobs:
         with:
           ref: main
 
+      - name: Set default branch to main
+        run: git config --global init.defaultBranch main
+
+      - name: Get changed files in the main branch
+        id: changed_files
+        uses: tj-actions/changed-files@v36
+        with:
+          ref: main
+
       - name: Install dependencies
         run: npm install markdown-it
 
       - name: Check for changes in .sqf files
-        id: check_sqf_changes
         run: |
-          git diff --name-only --diff-filter=d *.sqf > changes.txt
-          if [ -s changes.txt ]; then
-            echo "CHANGED_FILES=$(cat changes.txt)" >> $GITHUB_ENV
+          CHANGED_FILES=$(echo "${{ steps.changed_files.outputs.all }}" | grep -E '\.sqf$')
+          if [ -n "$CHANGED_FILES" ]; then
+            echo "CHANGED_FILES=$CHANGED_FILES" >> $GITHUB_ENV
             echo "HAS_CHANGES=true" >> $GITHUB_ENV
           else
             echo "HAS_CHANGES=false" >> $GITHUB_ENV
           fi
 
       - name: Generate documentation from .sqf files
-        if: steps.check_sqf_changes.outputs.has_changes == 'true'
+        if: env.HAS_CHANGES == 'true'
         run: node generate_documentation.js
 
       - name: Upload Release Notes to Wiki
