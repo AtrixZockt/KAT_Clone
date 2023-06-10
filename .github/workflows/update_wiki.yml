@@ -23,6 +23,7 @@ jobs:
         uses: tj-actions/changed-files@v36
         with:
           files: addons/**
+          include_all_old_new_renamed_files: true
 
       - name: Install dependencies
         run: npm install markdown-it
